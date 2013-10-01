@@ -1,0 +1,27 @@
+{
+    "name": "wpt-component",
+    "version": "1.5.0",
+    "description": "A pure javascript pivot table and pivot chart component",
+    "author": {
+        "name": "Minghai Zhao",
+        "email": "minghai.zhao@gmail.com"
+    },
+    "website":{
+        "url": "webpivottable.com"
+    },
+    "repository": {
+         "type": "git",
+         "url": "git://github.com/bright-sea/wpt-component.git"
+    },
+    "private": true,
+    "dependencies": {
+        "express": "3.x",
+        "phantomjs": "1.x",
+        "request":"2.21.x"
+    },
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    }  
+}
+
