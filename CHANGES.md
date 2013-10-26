@@ -1,3 +1,19 @@
+### V1.6 October 1st, 2013
+* Implement all options changes for HighCharts and FusionCharts. User can 
+  customize all aspects of Highcharts and Fusioncharts and export them.
+* Redeign all layouts, levegage multiple tabs to use screen more efficiently.
+  Dynamic create and remove Report tabs and drill through tabs.
+* Sepearte widget layout and widget creation so that all widgets can be 
+  recreated anytime. This allows future implementation of dynamic changing 
+  language setting.
+* Implement Drill through for both CSV and OLAP.
+* Clean data strcture design, implemented saving everything of WebPivotTable 
+  (data and options) to a file and restore it anytime. 
+* Implement sort Fields values.
+* Add pivot fields setting and sorting at pivot bar.
+* Enable/Disable file proxy and xmla proxy at UI.
+
+
 ### V1.5 September 1st, 2013
 * Implement most fuctionalities of OLAP support, include cross-tab grid, expand 
   and collpase, charts, slice, non empty.

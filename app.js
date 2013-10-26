@@ -14,8 +14,8 @@ app.configure( function () {
   app.use( app.router );
 });
 
-app.post( '/wpt/csvProxy', function ( req, res ) {
-    wpt.csvProxy(req, res);
+app.post( '/wpt/fileProxy', function ( req, res ) {
+    wpt.fileProxy(req, res);
 });
 
 app.post( '/wpt/generatePdf', function ( req, res ) {
@@ -25,7 +25,6 @@ app.post( '/wpt/generatePdf', function ( req, res ) {
 app.post( '/wpt/xmlaProxy', function ( req, res ) {
     wpt.xmlaProxy(req, res);
 });
-
 
 app.configure( 'development', function () {
     app.use( express.logger() );

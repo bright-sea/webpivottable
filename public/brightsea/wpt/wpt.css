@@ -5560,14 +5560,14 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
     border:1px solid #888;
 }
 .wpt-data-load-dialog{
-    width:600px;
+    width: 600px;
     height:400px;
 }
 .wpt-open-dialog,
 .wpt-save-dialog,
 .wpt-setting-dialog {
-    width:300px;
-    height:120px;
+    width:500px;
+    height:300px;
 }
 .wpt-main-container .dijitContentPane,
 .wpt-dialog .dijitTabPane,
@@ -5595,20 +5595,15 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
     font-weight:bold;
     margin:4px;
 }
-.wpt-text-label{
-    float:left;
-    margin:5px;
-    font-weight:bold;
-}
 .wpt-field-row {
     float:left;
     width:100%;
     height:30px;
 }
-.wpt-field-row .wpt-field-text{
+.wpt-field-text{
     float:left;
     font-weight:bold;
-    margin:5px 0;
+    margin:5px;
 }
 .wpt-field-row a{
     color:blue;
@@ -5643,7 +5638,7 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
     height:480px;
 }
 .wpt-chart-options-ttd{
-    width:600px;
+    width:640px;
     height:200px;
 }
 .wpt-cell-value-textbox{
@@ -5673,7 +5668,7 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
 .wpt-control-container .wpt-top-pane{
     height:16px;
 }
-.wpt-control-container .wpt-text-label{
+.wpt-control-container .wpt-field-text{
     float:left;
     margin:0;
     font-weight:bold;
