@@ -1,3 +1,12 @@
+### V1.7 November 1st, 2013
+* Choose Highcharts as final chart library, remove fusioncharts and dojo charts.
+* Change Source data Tab from static to dynamic.
+* Implement Multi language support, change language on the fly.
+* Add clear all and clear filters.
+* When save WebPivotTable, only save query now, not save generated pivot data.
+
+
+
 ### V1.6 October 1st, 2013
 * Implement all options changes for HighCharts and FusionCharts. User can 
   customize all aspects of Highcharts and Fusioncharts and export them.
