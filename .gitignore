@@ -1,8 +1,2 @@
 .*
 !.gitignore
-!.gitmodules
-
-node_modules
-public/brightsea
-public/report
-public/ThirdParty
