@@ -6019,6 +6019,13 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
 	background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+UlEQVR42p2TPUgcQRTH/7Mft34SIjk8DQaVEERFsFnQIH6kUGNzhZIqRSqRxEJEjQpWco1ExEoJqHAWWoiC0cApgkYCJ4gGA14QNKRVooW6u97unrM7e+ptTHE+dnjzsf/fezNvhsx/eNLUUJraC0BEcmZsHWnDRBnL26SDl0mK47ZnAcK0I/+7RlzjGLinVRDkbph/I9C/9QFmNHIPgAoJcfTkRmx9nuYQuKwX9sxVqBXm0Vc3wBFzjk8AxCDWT4LPq2EH8GcN0fUuF4BwjtjyvAOBLYaYAcm/BHVxGsavbQillZBev70DSPWCPH6O2PEOC8zzDGKZaUCsDEA/OIMaDDAgbVxOgQNI98lSywqI9AjG4RdENzoBQQQRWGVJdgX44h6c9/sB5YICTQYBGIB7Vid7GqdYtlfn0OZe0U1e2AAiZkJsmMXl6Efo+1t03nABxvPDYu2wTLxVNIMU+yehqIz6KZD0bHDecui7e1CCg0xsNWcLNkD/vRo2TyBfjrQDetQ+RC63EGnvP4HPL7Gz0kJBqNMBJ7olNuM1jxBtYz6sjPXIMPTb0lGI5G9DSksHAyx+hjozxMS4ic4AZ28KEy9SHOLxQGp8R6shQFueAFTFLf4PIAF09ybHcI/ZgO+0U/HAx/STLFT7mmt8aQNI/jnrP061oWtBwtKJXdBW3AAAAABJRU5ErkJggg==");
 	float:left;
 }
+.wpt-google-spreadsheet-img {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+	background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMUlEQVQ4y2PgnxuxAIj/k4kXMFCgGYypawCxAK8B2Ni41NDGgFEvDHkvDFheoCg7AwAXsnQNqnNJuAAAAABJRU5ErkJggg==");
+	float:left;
+}
 .wpt-swap-axis-img {
     width: 16px;
     height: 16px;

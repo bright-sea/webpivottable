@@ -1,27 +1,34 @@
 {
-    "name": "wpt-component",
-    "version": "1.6.0",
-    "description": "A pure javascript pivot table and pivot chart component",
-    "author": {
-        "name": "Minghai Zhao",
-        "email": "minghai.zhao@gmail.com"
-    },
-    "website":{
-        "url": "webpivottable.com"
-    },
-    "repository": {
-         "type": "git",
-         "url": "git@github.com:bright-sea/webpivottable.git"
-    },
-    "private": true,
-    "dependencies": {
-        "express": "3.x",
-        "phantomjs": "1.9.2-1", 
-        "request":"2.21.x"
-    },
-    "engines": {
-        "node": "0.8.x",
-        "npm": "1.1.x"
-    }  
+  "name": "wpt-component",
+  "version": "1.8",
+  "description": "A pure javascript pivot table and pivot chart component",
+  "author": {
+    "name": "Minghai Zhao",
+    "email": "minghai.zhao@gmail.com"
+  },
+  "website": {
+    "url": "webpivottable.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bright-sea/webpivottable.git"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "phantomjs": "1.9.2-1",
+    "request": "2.21.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-dojo": "~0.2.0",
+    "grunt-exec": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-compress": "~0.6.0"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
 }
-

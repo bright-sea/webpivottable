@@ -7,8 +7,9 @@ var express = require( 'express' ),
 
 // Configuration
 app.configure( function () {
-  app.use( express.bodyParser() );
-  app.use( express.methodOverride() );
+    app.use(express.json());
+    app.use(express.urlencoded());
+    app.use( express.methodOverride() );
 //  app.use( express.cookieParser());  
   app.use( express.static( __dirname + '/public' ) );
   app.use( app.router );

@@ -1,4 +1,4 @@
-# WebPivotTable Component (V1.7)
+# WebPivotTable Component (V1.8)
 
 * A pure javascript pivot table and pivot chart component 
   which can be integrated into any web application to do data analysis.

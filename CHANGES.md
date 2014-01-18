@@ -1,3 +1,13 @@
+### V1.8 January 18th, 2014
+* Add sync and timeout options for xmla client
+* Fix Highchart error #19 : too many ticks
+* Change all controls to index of fields instead of objects reference to 
+  support separate wpt selections from data.
+* Add API for load and save wpt without data.
+* Add more options to show/hide buttons on toolbars.
+* Add support of load data from google spreadsheet.
+
+
 ### V1.7 November 1st, 2013
 * Choose Highcharts as final chart library, remove fusioncharts and dojo charts.
 * Change Source data Tab from static to dynamic.
