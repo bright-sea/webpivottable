@@ -2,59 +2,99 @@
 <html>
 <head>
     <title>Test</title>
-
+    
     <style type="text/css">
         html, body, #wpt-container {width:100%;height:100%;}
     </style>
-
+    
     <link rel='stylesheet' href='brightsea/wpt/wpt.css'>
 
-    <script type="text/javascript" src="brightsea/dojo/dojo.js"  data-dojo-config="async:1, locale:'en'"></script>
+    <script type="text/javascript" src="brightsea/dojo/dojo.js"  data-dojo-config="async:1, locale:'en', extraLocale:['zh','pt','es','it']"></script>
     <script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
     <script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="highcharts/3.0.6/highcharts.js"></script>
-    <script type="text/javascript" src="highcharts/3.0.6/modules/exporting.js"></script>
+    <script type="text/javascript" src="highcharts/3.0.9/highcharts.js"></script>
+    <script type="text/javascript" src="highcharts/3.0.9/modules/exporting.js"></script>
+    <script type="text/javascript" src="highcharts/3.0.9/modules/drilldown.js"></script>
     <!--script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="//code.highcharts.com/highcharts.js"></script>
     <script type="text/javascript" src="//code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="//code.highcharts.com/modules/drilldown.js"></script>
     -->
 
     <script type="text/javascript">
         require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
             new WebPivotTable({
                 customOptions:{
-                    wptLinks:[{
-                        url: "http://bi2.io/json/sample11.wpt",
+                    fileLinks:[{
+                        type: "WPT",
+                        url: "http://bi2.io/json/sample31.wpt",
                         label: "Sample 1: Predefined small CSV WebPivotTable file"
                     },{
-                        url: "http://bi2.io/json/sample12.wpt",
+                        type: "WPT",
+                        url: "http://bi2.io/json/sample32.wpt",
                         label: "Sample 2: Predefined Mondrian OLAP WebPivotTable file"
                     },{
-                        url: "http://bi2.io/json/sample13.wpt",
+                        type: "WPT",
+                        url: "http://bi2.io/json/sample33.wpt",
                         label: "Sample 3: Predefined large CSV WebPivotTable file"
-                    }],
-
-                    csvLinks:[{
+                    },{
+                        type: "CSV",
                         url: "http://bi2.io/json/example.csv",
                         label: "Sample 1: USA Selection Poll Data (Total 4,000 records)"
                     },{
+                        type: "CSV",
                         url: "http://bi2.io/json/sales.csv",
                         label: "Sample 2: Sales Sample Data (Total 2,823 records)"
                     },{
+                        type: "CSV",
                         url: "http://bi2.io/json/FL_insurance.csv",
                         label: "Sample 3: Florida Insurance Data (Total 36,634 records)"
-                    }],
-
-                    olapLinks:[{
+                    },{
+                        type: "XLS",
+                        url: "http://bi2.io/json/example.xls",
+                        label: "Sample 1: USA Selection Poll Data (Total 4,000 records)"
+                    },{
+                        type: "XLS",
+                        url: "http://bi2.io/json/sales.xls",
+                        label: "Sample 2: Sales Sample Data (Total 2,823 records)"
+                    },{
+                        type: "XLS",
+                        url: "http://bi2.io/json/FL_insurance.xls",
+                        label: "Sample 3: Florida Insurance Data (Total 36,634 records)"
+                    },{
+                        type: "XLSX",
+                        url: "http://bi2.io/json/example.xlsx",
+                        label: "Sample 1: USA Selection Poll Data (Total 4,000 records)"
+                    },{
+                        type: "XLSX",
+                        url: "http://bi2.io/json/sales.xlsx",
+                        label: "Sample 2: Sales Sample Data (Total 2,823 records)"
+                    },{
+                        type: "XLSX",
+                        url: "http://bi2.io/json/FL_insurance.xlsx",
+                        label: "Sample 3: Florida Insurance Data (Total 36,634 records)"
+                    },{
+                        type: "GSS",
+                        url: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html",
+                        label: "Sample 1: USA Selection Poll Data (Total 4,000 records)"
+                    },{
+                        type: "GSS",
+                        url: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdHJMOTh4Sm1BSFlDYXRwVW5lc0xuMVE&output=html",
+                        label: "Sample 2: Sales Sample Data (Total 2,823 records)"
+                    },{
+                        type: "OLAP",
                         url: "http://bi2.io:8080/mondrian/xmla",
                         label: "Sample Mondrian OLAP Server"
                     },{
+                        type: "OLAP",
                         url: "http://olap.flexmonster.com/olap/msmdpump.dll",
                         label: "Sample Microsoft Analysis Service"
-                    },{
-                        url: "http://bi2.io:8282/icCube/xmla",
-                        label: "Sample IcCube OLAP Server"
+//                    },{
+//                        type: "OLAP",
+//                        url: "http://bi2.io:8282/icCube/xmla",
+//                        label: "Sample IcCube OLAP Server"
                     }],
+
 
                     filepicker:{
                         key:"A4bieoUsyR4yBrNPkFIvrz"  //bi2.io
@@ -63,11 +103,11 @@
                 }
             },"wpt-container");
         });
-    </script>
+	</script>
 </head>
 
 <body class="claro">
-<div id="wpt-container"></div>
+	<div id="wpt-container"></div>
 </body>
 </html>
 

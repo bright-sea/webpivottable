@@ -19,6 +19,10 @@ app.post( '/wpt/fileProxy', function ( req, res ) {
     wpt.fileProxy(req, res);
 });
 
+app.post( '/wpt/fileProxyWithBase64', function ( req, res ) {
+    wpt.fileProxyWithBase64(req, res);
+});
+
 app.post( '/wpt/generatePdf', function ( req, res ) {
     wpt.generatePdf(req, res);
 });

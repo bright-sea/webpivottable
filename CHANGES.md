@@ -1,6 +1,18 @@
-### V1.8 January 18th, 2014
+### V2.0 March 1st, 2014
+* Redesign internal data model and csv calculate engine to improve performance
+  and better support advanced features.
+* Redesign pivot grid to better support both compact form and tabular form.
+* Redesign pivot chart to control values independently.
+* Separate the control of grid and chart.
+* Add support of XLS and XLSX format data source.
+* Redesign MainBar to use dropdown buttons
+* Fix IE8 issue caused by Filesaver
+* Add language support of Spanish, Portuguese, Italian
+
+
+### V1.8.0 January 18th, 2014
 * Add sync and timeout options for xmla client
-* Fix Highchart error #19 : too many ticks
+* Fix Highcharts error #19 : too many ticks
 * Change all controls to index of fields instead of objects reference to 
   support separate wpt selections from data.
 * Add API for load and save wpt without data.
@@ -20,13 +32,13 @@
 ### V1.6 October 1st, 2013
 * Implement all options changes for HighCharts and FusionCharts. User can 
   customize all aspects of Highcharts and Fusioncharts and export them.
-* Redeign all layouts, levegage multiple tabs to use screen more efficiently.
+* Redesign all layouts, leverage multiple tabs to use screen more efficiently.
   Dynamic create and remove Report tabs and drill through tabs.
-* Sepearte widget layout and widget creation so that all widgets can be 
+* Separate widget layout and widget creation so that all widgets can be
   recreated anytime. This allows future implementation of dynamic changing 
   language setting.
 * Implement Drill through for both CSV and OLAP.
-* Clean data strcture design, implemented saving everything of WebPivotTable 
+* Clean data structure design, implemented saving everything of WebPivotTable
   (data and options) to a file and restore it anytime. 
 * Implement sort Fields values.
 * Add pivot fields setting and sorting at pivot bar.
@@ -34,31 +46,31 @@
 
 
 ### V1.5 September 1st, 2013
-* Implement most fuctionalities of OLAP support, include cross-tab grid, expand 
-  and collpase, charts, slice, non empty.
-* Redeign the csv grid layout and csvService to fully concide with Microsoft 
+* Implement most functionalities of OLAP support, include cross-tab grid, expand
+  and collapase, charts, slice, non empty.
+* Redesign the csv grid layout and csvService to fully coincide with Microsoft
   Excel, support compact form and tabular form, expand/collapse both columns 
   and rows, show/hide row/column totals/subtotals.   
 * Show tooltip for all data cell and support drill through for csv.
 * Redesign pivot toolbar, grid toolbar and chart toolbar.
 * Pivot grid and charts share exactly the same data set and refresh 
-  automaticlaly for any change together. 
+  automatically for any change together.
 * Fix 25 fields limit issue and add support of locale number style.
 
 
 ### V1.4 August 2nd, 2013
 
-* Seperate all modules into different files to easy future development.
+* Separate all modules into different files to easy future development.
 * Create dojo build profile to build a single layer loadable customize dojo.js 
   to improve the loading performance, also make it very easy for all kinds of 
-  web application integarte this component.    
+  web application integrate this component.
 * The first implementation of OLAP support, now this component can be used as 
   a front end UI for all kinds of business intelligence projects.
 * Create an unify XmlaService to support Microsoft Analysis Service (SSAS), 
   Mondrian OLAP server and icCube OLAP server.
 * Unify the support of different chart libraries. Currently dojo chart library  
-  is default chart library, it will be always avaiable. FusionCharts library 
-  and Highcharts library will be avaiable when those chart libraries file has 
+  is default chart library, it will be always available. FusionCharts library
+  and Highcharts library will be available when those chart libraries file has
   been loaded.
 * Fix issues related to touch screen device, now this component can be run at 
   all touch Screen laptops and tablets like ipad.
@@ -69,8 +81,8 @@
 * Replace FusionChart library with dojo chart library
 * Use filepicker.io to load csv file from cloud drive
 * replace xmla4js with own xmla service, no dependence on xmla4js
-* Redeisgn pivot control pane to support tree structure (for OLAP)
-* Redeign pivot grid layout engine to support values within columns and rows
+* Redesign pivot control pane to support tree structure (for OLAP)
+* Redesign pivot grid layout engine to support values within columns and rows
   and can be moved up and down.
 * Implement the function of expanding and collapsing columns tree
 * Redesign the calculation engine to improve performance 
@@ -80,34 +92,34 @@
 
 ### V1.2 June 8th, 2013
 
-* Redeisgn layout to allow change control pane position
+* Redesign layout to allow change control pane position
 * Upgrade to dojo1.9 and remove dependence of Expandpane and floatingPane
 * Put grid pane and chart pane inside one container to easily control layout
-* Redeign Import Module and implement change CSV content before import
+* Redesign Import Module and implement change CSV content before import
 * Implement Zoom in and Zoom out Grid and charts
 * Implement Export to excel functionality 
 * Replace webkitHTmltopdf with phantomjs to output report to pdf
 * Move xmla4js to client side (ready to replace xmla4js with own js lib)
-* Use node.js request module at backend to do tranparent proxy
+* Use node.js request module at backend to do transparent proxy
 
 
 
 ### V1.1 May 3rd, 2013
 
 * The biggest improvement to make it production ready
-* Redeign the calculation engine and grid layout to support filters
+* Redesign the calculation engine and grid layout to support filters
 * Redesign UI to use standard menu and improve User experience
-* Redeign fields pivot grid to support OLAP
+* Redesign fields pivot grid to support OLAP
 * Move data input and report export as individual module 
 * Add more customize options for integration 
 
 
 ### V1.0 April 3rd, 2013
 
-* Redeign the grid to better control the style  
+* Redesign the grid to better control the style
 * Fix all issues after 1.0beta2 review
 * Improve the calculation engine to support larger source dataset
-* Redeisgn the chart to improve the performance
+* Redesign the chart to improve the performance
 * Add more customize API to easy integration 
 
 
@@ -124,7 +136,7 @@
   [Cloud 9 IDE](https://c9.io), create
   [node.js](http://nodejs.org/) server to test component.
 * Clean code to satisfy CLoud9 IDE Code Quality Check.
-* Reorginaize code to follow javascript code standard best practice.
+* Reorganize code to follow javascript code standard best practice.
 * Use online javascript compressor [jscompress.com](http://jscompress.com/)
 
 
@@ -144,7 +156,7 @@
 
 ### V0.2 May 25th, 2012 
 
-* Solve the long run script issue while hirechary of rows or columns becomes 
+* Solve the long run script issue while hierarchy of rows or columns becomes
   complicate. 
 * Change lazy-load cells to one-time loading. 
 * Add grid options to change pivotGrid layout
