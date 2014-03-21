@@ -1,3 +1,17 @@
+### V2.1 March 21st, 2014
+* Implement fixed row header while horizontal scroll and fixed column header
+  while vertical scroll for pivot grid.
+* Implement group categories for pivot chart.
+* Expand/Collapse group categories and synchronize pivot chart and pivot grid
+* Unify tooltips for both pivot grid and pivot chart.
+* Unify drill through for both pivot grid and pivot chart.
+* Save only grid and chart options instead of all options to wpt files.
+* Add API to generate wpt string at background from all kinds of csv data.
+* Add API to load all kinds of csv data together with saved wpt file.
+* Separate NLS files from dojo.js layer file so that language file can be easy
+  to be customized
+
+
 ### V2.0 March 1st, 2014
 * Redesign internal data model and csv calculate engine to improve performance
   and better support advanced features.
@@ -10,7 +24,7 @@
 * Add language support of Spanish, Portuguese, Italian
 
 
-### V1.8.0 January 18th, 2014
+### V1.8 January 18th, 2014
 * Add sync and timeout options for xmla client
 * Fix Highcharts error #19 : too many ticks
 * Change all controls to index of fields instead of objects reference to 
@@ -47,7 +61,7 @@
 
 ### V1.5 September 1st, 2013
 * Implement most functionalities of OLAP support, include cross-tab grid, expand
-  and collapase, charts, slice, non empty.
+  and collapse, charts, slice, non empty.
 * Redesign the csv grid layout and csvService to fully coincide with Microsoft
   Excel, support compact form and tabular form, expand/collapse both columns 
   and rows, show/hide row/column totals/subtotals.   

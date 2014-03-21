@@ -1,4 +1,4 @@
-# WebPivotTable Component (V2.0)
+# WebPivotTable Component (V2.1)
 
 * A pure javascript pivot table and pivot chart component 
   which can be integrated into any web application to do data analysis.
@@ -32,4 +32,7 @@
 * [Highcharts](http://www.highcharts.com/)
 * [node.js](http://nodejs.org/)
 * [webpivottable.com](http://webpivottable.com/)
+* [xls.js]( https://github.com/SheetJS/js-xls)
+* [xlsx.js](https://github.com/SheetJS/js-xlsx)
+
 
