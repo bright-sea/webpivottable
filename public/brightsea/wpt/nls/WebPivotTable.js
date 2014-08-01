@@ -199,12 +199,10 @@ define({
     Mnu_FieldSettings: "Field Settings ...",	
     Mnu_ValueFieldSettings: "Value Field Settings ...",	
 
-    Dlg_FieldSettings: "Field Settings",	
-    Dlg_ValueFieldSettings: "Value Field Settings",	
-    
     Tab_Subtotal: "Subtotal & Filters",
     Tab_Layout: "Layout & Print",
     Tab_Summarize: "Summarize Values By",
+    Tab_ShowValueAs: "Show Value As",
     Tab_NumberFormat: "Number Format",
 
     Lbl_SourceName:"Source Name: ",
@@ -297,6 +295,7 @@ define({
     Tip_SplineChart: "Spline Chart",
     Tip_AreaChart: "Area Chart",
     Tip_AreaSplineChart: "Area Spline Chart",
+    Tip_PieChart: "Pie Chart",  //to be fixed in other language file
 
     Lbl_ChartStacked: "Stacked",
     Lbl_NoStacked: "No",
@@ -328,6 +327,11 @@ define({
     Lbl_High_ResetZoomTitle: 'Reset zoom level 1:1',
     
 
+    Lbl_3DView: "3D View",
+    Lbl_Alpha: "Alpha",
+    Lbl_Beta: "Beta",
+    Lbl_Depth: "Depth",
+    Lbl_ViewDistance: "View Distance",
 
     /* DataPane.js  */    
 

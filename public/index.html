@@ -9,34 +9,33 @@
     
     <link rel='stylesheet' href='brightsea/wpt/wpt.css'>
 
-    <script type="text/javascript" src="brightsea/dojo/dojo.js"  data-dojo-config="async:1"></script>
+    <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: '/brightsea/dojo/'"></script>
     <script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
-    <script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="highcharts/3.0.9/highcharts.js"></script>
-    <script type="text/javascript" src="highcharts/3.0.9/modules/exporting.js"></script>
-    <script type="text/javascript" src="highcharts/3.0.9/modules/drilldown.js"></script>
+    <script type="text/javascript" src="jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="highcharts/4.0.1/highcharts-all.js"></script>
     <script type="text/javascript" src="highcharts/group_categories/grouped-categories.js"></script>
-    <!--script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.highcharts.com/highcharts.js"></script>
-    <script type="text/javascript" src="//code.highcharts.com/modules/exporting.js"></script>
-    <script type="text/javascript" src="//code.highcharts.com/modules/drilldown.js"></script>
-    -->
 
     <script type="text/javascript">
         require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
             new WebPivotTable({
                 customOptions:{
+
+                    uiFlags: {
+                        helpBtn: 0,
+                        aboutBtn: 0
+                    },
+
                     fileLinks:[{
                         type: "WPT",
-                        url: "http://bi2.io/json/sample31.wpt",
+                        url: "http://bi2.io/json/sample51.wpt",
                         label: "Sample 1: Predefined small CSV WebPivotTable file"
                     },{
                         type: "WPT",
-                        url: "http://bi2.io/json/sample32.wpt",
+                        url: "http://bi2.io/json/sample52.wpt",
                         label: "Sample 2: Predefined Mondrian OLAP WebPivotTable file"
                     },{
                         type: "WPT",
-                        url: "http://bi2.io/json/sample33.wpt",
+                        url: "http://bi2.io/json/sample53.wpt",
                         label: "Sample 3: Predefined large CSV WebPivotTable file"
                     },{
                         type: "CSV",

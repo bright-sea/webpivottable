@@ -199,12 +199,10 @@ define({
     Mnu_FieldSettings: "Configurações do Campo...",
     Mnu_ValueFieldSettings: "Configuração do Valor do Campo...",
 
-    Dlg_FieldSettings: "Configurações do Campo",
-    Dlg_ValueFieldSettings: "Configuração do Valor do Campo",
-
     Tab_Subtotal: "Subtotal & Filtros",
     Tab_Layout: "Layout & Impressão",
     Tab_Summarize: "Somar Valores Por",
+    Tab_ShowValueAs: "Show Value As",  //to be fixed
     Tab_NumberFormat: "Formato dos Números",
 
     Lbl_SourceName:"Nome da Fonde de Dados: ",

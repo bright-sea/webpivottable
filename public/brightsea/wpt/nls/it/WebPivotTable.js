@@ -198,12 +198,10 @@ define({
     Mnu_FieldSettings: "Impostazioni Campo ...",
     Mnu_ValueFieldSettings: "Impostazioni Campo Valore ...",
 
-    Dlg_FieldSettings: "Impostazioni Campo",
-    Dlg_ValueFieldSettings: "Impostazioni Valore Campo",
-
     Tab_Subtotal: "Subtotali & Filtri",
     Tab_Layout: "Layout & Stampa",
     Tab_Summarize: "Riassumere i Valori per ",
+    Tab_ShowValueAs: "Show Value As",  //to be fixed
     Tab_NumberFormat: "Formato Numero",
 
     Lbl_SourceName:"Nome Sorgente: ",

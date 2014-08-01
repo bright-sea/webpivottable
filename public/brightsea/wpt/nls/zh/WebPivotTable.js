@@ -198,12 +198,10 @@ define({
     Mnu_FieldSettings: "字段设置...",	
     Mnu_ValueFieldSettings: "值字段设置...",	
 
-    Dlg_FieldSettings: "字段设置",	
-    Dlg_ValueFieldSettings: "值字段设置",	
-    
     Tab_Subtotal: "小计和过滤",
     Tab_Layout: "布局和打印",
     Tab_Summarize: "汇总值为",
+    Tab_ShowValueAs: "显示值为",
     Tab_NumberFormat: "数字格式",
 
     Lbl_SourceName:"源名: ",

@@ -1,3 +1,41 @@
+###
+* Fix the issue of olap cube crossjoin with multiple dimensions.
+
+
+
+
+### V2.4 July 5th, 2014
+* Redesign pivot grids to better support OLAP cubes.
+* Add more messages while loading cube details.
+* Add xmla data popup dialogs for all OLAP fields.
+* Add support of filters in OLAP cube.
+* Separate free version with commercial version.
+
+
+### V2.3 May 3rd, 2014
+* Add show value as percentage options for value fields.
+* Add more number format options for value fields.
+* Add field and value customize popup through row and column header.
+* Update to use highchart 4.0.1
+* Add 3D view of column and pie charts
+* Redesign data and fields to improve performance and decrease wpt file size
+* Add dimension layer into pivot fields list for OLAP Cubes
+* Add more details message while loading OLAP Cube data.
+
+
+
+### V2.2 April 13th, 2014
+* Move format attributes from fields to values.
+* Add Pie Chart.
+* Redesign CSV process to improve performance.
+* Redesign wpt format to add sort by values field option.
+* Add filter by label, filter by value and top 10 options.
+* Change pivot control fields at pivot bar to popup tooltip dialogs.
+* Fix IE11 webworker issue and setOptions issue.
+* Fix sometime load component failed at Firefox issue.
+* Remove placeHolder columns format in pivot grid
+
+
 ### V2.1 March 21st, 2014
 * Implement fixed row header while horizontal scroll and fixed column header
   while vertical scroll for pivot grid.

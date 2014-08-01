@@ -1,4 +1,4 @@
-# WebPivotTable Component (V2.1)
+# WebPivotTable Component (V2.4)
 
 * A pure javascript pivot table and pivot chart component 
   which can be integrated into any web application to do data analysis.
@@ -6,8 +6,8 @@
 
 # Broswer Support
 
-* IE8, 9, 10
-* Firefox, Chrome, Sarafi
+* IE9, 10, 11
+* Firefox, Chrome, Safari
 
 # How to use 
 
