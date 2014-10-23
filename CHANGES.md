@@ -1,7 +1,8 @@
-###
+### V2.4.2 October 22nd, 2014
+* Fix the issue pivot fields grid is empty while hide it first
+
+### V2.4.1 August 1st, 2014
 * Fix the issue of olap cube crossjoin with multiple dimensions.
-
-
 
 
 ### V2.4 July 5th, 2014

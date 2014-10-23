@@ -151,30 +151,9 @@ function walk(arr, key, fn) {
     fn(arr[l]);
   }
 }
+
 function deepClone(thing) {
-    var other, key;
-   
-    function isArray(obj) {
-        return Object.prototype.toString.call(obj) === '[object Array]';
-    }
-    
-    function isObject(obj) {
-        return Object.prototype.toString.call(obj) === '[object Object]';
-    }
-
-    // check for type, array or object
-    other = isArray(thing) ? [] : {};
-
-    for (key in thing) {
-        if (thing.hasOwnProperty(key)) {
-            if (isObject(thing[key])) {
-                other[key] = deepClone(thing[key]);
-            } else {
-                other[key] = thing[key];
-            }           
-        }        
-    };
-    return other;
+    return JSON.parse(JSON.stringify(thing));
 }
 
 //
@@ -243,7 +222,7 @@ axisProto.render = function () {
       left    = axis.left,
       right   = left + axis.width,
       bottom  = top + axis.height,
-      visible = axis.hasVisibleSeries,
+      visible = axis.hasVisibleSeries || axis.hasData,
       depth   = axis.labelsDepth,
       grid    = axis.labelsGrid,
       horiz   = axis.horiz,
@@ -259,7 +238,8 @@ axisProto.render = function () {
   if (!grid) {
     grid = axis.labelsGrid = axis.chart.renderer.path()
       .attr({
-        strokeWidth: options.lineWidth,
+        strokeWidth: options.lineWidth, // < 4.0.3
+        'stroke-width': options.lineWidth, // 4.0.3+ #30
         stroke: options.lineColor
       })
       .add(axis.axisGroup);
@@ -300,7 +280,7 @@ axisProto.render = function () {
     }
     else
 	  tick.label.attr({
-		visibility: ''
+		visibility: visible ? 'visible' : 'hidden'
 	  });
   });
 };
@@ -516,14 +496,16 @@ tickProto.render = function (index, old, opacity) {
 			y: (minPos.y + maxPos.y - bBox.height) / 2  + baseLine
 		};
 
-    group.label.attr(attrs);
-
-    if (grid) {
-      gridAttrs = horiz ?
-        [maxPos.x, size, maxPos.x, size + lvlSize] :
-        [size, maxPos.y, size + lvlSize, maxPos.y];
-
-      addGridPart(grid, gridAttrs);
+		if(!isNaN(attrs.x) && !isNaN(attrs.y)){ 
+			group.label.attr(attrs);
+	
+			if (grid) {
+				gridAttrs = horiz ?
+					[maxPos.x, size, maxPos.x, size + lvlSize] :
+					[size, maxPos.y, size + lvlSize, maxPos.y];
+	
+				addGridPart(grid, gridAttrs);
+			}
     }
 
     size += lvlSize;
