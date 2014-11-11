@@ -1,4 +1,4 @@
-# WebPivotTable Component (V2.4.2)
+# WebPivotTable Component (V2.4.3)
 
 * A pure javascript pivot table and pivot chart component 
   which can be integrated into any web application to do data analysis.
@@ -16,12 +16,12 @@
 ### Node.js:
 
 * Copy whole directory.
-* got to this root directory, run "npm install"
+* got to this directory, run "npm install"
 * run "node app"
 
 ### Other Web Servers:
 
-* Copy contents under public directory to www root directory.
+* Copy all contents under public directory to www root directory.
 
 # Resources
 

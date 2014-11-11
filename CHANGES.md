@@ -1,3 +1,6 @@
+### V2.4.3 November 11th, 2014
+* Support to keep filters working when loading updated data with pre saved pivot options.
+
 ### V2.4.2 October 22nd, 2014
 * Fix the issue pivot fields grid is empty while hide it first
 
