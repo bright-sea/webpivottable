@@ -1,12 +1,8 @@
-### V2.4.3 November 11th, 2014
+### V2.5 November 15th, 2014
+* Support to add Calculated fields with any formula
 * Support to keep filters working when loading updated data with pre saved pivot options.
-
-### V2.4.2 October 22nd, 2014
 * Fix the issue pivot fields grid is empty while hide it first
-
-### V2.4.1 August 1st, 2014
 * Fix the issue of olap cube crossjoin with multiple dimensions.
-
 
 ### V2.4 July 5th, 2014
 * Redesign pivot grids to better support OLAP cubes.
