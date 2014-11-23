@@ -5626,6 +5626,10 @@ html.has-quirks .dgrid-column-set {
 .wpt-pivot-fields-pane{
     border:1px solid #888;
 }
+.wpt-data-save-dialog{
+    width: 300px;
+    height:100px;
+}
 .wpt-data-load-dialog{
     width: 600px;
     height:320px;

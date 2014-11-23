@@ -1,3 +1,9 @@
+### V2.5.1 November 22th, 2014
+* Fix issue of drill through while added calculated field.
+* Add save wpt dialog to set file name and ignore data option.
+* Ignore saving lookups of fields which no filter setting to save wptString size.
+
+
 ### V2.5 November 15th, 2014
 * Support to add Calculated fields with any formula
 * Support to keep filters working when loading updated data with pre saved pivot options.
