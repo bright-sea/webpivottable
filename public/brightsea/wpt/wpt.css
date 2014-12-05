@@ -5225,8 +5225,7 @@ div.dijitNumberTextBoxRtl {
 	bottom: 0;
 	width: 100%;
 }
-.dgrid-header-hidden,
-html.has-quirks .dgrid-header-hidden .dgrid-cell {
+.dgrid-header-hidden {
 	
 	font-size: 0; 
 	height: 0 !important;
@@ -5253,11 +5252,11 @@ html.has-quirks .dgrid-header-hidden .dgrid-cell {
 	border: none;
 	table-layout: fixed;
 	empty-cells: show;
-	width: 100%; 
+	width: 100%;
 	height: 100%;
 }
 .dgrid-cell {
-	padding: 0px;
+	padding: 3px;
 	text-align: left;
 	overflow: hidden;
 	vertical-align: top;
@@ -5268,9 +5267,6 @@ html.has-quirks .dgrid-header-hidden .dgrid-cell {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-}
-.dgrid-cell-padding {
-	padding: 3px;
 }
 .dgrid-content {
 	position: relative;
@@ -5344,23 +5340,6 @@ html.has-quirks .dgrid-header-hidden .dgrid-cell {
 .dgrid-input {
 	width: 99%;
 }
-html.has-mozilla .dgrid *:focus, html.has-opera .dgrid *:focus {
-	 
-	outline: 1px dotted;
-}
-html.has-ie-6-7.has-no-quirks .dgrid-row-table {
-	
-	width: auto;
-}
-html.has-quirks .dgrid-row-table, html.has-ie-6 .dgrid-row-table {
-	
-	height: auto; 
-}
-html.has-quirks .dgrid-header-scroll,
-html.has-ie-6 .dgrid-header-scroll {
-	
-	font-size: 0;
-}
 html.has-mozilla .dgrid-focus {
 	
 	outline-offset: -1px;
@@ -5427,9 +5406,6 @@ html.has-mozilla .dgrid-focus {
 	transition-property: background-color, border-color;
 	background: url("data:image/png;base64,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") #fff repeat-x;
 }
-.has-ie-6 .claro .dgrid-row {
-	background-image: none;
-}
 .claro .dgrid-row:hover {
 	background-color: #e9f2fe;
 }
@@ -5465,15 +5441,6 @@ html.has-mozilla .dgrid-focus {
 	border-left: 5px solid transparent;
 	outline: none;
 }
-html.has-ie-6 .dgrid-resize-handle {
-	border-color: pink;
-	filter: chroma(color=pink);
-}
-html.has-mozilla .dgrid .dgrid-resize-handle:focus,
-html.has-opera .dgrid .dgrid-resize-handle:focus {
-	
-	outline: none;
-}
 .dgrid-resize-header-container {
 	height:100%;
 }
@@ -5483,24 +5450,12 @@ html.has-touch .dgrid-resize-handle {
 html.has-touch .dgrid-column-resizer {
 	width: 2px;
 }
-html.has-no-quirks .dgrid-resize-header-container {
+.dgrid-resize-header-container {
 	
 	position: relative;
 }
-html.has-ie-6 .dgrid-resize-header-container {
-	position: static; 
-} 
-.dgrid-header .dgrid-cell-padding {
+.dgrid-header .dgrid-cell {
 	overflow: hidden;
-}
-html.has-ie-6 .dgrid-header .dgrid-cell-padding {
-	margin-right: 4px; 
-}
-html.has-ie-6 .dgrid-header .dgrid-sort-arrow {
-    margin-right: 0; 
-}
-html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .dgrid-cell {
-	position:relative;
 }
 #dgrid-css-extensions-ColumnResizer-loaded {
 	display: none;
@@ -5525,9 +5480,7 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
 .dgrid-first, .dgrid-last, .dgrid-next, .dgrid-previous {
 	font-size: 130%;
 }
-.dgrid-pagination .dgrid-page-disabled,
-.has-ie-6-7 .dgrid-navigation .dgrid-page-disabled,
-.has-ie.has-quirks .dgrid-navigation .dgrid-page-disabled {
+.dgrid-pagination .dgrid-page-disabled {
 	color: #aaa;
 	cursor: default;
 }
@@ -5555,6 +5508,9 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
 	width: 100%;
 	position: relative; 
 	height: 100%;
+	
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
 }
 .dgrid-column-set-cell {
 	vertical-align: top;
@@ -5576,21 +5532,17 @@ html.has-quirks .dgrid-header .dgrid-cell-padding, html.has-ie-6 .dgrid-header .
 .dgrid-column-set-scroller-content {
 	height: 1px;
 }
-html.has-mozilla .dgrid-column-set *:focus, html.has-safari .dgrid-column-set *:focus {
-	
-	border: 1px dotted black; 
-	outline: 1px dotted black;
-}
-html.has-ie-7 .dgrid-column-set {
-	
-	width: auto;
-}
-html.has-quirks .dgrid-column-set {
-	
-	width: 100%;
-}
 #dgrid-css-columnset-loaded {
 	display: none;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 .wpt-header-pane,
 .wpt-footer-pane{
@@ -5757,12 +5709,8 @@ html.has-quirks .dgrid-column-set {
 .wpt-fields-grid .dgrid-cell,
 .wpt-control-grid .dgrid-cell,
 .wpt-fields-grid-ttd .dgrid-cell{
+  padding: 0;
 	border: 0;
-}
-.wpt-fields-grid .dgrid-cell-padding,
-.wpt-control-grid .dgrid-cell-padding,
-.wpt-fields-grid-ttd .dgrid-cell-padding{
-    padding: 0;
 }
 .wpt-control-grid .dgrid-row-table {
     background-color:rgb(250, 224, 177);
