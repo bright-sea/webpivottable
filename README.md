@@ -1,4 +1,4 @@
-# WebPivotTable Component (V2.5.2)
+# WebPivotTable Component (V2.6.0)
 
 * A pure javascript pivot table and pivot chart component 
   which can be integrated into any web application to do data analysis.
@@ -36,7 +36,8 @@
 ## Dependence resources:
 
 * [dojo](http://dojotoolkit.org/) 
-* [dgrid](https://github.com/SitePen/dgrid) 
+* [dgrid](https://github.com/SitePen/dgrid)
+* [dstore](https://github.com/sitepen/dstore) 
 * [put-selector](https://github.com/kriszyp/put-selector) 
 * [xstyle](https://github.com/kriszyp/xstyle)
 * [Highcharts](http://www.highcharts.com/)

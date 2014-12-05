@@ -1,11 +1,9 @@
-### V2.5.2 December 5th, 2014
+### V2.6 December 5th, 2014
 * Refactor to use dgrid0.4 and dstore
 * Force horizontal scroll bar always show in WebKit based browsers.
+* Fix issues used in iPad and other touch devices.
 * Add confirmation box when leaving the page 
 * Remove the dependence of jquery outside highcharts
-
-
-### V2.5.1 November 22th, 2014
 * Fix issue of drill through while added calculated field.
 * Add save wpt dialog to set file name and ignore data option.
 * Ignore saving lookups of fields which no filter setting to save wptString size.
