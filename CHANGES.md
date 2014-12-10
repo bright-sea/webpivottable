@@ -1,3 +1,6 @@
+### V3.0 2015
+
+
 ### V2.6 December 5th, 2014
 * Refactor to use dgrid0.4 and dstore
 * Force horizontal scroll bar always show in WebKit based browsers.

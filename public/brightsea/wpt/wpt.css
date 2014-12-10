@@ -5548,6 +5548,12 @@ html.has-touch .dgrid-column-resizer {
 .wpt-footer-pane{
     height:27px;
 }
+.wpt-leftmenu-pane{
+    width: 20px;
+}
+.wpt-leftmenu-pane .dijitToolbar{
+    padding: 0px;
+}
 .wpt-main-container {
     width:100%;
     height:100%;
@@ -5572,6 +5578,7 @@ html.has-touch .dgrid-column-resizer {
 	padding: 6px;
 }
 .wpt-header-pane .dijitButtonText,
+.wpt-leftmenu-pane .dijitButtonText,
 .wpt-button-selector .dijitButtonText {
     padding: 0;
 }
@@ -5597,6 +5604,7 @@ html.has-touch .dgrid-column-resizer {
     height:200px;
 }
 .wpt-main-container .dijitContentPane,
+.wpt-pivot-fields-pane .dijitContentPane,
 .wpt-dialog .dijitTabPane,
 .wpt-tooltip-dialog .dijitContentPane{
     padding: 3px;
@@ -6104,6 +6112,13 @@ html.has-touch .dgrid-column-resizer {
     background-repeat: no-repeat;
     background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAABF0lEQVR42mL8//8/Azr46ej4/9efPww/f/9m+AHFKpcuMTJgAQABxIJN8PuvX3CNMDYuABBAWA348uMHRDMRBgAEENiA6Kkf/jP8Y2D4/5eBYVmBAONnmAFILgGBwNIP/0FqNvQJwL0DEEAMoDAA4cgJ7/9H9L7/D+Pjw76ZCHUAAQTXDKLDu4gzAIS9kyBqAQIIrplU7BUP0QcQQEwgP5EDYPoAAohiAwACiGIDAAKIJAO84j6Ak61H+If/O1ZCohIggMABElxHXEB6RL7/7x6GqhYggBhheSGoAphI/jAwrO8RYMSVF0A2g1wMwrvWQ1wAEECM2DLTB2vr/+h5wfDWLayZCSCAKM4LAAGE1QBceQEbAAgwANnRbdil0zVmAAAAAElFTkSuQmCC");
 	float:left;
+}
+.wpt-grid-styles-img {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABFklEQVR4Xr2RsUoDQRCG/9kchnQS0AdQBEEb8QHEN7CwERG0srEQxCKVop14nUJ6K8FaAjbXiIVvIMRCRO8UzN0hAS8hKzccE46VDIg4sOzPsN/sLh8BsPh9kZeH52AZ1fEFAYgqMNVJ1Gf3kaYJsiwDEQmVxB1MTc9w9gAwXJtYkgN28IVu2Mojw+9vUTGYeD22H+SskeS2BBJ4mAXw4NSg1LDWym6Me59X/Jmf/VPFnY8SSETuADNWR++zXQL73ScOUfSKNIlLYBi+SP4TjaNU6RoVVbpGRZWuUVGla1RU6RpHqPofjbi/CzhdXjSxOD+HjbVVNPZ2cH56CP+4gbOTAzT9I+xubzKxtb6Cm+sr3AYt5r4BIyaRjc+UGSEAAAAASUVORK5CYII=");
+    float:left;
 }
 .wpt-size-width-img {
     width: 16px;
