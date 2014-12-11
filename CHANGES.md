@@ -1,4 +1,7 @@
 ### V3.0 2015
+* Redeign the whole UI to support add multiple pivot tables and dashboards
+* Update the wpt format to 2.0 to support add multiple pivot tables and dashboards
+* Show all pie charts for one value at one time.
 
 
 ### V2.6 December 5th, 2014
