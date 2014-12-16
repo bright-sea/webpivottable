@@ -50,7 +50,7 @@ define({
     Lbl_DeferUpdate: "延迟布局更新",
 	Btn_Update:"更新",
 
-    /* MainBar.js  */
+    /* TopBar.js  */
 
     Mnu_OpenWpt: "打开WEB数据透视表文件 (.wpt)",
     Mnu_SaveWpt: "保存WEB数据透视表到文件",
@@ -213,7 +213,12 @@ define({
     Lbl_UseKSeparator: "使用千位分割符",
     Lbl_Symbol: "符号($)",
 
-    /* PivotGrid.js  */    
+    /* PivotGrid.js  */
+
+    Tip_CollapseRows: "收缩所有行",
+    Tip_ExpandRows: "展开所有行",
+    Tip_CollapseCols: "收缩所有列",
+    Tip_ExpandCols: "收缩所有列",
 
     Lbl_AllRows: "所有行",    
     Lbl_AllCols: "所有列",    
@@ -338,6 +343,9 @@ define({
 
     /* ReportPane.js  */    
 
-    Btn_ExportToPdf: "输出到PDF文件"
+    Btn_ExportToPdf: "输出到PDF文件",
+    
+    Tip_NewSheetBtn: "创建新工作薄",    
+    Tip_NewReportBtn: "创建新报表"    
 
 });

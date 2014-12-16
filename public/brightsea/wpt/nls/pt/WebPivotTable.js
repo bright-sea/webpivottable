@@ -50,7 +50,7 @@ define({
     Lbl_DeferUpdate: "Atualização de Layout Atrasada",
     Btn_Update:"Atualizar",
 
-    /* MainBar.js  */
+    /* TopBar.js  */
 
     Mnu_OpenWpt: "Abrir arquivo WebPivotTable (.wpt)",
     Mnu_SaveWpt: "Salvar WebPivotTable em Arquivo",
@@ -215,7 +215,12 @@ define({
     Lbl_Symbol: "Símbolo($)",
 
     /* PivotGrid.js  */
-    
+
+    Tip_CollapseRows: "Agrupar Todas as Linhas",
+    Tip_ExpandRows: "Desagruopar Todas as Linhas",
+    Tip_CollapseCols: "Agrupar Todas as Colunas",
+    Tip_ExpandCols: "Desagrupar Todas as Colunas",
+
     Lbl_AllRows: "Todas as Linhas",    
     Lbl_AllCols: "Todas as Colunas",    
     Tip_ShowSign: "sinais(+/-)",

@@ -50,7 +50,7 @@ define({
     Lbl_DeferUpdate: "No actualizar instantáneamente",
     Btn_Update:"Actualizar",
 
-    /* MainBar.js */
+    /* TopBar.js */
 
     Mnu_OpenWpt: "Abrir archivo de WebPivotTable (.wpt)",
     Mnu_SaveWpt: "Guardar tabla dinámica",
@@ -211,8 +211,13 @@ define({
     Lbl_Symbol: "Simbolo($)",
     
     /* cuadricula pivot.js */
-    
-    Lbl_AllRows: "Todas las filas",    
+
+    Tip_CollapseRows: "Contraer todas las filas",
+    Tip_ExpandRows: "Expandir todas las filas",
+    Tip_CollapseCols: "Contraer todas las columnas",
+    Tip_ExpandCols: "Expandir todas las columnas",
+
+    Lbl_AllRows: "Todas las filas",
     Lbl_AllCols: "Todas las columnas",    
     Tip_ShowSign: "Signos(+/-)",
     Tip_ShowTotalRows: "Total de filas",

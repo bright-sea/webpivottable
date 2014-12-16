@@ -50,7 +50,7 @@ define({
     Lbl_DeferUpdate: "Rimanda layout di aggiornamento",
     Btn_Update:"Aggiorna",
 
-    /* MainBar.js  */
+    /* TopBar.js  */
 
     Mnu_OpenWpt: "Apri il file WebPivotTable (.wpt)",
     Mnu_SaveWpt: "Salva WebPivotTable su File",
@@ -214,7 +214,12 @@ define({
     Lbl_Symbol: "Simbolo(€)",
 
     /* PivotGrid.js  */
-    
+
+    Tip_CollapseRows: "Chiudi Tutte le Righe",
+    Tip_ExpandRows: "Espandi Tutte le Righe",
+    Tip_CollapseCols: "Chiudi Tutte le Colonne",
+    Tip_ExpandCols: "Espandi Tutte le Colonne",
+
     Lbl_AllRows: "Tutte le Righe",    
     Lbl_AllCols: "Tutte le Colonne",    
     Tip_ShowSign: "espandi/chiudi(+/-)",

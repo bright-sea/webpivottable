@@ -52,7 +52,7 @@ define({
     Lbl_DeferUpdate: "Defer Layout Update",
 	Btn_Update:"Update",
 
-    /* MainBar.js  */
+    /* TopBar.js  */
 
     Mnu_OpenWpt: "Open WebPivotTable File (.wpt)",
     Mnu_SaveWpt: "Save WebPivotTable to File",
@@ -214,9 +214,14 @@ define({
     Lbl_UseKSeparator: "Use thousands separator",
     Lbl_Symbol: "Symbol($)",
 
-    /* PivotGrid.js  */    
+    /* PivotGrid.js  */
 
-    Lbl_AllRows: "All Rows",    
+    Tip_CollapseRows: "Collapse All Rows",
+    Tip_ExpandRows: "Expand All Rows",
+    Tip_CollapseCols: "Collapse All Columns",
+    Tip_ExpandCols: "Expand All Columns",
+
+    Lbl_AllRows: "All Rows",
     Lbl_AllCols: "All Columns",    
     Tip_ShowSign: "Signs(+/-)",
     Tip_ShowTotalRows: "Grand Total Rows",
@@ -344,7 +349,10 @@ define({
 
     /* ReportPane.js  */    
 
-    Btn_ExportToPdf: "Export To PDF File"
+    Btn_ExportToPdf: "Export To PDF File",
+    
+    Tip_NewSheetBtn: "Create a new sheet",    
+    Tip_NewReportBtn: "Create a new report"    
     
 
 	},
