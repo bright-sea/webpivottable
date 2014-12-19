@@ -62,7 +62,7 @@ define({
     Mnu_Setting: "Configurações",
     Dlg_Setting: "Configurações",
 
-    Btn_LoadData: "Fonte de Dados",
+    Btn_LoadData: "Carregando dados",
     Tip_LoadData: "Carregando dados de todos os tipos da fonte de dados para criar um novo WebPivotTable.",
     Dlg_LoadData: "Carregando dados da Fonte de Dados",
 

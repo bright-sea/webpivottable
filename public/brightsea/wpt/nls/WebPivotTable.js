@@ -62,7 +62,7 @@ define({
     Mnu_Setting: "Setting",
     Dlg_Setting: "Setting",
 
-    Btn_LoadData: "DataSource",
+    Btn_LoadData: "Load Data",
     Tip_LoadData: "Load data from all kinds of data sources to create a new WebPivotTable.",
     Dlg_LoadData: "Load Data From Data Source",
 

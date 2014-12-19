@@ -62,7 +62,7 @@ define({
     Mnu_Setting: "Configuración",
     Dlg_Setting: "Configuración",
 
-    Btn_LoadData: "fuente de datos",
+    Btn_LoadData: "Cargar datos",
     Tip_LoadData: "Cargar datos de todo tipo de fuente de datos para crear una nueva tabla dinámica",
     Dlg_LoadData: "Cargar datos de la fuente de datos",
 

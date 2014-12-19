@@ -61,7 +61,7 @@ define({
     Mnu_Setting: "设置",
     Dlg_Setting: "设置",
 
-    Btn_LoadData: "数据源",
+    Btn_LoadData: "加载数据",
     Tip_LoadData: "从各种数据源加载数据以创建新的WEB数据透视表.",
     Dlg_LoadData: "从数据源加载数据",
 
