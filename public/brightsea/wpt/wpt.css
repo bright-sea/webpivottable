@@ -5551,9 +5551,6 @@ html.has-touch .dgrid-column-resizer {
 .wpt-leftmenu-pane{
     width: 20px;
 }
-.wpt-leftmenu-pane .dijitToolbar{
-    padding: 0px;
-}
 .wpt-main-container {
     width:100%;
     height:100%;
@@ -5564,22 +5561,45 @@ html.has-touch .dgrid-column-resizer {
     float:left;
     margin:5px 5px 0 0;
 }
+.wpt-data-load-dialog{
+    width: 600px;
+    height:320px;
+}
+.wpt-open-dialog,
+.wpt-save-dialog,
+.wpt-setting-dialog {
+    width:500px;
+    height:300px;
+}
+.wpt-drill-through-dialog,
+.wpt-data-source-dialog{
+    width:1000px;
+    height:800px;
+}
+.wpt-about-dialog {
+    width:310px;
+    height:200px;
+}
 .wpt-main-container,
-.wpt-data-pane,
+.wpt-data-source-pane,
 .wpt-pivot-main-pane,
 .wpt-nav-pane,
-.wpt-drillthrough-pane,
+.wpt-drill-through-pane,
 .wpt-report-pane{
     background-color:#ddd;
 }
 .wpt-border-container{
     border: solid 1px #888
 }
-.wpt-data-pane,
-.wpt-drillthrough-pane,
+.wpt-drill-through-pane,
+.wpt-data-source-pane{
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding: 0;
+}
 .wpt-pivot-chart-pane{
     overflow:auto;
-	padding: 6px;
+	padding: 0;
 }
 .dijitTabContainerTop-tabs .dijitButtonText,
 .wpt-header-pane .dijitButtonText,
@@ -5593,24 +5613,6 @@ html.has-touch .dgrid-column-resizer {
 .wpt-data-save-dialog{
     width: 300px;
     height:100px;
-}
-.wpt-data-load-dialog{
-    width: 600px;
-    height:320px;
-}
-.wpt-open-dialog,
-.wpt-save-dialog,
-.wpt-setting-dialog {
-    width:500px;
-    height:300px;
-}
-.wpt-sourcedata-dialog{
-    width:1000px;
-    height:800px;
-}
-.wpt-about-dialog {
-    width:310px;
-    height:200px;
 }
 .wpt-nav-pane .wpt-header-pane{
     padding:0px;
