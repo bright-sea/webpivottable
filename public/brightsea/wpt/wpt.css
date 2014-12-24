@@ -5588,8 +5588,9 @@ html.has-touch .dgrid-column-resizer {
 .wpt-report-pane{
     background-color:#ddd;
 }
-.wpt-border-container{
-    border: solid 1px #888
+.wpt-main-container,
+.wpt-nav-pane{
+    border:1px solid #888;
 }
 .wpt-drill-through-pane,
 .wpt-data-source-pane{
@@ -5607,15 +5608,9 @@ html.has-touch .dgrid-column-resizer {
 .wpt-button-selector .dijitButtonText {
     padding: 0;
 }
-.wpt-nav-pane{
-    border:1px solid #888;
-}
 .wpt-data-save-dialog{
     width: 300px;
     height:100px;
-}
-.wpt-nav-pane .wpt-header-pane{
-    padding:0px;
 }
 .wpt-main-container .dijitContentPane,
 .wpt-nav-pane .dijitContentPane,
@@ -5623,10 +5618,12 @@ html.has-touch .dgrid-column-resizer {
 .wpt-tooltip-dialog .dijitContentPane{
     padding: 3px;
 }
-.wpt-pivot-main-pane .dijitToolbar .dijitToggleButton{
+.wpt-header-pane .dijitToolbar .dijitToggleButton{
     margin: 0 2px;
 }
-.wpt-pivot-main-pane .dijitToolbar  .dijitToggleButtonChecked .dijitButtonNode,
+.wpt-header-pane .dijitToolbar  .dijitToggleButtonChecked .dijitButtonNode{
+    border: 2px solid blue;
+}
 .wpt-button-selector .dijitToggleButtonChecked .dijitButtonNode{
     background-color: orange;
 }
