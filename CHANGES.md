@@ -1,7 +1,11 @@
 ### V3.0 2015
-* Redeign the whole UI to support add multiple pivot tables and dashboards
-* Update the wpt format to 2.0 to support add multiple pivot tables and dashboards
-* Show all pie charts for one value at one time.
+* Redesign both UI and data structure to support to add multiple sheets and reports
+* Redesign both UI and data structure to support to switch data source view and pivot table view
+* Redesign the UI to better customize grids and charts
+* Update the wpt format to 2.0 to support multiple sources, sheets and reports
+* Show all charts at one time.
+* Fix issue of calculated fields calculation
+
 
 
 ### V2.6 December 5th, 2014
