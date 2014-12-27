@@ -5916,6 +5916,13 @@ html.has-touch .dgrid-column-resizer {
     background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAxklEQVQ4ja3RS2oCURAF0NOiGOMCQhDncQ86EgSzpAzcWBSEEOJnAYKIgyxCCAQ6A/vhQ/sj0YLifW7VrVtVCVI3WlpwFsXGeJrcU8G/cmu3Vq9XKEmqsHoOkGdJEXBNCy2n6cfeDAHx+s79AUu8o48nDDDDNOSWEUwwdzmLGj7OCfJsh2H0jmNH1xAc0ClQ18VP1RD3eMlaCG2Eew/fQUGZfzqtO6ht4MtxRqXWxgIrjPGMV6yz/8cqAo6rfMMGv9hmlVvwByTKRtuMXIOAAAAAAElFTkSuQmCC");
     float:left;
 }
+.wpt-pdf-img {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlklEQVR4XpXQP2haURTH8e+9cehQsFuXQAt26lQQCbhECA6FBgpBsGQwi1OWUFIouGSU9A8dOnR0KXWwtLR9WaSDg0MHp6BIwCDYyQdaEUoW34nvwoGXR4TkA4fLgXN+nPcMDjtAg5vbBn4BWBwaQRAQltJea7FYMBwOabVaAD+BHYAEEfP5nNBu9QfWWmazGVGj0YhsNku9XqdYLDaAbQsI4BaSySShrScPeH70VXvFeDymUqngeR65XM5dohfwrX3GmjUk1iyT+QXPNh7BMuT++kO87w3S6TSZTIZ+v0+3e0qv1yNk9IKNF69Rd+7eI+SfLwd/f2Y6naJEhFCn0yGfz6MX8OdLFbVZruoy7XbbfXMqlWIwGBAqFArEyfIvy2QyEUAeb+0K4Prryvd9aTabbsZowCfgP/ASh/cokMir/gIfcDQAUSelkrxZ0asDEEAsMe+M4Wmthon16q0xrpQlJljxCg6HIgSwOuCVCCd7e8RpwLExRCVQkYF4oBcJFK7SaTkEFqwWX/wH1KCrAfvAR26vfAmL6+OW1lBuzgAAAABJRU5ErkJggg==");
+    float:left;
+}
 .wpt-excel-img {
     width: 16px;
     height: 16px;

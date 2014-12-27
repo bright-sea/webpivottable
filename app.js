@@ -9,9 +9,10 @@ var express = require( 'express' ),
     app = module.exports = express();
 
 app.use(express.static(__dirname + '/public')); 	
-app.use(morgan('dev')); 				
-app.use(bodyParser()); 					
-app.use(methodOverride()); 				
+app.use(morgan('dev'));
+app.use(bodyParser.json({limit: '100mb'}));
+app.use(bodyParser.urlencoded({limit: '100mb', extended: true}));
+app.use(methodOverride());
 
 
 app.post( '/wpt/fileProxy', wpt.fileProxy);
