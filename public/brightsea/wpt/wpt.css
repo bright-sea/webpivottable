@@ -6463,12 +6463,6 @@ html.has-touch .dgrid-column-resizer {
 .wpt-pivot-grid .dgrid-cell.wpt-active{
     border-color: orange;
 }
-.wpt-pivot-grid .placeHolderCell,
-.wpt-pivot-grid .placeHolderCell:hover
-{
-    border: 0 !important;
-    background: #fff !important;
-}
 .wpt-default .wpt-pivot-grid .dgrid-header .dgrid-cell{
     text-align: center;
     background-color: #bfd6eb;
