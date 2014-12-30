@@ -5589,7 +5589,7 @@ html.has-touch .dgrid-column-resizer {
     height:200px;
 }
 .wpt-main-container{
-    background-color:#888;
+    background-color:#bbb;
 }
 .wpt-data-source-pane,
 .wpt-pivot-main-pane,
@@ -5668,6 +5668,11 @@ html.has-touch .dgrid-column-resizer {
 .wpt-pivot-chart-pane:-ms-full-screen    	{ width: 100%; height:100%; overflow: auto;}
 .wpt-pivot-chart-pane:-o-full-screen		{ width: 100%; height:100%; overflow: auto;}
 .wpt-pivot-chart-pane:full-screen			{ width: 100%; height:100%; overflow: auto;}
+.wpt-report-pane:-webkit-full-screen { width: 100%; height:100%; overflow: auto;}
+.wpt-report-pane:-moz-full-screen    { width: 100%; height:100%; overflow: auto;}
+.wpt-report-pane:-ms-full-screen    	{ width: 100%; height:100%; overflow: auto;}
+.wpt-report-pane:-o-full-screen		{ width: 100%; height:100%; overflow: auto;}
+.wpt-report-pane:full-screen			{ width: 100%; height:100%; overflow: auto;}
 .wpt-iframe{
     border: 0;
     width: 100%;
