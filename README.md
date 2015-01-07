@@ -1,7 +1,7 @@
 # WebPivotTable Component (V3.0.0)
 
-* A pure javascript pivot table and pivot chart component 
-  which can be integrated into any web application to do data analysis.
+* A pure javascript pivot table and pivot chart component which can be 
+  integrated into any web application to do data analysis and reporting.
 * Depends on Dojo toolkit and Highcharts.
 
 # Browser Support
