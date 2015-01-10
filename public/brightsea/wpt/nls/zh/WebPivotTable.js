@@ -37,9 +37,6 @@ define({
 	Lbl_StdDev: "均方差",
 	Lbl_Variance: "方差",
 
-    Tab_SourceData: "源数据",
-    Tab_PivotTable: "数据透视表",
-    Tab_Report: "报表",
     Tab_DrillThrough: "钻取",
 
 	Lbl_Rows: "行字段",
@@ -344,8 +341,69 @@ define({
     /* ReportPane.js  */    
 
     Btn_ExportToPdf: "输出到PDF文件",
-    
-    Tip_NewSheetBtn: "创建新工作薄",    
-    Tip_NewReportBtn: "创建新报表"    
+
+
+    /* new */
+    Tip_AddCalculatedField: "增加新的计算字段",
+    Tip_ChangeCalculatedField: "更改此计算字段",
+    Tip_RemoveCalculatedField: "移除此计算字段",
+    Lbl_CalculatedField: "计算字段",
+    Lbl_Formula: "公式",
+    Lbl_Space: "空格",
+    Lbl_InsertField: "插入字段",
+    Lbl_InsertMath: "插入数学函数和常数",
+    Msg_AddCalculatedFieldNotAvailable: "数据还没有加载时或者对OLAP数据源不能增加计算字段。",
+
+
+
+    Btn_PivotTable: "数据透视表",
+    Tip_PivotTable: "切换到数据透视表视图",
+    Btn_DataSource: "数据源",
+    Tip_DataSource: "切换到数据源视图",
+
+    Lbl_Source: "数据源",
+    Lbl_Sheet: "工作薄",
+    Lbl_Report: "报表",
+
+    Lbl_SourceName: "数据源名",
+    Lbl_SheetName: "工作薄名",
+    Lbl_ReportName: "报表名",
+    Tip_RenameSourceName: "更换数据源名",
+    Tip_RenameSheetName: "更换工作薄名",
+    Tip_RenameReportName: "更换报表名",
+
+
+    Btn_Add: "增加",
+    Btn_Change: "更换",
+    Btn_Remove: "移除",
+
+    Mnu_Memory: "本地内存",
+    Lbl_Samples: "样例",
+    Lbl_Format: "格式",
+
+    Tip_SwitchGridChart: "切换表格与图形",
+
+    Msg_LeavingPage: "在离开页面前请保存你的WPT报表，否则你将丢失你所有的操作！",
+    Msg_SheetUsedByReports: "有一些报表基于该工作薄， 那些工作薄会发生改变如果您确认移除。",
+    Msg_FirstSourceNotRemovable: "第一个工作薄的数据源不能被移除。",
+    Msg_SourceWithSheetNotRemovable: "有一些工作薄基于此数据源，请先移除那些工作薄再移除此数据源。",
+
+    Lbl_FileName: "文件名",
+    Lbl_IgnoreData: "不保存数据，只保存操作选项。",
+
+    Lbl_CreateSheetFromSource: "从数据源创建新的工作薄",
+    Lbl_CopySheetFromSheet: "从已经存在的工作薄拷贝",
+    Lbl_RemoveSheetConfirmation:"您确认要移除这个工作薄吗？",
+
+    Lbl_AvailableComponents: "可用的组件",
+    Lbl_ReportComponents: "报表组件",
+    Lbl_Sheets: "工作薄",
+
+    Tip_AddSource: "增加新的数据源",
+    Tip_RemoveSource: "移除当前数据源",
+    Tip_ChangeSource: "更改当前数据源",
+
+    Tip_AddSheet: "创建新工作薄",
+    Tip_AddReport: "创建新报表"
 
 });

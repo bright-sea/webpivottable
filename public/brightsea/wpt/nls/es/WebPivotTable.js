@@ -37,9 +37,6 @@ define({
     Lbl_StdDev: "Desviación estándar",
     Lbl_Variance: "Varianza",
 
-    Tab_SourceData: "Fuente de datos",
-    Tab_PivotTable: "Tabla Dinámica",
-    Tab_Report: "Reporte",
     Tab_DrillThrough: "Detalles",
 
     Lbl_Rows: "Filas",
@@ -339,6 +336,21 @@ define({
 
     /* ReportPane.js */
 
-    Btn_ExportToPdf: "Exportar a archivo PDF"
+    Btn_ExportToPdf: "Exportar a archivo PDF",
+
+    /* new */
+    Btn_PivotTable: "Tabla Dinámica",
+    Tip_PivotTable: "Switch to Pivot Table View",
+    Btn_DataSource: "Fuente de datos",
+    Tip_DataSource: "Switch to Data Source View",
+
+    Lbl_Source: "Fuente",
+    Lbl_Sheet: "Sheet",
+    Lbl_Report: "Reporte",
+
+
+    Tip_AddSheet: "Create a new sheet",
+    Tip_AddReport: "Create a new report"
+
 
 });

@@ -37,9 +37,6 @@ define({
     Lbl_StdDev: "Deviazione Standard",
     Lbl_Variance: "Variazione",
 
-    Tab_SourceData: "SourceData",
-    Tab_PivotTable: "PivotTable",
-    Tab_Report: "Report",
     Tab_DrillThrough: "DrillThrough",
 
     Lbl_Rows: "Righe",
@@ -343,6 +340,24 @@ define({
 
     /* ReportPane.js  */
 
-    Btn_ExportToPdf: "Esporta in file PDF"
+    Btn_ExportToPdf: "Esporta in file PDF",
+
+
+    /* new */
+    Btn_PivotTable: "Pivot Table",
+    Tip_PivotTable: "Switch to Pivot Table View",
+    Btn_DataSource: "Data Source",
+    Tip_DataSource: "Switch to Data Source View",
+
+    Lbl_Source: "Source",
+    Lbl_Sheet: "Sheet",
+    Lbl_Report: "Report",
+
+
+    Tip_AddSheet: "Create a new sheet",
+    Tip_AddReport: "Create a new report"
+
+
+
 
 });

@@ -355,12 +355,18 @@ tickProto.addLabel = function () {
       !(category = this.axis.categories[this.pos]))
     return;
 
-  // set label text
-  if (category.name)
-    this.label.attr('text', category.name);
+  // set label text - but applied after formatter #46
+  if (category.name && this.label)
+    this.label.attr('text', this.axis.labelFormatter.call({
+			axis: this.axis,
+			chart: this.axis.chart,
+			isFirst: this.isFirst,
+			isLast: this.isLast,
+			value: category.name
+		}));
 
   // create elements for parent categories
-  if (this.axis.isGrouped)
+  if (this.axis.isGrouped && this.axis.options.labels.enabled)
     this.addGroupedLabels(category);
 };
 

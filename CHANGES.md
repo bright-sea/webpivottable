@@ -1,11 +1,10 @@
-### V3.0 2015
+### V3.0 January 10th, 2015
 * Redesign both UI and data structure to support to switch data source view and pivot table view
 * Redesign both UI and data structure to support to add multiple sources, sheets and reports
 * Redesign the UI to better customize grids and charts
 * Update the wpt format to 2.0 to support multiple sources, sheets and reports
 * Show all charts at one time.
 * Fix issue of calculated fields calculation
-
 
 
 ### V2.6 December 5th, 2014
