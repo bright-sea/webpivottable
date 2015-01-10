@@ -79,6 +79,7 @@ define({
     Lbl_EnterFileUrl: "文件URL:",
 
     Lbl_CopyPasteCsv: "输入或者拷贝/粘贴CSV数据:",
+    Lbl_CopyPasteWpt: "输入或者拷贝/粘贴WPT数据:",
     Btn_Load: "加载",
     
     Btn_GotoCloudDrive: "去云驱动器",

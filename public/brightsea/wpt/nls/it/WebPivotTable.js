@@ -80,6 +80,7 @@ define({
     Lbl_EnterFileUrl: "File URL:",
 
     Lbl_CopyPasteCsv: "Inserisci o Copia&Incolla dati CSV:",
+    Lbl_CopyPasteWpt: "Inserisci o Copia&Incolla dati WPT:",
     Btn_Load: "Caricamento",
 
     Btn_GotoCloudDrive: "Vai al Drive Cloud",
