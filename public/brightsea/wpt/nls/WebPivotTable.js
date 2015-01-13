@@ -351,6 +351,8 @@ define({
 
 
         /* new */
+        Btn_ExportToHtml: "Export To HTML File",
+
         Tip_AddCalculatedField: "Add new calculated field",
         Tip_ChangeCalculatedField: "Change this calculated field",
         Tip_RemoveCalculatedField: "Remove this calculated field",

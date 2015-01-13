@@ -345,6 +345,8 @@ define({
 
 
     /* new */
+    Btn_ExportToHtml: "输出到HTML文件",
+
     Tip_AddCalculatedField: "增加新的计算字段",
     Tip_ChangeCalculatedField: "更改此计算字段",
     Tip_RemoveCalculatedField: "移除此计算字段",
