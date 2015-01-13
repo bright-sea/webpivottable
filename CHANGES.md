@@ -1,3 +1,8 @@
+### V3.0.1 January 13th, 2015
+* Fix the issue of wrong scroll bar width in firefox/IE
+* Fix the issue of duplicate grid ids in report pane
+
+
 ### V3.0 January 10th, 2015
 * Redesign both UI and data structure to support to switch data source view and pivot table view
 * Redesign both UI and data structure to support to add multiple sources, sheets and reports

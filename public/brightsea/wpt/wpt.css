@@ -5545,7 +5545,6 @@ html.has-touch .dgrid-column-resizer {
 }
 ::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: 7px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
