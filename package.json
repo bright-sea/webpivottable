@@ -22,6 +22,7 @@
     "compression": "~1.0.1",
     "phantomjs": "~1.9.2",
     "phantom": "~0.7.2",
+    "webshot": "~0.15.3",
     "request": "2.21.x"
   },
   "devDependencies": {

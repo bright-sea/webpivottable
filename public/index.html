@@ -17,7 +17,7 @@
 
     <script type="text/javascript">
         require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
-            new WebPivotTable({
+            var wpt = new WebPivotTable({
                 customOptions:{
 
                     uiFlags: {
@@ -96,6 +96,9 @@
                     }]
                 }
             },"wpt-container");
+
+            wpt.setCsvUrl("/json/example.csv");
+
         });
 	</script>
 </head>

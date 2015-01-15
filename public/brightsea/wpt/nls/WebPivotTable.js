@@ -352,6 +352,8 @@ define({
 
         /* new */
         Btn_ExportToHtml: "Export To HTML File",
+        Btn_ExportToPng: "Export To PNG Image File",
+        Btn_ExportToJpeg: "Export To JPEG Image File",
 
         Tip_AddCalculatedField: "Add new calculated field",
         Tip_ChangeCalculatedField: "Change this calculated field",

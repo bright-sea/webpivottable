@@ -346,6 +346,8 @@ define({
 
     /* new */
     Btn_ExportToHtml: "输出到HTML文件",
+    Btn_ExportToPng: "输出到PNG图片文件",
+    Btn_ExportToJpeg: "输出到JPEG图片文件",
 
     Tip_AddCalculatedField: "增加新的计算字段",
     Tip_ChangeCalculatedField: "更改此计算字段",

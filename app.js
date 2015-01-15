@@ -18,6 +18,7 @@ app.use(methodOverride());
 app.post( '/wpt/fileProxy', wpt.fileProxy);
 
 app.post( '/wpt/generatePdf', wpt.generatePdf);
+app.post( '/wpt/generatePic', wpt.generatePic);
 
 app.post( '/wpt/xmlaProxy', wpt.xmlaProxy);
 
