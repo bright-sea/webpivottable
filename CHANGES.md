@@ -1,4 +1,5 @@
 ### V3.0.3 January 16th, 2015
+* Keep saving grid width and height for report and output
 * Fix the issue of refresh after setOptions
 * Generate pdf/html/png/jpeg reports
 * Fix the issue of wrong scroll bar width in firefox/IE
