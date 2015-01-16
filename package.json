@@ -1,6 +1,6 @@
 {
   "name": "wpt-component",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A pure javascript pivot table and pivot chart component",
   "author": {
     "name": "Minghai Zhao",

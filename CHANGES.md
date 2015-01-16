@@ -1,4 +1,6 @@
-### V3.0.1 January 13th, 2015
+### V3.0.3 January 16th, 2015
+* Fix the issue of refresh after setOptions
+* Generate pdf/html/png/jpeg reports
 * Fix the issue of wrong scroll bar width in firefox/IE
 * Fix the issue of duplicate grid ids in report pane
 
