@@ -1,1 +1,0 @@
-This is a directory to put generate reports on server.
