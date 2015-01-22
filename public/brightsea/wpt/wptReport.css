@@ -689,6 +689,7 @@ html.has-mozilla .dgrid-focus {
     font-size: small;
     padding: 3px;
     vertical-align: middle;
+    border-color: #000;
 }
 .wpt-pivot-grid .dgrid-cell.wpt-active{
     border-color: orange;
