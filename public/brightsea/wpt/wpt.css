@@ -6521,14 +6521,23 @@ html.has-touch .dgrid-column-resizer {
 }
 .wpt-pivot-grid{
     height:100%;
+    border:0px;
+}
+.wpt-pivot-grid .dgrid-header-scroll{
+    display:none;
 }
 .wpt-pivot-grid .dgrid-spacer-row {
     display:none;
 }
+.wpt-pivot-grid .dgrid{
+    border:0;
+}
+.wpt-pivot-grid .dgrid-header .dgrid-cell,
 .wpt-pivot-grid .dgrid-cell{
-    border: 1px solid #888;
-    font-size: small;
     padding: 3px;
+    border: 1px solid #888;
+    border-top-style: none;
+    font-size: small;
     vertical-align: middle;
 }
 .wpt-pivot-grid .dgrid-cell.wpt-active{

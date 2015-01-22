@@ -681,9 +681,16 @@ html.has-mozilla .dgrid-focus {
 }
 .wpt-pivot-grid{
     height:100%;
+    border:0px;
+}
+.wpt-pivot-grid .dgrid-header-scroll{
+    display:none;
 }
 .wpt-pivot-grid .dgrid-spacer-row {
     display:none;
+}
+.wpt-pivot-grid .dgrid{
+    border:0;
 }
 .wpt-pivot-grid .dgrid-header .dgrid-cell,
 .wpt-pivot-grid .dgrid-cell{
@@ -740,6 +747,3 @@ html.has-mozilla .dgrid-focus {
     background-color: #72d2df;
 }
 
-.dgrid-scrollbar-width {
-    width: 16px;
-}
