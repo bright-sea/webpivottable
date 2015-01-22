@@ -686,10 +686,9 @@ html.has-mozilla .dgrid-focus {
     display:none;
 }
 .wpt-pivot-grid .dgrid-cell{
-    border-collapse: collapse !important;
     border: 1px solid #888;
+    border-top-style: none;
     font-size: small;
-    padding: 3px;
     vertical-align: middle;
 }
 .wpt-pivot-grid .dgrid-cell.wpt-active{
