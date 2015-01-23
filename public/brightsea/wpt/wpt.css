@@ -6536,7 +6536,6 @@ html.has-touch .dgrid-column-resizer {
 .wpt-pivot-grid .dgrid-cell{
     padding: 3px;
     border: 1px solid #888;
-    border-top-style: none;
     font-size: small;
     vertical-align: middle;
 }
