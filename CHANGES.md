@@ -1,9 +1,10 @@
-### V3.0.3 January 16th, 2015
+### V3.0.4 January 23th, 2015
 * Keep saving grid width and height for report and output
 * Fix the issue of refresh after setOptions
 * Generate pdf/html/png/jpeg reports
 * Fix the issue of wrong scroll bar width in firefox/IE
 * Fix the issue of duplicate grid ids in report pane
+* Fix the issue of local olap cube proxy.
 
 
 ### V3.0 January 10th, 2015
