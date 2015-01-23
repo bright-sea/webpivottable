@@ -696,7 +696,6 @@ html.has-mozilla .dgrid-focus {
 .wpt-pivot-grid .dgrid-cell{
     padding: 3px;
     border: 1px solid #888;
-    font-size: small;
     vertical-align: middle;
 }
 .wpt-pivot-grid .dgrid-cell.wpt-active{
