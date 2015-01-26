@@ -346,6 +346,16 @@ define({
 
     /* new */
     Btn_ExportReport: "输出报表",
+    Btn_PdfFormatSetting: "PDF格式设置",
+
+    Lbl_PaperSize: "纸张大小",
+    Lbl_PaperOrientation: "方向",
+    Lbl_PaperMargin: "页边",
+    Lbl_Height: "高度",
+    Lbl_Width: "宽度",
+    Lbl_Header: "页头",
+    Lbl_Footer: "页脚",
+    Lbl_ZoomFactor: "放大因子",
 
     Btn_ExportToHtml: "输出到HTML文件",
     Btn_ExportToPng: "输出到PNG图片文件",

@@ -1,7 +1,8 @@
-### V3.0.4 January 23th, 2015
-* Keep saving grid width and height for report and output
+### V3.1 January 26th, 2015
+* Generate full size pivot grid for exporting and report component
+* Generate pdf/html/png/jpeg exporting
+* Customize pdf format
 * Fix the issue of refresh after setOptions
-* Generate pdf/html/png/jpeg reports
 * Fix the issue of wrong scroll bar width in firefox/IE
 * Fix the issue of duplicate grid ids in report pane
 * Fix the issue of local olap cube proxy.

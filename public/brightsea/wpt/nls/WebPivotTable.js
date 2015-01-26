@@ -352,6 +352,16 @@ define({
 
         /* new */
         Btn_ExportReport: "Export Report",
+        Btn_PdfFormatSetting: "PDF Format Setting",
+
+        Lbl_PaperSize: "Paper Size",
+        Lbl_PaperOrientation: "Orientation",
+        Lbl_PaperMargin: "Margin",
+        Lbl_Height: "Height",
+        Lbl_Width: "Width",
+        Lbl_Header: "Header",
+        Lbl_Footer: "Footer",
+        Lbl_ZoomFactor: "Zoom Factor",
 
         Btn_ExportToHtml: "Export To HTML File",
         Btn_ExportToPng: "Export To PNG Image File",
