@@ -5,7 +5,7 @@ var express = require( 'express' ),
     bodyParser = require('body-parser'),
     morgan = require('morgan'),
     methodOverride = require('method-override'),
-    wpt = require('./lib/wpt.js'),
+    wpt = require('./wpt.js'),
     app = module.exports = express();
 
 app.use(express.static(__dirname + '/public')); 	

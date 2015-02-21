@@ -49,6 +49,7 @@ define({
 
     /* TopBar.js */
 
+    Mnu_NewWpt: "Create new WebPivotTable",
     Mnu_OpenWpt: "Abrir archivo de WebPivotTable (.wpt)",
     Mnu_SaveWpt: "Guardar tabla dinámica",
     Mnu_SourceData: "Abrir visor de fuente de datos ",

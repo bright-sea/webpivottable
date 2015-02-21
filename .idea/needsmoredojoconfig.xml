@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="NeedsMoreDojoConfiguration">
+    <option name="amdImportNamingExceptions">
+      <map />
+    </option>
+    <option name="amdImportNamingExceptionsList">
+      <list>
+        <option value="dojo/sniff(has" />
+        <option value="doh/main(doh" />
+        <option value="dojo/sniff(has" />
+        <option value="doh/main(doh" />
+      </list>
+    </option>
+    <option name="version" value="0.7" />
+  </component>
+</project>
+

@@ -49,8 +49,9 @@ define({
 
     /* TopBar.js  */
 
+    Mnu_NewWpt: "Create new WebPivotTable",
     Mnu_OpenWpt: "Abrir arquivo WebPivotTable (.wpt)",
-    Mnu_SaveWpt: "Salvar WebPivotTable em Arquivo",
+    Mnu_SaveWpt: "Salvar WebPivotTable",
     Mnu_SourceData: "Abrir visualização da fonte de dados",
     Mnu_Report: "Criar e exportar um relatório",
 

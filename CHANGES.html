@@ -1,0 +1,364 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <h3 id="v3-2-feburary-26th-2015">V3.2 Feburary 26th, 2015</h3>
+<ul>
+<li>Add user information to support backend user authentication</li>
+<li>Add a dashboard view for user</li>
+<li>Save WPT to backend database directly </li>
+</ul>
+<h3 id="v3-1-january-26th-2015">V3.1 January 26th, 2015</h3>
+<ul>
+<li>Generate full size pivot grid for exporting and report component</li>
+<li>Generate pdf/html/png/jpeg exporting</li>
+<li>Customize pdf format</li>
+<li>Fix the issue of refresh after setOptions</li>
+<li>Fix the issue of wrong scroll bar width in firefox/IE</li>
+<li>Fix the issue of duplicate grid ids in report pane</li>
+<li>Fix the issue of local olap cube proxy.</li>
+</ul>
+<h3 id="v3-0-january-10th-2015">V3.0 January 10th, 2015</h3>
+<ul>
+<li>Redesign both UI and data structure to support to switch data source view and pivot table view</li>
+<li>Redesign both UI and data structure to support to add multiple sources, sheets and reports</li>
+<li>Redesign the UI to better customize grids and charts</li>
+<li>Update the wpt format to 2.0 to support multiple sources, sheets and reports</li>
+<li>Show all charts at one time.</li>
+<li>Fix issue of calculated fields calculation</li>
+</ul>
+<h3 id="v2-6-december-5th-2014">V2.6 December 5th, 2014</h3>
+<ul>
+<li>Refactor to use dgrid0.4 and dstore</li>
+<li>Force horizontal scroll bar always show in WebKit based browsers.</li>
+<li>Fix issues used in iPad and other touch devices.</li>
+<li>Add confirmation box when leaving the page </li>
+<li>Remove the dependence of jquery outside highcharts</li>
+<li>Fix issue of drill through while added calculated field.</li>
+<li>Add save wpt dialog to set file name and ignore data option.</li>
+<li>Ignore saving lookups of fields which no filter setting to save wptString size.</li>
+</ul>
+<h3 id="v2-5-november-15th-2014">V2.5 November 15th, 2014</h3>
+<ul>
+<li>Support to add Calculated fields with any formula</li>
+<li>Support to keep filters working when loading updated data with pre saved pivot options.</li>
+<li>Fix the issue pivot fields grid is empty while hide it first</li>
+<li>Fix the issue of olap cube crossjoin with multiple dimensions.</li>
+</ul>
+<h3 id="v2-4-july-5th-2014">V2.4 July 5th, 2014</h3>
+<ul>
+<li>Redesign pivot grids to better support OLAP cubes.</li>
+<li>Add more messages while loading cube details.</li>
+<li>Add xmla data popup dialogs for all OLAP fields.</li>
+<li>Add support of filters in OLAP cube.</li>
+<li>Separate free version with commercial version.</li>
+</ul>
+<h3 id="v2-3-may-3rd-2014">V2.3 May 3rd, 2014</h3>
+<ul>
+<li>Add show value as percentage options for value fields.</li>
+<li>Add more number format options for value fields.</li>
+<li>Add field and value customize popup through row and column header.</li>
+<li>Update to use highchart 4.0.1</li>
+<li>Add 3D view of column and pie charts</li>
+<li>Redesign data and fields to improve performance and decrease wpt file size</li>
+<li>Add dimension layer into pivot fields list for OLAP Cubes</li>
+<li>Add more details message while loading OLAP Cube data.</li>
+</ul>
+<h3 id="v2-2-april-13th-2014">V2.2 April 13th, 2014</h3>
+<ul>
+<li>Move format attributes from fields to values.</li>
+<li>Add Pie Chart.</li>
+<li>Redesign CSV process to improve performance.</li>
+<li>Redesign wpt format to add sort by values field option.</li>
+<li>Add filter by label, filter by value and top 10 options.</li>
+<li>Change pivot control fields at pivot bar to popup tooltip dialogs.</li>
+<li>Fix IE11 webworker issue and setOptions issue.</li>
+<li>Fix sometime load component failed at Firefox issue.</li>
+<li>Remove placeHolder columns format in pivot grid</li>
+</ul>
+<h3 id="v2-1-march-21st-2014">V2.1 March 21st, 2014</h3>
+<ul>
+<li>Implement fixed row header while horizontal scroll and fixed column header
+while vertical scroll for pivot grid.</li>
+<li>Implement group categories for pivot chart.</li>
+<li>Expand/Collapse group categories and synchronize pivot chart and pivot grid</li>
+<li>Unify tooltips for both pivot grid and pivot chart.</li>
+<li>Unify drill through for both pivot grid and pivot chart.</li>
+<li>Save only grid and chart options instead of all options to wpt files.</li>
+<li>Add API to generate wpt string at background from all kinds of csv data.</li>
+<li>Add API to load all kinds of csv data together with saved wpt file.</li>
+<li>Separate NLS files from dojo.js layer file so that language file can be easy
+to be customized</li>
+</ul>
+<h3 id="v2-0-march-1st-2014">V2.0 March 1st, 2014</h3>
+<ul>
+<li>Redesign internal data model and csv calculate engine to improve performance
+and better support advanced features.</li>
+<li>Redesign pivot grid to better support both compact form and tabular form.</li>
+<li>Redesign pivot chart to control values independently.</li>
+<li>Separate the control of grid and chart.</li>
+<li>Add support of XLS and XLSX format data source.</li>
+<li>Redesign MainBar to use dropdown buttons</li>
+<li>Fix IE8 issue caused by Filesaver</li>
+<li>Add language support of Spanish, Portuguese, Italian</li>
+</ul>
+<h3 id="v1-8-january-18th-2014">V1.8 January 18th, 2014</h3>
+<ul>
+<li>Add sync and timeout options for xmla client</li>
+<li>Fix Highcharts error #19 : too many ticks</li>
+<li>Change all controls to index of fields instead of objects reference to 
+support separate wpt selections from data.</li>
+<li>Add API for load and save wpt without data.</li>
+<li>Add more options to show/hide buttons on toolbars.</li>
+<li>Add support of load data from google spreadsheet.</li>
+</ul>
+<h3 id="v1-7-november-1st-2013">V1.7 November 1st, 2013</h3>
+<ul>
+<li>Choose Highcharts as final chart library, remove fusioncharts and dojo charts.</li>
+<li>Change Source data Tab from static to dynamic.</li>
+<li>Implement Multi language support, change language on the fly.</li>
+<li>Add clear all and clear filters.</li>
+<li>When save WebPivotTable, only save query now, not save generated pivot data.</li>
+</ul>
+<h3 id="v1-6-october-1st-2013">V1.6 October 1st, 2013</h3>
+<ul>
+<li>Implement all options changes for HighCharts and FusionCharts. User can 
+customize all aspects of Highcharts and Fusioncharts and export them.</li>
+<li>Redesign all layouts, leverage multiple tabs to use screen more efficiently.
+Dynamic create and remove Report tabs and drill through tabs.</li>
+<li>Separate widget layout and widget creation so that all widgets can be
+recreated anytime. This allows future implementation of dynamic changing 
+language setting.</li>
+<li>Implement Drill through for both CSV and OLAP.</li>
+<li>Clean data structure design, implemented saving everything of WebPivotTable
+(data and options) to a file and restore it anytime. </li>
+<li>Implement sort Fields values.</li>
+<li>Add pivot fields setting and sorting at pivot bar.</li>
+<li>Enable/Disable file proxy and xmla proxy at UI.</li>
+</ul>
+<h3 id="v1-5-september-1st-2013">V1.5 September 1st, 2013</h3>
+<ul>
+<li>Implement most functionalities of OLAP support, include cross-tab grid, expand
+and collapse, charts, slice, non empty.</li>
+<li>Redesign the csv grid layout and csvService to fully coincide with Microsoft
+Excel, support compact form and tabular form, expand/collapse both columns 
+and rows, show/hide row/column totals/subtotals.   </li>
+<li>Show tooltip for all data cell and support drill through for csv.</li>
+<li>Redesign pivot toolbar, grid toolbar and chart toolbar.</li>
+<li>Pivot grid and charts share exactly the same data set and refresh 
+automatically for any change together.</li>
+<li>Fix 25 fields limit issue and add support of locale number style.</li>
+</ul>
+<h3 id="v1-4-august-2nd-2013">V1.4 August 2nd, 2013</h3>
+<ul>
+<li>Separate all modules into different files to easy future development.</li>
+<li>Create dojo build profile to build a single layer loadable customize dojo.js 
+to improve the loading performance, also make it very easy for all kinds of 
+web application integrate this component.</li>
+<li>The first implementation of OLAP support, now this component can be used as 
+a front end UI for all kinds of business intelligence projects.</li>
+<li>Create an unify XmlaService to support Microsoft Analysis Service (SSAS), 
+Mondrian OLAP server and icCube OLAP server.</li>
+<li>Unify the support of different chart libraries. Currently dojo chart library<br>is default chart library, it will be always available. FusionCharts library
+and Highcharts library will be available when those chart libraries file has
+been loaded.</li>
+<li>Fix issues related to touch screen device, now this component can be run at 
+all touch Screen laptops and tablets like ipad.</li>
+</ul>
+<h3 id="v1-3-july-5th-2013">V1.3 July 5th, 2013</h3>
+<ul>
+<li>Replace FusionChart library with dojo chart library</li>
+<li>Use filepicker.io to load csv file from cloud drive</li>
+<li>replace xmla4js with own xmla service, no dependence on xmla4js</li>
+<li>Redesign pivot control pane to support tree structure (for OLAP)</li>
+<li>Redesign pivot grid layout engine to support values within columns and rows
+and can be moved up and down.</li>
+<li>Implement the function of expanding and collapsing columns tree</li>
+<li>Redesign the calculation engine to improve performance </li>
+<li>Implement Fullscreen Mode using HTML5 FullScreen API </li>
+</ul>
+<h3 id="v1-2-june-8th-2013">V1.2 June 8th, 2013</h3>
+<ul>
+<li>Redesign layout to allow change control pane position</li>
+<li>Upgrade to dojo1.9 and remove dependence of Expandpane and floatingPane</li>
+<li>Put grid pane and chart pane inside one container to easily control layout</li>
+<li>Redesign Import Module and implement change CSV content before import</li>
+<li>Implement Zoom in and Zoom out Grid and charts</li>
+<li>Implement Export to excel functionality </li>
+<li>Replace webkitHTmltopdf with phantomjs to output report to pdf</li>
+<li>Move xmla4js to client side (ready to replace xmla4js with own js lib)</li>
+<li>Use node.js request module at backend to do transparent proxy</li>
+</ul>
+<h3 id="v1-1-may-3rd-2013">V1.1 May 3rd, 2013</h3>
+<ul>
+<li>The biggest improvement to make it production ready</li>
+<li>Redesign the calculation engine and grid layout to support filters</li>
+<li>Redesign UI to use standard menu and improve User experience</li>
+<li>Redesign fields pivot grid to support OLAP</li>
+<li>Move data input and report export as individual module </li>
+<li>Add more customize options for integration </li>
+</ul>
+<h3 id="v1-0-april-3rd-2013">V1.0 April 3rd, 2013</h3>
+<ul>
+<li>Redesign the grid to better control the style</li>
+<li>Fix all issues after 1.0beta2 review</li>
+<li>Improve the calculation engine to support larger source dataset</li>
+<li>Redesign the chart to improve the performance</li>
+<li>Add more customize API to easy integration </li>
+</ul>
+<h3 id="v1-0b2-march-13th-2013">V1.0b2 March 13th, 2013</h3>
+<ul>
+<li>Change to based on dojo1.8.3 and use pure AMD </li>
+<li>Fix all issues after 1.0beta review</li>
+<li>Totally Support IE8,9,10, Firefox, Chrome, Safari</li>
+<li>Change to use 
+<a href="https://github.com/kriszyp/put-selector">put-selector</a> and
+<a href="https://github.com/kriszyp/xstyle">xstyle</a></li>
+<li>Separate Core modules into an independent pure javascript component and put on 
+<a href="https://github.com/">Github</a> and 
+<a href="https://c9.io">Cloud 9 IDE</a>, create
+<a href="http://nodejs.org/">node.js</a> server to test component.</li>
+<li>Clean code to satisfy CLoud9 IDE Code Quality Check.</li>
+<li>Reorganize code to follow javascript code standard best practice.</li>
+<li>Use online javascript compressor <a href="http://jscompress.com/">jscompress.com</a></li>
+</ul>
+<h3 id="v1-0b1-aug-26th-2012">V1.0b1 Aug 26th, 2012</h3>
+<ul>
+<li>Change pivot chart from dojo chart to 
+<a href="http://www.fusioncharts.com/">FusionCharts</a>. </li>
+<li>Create a demo wordpress website 
+<a href="http://webpivottable.com/">webpivottable.com</a> for public review.</li>
+</ul>
+<h3 id="v0-3-june-13th-2012">V0.3 June 13th, 2012</h3>
+<ul>
+<li>Implement PHP backend export HTML to pdf. </li>
+<li>Implement PHP backend to load excel data. </li>
+<li>Add pivot charts based on dojo chart library.</li>
+</ul>
+<h3 id="v0-2-may-25th-2012">V0.2 May 25th, 2012</h3>
+<ul>
+<li>Solve the long run script issue while hierarchy of rows or columns becomes
+complicate. </li>
+<li>Change lazy-load cells to one-time loading. </li>
+<li>Add grid options to change pivotGrid layout</li>
+<li>Add filter functions.</li>
+</ul>
+<h3 id="v0-1-april-29th-2012">V0.1 April 29th, 2012</h3>
+<ul>
+<li>Implement basic functions of pivot controls &amp; pivot grid, all based on 
+<a href="http://dojotoolkit.org/">dojo</a> and 
+<a href="https://github.com/SitePen/dgrid">dgrid</a> widget.</li>
+</ul>
+
+  </body>
+</html>

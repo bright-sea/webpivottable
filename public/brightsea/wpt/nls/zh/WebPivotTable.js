@@ -49,11 +49,11 @@ define({
 
     /* TopBar.js  */
 
+    Mnu_NewWpt: "创建新的WEB数据透视表",
     Mnu_OpenWpt: "打开WEB数据透视表文件 (.wpt)",
-    Mnu_SaveWpt: "保存WEB数据透视表到文件",
+    Mnu_SaveWpt: "保存WEB数据透视表",
     Mnu_Report: "创建并输出报表",
     Mnu_SourceData: "打开源数据视图",
-
 
     Mnu_Setting: "设置",
     Dlg_Setting: "设置",
@@ -345,6 +345,91 @@ define({
 
 
     /* new */
+    Lbl_Signin: "登录",
+    Lbl_Signup: "注册",
+    Lbl_Signout: "退出",
+    Lbl_ForgotPassword: "忘记密码",
+    Lbl_ChangePassword: "修改密码",
+    Lbl_EditProfile: "修改个人资料",
+    Lbl_Anonymous: "匿名用户",
+    Lbl_Username: "用户名",
+    Lbl_Password: "密码",
+    Lbl_FirstName: "名",
+    Lbl_LastName: "姓",
+    Lbl_Email: "电子邮箱",
+    Lbl_SignupEmail: "注册电子邮箱",
+    Lbl_RetrieveToken: "获取盾牌",
+    Lbl_VerifyToken: "校验盾牌",
+    Lbl_Token: "盾牌",
+    Lbl_CurrentPassword: "当前密码",
+    Lbl_NewPassword: "新密码",
+    Lbl_ConfirmPassword: "确定密码",
+    Lbl_ResetPassword: "重设密码",
+    Lbl_Save: "保存",
+
+    //MESSAGE_SUBJECT_SEND_TOKEN_EMAIL: "重设WebPivotTable密码",
+    //MESSAGE_CONTENT_SEND_TOKEN_EMAIL: "您收到此邮件是因为您（或者其他人）请求重设您的账户密码。<br/><br/>" +
+    //"请使用下面的盾牌继续您的密码重设处理。<br/><br/>" +
+    //"您的密码重设盾牌是：<b>  {{token}}  </b><br/><br/>"+
+    //"如果您没有请求这个，请忽略此邮件，您的密码将保持不变。 <br/><br/>",
+    //MESSAGE_SUBJECT_CHANGE_PASSWORD_EMAIL: "您的密码已经更改",
+    //MESSAGE_CONTENT_CHANGE_PASSWORD_EMAIL: "您好！<br/><br/>" +
+    //"此邮件是确认您的账户：<b> {{account}} </b>的密码刚被更改了。<br/><br/>",
+
+
+    MESSAGE_RESET_PASSWORD_TOKEN_SENT: "密码重设盾牌已经发送到该邮件地址，请查收邮件！",
+    MESSAGE_RESET_PASSWORD_TOKEN_VERIFIED: "密码重设盾牌已验证，您已经登录并可以重设密码。",
+    MESSAGE_PROFILE_UPDATE_SUCCESS: "成功了！ 你的档案已被更改。",
+    MESSAGE_PASSWORD_RESET_SUCCESS: "成功了！ 你的密码已被更改。",
+    MESSAGE_SAVE_LOCAL_SUCCESS: "报表成功保存到本地文件。",
+    MESSAGE_SAVE_SERVER_SUCCESS: "报表成功保存到服务器上。",
+    MESSAGE_REPORT_SHARE_SUCCESS: "报表分享成功。",
+
+    ERROR_SERVER_GENERAL: "服务器端出错！",
+    ERROR_UNKNOWN_USER: "该用户还没有注册！",
+    ERROR_INVALID_PASSWORD: "密码错误！",
+    ERROR_USERNAME_EMAIL_DUPLICATE: "该用户名或者电子邮箱已经被注册！",
+    ERROR_REQUIRED: "请输入{{field}}",
+    ERROR_NO_USER_WITH_THIS_EMAIL: "该邮件地址没有对应的用户！",
+    ERROR_RESET_TOKEN_INVALID: "密码重设盾牌不对或者已经过期！",
+    ERROR_CONFIRM_PASSWORD: "两个密码不一样， 请重输！",
+    ERROR_USER_NOT_SIGNIN: "用户还没有登录！",
+    ERROR_CURRENT_PASSWORD: "当前密码不正确！",
+    ERROR_NEW_PASSWORD: "请提供一个新密码！",
+    ERROR_USER_NOT_FOUND: "用户没找到！",
+
+    ERROR_VALIDATION_SERVER: "服务器错误导致请求失败！",
+    ERROR_VADIDATION_NOT_FOUND: "没找到！",
+    ERROR_VADIDATION_WAIT: "请等待！",
+    ERROR_VADIDATION_REQUIRED: "这个字段是必须的！",
+    ERROR_VADIDATION_TOO_SHORT: "这个字段太短！",
+    ERROR_VADIDATION_TOO_LONG: "这个字段太长！",
+    ERROR_VADIDATION_EMAIL: "Email不正确！",
+
+    ERROR_UPLOAD_FILE: "上传文件失败！",
+    ERROR_REQUEST_FILE_URL: "用URL请求文件内容失败！",
+    ERROR_FILE_PICKER: "从云盘选取文件失败！",
+    ERROR_FILE_TYPE: "文件类型选择错误！",
+    ERROR_FILE_NOT_FOUND: "找不到文件！",
+    ERROR_FILE_NOT_READABLE: "文件不可读！",
+    ERROR_FILE_READ_SECURITY: "文件处于被锁定状态！",
+    ERROR_FILE_READ_DEFAULT: "读取文件错误！",
+    ERROR_EXCEL_NO_SHEET: "EXCEL文件中无表单！",
+    ERROR_READ_EXCEL_FILE: "读取EXCEL文件失败！",
+
+    ERROR_NOT_WPT_FILE: "这不是一个有效的WEB数据透视表文件！",
+
+    ERROR_NO_DATA_IN_REPORT: "当前报表中还没有数据！",
+
+
+
+    Mnu_SaveToLocal: "到本地文件",
+    Mnu_SaveToServer: "到服务器数据库中",
+
+    Lbl_Title: "标题",
+    Lbl_Description: "描述",
+    Btn_Save: "保存",
+
     Btn_ExportReport: "输出报表",
     Btn_PdfFormatSetting: "PDF格式设置",
 
@@ -378,6 +463,8 @@ define({
     Tip_PivotTable: "切换到数据透视表视图",
     Btn_DataSource: "数据源",
     Tip_DataSource: "切换到数据源视图",
+    Btn_Dashboard: "仪表盘",
+    Tip_Dashboard: "切换到仪表盘视图",
 
     Lbl_Source: "数据源",
     Lbl_Sheet: "工作薄",
@@ -391,9 +478,12 @@ define({
     Tip_RenameReportName: "更换报表名",
 
 
+    Btn_Create: "创建",
     Btn_Add: "增加",
     Btn_Change: "更换",
     Btn_Remove: "移除",
+    Btn_Delete: "删除",
+    Btn_Open: "打开",
 
     Mnu_Memory: "本地内存",
     Lbl_Samples: "样例",
@@ -417,9 +507,12 @@ define({
     Lbl_ReportComponents: "报表组件",
     Lbl_Sheets: "工作薄",
 
+    Tip_NewWptWithSource: "选择数据源以创建新的WEB数据透视表",
     Tip_AddSource: "增加新的数据源",
     Tip_RemoveSource: "移除当前数据源",
     Tip_ChangeSource: "更改当前数据源",
+    Tip_DeleteWpt: "从数据库中删除该WPT",
+    Tip_OpenWpt: "打开此WPT",
 
     Tip_AddSheet: "创建新工作薄",
     Tip_AddReport: "创建新报表"

@@ -1,3 +1,10 @@
+### V3.2 Feburary 26th, 2015
+* Add user information to support backend user authentication
+* Add a dashboard view for user
+* Save WPT to backend database directly 
+
+
+
 ### V3.1 January 26th, 2015
 * Generate full size pivot grid for exporting and report component
 * Generate pdf/html/png/jpeg exporting
