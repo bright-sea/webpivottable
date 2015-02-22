@@ -2,890 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2113945-3708-4288-8aa0-c309c797e1aa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/wpt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/license_agreement.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/_DnD-touch-autoscroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/ar/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/columnHider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/de/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/es/columnHider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/es/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/fr/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/ja/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/pt/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/ro/columnHider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/ro/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/sk/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/sl/columnHider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/sl/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/th/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/zh-cn/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/extensions/nls/zh-hk/pagination.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dgrid/util/touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ar/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ar/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ar/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/az/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/az/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/az/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/bg/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/bg/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/bg/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ca/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ca/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ca/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/cs/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/cs/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/cs/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/da/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/da/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/da/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/de/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/de/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/de/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/el/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/el/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/el/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/es/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/es/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/es/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/fi/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/fi/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/fi/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/fr/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/fr/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/fr/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/he/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/he/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/he/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/hr/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/hr/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/hr/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/hu/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/hu/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/hu/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/id/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/id/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/id/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/it/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/it/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/it/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ja/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ja/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ja/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/kk/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/kk/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/kk/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ko/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ko/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ko/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/nb/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/nb/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/nb/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/nl/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/nl/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/nl/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pl/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pl/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pl/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pt-pt/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pt-pt/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pt-pt/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pt/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pt/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/pt/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ro/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ro/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ro/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ru/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ru/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/ru/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sk/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sk/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sk/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sl/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sl/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sl/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sv/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sv/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/sv/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/th/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/th/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/th/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/tr/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/tr/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/tr/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/uk/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/uk/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/uk/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/zh-tw/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/zh-tw/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/zh-tw/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/zh/FontChoice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/zh/LinkDialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/_editor/nls/zh/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ar/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ar/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ar/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/az/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/az/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/az/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/bg/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/bg/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/bg/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ca/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ca/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ca/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/cs/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/cs/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/cs/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/da/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/da/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/da/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/de/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/de/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/de/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/el/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/el/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/el/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/es/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/es/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/es/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/fi/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/fi/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/fi/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/fr/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/fr/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/fr/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/he/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/he/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/he/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/hr/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/hr/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/hr/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/hu/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/hu/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/hu/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/id/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/id/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/id/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/it/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/it/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/it/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ja/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ja/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ja/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/kk/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/kk/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/kk/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ko/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ko/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ko/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/nb/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/nb/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/nb/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/nl/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/nl/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/nl/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pl/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pl/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pl/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pt-pt/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pt-pt/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pt-pt/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pt/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pt/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/pt/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ro/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ro/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ro/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ru/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ru/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/ru/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sk/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sk/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sk/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sl/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sl/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sl/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sv/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sv/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/sv/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/th/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/th/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/th/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/tr/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/tr/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/tr/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/uk/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/uk/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/uk/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/zh-tw/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/zh-tw/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/zh-tw/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/zh/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/zh/Textarea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/form/nls/zh/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ar/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ar/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/az/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/az/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/bg/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/bg/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ca/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ca/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/cs/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/cs/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/da/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/da/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/de/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/de/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/el/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/el/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/es/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/es/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/fi/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/fi/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/fr/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/fr/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/he/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/he/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/hr/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/hr/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/hu/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/hu/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/id/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/id/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/it/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/it/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ja/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ja/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/kk/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/kk/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ko/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ko/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/nb/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/nb/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/nl/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/nl/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/pl/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/pl/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/pt-pt/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/pt-pt/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/pt/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/pt/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ro/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ro/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ru/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/ru/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/sk/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/sk/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/sl/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/sl/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/sv/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/sv/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/th/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/th/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/tr/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/tr/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/uk/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/uk/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/zh-tw/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/zh-tw/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/zh/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dijit/nls/zh/loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ar/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ca/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ca/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ca/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ca/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ca/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ca/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ca/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/cs/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/da/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/de/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/el/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-au/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-au/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-au/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-au/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-au/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-au/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-au/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-ca/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-ca/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-ca/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-gb/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-gb/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-gb/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-gb/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-gb/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-gb/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en-gb/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/en/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/es/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ethiopic-amete-alem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fi/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr-ch/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr-ch/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr-ch/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr-ch/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/fr/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/he/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/he/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/he/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/he/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/he/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/he/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/he/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/hu/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/islamic-civil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/islamic-rgsa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/islamic-tbla.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/islamic-umalqura.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/it/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ja/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ko/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nb/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/nl/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pl/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt-pt/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/pt/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ro/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/ru/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sk/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sk/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sk/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sk/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sl/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sl/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sl/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sl/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/sv/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/th/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/tr/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/dangi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hant/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hk/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hk/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-hk/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-tw/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-tw/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh-tw/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/buddhist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/chinese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/coptic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/currency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/ethiopic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/generic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/gregorian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/hebrew.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/indian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/islamic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/japanese.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/persian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/cldr/nls/zh/roc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/ar/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/az/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/bg/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/ca/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/cs/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/da/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/de/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/el/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/es/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/fi/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/fr/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/he/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/hr/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/hu/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/id/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/it/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/ja/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/kk/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/ko/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/nb/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/nl/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/pl/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/pt-pt/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/pt/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/ro/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/ru/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/sk/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/sl/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/sv/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/th/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/tr/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/uk/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/zh-tw/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/nls/zh/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/blank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/dnd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/dojo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/iframe_history.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/images/dndCopy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/images/dndMove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/images/dndNoCopy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojo/resources/images/dndNoMove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/ColorPicker/ColorPicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/ColorPicker/ColorPicker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/ColorPicker/images/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/ColorPicker/images/hueHandle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/ColorPicker/images/hueHandleA11y.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/ColorPicker/images/pickerPointer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/ColorPicker/images/underlay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ar/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ar/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ar/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/az/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/az/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/az/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/bg/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/bg/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/bg/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ca/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ca/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ca/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/cs/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/cs/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/cs/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/da/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/da/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/da/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/de/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/de/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/de/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/el/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/el/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/el/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/es/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/es/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/es/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/fi/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/fi/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/fi/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/fr/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/fr/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/fr/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/he/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/he/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/he/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/hr/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/hr/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/hr/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/hu/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/hu/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/hu/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/id/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/id/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/id/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/it/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/it/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/it/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ja/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ja/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ja/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/kk/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/kk/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/kk/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ko/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ko/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ko/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/nb/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/nb/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/nb/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/nl/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/nl/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/nl/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pl/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pl/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pl/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pt-pt/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pt-pt/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pt-pt/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pt/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pt/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/pt/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ro/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ro/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ro/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ru/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ru/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/ru/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sk/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sk/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sk/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sl/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sl/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sl/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sv/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sv/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/sv/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/th/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/th/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/th/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/tr/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/tr/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/tr/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/uk/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/uk/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/uk/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/zh-tw/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/zh-tw/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/zh-tw/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/zh/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/zh/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/dojox/widget/nls/zh/Wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/WebPivotTable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/es/WebPivotTable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/it/WebPivotTable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/pt/WebPivotTable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_ROOT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_en-us.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_es-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_fi-fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_fr-fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_he-il.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_it-it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_ja-jp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_ko-kr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_nl-nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_pt-pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/wpt_zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/zh/WebPivotTable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/wpt.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/wpt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/brightsea/wpt/wptReport.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/highcharts/4.0.4/highcharts-all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/highcharts/group_categories/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/highcharts/group_categories/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/highcharts/group_categories/grouped-categories.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/highcharts/group_categories/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/highcharts/group_categories/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/highcharts/group_categories/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/jquery/jquery-1.11.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/jquery/jquery-1.11.2.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/local.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/quick_start.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webpivottable.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -908,7 +25,53 @@
     <favorites_list name="webpivottable" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="570">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wpt.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wpt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1424486288000" expanded="true" signature="2230:2241" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5415">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6465">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -971,6 +134,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="webpivottable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpivottable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpivottable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1055,12 +228,12 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33900815" sideWeight="0.6701847" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33900815" sideWeight="0.6701847" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1094,5 +267,44 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wpt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1424486288000" expanded="true" signature="2230:2241" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5415">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6465">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
