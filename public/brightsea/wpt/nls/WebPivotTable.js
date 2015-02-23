@@ -480,6 +480,8 @@ define({
         Tip_RenameSourceName: "Change data source name",
         Tip_RenameSheetName: "Change sheet name",
         Tip_RenameReportName: "Change report name",
+        Lbl_Sources: "Sources List",
+        Lbl_Sheets: "Sheets List",
 
         Btn_Create: "Create",
         Btn_Add: "Add",
@@ -496,6 +498,7 @@ define({
 
         Msg_LeavingPage: "Please save WPT report before you leave the page, otherwise you may lose your work!",
         Msg_SheetUsedByReports: "There are some reports based on this sheet. Those reports will be changed if you confirm to remove.",
+        Msg_SourceUsedBySheets: "There are some sheets based on this source. Please remove those sheets first.",
         Msg_FirstSourceNotRemovable: "Data source for the first sheet can't be removed.",
         Msg_SourceWithSheetNotRemovable: "There are sheets based on this data source, please remove those sheets first.",
 
@@ -508,7 +511,6 @@ define({
 
         Lbl_AvailableComponents: "Available Components",
         Lbl_ReportComponents: "Report Components",
-        Lbl_Sheets: "Sheets",
 
         Tip_NewWptWithSource: "Select data source to create new WebPivotTable",
         Tip_AddSource: "Add a new data source",

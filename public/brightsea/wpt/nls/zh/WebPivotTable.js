@@ -476,6 +476,8 @@ define({
     Tip_RenameSourceName: "更换数据源名",
     Tip_RenameSheetName: "更换工作薄名",
     Tip_RenameReportName: "更换报表名",
+    Lbl_Sources: "数据源列表",
+    Lbl_Sheets: "工作薄列表",
 
 
     Btn_Create: "创建",
@@ -493,6 +495,7 @@ define({
 
     Msg_LeavingPage: "在离开页面前请保存你的WPT报表，否则你将丢失你所有的操作！",
     Msg_SheetUsedByReports: "有一些报表基于该工作薄， 那些工作薄会发生改变如果您确认移除。",
+    Msg_SourceUsedBySheets: "有一些工作薄基于该数据源， 请先移除那些工作薄。",
     Msg_FirstSourceNotRemovable: "第一个工作薄的数据源不能被移除。",
     Msg_SourceWithSheetNotRemovable: "有一些工作薄基于此数据源，请先移除那些工作薄再移除此数据源。",
 
@@ -505,7 +508,6 @@ define({
 
     Lbl_AvailableComponents: "可用的组件",
     Lbl_ReportComponents: "报表组件",
-    Lbl_Sheets: "工作薄",
 
     Tip_NewWptWithSource: "选择数据源以创建新的WEB数据透视表",
     Tip_AddSource: "增加新的数据源",
