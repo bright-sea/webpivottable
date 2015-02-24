@@ -5647,7 +5647,16 @@ html.has-touch .dgrid-column-resizer {
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 .dojoxDialog{
-    padding:5px !important;
+    padding:0px !important;
+}
+.dojoxDialogTitleBar {
+    background-color: lightblue  !important;
+    border-top-left-radius: 4px  !important;
+    border-top-right-radius: 4px  !important;
+    -moz-border-radius-topleft: 9pt  !important;
+    -moz-border-radius-topright: 9pt  !important;
+    -webkit-border-top-left-radius: 8pt  !important;
+    -webkit-border-top-right-radius: 8pt  !important;
 }
 .wpt-header-pane,
 .wpt-footer-pane{
