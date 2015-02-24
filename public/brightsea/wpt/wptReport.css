@@ -376,8 +376,6 @@ html.has-mozilla .dgrid-focus {
 }
 .dojoxDialogTitleBar {
     background-color: lightblue  !important;
-    border-top-left-radius: 4px  !important;
-    border-top-right-radius: 4px  !important;
     -moz-border-radius-topleft: 9pt  !important;
     -moz-border-radius-topright: 9pt  !important;
     -webkit-border-top-left-radius: 8pt  !important;
