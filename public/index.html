@@ -1,25 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>WebPivotTable Component</title>
-
-    <!-- General META -->
-    <meta charset="utf-8">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <!-- Semantic META -->
-    <meta name="keywords" content="business intelligence, data analysis, web pivot table, report">
-    <meta name="description" content="A BI solution leverage WebPivotTable component to analyze data dynamically and to share reports within enterprise.">
-    
     <style type="text/css">
         html, body, #wpt-container {width:100%;height:100%;}
     </style>
 
     <link rel='stylesheet' href='brightsea/wpt/wpt.css'>
 
-    <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: '/brightsea/dojo/'"></script>
+    <script type="text/javascript" src="brightsea/wpt/wpt.js"  
+        data-dojo-config="async:1, baseUrl: '/brightsea/dojo/'"></script>
+        
     <script type="text/javascript" src="lib/filepicker/index.js"></script>
     <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="lib/highcharts-release/highcharts-all.js"></script>
@@ -27,88 +17,7 @@
 
     <script type="text/javascript">
         require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
-            var wpt = new WebPivotTable({
-                customOptions:{
-
-                    uiFlags: {
-                        helpBtn: 0,
-                        aboutBtn: 0
-                    },
-
-                    fileLinks:[{
-                        type: "WPT",
-                        url: "http://bi2.io/json/sample91.wpt",
-                        label: "Predefined small CSV WebPivotTable file"
-                    },{
-                        type: "WPT",
-                        url: "http://bi2.io/json/sample92.wpt",
-                        label: "Predefined Mondrian OLAP WebPivotTable file"
-                    },{
-                        type: "WPT",
-                        url: "http://bi2.io/json/sample93.wpt",
-                        label: "Predefined large CSV WebPivotTable file"
-                    },{
-                        type: "CSV",
-                        url: "http://bi2.io/json/example.csv",
-                        label: "USA Selection Poll Data (Total 4,000 records)"
-                    },{
-                        type: "CSV",
-                        url: "http://bi2.io/json/sales.csv",
-                        label: "Sales Sample Data (Total 2,823 records)"
-                    },{
-                        type: "CSV",
-                        url: "http://bi2.io/json/FL_insurance.csv",
-                        label: "Florida Insurance Data (Total 36,634 records)"
-                    },{
-                        type: "XLS",
-                        url: "http://bi2.io/json/example.xls",
-                        label: "USA Selection Poll Data (Total 4,000 records)"
-                    },{
-                        type: "XLS",
-                        url: "http://bi2.io/json/sales.xls",
-                        label: "Sales Sample Data (Total 2,823 records)"
-                    },{
-                        type: "XLS",
-                        url: "http://bi2.io/json/FL_insurance.xls",
-                        label: "Florida Insurance Data (Total 36,634 records)"
-                    },{
-                        type: "XLSX",
-                        url: "http://bi2.io/json/example.xlsx",
-                        label: "USA Selection Poll Data (Total 4,000 records)"
-                    },{
-                        type: "XLSX",
-                        url: "http://bi2.io/json/sales.xlsx",
-                        label: "Sales Sample Data (Total 2,823 records)"
-                    },{
-                        type: "XLSX",
-                        url: "http://bi2.io/json/FL_insurance.xlsx",
-                        label: "Florida Insurance Data (Total 36,634 records)"
-                    },{
-                        type: "GSS",
-                        url: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html",
-                        label: "USA Selection Poll Data (Total 4,000 records)"
-                    },{
-                        type: "GSS",
-                        url: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdHJMOTh4Sm1BSFlDYXRwVW5lc0xuMVE&output=html",
-                        label: "Sales Sample Data (Total 2,823 records)"
-                    },{
-                        type: "OLAP",
-                        url: "http://bi2.io:8080/mondrian/xmla",
-                        label: "Sample Mondrian OLAP Server"
-                    },{
-                        type: "OLAP",
-                        url: "http://olap.flexmonster.com/olap/msmdpump.dll",
-                        label: "Sample Microsoft Analysis Service"
-//                    },{
-//                        type: "OLAP",
-//                        url: "http://bi2.io:8282/icCube/xmla",
-//                        label: "Sample IcCube OLAP Server"
-                    }]
-                }
-            },"wpt-container");
-
-            wpt.setCsvUrl("http://bi2.io/json/example.csv");
-
+            new WebPivotTable({},"wpt-container");
         });
 	</script>
 </head>

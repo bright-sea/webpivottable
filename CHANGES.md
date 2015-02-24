@@ -1,8 +1,12 @@
 ### V3.2 Feburary 26th, 2015
 * Add user information to support backend user authentication
 * Add a dashboard view for user
+* Add user admin dialogs for user sign/up/password
 * Save WPT to backend database directly 
-
+* Change all dialog to non modal and more funncy with dojox dialog
+* Change all title hint to Tooltip to improve user experience
+* Add more options to customize user interface
+* redesign data source view to have multiple tabs.
 
 
 ### V3.1 January 26th, 2015
