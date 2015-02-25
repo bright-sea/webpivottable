@@ -5646,9 +5646,6 @@ html.has-touch .dgrid-column-resizer {
   background-color: rgba(0,0,0,.5);
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
-.dijitToolbarSeparator {
-    height:30px;
-}
 .dojoxDialog{
     padding:0px !important;
 }
@@ -5673,7 +5670,7 @@ html.has-touch .dgrid-column-resizer {
     padding:0;
 }
 .wpt-toolbar .wpt-toolbar-container{
-    padding:0 5px 0 2px;
+    padding:0 5px;
 }
 .wpt-float-left{
     float:left;
@@ -5681,11 +5678,18 @@ html.has-touch .dgrid-column-resizer {
 .wpt-float-right{
     float:right;
 }
-.wpt-toolbar-container .wpt-toolbar-item {
-    padding-top:2px;    
+.wpt-toolbar-separator
+{
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 30px;
+    border-right: 2px solid #fafafa;
+    border-left: 2px solid #b4b4b4;
+    margin: 0 5px;
 }
-.wpt-toolbar-container .wpt-toolbar-separator {
-    padding:0 3px;
+.wpt-toolbar-container .wpt-toolbar-item {
+    padding-top:3px;
 }
 .wpt-leftmenu-pane{
     width: 20px;
