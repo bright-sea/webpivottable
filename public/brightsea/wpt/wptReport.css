@@ -371,6 +371,9 @@ html.has-mozilla .dgrid-focus {
   background-color: rgba(0,0,0,.5);
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
+.dijitToolbarSeparator {
+    height:30px;
+}
 .dojoxDialog{
     padding:0px !important;
 }
@@ -382,8 +385,32 @@ html.has-mozilla .dgrid-focus {
     -webkit-border-top-right-radius: 8pt  !important;
 }
 .wpt-header-pane,
+.wpt-bar-header-pane,
 .wpt-footer-pane{
     height:27px;
+}
+.wpt-bar-header-pane{
+    border-bottom: 1px solid #888;
+}
+.wpt-bar-header-pane .wpt-toolbar {
+    width:100%;
+    height:100%;
+    padding:0;
+}
+.wpt-toolbar .wpt-toolbar-container{
+    padding:0 5px 0 2px;
+}
+.wpt-float-left{
+    float:left;
+}
+.wpt-float-right{
+    float:right;
+}
+.wpt-toolbar-container .wpt-toolbar-item {
+    padding-top:2px;    
+}
+.wpt-toolbar-container .wpt-toolbar-separator {
+    padding:0 3px;
 }
 .wpt-leftmenu-pane{
     width: 20px;
@@ -397,10 +424,6 @@ html.has-mozilla .dgrid-focus {
 .wpt-tab-toolbar {
     float:left;
     margin:5px 5px 0 0;
-}
-.wpt-drill-through-dialog{
-    width:1000px;
-    height:800px;
 }
 .wpt-main-container{
     background-color:#bbb;
@@ -423,21 +446,18 @@ html.has-mozilla .dgrid-focus {
     padding: 0;
 }
 .dijitTabContainerTop-tabs .dijitButtonText,
-.wpt-header-pane .dijitButtonText,
+.wpt-bar-header-pane .dijitButtonText,
 .wpt-leftmenu-pane .dijitButtonText,
 .wpt-button-selector .dijitButtonText {
     padding: 0;
 }
 .wpt-main-container .dijitContentPane,
 .wpt-nav-pane .dijitContentPane,
-.wpt-dialog .dijitTabPane,
+.dojoxDialog .dijitTabPane,
 .wpt-tooltip-dialog .dijitContentPane{
     padding: 3px;
 }
-.wpt-header-pane .dijitToolbar .dijitToggleButton{
-    margin: 0 2px;
-}
-.wpt-header-pane .dijitToolbar  .dijitToggleButtonChecked .dijitButtonNode{
+.wpt-bar-header-pane .dijitToolbar  .dijitToggleButtonChecked .dijitButtonNode{
     border: 1px solid black;
     font-weight: bold;
     background-color: lightblue;
@@ -458,7 +478,7 @@ html.has-mozilla .dgrid-focus {
 .wpt-field-row {
     float:left;
     width:100%;
-    height:30px;
+    padding-top: 5px;
 }
 .wpt-field-text{
     float:left;
@@ -506,38 +526,9 @@ html.has-mozilla .dgrid-focus {
     float:left;
     background-position: 0 0;
 }
-.wpt-iframe{
-    border: 0;
-    width: 100%;
-    height: 100%;
-}
-.wpt-signin-dialog {
-    width:250px;
-    height:110px;
-}
-.wpt-change-password-dialog{
-    width:350px;
-    height:150px;
-}
-.wpt-signup-dialog {
-    width:250px;
-    height:200px;
-}
-.wpt-edit-profile-dialog {
-    width:250px;
-    height:200px;
-}
-.wpt-forgot-dialog {
-    width:400px;
-    height:180px;
-}
 .wpt-fields-menu-ttd {
     width:350px;
     height:120px;
-}
-.wpt-mdx-ttd{
-    width:600px;
-    height:200px;
 }
 .wpt-single-line-ttd{
     height:30px;
@@ -552,7 +543,7 @@ html.has-mozilla .dgrid-focus {
 }
 .wpt-chart-type-ttd{
     width:500px;
-    height:50px;
+    height:80px;
 }
 .wpt-chart-options-ttd{
     width:600px;
