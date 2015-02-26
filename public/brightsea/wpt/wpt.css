@@ -5684,8 +5684,8 @@ html.has-touch .dgrid-column-resizer {
     display: inline-block;
     width: 0px;
     height: 30px;
-    border-right: 2px solid #fafafa;
-    border-left: 2px solid #b4b4b4;
+    border-right: 1px solid #fafafa;
+    border-left: 1px solid #b4b4b4;
     margin: 0 5px;
 }
 .wpt-toolbar-container .wpt-toolbar-item {

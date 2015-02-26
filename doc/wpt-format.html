@@ -1,0 +1,370 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <p><a href="./index.html">Back to Home</a></p>
+<h2 id="what-s-wpt-file-">What&#39;s WPT file?</h2>
+<p>WPT file is a WebPivotTable file which includes your data and pivot selections. 
+WebPivotTable component allows you to save your content in a WPT file, which can then be opened directly.</p>
+<h2 id="wpt-format">WPT format</h2>
+<p>The WPT format is pretty simple; it&#39;s just a string of JSON objects. Here is a sample:</p>
+<pre><code>{
+    &quot;format&quot;: &quot;WPT&quot;,
+    &quot;version&quot;: &quot;2.0&quot;,
+    &quot;sources&quot;:[{
+        &quot;id&quot;:1,
+        &quot;name&quot;:&quot;Source1&quot;,
+        &quot;mode&quot;:&quot;MEMORY&quot;,
+        &quot;format&quot;:&quot;CSV&quot;,
+        &quot;url&quot;:&quot;/json/example.csv&quot;,
+        &quot;data&quot;:[           // data array
+            [               // first row data
+              0,     // value is the index of lookups array
+              ...
+              0      // the last field
+            ],
+            ...
+            [            
+               3999,
+               ...
+               1
+            ]
+        ],
+        &quot;fields&quot;: [        // fields array
+            {
+                &quot;id&quot;:0,        //a unique id, not necessary the same as index
+                &quot;name&quot;:&quot;0&quot;,   //field name, equal to index
+                &quot;label&quot;:&quot;VOTER&quot;,  //display label
+                &quot;lookups&quot;:[
+                   &quot;1012&quot;   //value
+                   &quot;1013&quot;,
+                     ...
+                   &quot;5162&quot;
+                ],
+                &quot;type&quot;:&quot;NUMBER&quot;  // MEASURE -- number    ATTRIBUTE -- string
+            },
+            ...
+            {
+                &quot;id&quot;:6,
+                &quot;name&quot;:&quot;6&quot;,
+                &quot;label&quot;:&quot;BALLOT STATUS&quot;,
+                &quot;lookups&quot;:[
+                    &quot;PERM&quot;,
+                    ...
+                    &quot;ABT&quot;
+                ],
+               &quot;type&quot;:&quot;STRING&quot;
+            }
+        ]
+    },
+    ...
+    {
+        &quot;id&quot;: 3,
+        &quot;name&quot;: &quot;Source3&quot;,
+        ...
+    }
+],
+
+&quot;sheets&quot;:[{
+    &quot;id&quot;:1,
+    &quot;name&quot;:&quot;Sheet1&quot;,
+    &quot;sourceId&quot;:1,
+    &quot;fields&quot;:[{
+        &quot;id&quot;:0,
+        &quot;name&quot;:&quot;0&quot;,
+        &quot;label&quot;:&quot;VOTER&quot;,
+        &quot;sort&quot;:{        // if not exist, default to descend = 0
+                   // and sortValieId =0
+            descend: 0,   // 0--ascend  1--descend
+            sortValueId: 0 // 0: sort by self field,
+                      //otherwise is the id of value field
+        },
+        &quot;filter&quot;:{
+            filterType: 0, // 0-label  1-value 2-top/bottom
+            exclude: [   // only for filterType=0 , filter out lists
+                0: 1,    // key is the lookups key  
+                4: 1,
+                ...
+                100:1
+            ],
+            filterValueId: 1,  // filter by or top value field id
+                              //(for filterType =1 or =2)
+            filterOperator: &quot;EQ&quot;, // filter By value operator: (filterType =1)
+                     //     &#39;EQ&#39;:&quot;equals&quot;
+                     //     &#39;NE&#39;:&quot;does not equal&quot;
+                     //     &#39;GT&#39;:&quot;is great than&quot;
+                     //     &#39;GE&#39;:&quot;is great than or equal to&quot;
+                     //     &#39;LT&#39;:&quot;is less than&quot;
+                     //     &#39;LE&#39;:&quot;is less than or equal to&quot;
+                     //     &#39;BT&#39;:&quot;is between&quot;
+                     //     &#39;NB&#39;:&quot;is not between&quot;
+                     // Top/Bottom operator: (filterType =2)
+                     //     &#39;TOP&#39;: &quot;Top&quot;
+                     //     &#39;BOTTOM&#39;: &quot;Bottom&quot;  
+            filterValue: 10000,   // filter value (filterType =1)
+                             // or top/bottom number (filterType =2)
+            filterValue1: null    // for filterType =1
+                     // and filterOperator = &#39;BT&#39; or &#39;NB&#39;
+        },
+        &quot;type&quot;:&quot;NUMBER&quot;
+    },
+    ....
+    {
+        &quot;id&quot;:6,
+         &quot;name&quot;:&quot;6&quot;,
+         &quot;label&quot;:&quot;BALLOT STATUS&quot;,
+         &quot;type&quot;:&quot;STRING&quot;
+    }],
+    &quot;rows&quot;:[1,4],   // pivot selection of rows, value is the index of fields
+    &quot;cols&quot;:[3],     // pivot selection of columns, value is the index of fields
+    &quot;filters&quot;:[],   // pivot selection of filters, value is the index of fields
+    &quot;values&quot;:[{      // pivot selection of values
+        &quot;id&quot;:1,          // an unique id (start from 1)
+        &quot;label&quot;:&quot;Sum of PRECINCT&quot;,  //display label
+        &quot;fieldIndex&quot;:2,  // base field index of fields
+        &quot;stats&quot;:&quot;Sum&quot;,   // Sum/Count/Average/Max/Min/
+                         // Median/Mode/Stddev/Variance
+        &quot;showValueAs&quot;: 0, // if not exist, the same as 0
+                   //    0 - No Calculation
+                  //    1 - % of Grand total
+                  //    2 - % of column total
+                  //    3 - % of row total
+                  //    4 - % of parent column
+                  //    5 - % of parent row
+        &quot;format&quot;:{        // if nor exist, the same as category =&quot;GENERAL&quot;
+            category: &quot;NUMBER&quot;,  //
+                   // GENERAL --- No format
+                   // NUMBER --- Number format
+                   // CURRENCY --- Number format + symbol
+                   // PERCENTAGE --- %
+            decimal: 2,  // decimal point position    
+            separatorFlag: true,  // true/false add thousand Separator or not  
+            symbol: &quot;$&quot;,    // currency symbol
+            symbolSuffix: 0,   // 0/1    0 --- prefix   1--- suffix
+            negative: 0       // negative number format
+                //  0 ---  no format -1234.5678
+                //  1 ---  (1234.5678)
+                //  2 ---  (-1234.5678)
+                //  3 --- (1234.5678)
+                //  4 --- (-1234.5678)
+            }
+        }],
+        &quot;valuesInAxis&quot;:-1,   // if values length &gt;1, values in which axis
+                //  0--cols  1--rows else -1
+        &quot;valuesIndex&quot;:-1,    // if value length &gt;1, the index of values in axis
+                // else -1
+        &quot;sheetOptions&quot;:{
+            &quot;chartFirst&quot;:0,
+            &quot;pivotLayout&quot;:&quot;1&quot;,
+            &quot;expandRows&quot;:1,
+            &quot;expandCols&quot;:1,
+            &quot;nonEmpty&quot;:1,
+            &quot;mdx&quot;:&quot;&quot;
+        },
+        &quot;gridOptions&quot;{
+            &quot;showSigns&quot;:1,
+            &quot;showRowTotals&quot;:1,
+            &quot;showColTotals&quot;:1,
+            &quot;showRowSubtotals&quot;:1,
+            &quot;showColSubtotals&quot;:1,
+            &quot;compactForm&quot;:1,
+            &quot;rowHeaderWidth&quot;:200,
+            &quot;cellWidth&quot;:100,
+            &quot;cellHeight&quot;:23,
+            &quot;theme&quot;:&quot;wpt-default&quot;
+        },  
+        &quot;chartOptions&quot;:{
+            &quot;width&quot;:500,
+            &quot;height&quot;:300,
+            &quot;high&quot;:{
+                &quot;theme&quot;:&quot;default&quot;,  //default, grid, gray, skies, drak-blue, drak-green
+                chart:{
+                    type:&#39;column&#39;,  //column, bar, line, spline, area, areaspline, pie
+                    options3d: {
+                        enabled: false,
+                        alpha: 15,
+                        beta: 15,
+                        depth: 50,
+                        viewDistance: 25
+                    }
+                },
+                    credits: {
+                        enabled:false
+                    },
+                    exporting: {
+                        enabled:true
+                    },
+                    navigation:{
+                        buttonOptions:{
+                            align: &#39;right&#39;,   // left, center, right
+                            verticalAlign: &#39;top&#39; // top, middle, bottom
+                        }
+                    },
+                    legend: {
+                        enabled: true,
+                        floating: false,
+                        layout: &#39;vertical&#39;,  //horizontal, vertical
+                        align: &#39;right&#39;,      // left, center, right
+                        verticalAlign: &#39;middle&#39;, // top, middle, bottom
+                        reversed: false
+                    },
+                    tooltip:{
+                        enabled: true,
+                        shadow: true
+                    },
+                    plotOptions: {
+                        series:{
+                            stacking: null //null, &#39;normal&#39;, &quot;percent&quot;
+                        }
+                    },
+                    xAxis: {
+                        labels:{
+                            enabled: true,
+                            align:&#39;left&#39;,  // left, center, right
+                            rotation:45    // 0 -- 360
+                        }
+                    }
+                }
+            }
+        },
+        ...
+    ],
+    &quot;reports&quot;:[
+        {
+            &quot;id&quot;:1,
+            &quot;name&quot;:&quot;Report1&quot;,
+            &quot;components&quot;:[
+                {
+                    &quot;id&quot;:1,
+                    &quot;label&quot;:&quot;Sheet1 - Grid&quot;,
+                    &quot;type&quot;:&quot;GRID&quot;,
+                    &quot;sheetId&quot;:1
+                },
+                {
+                    &quot;id&quot;:2,
+                    &quot;label&quot;:&quot;Sheet1 - Chart&quot;,
+                    &quot;type&quot;:&quot;CHART&quot;,
+                    &quot;sheetId&quot;:1
+                }
+            ],
+            &quot;reportOptions&quot;:{}
+        },
+        ...
+    ],
+    &quot;ptIndex&quot;:0,&quot;
+    &quot;dsIndex&quot;:0,&quot;
+    view&quot;:&quot;PIVOTTABLE&quot;
+}
+</code></pre>
+  </body>
+</html>

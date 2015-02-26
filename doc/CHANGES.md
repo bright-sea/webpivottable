@@ -1,4 +1,7 @@
-### V3.2 Feburary 26th, 2015
+[Back to Home](./index.html)
+
+
+### V3.2 Feburary 25th, 2015
 * Add user information to support backend user authentication
 * Add a dashboard view for user
 * Add user admin dialogs for user sign/up/password
@@ -7,7 +10,6 @@
 * Change all title hint to Tooltip to improve user experience
 * Add more options to customize user interface
 * redesign data source view to have multiple tabs.
-
 
 ### V3.1 January 26th, 2015
 * Generate full size pivot grid for exporting and report component

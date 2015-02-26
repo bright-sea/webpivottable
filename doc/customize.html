@@ -1,0 +1,323 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <p><a href="./index.html">Back to Home</a></p>
+<h2 id="customize-the-look-and-feel-of-webpivottable-">Customize the look and feel of WebPivotTable:</h2>
+<p>We designed the WPT component to be as flexible as possible for web developers to customize.
+There are many options to consider, all of which can be switched on or off before being passed
+as parameters when creating the WebPivotTable object on your page or can be set by API after
+WebPivotTable object had been created.</p>
+<h3 id="pass-in-cutomize-options-when-create-webpivottable-object">Pass in cutomize options when create WebPivotTable object</h3>
+<pre><code>var myOptions = {}
+new WebPivotTable({customOptions:myOptions},&quot;wpt-container&quot;);
+</code></pre><p>Please reference <a href="#cutomizeoptions">Customize Options</a> to all the options and their default values. 
+You can change all or part of these options, then pass them to the constructor:</p>
+<p>Keep in mind that it’s  unnecessary to pass options you wish to leave as default. For example, if you only want to hide open and save buttons, you can pass customOptions as:</p>
+<pre><code>var myOptions = {
+   uiFlags: {
+      openWptBtn: 0,
+      saveWptBtn: 0
+   }
+}
+new WebPivotTable({customOptions:myOptions},&quot;wpt-container&quot;);
+</code></pre><h3 id="set-cutomize-options-for-existing-webpivottable-object">Set cutomize options for existing WebPivotTable object</h3>
+<p>Even after WPT object being created, you can still change options:</p>
+<pre><code>var webPivotTable  = new WebPivotTable({},&quot;wpt-container&quot;);
+webPivotTable.setOptions(customOptions);
+</code></pre><h3 id="cutomizeoptions">Customize Options</h3>
+
+<pre><code>{
+
+    locale: &#39;en&#39;,  // &#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,‘fr&#39;,&#39;de&#39;,&#39;ar&#39;,&#39;ru&#39;,&#39;it&#39;,&#39;nl&#39;,&#39;el&#39;,&#39;he&#39;,&#39;hi&#39;,&#39;hu&#39;,&#39;sv&#39;,&#39;ko&#39;,&#39;ja&#39;
+    availableLocales: [&#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,&#39;it&#39;],
+
+    leavePageWarning: 1,
+
+    uiFlags: {
+        newWptBtn: 1,
+        openWptBtn: 1,
+        saveWptBtn: 1,
+        switchViewBtn: 1,
+        userBtn: 1,
+        navPaneBtn: 1,
+        settingBtn: 1,
+        languageSwitchBtn: 1, // show/hide &#39;Language Switch&#39; dropdown button: 1/0
+        helpBtn: 1, // show/hide &#39;Help&#39; button: 1/0
+        aboutBtn: 1, // show/hide &#39;About&#39; button: 1/0
+
+        memoryTab: 1,
+        olapTab: 1,
+        internetLinkTab: 1,
+        cloudDriveBtn: 1,
+        localDriveTab: 1,
+        googleSpreadSheetTab: 1,
+        copyPasteTab: 1,
+
+        localSaveTab: 1,
+        serverSaveTab: 1,
+
+        showDimInfoWhenHover: 0,
+
+        zoomBtn: 1,
+        fullScreenBtn: 1,
+        exportExcelBtn: 1
+    },
+
+    fileLinks:[],
+
+    filepicker:{
+        key:&#39;&#39;  // filepicker application key
+    },
+
+    decimalPoint: &#39;.&#39;,  // decimal point charactor: &#39;.&#39;, &#39;,&#39;
+    thousandsSep: &#39;,&#39;, // thousands separator: &#39;,&#39; &#39;.&#39;, &#39; &#39;
+    zoomScaleStep: 0.05,
+    reportCssFile: &#39;./brightsea/wpt/wptReport.css&#39;,
+
+    olap:{
+        drillThroughMaxRows: 1000,
+        sync : 0,
+        timeout : 300000,
+        xmlaProxyEnabled: 1,        // enable/disable Xmla Proxy 1/0
+        xmlaProxy: &#39;/wpt/xmlaProxy&#39;
+    },
+
+    exporting: {
+        pdf: {
+            paperMarginTop: &#39;1cm&#39;,
+            paperMarginLeft: &#39;1cm&#39;,
+            paperMarginBottom: &#39;1cm&#39;,
+            paperMarginRight: &#39;1cm&#39;,
+            paperFormat: &#39;A4&#39;, //&#39;A3&#39;, &#39;A4&#39;, &#39;A5&#39;, &#39;Legal&#39;, &#39;Letter&#39;, &#39;Tabloid&#39;. &#39;Custom&#39;
+            paperOrientation: &#39;portrait&#39;,  //&#39;portrait&#39;, &#39;landscape&#39;
+            paperWidth: &#39;600px&#39;,
+            paperHeight: &#39;600px&#39;,
+            headerHeight: &#39;1cm&#39;,
+            header: &#39;&#39;,
+            footerHeight: &#39;1cm&#39;,
+            footer: &#39;&#39;,
+            zoomFactor: 1
+        }
+    },
+
+    pivotFields: {  //Pivot Fields List pane
+        show: 1,   // show/hide: 1/0
+        position:&#39;right&#39;, // position: &#39;left&#39;, &#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;
+        stacked: 0,  //stack fields area or not: 1/0
+        width:300, // width, only for left and right
+        height:200 // height, only for top and bottom
+    },
+
+    server: {
+        helpUrl:&#39;http://webpivottable.com/documents&#39;,
+        fileProxyEnabled: 1,        // enable/disable file Proxy 1/0
+        fileProxy: &#39;/wpt/fileProxy&#39;,
+        fileProxyWithBase64: &#39;/wpt/fileProxyWithBase64&#39;,
+        generatePdf: &#39;/wpt/generatePdf&#39;
+    },
+
+
+    csvGrid:{
+        cellWidth: 120,
+        cellHeight: 25
+    },
+
+
+
+    report: {
+
+    },
+
+    sheet:{
+        chartFirst: 0, //show chart at top/left? 0/1
+        pivotLayout: &#39;1&#39;, // Pivot Grid and chart layout
+        // 0 -- tile horizontal, 1 -- tile vertical,
+        // 2 -- grid only,  3 -- chart only
+
+        expandRows: 1,
+        expandCols: 1,
+        nonEmpty: 1,
+        mdx: &#39;&#39;
+    },
+
+    grid:{
+        showSigns: 1,
+        showRowTotals: 1,
+        showColTotals: 1,
+        showRowSubtotals: 1,
+        showColSubtotals: 1,
+        compactForm: 1,
+        rowHeaderWidth: 200,
+        cellWidth: 100,
+        cellHeight: 25,
+        theme: &#39;wpt-default&#39;
+    },
+    chart:{
+        width: 500,
+        height: 300,
+
+        high:{
+            theme: &#39;default&#39;, //default, grid, gray, skies, drak-blue, drak-green
+            chart:{
+                type:&#39;column&#39;,  //column, bar, line, spline, area, areaspline, pie
+                options3d: {
+                    enabled: false,
+                    alpha: 15,
+                    beta: 15,
+                    depth: 50,
+                    viewDistance: 25
+                }
+            },
+            credits: {
+                enabled:false
+            },
+            exporting: {
+                enabled:false
+            },
+            navigation:{
+                buttonOptions:{
+                    align: &#39;right&#39;,   // left, center, right
+                    verticalAlign: &#39;top&#39; // top, middle, bottom
+                }
+            },
+            legend: {
+                enabled: true,
+                floating: false,
+                layout: &#39;vertical&#39;,  //horizontal, vertical
+                align: &#39;right&#39;,      // left, center, right
+                verticalAlign: &#39;middle&#39;, // top, middle, bottom
+                reversed: false
+            },
+            tooltip:{
+                enabled: true,
+                shadow: true
+            },
+            plotOptions: {
+                series:{
+                    stacking: null //null, &#39;normal&#39;, &#39;percent&#39;
+                }
+            },
+            xAxis: {
+                labels:{
+                    enabled: true,
+                    align:&#39;left&#39;,  // left, center, right
+                    rotation:45    // 0 -- 360
+                }
+            }
+        }
+    }
+};
+</code></pre>
+  </body>
+</html>

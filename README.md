@@ -30,7 +30,7 @@ WPT mimics all functionalities of Excel pivot table. By leverage the
 powerful web technology, it provides a very intuitive user interface for normal users. 
 Most of WPT operations are just a simple drag and drop or a simple mouse click. 
 There are almost no learn curves for normal users. Users can create a grid report or 
-a chart report in a minute with tons of customize options. WPT is a great 
+a chart report in a minute with a lot of customize options. WPT is a great 
 choice for any users to analysis their data easily and powerfully.
 
 WPT supports to load data from all kinds of resources: a data file locate 
@@ -52,17 +52,19 @@ integrate it into their own applications or solutions.
 
 There is a released free WPT version downloadable which can be used by 
 non commercial users directly or be used by commercial users for trial purpose. 
-There is no functionality limitation and time limitation for your trial.
 
 If you are statisfied with WPT component, you can purchase a license and
-get a commercial version by using the same download page. Or contact 
+get a commercial version by using the same [download page] [download]. Or 
+contact [Brightsea Inc.] [brightsea]
+
 
 ### Get from [Github website] [github]
 
-There is a public project at Github with the latest version and all past versions.
+This is a public project at Github with the latest version and all past versions.
 
 [download]: http://webpivottable.com/download
 [github]: https://github.com/bright-sea/webpivottable
+[brightsea]: http://brightsea.ca
 
 ### Bower intsall
 
@@ -71,71 +73,84 @@ There is a public project at Github with the latest version and all past version
 
 ## How to use WPT component?
 
-To integrate WPT component into your own web application or web site is 
+### Integrate WPT into web application or web site
+
+Integrating WPT component into your own web application or web site is 
 quite easy. What you need to do is include a css file and a javascript file in your 
 web page.
 
 After you get WPT componnet, you can extract public directory in the package
 to your web root directory. Then follow /public/index.html to include neceesary css file
 and javascript files into your own page.
+    
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <style type="text/css">
+            html, body, #wpt-container {width:100%;height:100%;}
+        </style>
+    
+        <!-- Step 1 -->
+        <link rel='stylesheet' href='brightsea/wpt/wpt.css'>    
+    
+        <!-- Step 2 -->
+        <script type="text/javascript" src="brightsea/wpt/wpt.js"  
+            data-dojo-config="async:1, baseUrl: '/brightsea/dojo/'"></script> 
+        
+        <!-- Step 3 -->    
+        <script type="text/javascript" src="lib/filepicker/index.js"></script>
+        <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-all.js"></script>
+        <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
+    
+        <!-- Step 4 -->
+        <script type="text/javascript">
+            require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
+                new WebPivotTable({},"wpt-container");
+            });
+    	</script>
+    </head>
+    
+    <!-- Step 5 -->
+    <body class="claro">
+    	<div id="wpt-container"></div>
+    </body>
+    </html>
 
 
+* Step1: include wpt.css file into the page
+* Step2: include wpt.js file into the page with correct dojo config
+* Step3: include third party javascript libraries
+* Step4: create WebPivotTable object when dojo domReady
+* Step5: add "claro" class to body tag
+
+_ Please reference [Developer Documents](doc/index.html) for further customization _    
 
 
+### Run independent web application in the package
 
-
-
-
-WPT can be used as an independent enterprise BI solution, it can be also integrated into
-any other web application or web site. OEM or SaaS integrations are also supported.
+We provide a very simple Node.js application which can be run in any environment. 
+Users can try it without any development or integration involved.
 
 
 * Install open source [Node.js](http://nodejs.org) platform on your server machine.
-  Run "node --version" to check whether Node.js has been installed correctly.
-* Install open source [MongoDB](http://www.mongodb.org/) NoSQL database on the same server machine or another server machine in the same network.
-  After MongoDB installation, start MongoDB follow the [MongoDB document](http://docs.mongodb.org/manual/)
-  If you don't want install MongoDB, you can try use cloud based MongoDB. There are lots of cloud based MongoDB in the market, for example, [Compose (original MongoHQ)](https://www.compose.io/) and [MongoLab](https://mongolab.com/).
+  Run " `node --version` "to check whether Node.js has been installed correctly.
 * Download [WPT](http://webpivottable.com/download) and unzip it to a directory.
-  If MongoDB is not on the same server machine, open "app/config.js" file to change "db" parameter to point to correct MongoDB URL.
-* Go to unzipped directory, run "npm install"
-* run "node app"
+* Go to unzipped directory, run " `npm install` " to install neccesary packages
+* run " `node app` " to start web server
 * Open any browser, access http://localhost:8002
 
-<h3 id="integration">Integrate into any web application as javascript component </h3>
 
-* Download [WPT](http://webpivottable.com/download) and unzip it to a directory.
-* Copy all contents under public subdirectory into your web application www root directory.
-
-[Back to Top](#wpttop)
-* * *
-
-<h2 id="resources"> Resources </h2>
-
-### support resources
+## Resources 
 
 * [webpivottable.com](http://webpivottable.com/)
 * [Demo](http://webpivottable.com/demo) 
 * [Documents](http://webpivottable.com/documents)
 * [Forums](http://brightsea.ca/forum) 
+* [Download](http://webpivottable.com/download)
 
  
-### Dependence resources:
-
-* [dojo](http://dojotoolkit.org/) 
-* [dgrid](https://github.com/SitePen/dgrid)
-* [dstore](https://github.com/sitepen/dstore) 
-* [put-selector](https://github.com/kriszyp/put-selector) 
-* [xstyle](https://github.com/kriszyp/xstyle)
-* [Highcharts](http://www.highcharts.com/)
-* [node.js](http://nodejs.org/)
-* [xls.js]( https://github.com/SheetJS/js-xls)
-* [xlsx.js](https://github.com/SheetJS/js-xlsx)
-
-[Back to Top](#wpttop)
-* * *
-
-
-# Browser Support
+## Browser Support
 
 * IE9+
 * Firefox, Chrome, Safari
