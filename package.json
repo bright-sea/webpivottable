@@ -1,6 +1,6 @@
 {
   "name": "WebPivotTable",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "A pure javascript pivot table and pivot chart component.",
   "author": {
     "name": "Minghai Zhao",

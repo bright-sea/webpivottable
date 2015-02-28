@@ -416,8 +416,7 @@ html.has-mozilla .dgrid-focus {
 .wpt-toolbar-container .wpt-toolbar-item {
     padding-top:3px;
 }
-.wpt-leftmenu-pane{
-    width: 20px;
+.wpt-options-menu{
 }
 .wpt-main-container {
     width:100%;

@@ -1,22 +1,21 @@
 [Back to Home](./index.html)
 
 
-## Customize the look and feel of WebPivotTable:
+## Customize the look and feel of WPT component:
 
-We designed the WPT component to be as flexible as possible for web developers to customize.
-There are many options to consider, all of which can be switched on or off before being passed
-as parameters when creating the WebPivotTable object on your page or can be set by API after
-WebPivotTable object had been created.
+WPT component can be customized by web developers through cutomize options.
 
-### Pass in cutomize options when create WebPivotTable object
+There are many [Customize Options](#customizeoptions), all of which can be passed
+in parameters when creating the WebPivotTable object on your page or can be set 
+by API after WebPivotTable object had been created.
+
+### Pass in customize options when create WebPivotTable object
 
     var myOptions = {}
     new WebPivotTable({customOptions:myOptions},"wpt-container");
 
-Please reference [Customize Options](#cutomizeoptions) to all the options and their default values. 
-You can change all or part of these options, then pass them to the constructor:
-
-Keep in mind that it’s  unnecessary to pass options you wish to leave as default. For example, if you only want to hide open and save buttons, you can pass customOptions as:
+It’s unnecessary to pass options you wish to leave as default. For example, 
+if you only want to hide open and save buttons, you can pass customOptions as:
 
     var myOptions = {
        uiFlags: {
@@ -28,49 +27,69 @@ Keep in mind that it’s  unnecessary to pass options you wish to leave as defau
 
 ### Set cutomize options for existing WebPivotTable object
 
-Even after WPT object being created, you can still change options:
+Even after WebPivotTable object being created, you can still change options:
 
     var webPivotTable  = new WebPivotTable({},"wpt-container");
     webPivotTable.setOptions(customOptions);
 
 
-<h3 id="cutomizeoptions">Customize Options</h3>
+<h3 id="customizeoptions">Customize Options</h3>
 
     {
 
-        locale: 'en',  // 'en','zh','es','pt',‘fr','de','ar','ru','it','nl','el','he','hi','hu','sv','ko','ja'
-        availableLocales: ['en','zh','es','pt','it'],
+        locale: 'en',  // current language locale
+        availableLocales: ['en','zh','es','pt','it'], //selectable locale at UI
+                       // 'en','zh','es','pt',‘fr','de','ar','ru','it',
+                       // 'nl','el','he','hi','hu','sv','ko','ja'
 
-        leavePageWarning: 1,
+        leavePageWarning: 1, //When leave page, whether to show a warning
 
         uiFlags: {
-            newWptBtn: 1,
-            openWptBtn: 1,
-            saveWptBtn: 1,
-            switchViewBtn: 1,
-            userBtn: 1,
-            navPaneBtn: 1,
+            switchViewBtn: 1,     // show/hide TopBar view switch buttons
+            newWptBtn: 1,         // show/hide TopBar "Create New WPT" button
+            openWptBtn: 1,        // show/hide TopBar "Open WPT" button
+            saveWptBtn: 1,        // show/hide TopBar "Save WPT" button
+            
+            navPaneBtn: 1,        // show/hide TopBar "Show pivot fields list" button
+            userBtn: 1,           // show/hide TopBar "Users" dropdown button
             settingBtn: 1,
-            languageSwitchBtn: 1, // show/hide 'Language Switch' dropdown button: 1/0
-            helpBtn: 1, // show/hide 'Help' button: 1/0
-            aboutBtn: 1, // show/hide 'About' button: 1/0
+            languageSwitchBtn: 1, // show/hide TopBar 'Language' dropdown button
+            helpBtn: 1,           // show/hide TopBar 'Help' button, but not work for free version
+            aboutBtn: 1,          // show/hide TopBar 'About' button, but not work for free version
 
-            memoryTab: 1,
-            olapTab: 1,
-            internetLinkTab: 1,
-            cloudDriveBtn: 1,
-            localDriveTab: 1,
-            googleSpreadSheetTab: 1,
-            copyPasteTab: 1,
+            memoryTab: 1,         // show/hide Load data dialog "Local Memory" Tab
+            olapTab: 1,           // show/hide Load data dialog "OLAP Cube" Tab
+            internetLinkTab: 1,   // show/hide Load data dialog "Internet Link" Tab
+            cloudDriveBtn: 1,     // show/hide Load data dialog "Goto Cloud Drive" Button
+            localDriveTab: 1,     // show/hide Load data dialog "Local Drive" Tab
+            googleSpreadSheetTab: 1, // show/hide Load data dialog "Google Spreadsheet" Tab
+            copyPasteTab: 1,      // show/hide Load data dialog "Copy & Paste" Tab
 
-            localSaveTab: 1,
-            serverSaveTab: 1,
+            localSaveTab: 1,      // show/hide Save WPT dialog "Save to local" Tab
+            serverSaveTab: 1,     // show/hide Save WPT dialog "Save to Server" Tab
+            
+            showDimInfoWhenHover: 0, // Whether Show Dimension/hierachy/level Tooltip when mouse hover
+            
+            sheetBarPivot: 1,     // show/hide Pivot buttons on sheet bar
+            sheetBarFields: 1,    // show/hide Pivot fields on sheet bar
+            
+            sheetSwitchBtn: 1,    // show/hide "switch grid and chart" button on sheet bar
+            sheetLayoutBtn: 1,    // show/hide "grid & chart layout" buttons on sheet bar
+            sheetMenuBtn: 1,    // show/hide menu button on sheet bar
 
-            showDimInfoWhenHover: 0,
+            exportGridMenu: 1,    // show/hide "export"  menu on sheet pivot grid menu bar
+            exportChartMenu: 1,   // show/hide "export"  menu on sheet pivot chart menu bar
+            exportReportMenu: 1,  // show/hide "export"  menu on report bar
+            
+            exportToExcel: 1,     // support "Export to Excel"
+            exportToHtml: 1,      // support "Export to HTML"
+            exportToPdf: 1,       // support "Export to PDF"
+            exportToPng: 1,       // support "Export to PNG"
+            exportToJpeg: 1,      // support "Export to JPEG"
+            exportToGif: 1,       // support "Export to GIF"
 
-            zoomBtn: 1,
-            fullScreenBtn: 1,
-            exportExcelBtn: 1
+            zoomBtn: 1,           // show/hide "Zoom"  menu on sheet control menu bar
+            fullScreenBtn: 1      // Support "Full Screen" mode for grid & chart
         },
 
         fileLinks:[],
@@ -132,20 +151,23 @@ Even after WPT object being created, you can still change options:
             cellHeight: 25
         },
 
-
-
         report: {
 
         },
 
         sheet:{
-            chartFirst: 0, //show chart at top/left? 0/1
-            pivotLayout: '1', // Pivot Grid and chart layout
-            // 0 -- tile horizontal, 1 -- tile vertical,
-            // 2 -- grid only,  3 -- chart only
+            controlMenuBar: {  //Grid & Chart control menu bar
+                show: 1,   // show/hide: 1/0
+                position:'right', // position: 'left', 'right'
+                width:25
+            },
 
-            expandRows: 1,
-            expandCols: 1,
+            chartFirst: 0,          // show chart at top/left? 0/1
+            pivotLayout: '1',       // Pivot Grid and chart layout
+                                    // 0 -- tile horizontal, 1 -- tile vertical,
+                                    // 2 -- grid only,  3 -- chart only
+            expandRows: 1,          // Expand/collapse All rows
+            expandCols: 1,          // Expand/Collapse All columns  
             nonEmpty: 1,
             mdx: ''
         },

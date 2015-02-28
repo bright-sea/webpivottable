@@ -6,7 +6,7 @@
 * Add a dashboard view for user
 * Add user admin dialogs for user sign/up/password
 * Save WPT to backend database directly 
-* Change all dialog to non modal and more funncy with dojox dialog
+* Change all dialog to non modal and more fancy with dojox dialog
 * Change all title hint to Tooltip to improve user experience
 * Add more options to customize user interface
 * redesign data source view to have multiple tabs.

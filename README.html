@@ -113,59 +113,56 @@
   </head>
   <body>  
     <h1 id="wpt-webpivottable-">WPT (WebPivotTable)</h1>
-<p>WPT is a pivot table and pivot chart component which mimics all functionalities 
-of Microsoft Excel Pivot Table with more intuitive user interface. It is pure javascript 
-based so that it can be run totally in browsers and can be easily integrated into any 
-web applications or any web pages.</p>
+<p>WPT is a pivot table and pivot chart implementation which mimics all functionalities 
+of Microsoft Excel Pivot Table with intuitive web user interface. </p>
+<p>It is a javascript component so that it can be run in browsers and be easily integrated 
+into any web applications or any web pages.</p>
 <h2 id="why-wpt-">Why WPT?</h2>
 <p><a href="http://en.wikipedia.org/wiki/Pivot_table">Pivot table</a> is a very useful tool for data analyst. Microsoft Excel pivot table is 
 the most popular implementation. Everyday, millions of users use it to analyze their 
 data, create reports. It is also the major client side tool within Microsoft Business
 Intelligence solution to pivot Microsoft Analysis Service (SSAS) cubes interactively.</p>
-<p>Despite the fact that pivot tables have been a cornerstone of Excel, they remain
+<p>Despite the fact that pivot table have been a cornerstone of Excel, it remains
 one of the most underutilized tools in the entire Microsoft Office Suite since 
-they are not intuitive enough to be used by normal users and there are hard to be
-integrated into other applications by professional developers.</p>
+it is not intuitive enough to be used by normal users and hard to be integrated 
+into other applications by professional developers.</p>
 <p><strong>WPT comes to the rescue!</strong></p>
 <p>WPT is a pure javascript implementation of pivot table and pivot chart.
-Since the only requirement to run WPT is a browser, WPT can be 
-easily used on any kind of devices (desktop computers, laptops, notebooks, tablets, 
-smart phones, terminals, etc. ). Users can use the same WPT to analyst their 
-data anytime anywhere on any devices.</p>
-<p>WPT mimics all functionalities of Excel pivot table. By leverage the 
-powerful web technology, it provides a very intuitive user interface for normal users. 
-Most of WPT operations are just a simple drag and drop or a simple mouse click. 
-There are almost no learn curves for normal users. Users can create a grid report or 
-a chart report in a minute with a lot of customize options. WPT is a great 
+Since the only requirement to run WPT is a browser, WPT can be used on any kind of 
+devices (desktop computers, laptops, notebooks, tablets, smart phones, etc. ). </p>
+<p>WPT mimics all functionalities of Excel pivot table with very intuitive web user
+interface. There are almost no learn curves for normal users. Users can create an
+analysis report in minutes with a lot of customize options. WPT is a great 
 choice for any users to analysis their data easily and powerfully.</p>
 <p>WPT supports to load data from all kinds of resources: a data file locate 
-in local drive, a data file locate in a cloud drive or an Internet data link. 
-The data format can be any of the most popular formats, like CSV, XLS, XLSX and 
-Google spreadsheet. WPT also provide APIs (Application Programming Interface) 
-for professional developers to load data from any back end SQL databases dynamically. 
-It also support to pivot data directly on any OLAP (On Line Analysis Process) servers, 
+at local drive, or at a cloud drive or an Internet link. The data format can be 
+any of the most popular formats, like CSV, XLS, XLSX and Google spreadsheet. 
+WPT also provide APIs (Application Programming Interface) for professional developers 
+to load data from any back end SQL databases dynamically. 
+It also support to pivot data directly on any OLAP (Online Analysis Process) servers, 
 like Microsoft Analyst Service, Pentaho Mondrian and icCube. 
 All these supports makes WPT a great choice for professional developers to 
 integrate it into their own applications or solutions.</p>
 <h2 id="how-to-get-wpt-component-">How to get WPT component?</h2>
-<h3 id="get-from-wpt-website-download-">Get from <a href="http://webpivottable.com/download">WPT website</a></h3>
-<p>There is a released free WPT version downloadable which can be used by 
-non commercial users directly or be used by commercial users for trial purpose. </p>
+<h3 id="get-it-from-webpivottable-com-download-">Get it from <a href="http://webpivottable.com/download">webpivottable.com</a></h3>
+<p>There is a released free WPT version downloadable which can be used by non 
+commercial users directly or be used by commercial users for trial purpose. </p>
 <p>If you are statisfied with WPT component, you can purchase a license and
 get a commercial version by using the same <a href="http://webpivottable.com/download">download page</a>. Or 
-contact <a href="http://brightsea.ca">Brightsea Inc.</a></p>
-<h3 id="get-from-github-website-github-">Get from <a href="https://github.com/bright-sea/webpivottable">Github website</a></h3>
+<a href="http://brightsea.ca/contact">contact us</a> directly.</p>
+<h3 id="get-it-from-github-github-">Get it from <a href="https://github.com/bright-sea/webpivottable">Github</a></h3>
 <p>This is a public project at Github with the latest version and all past versions.</p>
-<h3 id="bower-intsall">Bower intsall</h3>
+<h3 id="install-it-using-bower">Install it using Bower</h3>
+<p>If you are using <a href="http://bower.io/">Bower</a> to manage your packages, you can intsall WPT by:   </p>
 <pre><code>bower install webpivottable
 </code></pre><h2 id="how-to-use-wpt-component-">How to use WPT component?</h2>
 <h3 id="integrate-wpt-into-web-application-or-web-site">Integrate WPT into web application or web site</h3>
-<p>Integrating WPT component into your own web application or web site is 
-quite easy. What you need to do is include a css file and a javascript file in your 
+<p>Integrating WPT component into your own web application or web site is quite easy. 
+What you need to do is import a css file and some javascript files in your 
 web page.</p>
-<p>After you get WPT componnet, you can extract public directory in the package
-to your web root directory. Then follow /public/index.html to include neceesary css file
-and javascript files into your own page.</p>
+<p>After you get WPT componnet, you can extract all contents in &quot;public&quot; subdirectory
+to your web root directory. Then follow /public/index.html to import neceesary css file
+and javascript files into your page.</p>
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -173,20 +170,20 @@ and javascript files into your own page.</p>
         html, body, #wpt-container {width:100%;height:100%;}
     &lt;/style&gt;
 
-    &lt;!-- Step 1 --&gt;
+    &lt;!-- Step 1 import wpt.css file into the page --&gt;
     &lt;link rel=&#39;stylesheet&#39; href=&#39;brightsea/wpt/wpt.css&#39;&gt;    
 
-    &lt;!-- Step 2 --&gt;
+    &lt;!-- Step 2 import wpt.js file into the page with correct dojo config--&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;brightsea/wpt/wpt.js&quot;  
         data-dojo-config=&quot;async:1, baseUrl: &#39;/brightsea/dojo/&#39;&quot;&gt;&lt;/script&gt; 
 
-    &lt;!-- Step 3 --&gt;    
+    &lt;!-- Step 3 import third party javascript libraries--&gt;    
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/filepicker/index.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/highcharts-release/highcharts-all.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/grouped_categories/grouped-categories.js&quot;&gt;&lt;/script&gt;
 
-    &lt;!-- Step 4 --&gt;
+    &lt;!-- Step 4 create WebPivotTable object after dojo domReady--&gt;
     &lt;script type=&quot;text/javascript&quot;&gt;
         require([&quot;wpt/WebPivotTable&quot;,&quot;dojo/domReady!&quot;], function(WebPivotTable){
             new WebPivotTable({},&quot;wpt-container&quot;);
@@ -194,19 +191,19 @@ and javascript files into your own page.</p>
     &lt;/script&gt;
 &lt;/head&gt;
 
-&lt;!-- Step 5 --&gt;
+&lt;!-- Step 5 add &quot;claro&quot; class to body tag--&gt;
 &lt;body class=&quot;claro&quot;&gt;
     &lt;div id=&quot;wpt-container&quot;&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre><ul>
-<li>Step1: include wpt.css file into the page</li>
-<li>Step2: include wpt.js file into the page with correct dojo config</li>
-<li>Step3: include third party javascript libraries</li>
-<li>Step4: create WebPivotTable object when dojo domReady</li>
+<li>Step1: import wpt.css file into the page</li>
+<li>Step2: import wpt.js file into the page with correct dojo config</li>
+<li>Step3: import third party javascript libraries</li>
+<li>Step4: create WebPivotTable object after dojo domReady</li>
 <li>Step5: add &quot;claro&quot; class to body tag</li>
 </ul>
-<p><em> Please reference <a href="doc/index.html">Developer Documents</a> for further customization </em>    </p>
+<p><em> Please reference <a href="doc/index.html">Developer&#39;s Documents</a> for further customization. </em>    </p>
 <h3 id="run-independent-web-application-in-the-package">Run independent web application in the package</h3>
 <p>We provide a very simple Node.js application which can be run in any environment. 
 Users can try it without any development or integration involved.</p>

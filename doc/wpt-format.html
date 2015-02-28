@@ -114,13 +114,16 @@
   <body>  
     <p><a href="./index.html">Back to Home</a></p>
 <h2 id="what-s-wpt-file-">What&#39;s WPT file?</h2>
-<p>WPT file is a WebPivotTable file which includes your data and pivot selections. 
-WebPivotTable component allows you to save your content in a WPT file, which can then be opened directly.</p>
+<p>WPT file is a text file which includes data and pivot selections. WPT component 
+allows users to save their data and pivot selections in a WPT file, then this file
+can be opened by WPT component anytime and everything will be exactly the same as
+when it saved.</p>
 <h2 id="wpt-format">WPT format</h2>
 <p>The WPT format is pretty simple; it&#39;s just a string of JSON objects. Here is a sample:</p>
 <pre><code>{
-    &quot;format&quot;: &quot;WPT&quot;,
-    &quot;version&quot;: &quot;2.0&quot;,
+    &quot;format&quot;: &quot;WPT&quot;,             // fixed
+    &quot;version&quot;: &quot;2.0&quot;,            // will increase when format changed
+
     &quot;sources&quot;:[{
         &quot;id&quot;:1,
         &quot;name&quot;:&quot;Source1&quot;,
@@ -134,11 +137,6 @@ WebPivotTable component allows you to save your content in a WPT file, which can
               0      // the last field
             ],
             ...
-            [            
-               3999,
-               ...
-               1
-            ]
         ],
         &quot;fields&quot;: [        // fields array
             {
@@ -154,25 +152,9 @@ WebPivotTable component allows you to save your content in a WPT file, which can
                 &quot;type&quot;:&quot;NUMBER&quot;  // MEASURE -- number    ATTRIBUTE -- string
             },
             ...
-            {
-                &quot;id&quot;:6,
-                &quot;name&quot;:&quot;6&quot;,
-                &quot;label&quot;:&quot;BALLOT STATUS&quot;,
-                &quot;lookups&quot;:[
-                    &quot;PERM&quot;,
-                    ...
-                    &quot;ABT&quot;
-                ],
-               &quot;type&quot;:&quot;STRING&quot;
-            }
         ]
     },
     ...
-    {
-        &quot;id&quot;: 3,
-        &quot;name&quot;: &quot;Source3&quot;,
-        ...
-    }
 ],
 
 &quot;sheets&quot;:[{
@@ -184,7 +166,7 @@ WebPivotTable component allows you to save your content in a WPT file, which can
         &quot;name&quot;:&quot;0&quot;,
         &quot;label&quot;:&quot;VOTER&quot;,
         &quot;sort&quot;:{        // if not exist, default to descend = 0
-                   // and sortValieId =0
+                        //               and sortValueId =0
             descend: 0,   // 0--ascend  1--descend
             sortValueId: 0 // 0: sort by self field,
                       //otherwise is the id of value field
@@ -195,7 +177,6 @@ WebPivotTable component allows you to save your content in a WPT file, which can
                 0: 1,    // key is the lookups key  
                 4: 1,
                 ...
-                100:1
             ],
             filterValueId: 1,  // filter by or top value field id
                               //(for filterType =1 or =2)
@@ -231,16 +212,16 @@ WebPivotTable component allows you to save your content in a WPT file, which can
     &quot;values&quot;:[{      // pivot selection of values
         &quot;id&quot;:1,          // an unique id (start from 1)
         &quot;label&quot;:&quot;Sum of PRECINCT&quot;,  //display label
-        &quot;fieldIndex&quot;:2,  // base field index of fields
-        &quot;stats&quot;:&quot;Sum&quot;,   // Sum/Count/Average/Max/Min/
-                         // Median/Mode/Stddev/Variance
-        &quot;showValueAs&quot;: 0, // if not exist, the same as 0
-                   //    0 - No Calculation
-                  //    1 - % of Grand total
-                  //    2 - % of column total
-                  //    3 - % of row total
-                  //    4 - % of parent column
-                  //    5 - % of parent row
+        &quot;fieldIndex&quot;:2,    // base field index of fields
+        &quot;stats&quot;:&quot;Sum&quot;,     // Sum/Count/Average/Max/Min/
+                           // Median/Mode/Stddev/Variance
+        &quot;showValueAs&quot;: 0,  // if not exist, the same as 0
+                           //    0 - No Calculation
+                           //    1 - % of Grand total
+                           //    2 - % of column total
+                           //    3 - % of row total
+                           //    4 - % of parent column
+                           //    5 - % of parent row
         &quot;format&quot;:{        // if nor exist, the same as category =&quot;GENERAL&quot;
             category: &quot;NUMBER&quot;,  //
                    // GENERAL --- No format
@@ -251,18 +232,18 @@ WebPivotTable component allows you to save your content in a WPT file, which can
             separatorFlag: true,  // true/false add thousand Separator or not  
             symbol: &quot;$&quot;,    // currency symbol
             symbolSuffix: 0,   // 0/1    0 --- prefix   1--- suffix
-            negative: 0       // negative number format
-                //  0 ---  no format -1234.5678
-                //  1 ---  (1234.5678)
-                //  2 ---  (-1234.5678)
-                //  3 --- (1234.5678)
-                //  4 --- (-1234.5678)
+            negative: 0     // negative number format
+                            //  0 ---  no format -1234.5678
+                            //  1 ---  (1234.5678)
+                            //  2 ---  (-1234.5678)
+                            //  3 --- (1234.5678)
+                            //  4 --- (-1234.5678)
             }
         }],
-        &quot;valuesInAxis&quot;:-1,   // if values length &gt;1, values in which axis
-                //  0--cols  1--rows else -1
-        &quot;valuesIndex&quot;:-1,    // if value length &gt;1, the index of values in axis
-                // else -1
+        &quot;valuesInAxis&quot;:-1,  // if values length &gt;1, values in which axis
+                            //  0--cols  1--rows else -1
+        &quot;valuesIndex&quot;:-1,   // if value length &gt;1, the index of values in axis
+                            // else -1
         &quot;sheetOptions&quot;:{
             &quot;chartFirst&quot;:0,
             &quot;pivotLayout&quot;:&quot;1&quot;,
@@ -363,7 +344,7 @@ WebPivotTable component allows you to save your content in a WPT file, which can
     ],
     &quot;ptIndex&quot;:0,&quot;
     &quot;dsIndex&quot;:0,&quot;
-    view&quot;:&quot;PIVOTTABLE&quot;
+    &quot;view&quot;:&quot;PIVOTTABLE&quot;
 }
 </code></pre>
   </body>

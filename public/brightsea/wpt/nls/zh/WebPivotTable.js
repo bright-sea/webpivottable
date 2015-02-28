@@ -121,7 +121,7 @@ define({
     Btn_OK: "确定",
     Btn_Cancel: "取消",
 
-    /* PivotBar.js  */    
+    /* SheetBar.js  */
 
     Tip_ShowPivotFieldsList: "显示数据透视字段列表",
     Tip_HidePivotFieldsList: "隐藏数据透视字段列表",

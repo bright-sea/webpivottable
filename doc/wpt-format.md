@@ -2,16 +2,19 @@
 
 ## What's WPT file?
 
-WPT file is a WebPivotTable file which includes your data and pivot selections. 
-WebPivotTable component allows you to save your content in a WPT file, which can then be opened directly.
+WPT file is a text file which includes data and pivot selections. WPT component 
+allows users to save their data and pivot selections in a WPT file, then this file
+can be opened by WPT component anytime and everything will be exactly the same as
+when it saved.
 
 ## WPT format
 
 The WPT format is pretty simple; it's just a string of JSON objects. Here is a sample:
 
     {
-        "format": "WPT",
-        "version": "2.0",
+        "format": "WPT",             // fixed
+        "version": "2.0",            // will increase when format changed
+        
         "sources":[{
             "id":1,
             "name":"Source1",
@@ -25,11 +28,6 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                   0      // the last field
                 ],
                 ...
-                [            
-                   3999,
-                   ...
-                   1
-                ]
             ],
             "fields": [        // fields array
                 {
@@ -45,25 +43,9 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                     "type":"NUMBER"  // MEASURE -- number    ATTRIBUTE -- string
                 },
                 ...
-                {
-                    "id":6,
-                    "name":"6",
-                    "label":"BALLOT STATUS",
-                    "lookups":[
-                        "PERM",
-                        ...
-                        "ABT"
-                    ],
-                   "type":"STRING"
-                }
             ]
         },
         ...
-        {
-            "id": 3,
-            "name": "Source3",
-            ...
-        }
     ],
         
     "sheets":[{
@@ -75,7 +57,7 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
             "name":"0",
             "label":"VOTER",
             "sort":{        // if not exist, default to descend = 0
-                       // and sortValieId =0
+                            //               and sortValueId =0
                 descend: 0,   // 0--ascend  1--descend
                 sortValueId: 0 // 0: sort by self field,
                           //otherwise is the id of value field
@@ -86,7 +68,6 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                     0: 1,    // key is the lookups key  
                     4: 1,
                     ...
-                    100:1
                 ],
                 filterValueId: 1,  // filter by or top value field id
                                   //(for filterType =1 or =2)
@@ -122,16 +103,16 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
         "values":[{      // pivot selection of values
             "id":1,          // an unique id (start from 1)
             "label":"Sum of PRECINCT",  //display label
-            "fieldIndex":2,  // base field index of fields
-            "stats":"Sum",   // Sum/Count/Average/Max/Min/
-                             // Median/Mode/Stddev/Variance
-            "showValueAs": 0, // if not exist, the same as 0
-                       //    0 - No Calculation
-                      //    1 - % of Grand total
-                      //    2 - % of column total
-                      //    3 - % of row total
-                      //    4 - % of parent column
-                      //    5 - % of parent row
+            "fieldIndex":2,    // base field index of fields
+            "stats":"Sum",     // Sum/Count/Average/Max/Min/
+                               // Median/Mode/Stddev/Variance
+            "showValueAs": 0,  // if not exist, the same as 0
+                               //    0 - No Calculation
+                               //    1 - % of Grand total
+                               //    2 - % of column total
+                               //    3 - % of row total
+                               //    4 - % of parent column
+                               //    5 - % of parent row
             "format":{        // if nor exist, the same as category ="GENERAL"
                 category: "NUMBER",  //
                        // GENERAL --- No format
@@ -142,18 +123,18 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                 separatorFlag: true,  // true/false add thousand Separator or not  
                 symbol: "$",    // currency symbol
                 symbolSuffix: 0,   // 0/1    0 --- prefix   1--- suffix
-                negative: 0       // negative number format
-                    //  0 ---  no format -1234.5678
-                    //  1 ---  (1234.5678)
-                    //  2 ---  (-1234.5678)
-                    //  3 --- (1234.5678)
-                    //  4 --- (-1234.5678)
+                negative: 0     // negative number format
+                                //  0 ---  no format -1234.5678
+                                //  1 ---  (1234.5678)
+                                //  2 ---  (-1234.5678)
+                                //  3 --- (1234.5678)
+                                //  4 --- (-1234.5678)
                 }
             }],
-            "valuesInAxis":-1,   // if values length >1, values in which axis
-                    //  0--cols  1--rows else -1
-            "valuesIndex":-1,    // if value length >1, the index of values in axis
-                    // else -1
+            "valuesInAxis":-1,  // if values length >1, values in which axis
+                                //  0--cols  1--rows else -1
+            "valuesIndex":-1,   // if value length >1, the index of values in axis
+                                // else -1
             "sheetOptions":{
                 "chartFirst":0,
                 "pivotLayout":"1",
@@ -254,5 +235,5 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
         ],
         "ptIndex":0,"
         "dsIndex":0,"
-        view":"PIVOTTABLE"
+        "view":"PIVOTTABLE"
     }

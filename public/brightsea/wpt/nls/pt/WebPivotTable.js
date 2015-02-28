@@ -124,7 +124,7 @@ define({
     Btn_OK: "OK",
     Btn_Cancel: "Cancelar",
 
-    /* PivotBar.js  */
+    /* SheetBar.js  */
 
     Tip_ShowPivotFieldsList: "Mostar a Lista de Campos do Pivot",
     Tip_HidePivotFieldsList: "Esconder a Lista de Campos do Pivot",

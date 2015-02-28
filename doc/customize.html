@@ -113,17 +113,16 @@
   </head>
   <body>  
     <p><a href="./index.html">Back to Home</a></p>
-<h2 id="customize-the-look-and-feel-of-webpivottable-">Customize the look and feel of WebPivotTable:</h2>
-<p>We designed the WPT component to be as flexible as possible for web developers to customize.
-There are many options to consider, all of which can be switched on or off before being passed
-as parameters when creating the WebPivotTable object on your page or can be set by API after
-WebPivotTable object had been created.</p>
-<h3 id="pass-in-cutomize-options-when-create-webpivottable-object">Pass in cutomize options when create WebPivotTable object</h3>
+<h2 id="customize-the-look-and-feel-of-wpt-component-">Customize the look and feel of WPT component:</h2>
+<p>WPT component can be customized by web developers through cutomize options.</p>
+<p>There are many <a href="#customizeoptions">Customize Options</a>, all of which can be passed
+in parameters when creating the WebPivotTable object on your page or can be set 
+by API after WebPivotTable object had been created.</p>
+<h3 id="pass-in-customize-options-when-create-webpivottable-object">Pass in customize options when create WebPivotTable object</h3>
 <pre><code>var myOptions = {}
 new WebPivotTable({customOptions:myOptions},&quot;wpt-container&quot;);
-</code></pre><p>Please reference <a href="#cutomizeoptions">Customize Options</a> to all the options and their default values. 
-You can change all or part of these options, then pass them to the constructor:</p>
-<p>Keep in mind that it’s  unnecessary to pass options you wish to leave as default. For example, if you only want to hide open and save buttons, you can pass customOptions as:</p>
+</code></pre><p>It’s unnecessary to pass options you wish to leave as default. For example, 
+if you only want to hide open and save buttons, you can pass customOptions as:</p>
 <pre><code>var myOptions = {
    uiFlags: {
       openWptBtn: 0,
@@ -132,46 +131,66 @@ You can change all or part of these options, then pass them to the constructor:<
 }
 new WebPivotTable({customOptions:myOptions},&quot;wpt-container&quot;);
 </code></pre><h3 id="set-cutomize-options-for-existing-webpivottable-object">Set cutomize options for existing WebPivotTable object</h3>
-<p>Even after WPT object being created, you can still change options:</p>
+<p>Even after WebPivotTable object being created, you can still change options:</p>
 <pre><code>var webPivotTable  = new WebPivotTable({},&quot;wpt-container&quot;);
 webPivotTable.setOptions(customOptions);
-</code></pre><h3 id="cutomizeoptions">Customize Options</h3>
+</code></pre><h3 id="customizeoptions">Customize Options</h3>
 
 <pre><code>{
 
-    locale: &#39;en&#39;,  // &#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,‘fr&#39;,&#39;de&#39;,&#39;ar&#39;,&#39;ru&#39;,&#39;it&#39;,&#39;nl&#39;,&#39;el&#39;,&#39;he&#39;,&#39;hi&#39;,&#39;hu&#39;,&#39;sv&#39;,&#39;ko&#39;,&#39;ja&#39;
-    availableLocales: [&#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,&#39;it&#39;],
+    locale: &#39;en&#39;,  // current language locale
+    availableLocales: [&#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,&#39;it&#39;], //selectable locale at UI
+                   // &#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,‘fr&#39;,&#39;de&#39;,&#39;ar&#39;,&#39;ru&#39;,&#39;it&#39;,
+                   // &#39;nl&#39;,&#39;el&#39;,&#39;he&#39;,&#39;hi&#39;,&#39;hu&#39;,&#39;sv&#39;,&#39;ko&#39;,&#39;ja&#39;
 
-    leavePageWarning: 1,
+    leavePageWarning: 1, //When leave page, whether to show a warning
 
     uiFlags: {
-        newWptBtn: 1,
-        openWptBtn: 1,
-        saveWptBtn: 1,
-        switchViewBtn: 1,
-        userBtn: 1,
-        navPaneBtn: 1,
+        switchViewBtn: 1,     // show/hide TopBar view switch buttons
+        newWptBtn: 1,         // show/hide TopBar &quot;Create New WPT&quot; button
+        openWptBtn: 1,        // show/hide TopBar &quot;Open WPT&quot; button
+        saveWptBtn: 1,        // show/hide TopBar &quot;Save WPT&quot; button
+
+        navPaneBtn: 1,        // show/hide TopBar &quot;Show pivot fields list&quot; button
+        userBtn: 1,           // show/hide TopBar &quot;Users&quot; dropdown button
         settingBtn: 1,
-        languageSwitchBtn: 1, // show/hide &#39;Language Switch&#39; dropdown button: 1/0
-        helpBtn: 1, // show/hide &#39;Help&#39; button: 1/0
-        aboutBtn: 1, // show/hide &#39;About&#39; button: 1/0
+        languageSwitchBtn: 1, // show/hide TopBar &#39;Language&#39; dropdown button
+        helpBtn: 1,           // show/hide TopBar &#39;Help&#39; button, but not work for free version
+        aboutBtn: 1,          // show/hide TopBar &#39;About&#39; button, but not work for free version
 
-        memoryTab: 1,
-        olapTab: 1,
-        internetLinkTab: 1,
-        cloudDriveBtn: 1,
-        localDriveTab: 1,
-        googleSpreadSheetTab: 1,
-        copyPasteTab: 1,
+        memoryTab: 1,         // show/hide Load data dialog &quot;Local Memory&quot; Tab
+        olapTab: 1,           // show/hide Load data dialog &quot;OLAP Cube&quot; Tab
+        internetLinkTab: 1,   // show/hide Load data dialog &quot;Internet Link&quot; Tab
+        cloudDriveBtn: 1,     // show/hide Load data dialog &quot;Goto Cloud Drive&quot; Button
+        localDriveTab: 1,     // show/hide Load data dialog &quot;Local Drive&quot; Tab
+        googleSpreadSheetTab: 1, // show/hide Load data dialog &quot;Google Spreadsheet&quot; Tab
+        copyPasteTab: 1,      // show/hide Load data dialog &quot;Copy &amp; Paste&quot; Tab
 
-        localSaveTab: 1,
-        serverSaveTab: 1,
+        localSaveTab: 1,      // show/hide Save WPT dialog &quot;Save to local&quot; Tab
+        serverSaveTab: 1,     // show/hide Save WPT dialog &quot;Save to Server&quot; Tab
 
-        showDimInfoWhenHover: 0,
+        showDimInfoWhenHover: 0, // Whether Show Dimension/hierachy/level Tooltip when mouse hover
 
-        zoomBtn: 1,
-        fullScreenBtn: 1,
-        exportExcelBtn: 1
+        sheetBarPivot: 1,     // show/hide Pivot buttons on sheet bar
+        sheetBarFields: 1,    // show/hide Pivot fields on sheet bar
+
+        sheetSwitchBtn: 1,    // show/hide &quot;switch grid and chart&quot; button on sheet bar
+        sheetLayoutBtn: 1,    // show/hide &quot;grid &amp; chart layout&quot; buttons on sheet bar
+        sheetMenuBtn: 1,    // show/hide menu button on sheet bar
+
+        exportGridMenu: 1,    // show/hide &quot;export&quot;  menu on sheet pivot grid menu bar
+        exportChartMenu: 1,   // show/hide &quot;export&quot;  menu on sheet pivot chart menu bar
+        exportReportMenu: 1,  // show/hide &quot;export&quot;  menu on report bar
+
+        exportToExcel: 1,     // support &quot;Export to Excel&quot;
+        exportToHtml: 1,      // support &quot;Export to HTML&quot;
+        exportToPdf: 1,       // support &quot;Export to PDF&quot;
+        exportToPng: 1,       // support &quot;Export to PNG&quot;
+        exportToJpeg: 1,      // support &quot;Export to JPEG&quot;
+        exportToGif: 1,       // support &quot;Export to GIF&quot;
+
+        zoomBtn: 1,           // show/hide &quot;Zoom&quot;  menu on sheet control menu bar
+        fullScreenBtn: 1      // Support &quot;Full Screen&quot; mode for grid &amp; chart
     },
 
     fileLinks:[],
@@ -233,20 +252,23 @@ webPivotTable.setOptions(customOptions);
         cellHeight: 25
     },
 
-
-
     report: {
 
     },
 
     sheet:{
-        chartFirst: 0, //show chart at top/left? 0/1
-        pivotLayout: &#39;1&#39;, // Pivot Grid and chart layout
-        // 0 -- tile horizontal, 1 -- tile vertical,
-        // 2 -- grid only,  3 -- chart only
+        controlMenuBar: {  //Grid &amp; Chart control menu bar
+            show: 1,   // show/hide: 1/0
+            position:&#39;right&#39;, // position: &#39;left&#39;, &#39;right&#39;
+            width:25
+        },
 
-        expandRows: 1,
-        expandCols: 1,
+        chartFirst: 0,          // show chart at top/left? 0/1
+        pivotLayout: &#39;1&#39;,       // Pivot Grid and chart layout
+                                // 0 -- tile horizontal, 1 -- tile vertical,
+                                // 2 -- grid only,  3 -- chart only
+        expandRows: 1,          // Expand/collapse All rows
+        expandCols: 1,          // Expand/Collapse All columns  
         nonEmpty: 1,
         mdx: &#39;&#39;
     },
