@@ -1,11 +1,11 @@
 ## WPT component Developer's Documents 
 
 
-* [Cutomize options](./customize.html)
+* [Cutomize options](./customize.md)
 
-* [Load & Save APIs](./api.html)
+* [Load & Save APIs](./api.md)
 
-* [Changes](./CHANGES.html)
+* [Changes](./CHANGES.md)
 
-* [Readme](../README.html)
+* [Readme](../README.md)
 

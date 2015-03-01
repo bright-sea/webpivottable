@@ -1,4 +1,4 @@
-[Back to Home](./index.html)
+[Back to Home](./index.md)
 
 
 To load your data from a CSV file, first put the file on your web server, then copy its URL into the following method:

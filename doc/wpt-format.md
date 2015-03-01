@@ -1,4 +1,4 @@
-[Back to Home](./index.html)
+[Back to Home](./index.md)
 
 ## What's WPT file?
 

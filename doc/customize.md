@@ -1,4 +1,4 @@
-[Back to Home](./index.html)
+[Back to Home](./index.md)
 
 
 ## Customize the look and feel of WPT component:

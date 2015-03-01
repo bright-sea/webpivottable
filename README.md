@@ -123,7 +123,7 @@ and javascript files into your page.
 * Step4: create WebPivotTable object after dojo domReady
 * Step5: add "claro" class to body tag
 
-_ Please reference [Developer's Documents](doc/index.html) for further customization. _    
+_Please reference [Developer's Documents](doc/index.md) for further customization._    
 
 
 ### Run independent web application in the package
@@ -142,11 +142,26 @@ Users can try it without any development or integration involved.
 
 ## Resources 
 
+### support resources
+
 * [webpivottable.com](http://webpivottable.com/)
 * [Demo](http://webpivottable.com/demo) 
 * [Documents](http://webpivottable.com/documents)
 * [Forums](http://brightsea.ca/forum) 
 * [Download](http://webpivottable.com/download)
+
+ 
+### Dependence resources:
+
+* [dojo](http://dojotoolkit.org/) 
+* [dgrid](https://github.com/SitePen/dgrid)
+* [dstore](https://github.com/sitepen/dstore) 
+* [put-selector](https://github.com/kriszyp/put-selector) 
+* [xstyle](https://github.com/kriszyp/xstyle)
+* [Highcharts](http://www.highcharts.com/)
+* [node.js](http://nodejs.org/)
+* [xls.js]( https://github.com/SheetJS/js-xls)
+* [xlsx.js](https://github.com/SheetJS/js-xlsx)
 
  
 ## Browser Support
