@@ -1,7 +1,10 @@
-[Back to Home](./index.md)
+[Back to Index](./index.md)
 
+### V3.2.1 March 1st, 2015
+* Add options to show/hide and position Grid&Chart menu bar
+* Add more uiFlags options to customize User Interface
 
-### V3.2 Feburary 25th, 2015
+### V3.2 February 25th, 2015
 * Add user information to support backend user authentication
 * Add a dashboard view for user
 * Add user admin dialogs for user sign/up/password

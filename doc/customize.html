@@ -112,29 +112,32 @@
     </style>
   </head>
   <body>  
-    <p><a href="./index.html">Back to Home</a></p>
-<h2 id="customize-the-look-and-feel-of-wpt-component-">Customize the look and feel of WPT component:</h2>
-<p>WPT component can be customized by web developers through cutomize options.</p>
+    <p><a href="./index.html">Back to Index</a></p>
+<h2 id="customize-wpt-component-">Customize WPT component:</h2>
+<p>WPT component can be customized by web developers through customize options.</p>
 <p>There are many <a href="#customizeoptions">Customize Options</a>, all of which can be passed
 in parameters when creating the WebPivotTable object on your page or can be set 
 by API after WebPivotTable object had been created.</p>
 <h3 id="pass-in-customize-options-when-create-webpivottable-object">Pass in customize options when create WebPivotTable object</h3>
-<pre><code>var myOptions = {}
-new WebPivotTable({customOptions:myOptions},&quot;wpt-container&quot;);
-</code></pre><p>It’s unnecessary to pass options you wish to leave as default. For example, 
-if you only want to hide open and save buttons, you can pass customOptions as:</p>
 <pre><code>var myOptions = {
    uiFlags: {
       openWptBtn: 0,
       saveWptBtn: 0
    }
-}
-new WebPivotTable({customOptions:myOptions},&quot;wpt-container&quot;);
-</code></pre><h3 id="set-cutomize-options-for-existing-webpivottable-object">Set cutomize options for existing WebPivotTable object</h3>
+};
+var webPivotTable = new WebPivotTable({
+    customOptions:myOptions
+},&quot;wpt-container&quot;);
+</code></pre><h3 id="set-customize-options-for-existing-webpivottable-object">Set customize options for existing WebPivotTable object</h3>
 <p>Even after WebPivotTable object being created, you can still change options:</p>
-<pre><code>var webPivotTable  = new WebPivotTable({},&quot;wpt-container&quot;);
-webPivotTable.setOptions(customOptions);
-</code></pre><h3 id="customizeoptions">Customize Options</h3>
+<pre><code>var myOptions = {
+   uiFlags: {
+      openWptBtn: 0,
+      saveWptBtn: 0
+   }
+};
+webPivotTable.setOptions(myOptions);
+</code></pre><h3 id="customizeoptions">All Customize Options</h3>
 
 <pre><code>{
 

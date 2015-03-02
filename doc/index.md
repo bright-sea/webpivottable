@@ -1,11 +1,13 @@
-## WPT component Developer's Documents 
+## WPT component Documents for Developer 
 
+* [Integration Guide](./integration.md)  
 
-* [Cutomize options](./customize.md)
+* [Customize WPT component](./customize.md)
 
-* [Load & Save APIs](./api.md)
+* [WPT component APIs](./api.md)
 
-* [Changes](./CHANGES.md)
+* [WPT File Format](./wpt-format.md)
 
-* [Readme](../README.md)
+* [Changes History](./CHANGES.md)
+
 

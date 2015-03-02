@@ -1,9 +1,9 @@
-[Back to Home](./index.md)
+[Back to Index](./index.md)
 
 
-## Customize the look and feel of WPT component:
+## Customize WPT component:
 
-WPT component can be customized by web developers through cutomize options.
+WPT component can be customized by web developers through customize options.
 
 There are many [Customize Options](#customizeoptions), all of which can be passed
 in parameters when creating the WebPivotTable object on your page or can be set 
@@ -11,29 +11,30 @@ by API after WebPivotTable object had been created.
 
 ### Pass in customize options when create WebPivotTable object
 
-    var myOptions = {}
-    new WebPivotTable({customOptions:myOptions},"wpt-container");
+    var myOptions = {
+       uiFlags: {
+          openWptBtn: 0,
+          saveWptBtn: 0
+       }
+    };
+    var webPivotTable = new WebPivotTable({
+        customOptions:myOptions
+    },"wpt-container");
 
-It’s unnecessary to pass options you wish to leave as default. For example, 
-if you only want to hide open and save buttons, you can pass customOptions as:
+### Set customize options for existing WebPivotTable object
+
+Even after WebPivotTable object being created, you can still change options:
 
     var myOptions = {
        uiFlags: {
           openWptBtn: 0,
           saveWptBtn: 0
        }
-    }
-    new WebPivotTable({customOptions:myOptions},"wpt-container");
-
-### Set cutomize options for existing WebPivotTable object
-
-Even after WebPivotTable object being created, you can still change options:
-
-    var webPivotTable  = new WebPivotTable({},"wpt-container");
-    webPivotTable.setOptions(customOptions);
+    };
+    webPivotTable.setOptions(myOptions);
 
 
-<h3 id="customizeoptions">Customize Options</h3>
+<h3 id="customizeoptions">All Customize Options</h3>
 
     {
 
