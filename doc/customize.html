@@ -139,210 +139,205 @@ var webPivotTable = new WebPivotTable({
 webPivotTable.setOptions(myOptions);
 </code></pre><h3 id="customizeoptions">All Customize Options</h3>
 
-<pre><code>{
+<pre><code>       {
 
-    locale: &#39;en&#39;,  // current language locale
-    availableLocales: [&#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,&#39;it&#39;], //selectable locale at UI
-                   // &#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,‘fr&#39;,&#39;de&#39;,&#39;ar&#39;,&#39;ru&#39;,&#39;it&#39;,
-                   // &#39;nl&#39;,&#39;el&#39;,&#39;he&#39;,&#39;hi&#39;,&#39;hu&#39;,&#39;sv&#39;,&#39;ko&#39;,&#39;ja&#39;
+            locale: &#39;en&#39;,  // current language locale
+            availableLocales: [&#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,&#39;it&#39;], //selectable locale at UI
+                           // &#39;en&#39;,&#39;zh&#39;,&#39;es&#39;,&#39;pt&#39;,‘fr&#39;,&#39;de&#39;,&#39;ar&#39;,&#39;ru&#39;,&#39;it&#39;,
+                           // &#39;nl&#39;,&#39;el&#39;,&#39;he&#39;,&#39;hi&#39;,&#39;hu&#39;,&#39;sv&#39;,&#39;ko&#39;,&#39;ja&#39;
 
-    leavePageWarning: 1, //When leave page, whether to show a warning
+            leavePageWarning: 1, //When leave page, whether to show a warning
 
-    uiFlags: {
-        switchViewBtn: 1,     // show/hide TopBar view switch buttons
-        newWptBtn: 1,         // show/hide TopBar &quot;Create New WPT&quot; button
-        openWptBtn: 1,        // show/hide TopBar &quot;Open WPT&quot; button
-        saveWptBtn: 1,        // show/hide TopBar &quot;Save WPT&quot; button
+            uiFlags: {
+                switchViewBtn: 1,     // show/hide TopBar view switch buttons
+                newWptBtn: 1,         // show/hide TopBar &quot;Create New WPT&quot; button
+                openWptBtn: 1,        // show/hide TopBar &quot;Open WPT&quot; button
+                saveWptBtn: 1,        // show/hide TopBar &quot;Save WPT&quot; button
 
-        navPaneBtn: 1,        // show/hide TopBar &quot;Show pivot fields list&quot; button
-        userBtn: 1,           // show/hide TopBar &quot;Users&quot; dropdown button
-        settingBtn: 1,
-        languageSwitchBtn: 1, // show/hide TopBar &#39;Language&#39; dropdown button
-        helpBtn: 1,           // show/hide TopBar &#39;Help&#39; button, but not work for free version
-        aboutBtn: 1,          // show/hide TopBar &#39;About&#39; button, but not work for free version
+                navPaneBtn: 1,        // show/hide TopBar &quot;Show pivot fields list&quot; button
+                userBtn: 1,           // show/hide TopBar &quot;Users&quot; dropdown button
+                settingBtn: 1,
+                languageSwitchBtn: 1, // show/hide TopBar &#39;Language&#39; dropdown button
+                helpBtn: 1,           // show/hide TopBar &#39;Help&#39; button, but not work for free version
+                aboutBtn: 1,          // show/hide TopBar &#39;About&#39; button, but not work for free version
 
-        memoryTab: 1,         // show/hide Load data dialog &quot;Local Memory&quot; Tab
-        olapTab: 1,           // show/hide Load data dialog &quot;OLAP Cube&quot; Tab
-        internetLinkTab: 1,   // show/hide Load data dialog &quot;Internet Link&quot; Tab
-        cloudDriveBtn: 1,     // show/hide Load data dialog &quot;Goto Cloud Drive&quot; Button
-        localDriveTab: 1,     // show/hide Load data dialog &quot;Local Drive&quot; Tab
-        googleSpreadSheetTab: 1, // show/hide Load data dialog &quot;Google Spreadsheet&quot; Tab
-        copyPasteTab: 1,      // show/hide Load data dialog &quot;Copy &amp; Paste&quot; Tab
+                memoryTab: 1,         // show/hide Load data dialog &quot;Local Memory&quot; Tab
+                olapTab: 1,           // show/hide Load data dialog &quot;OLAP Cube&quot; Tab
+                internetLinkTab: 1,   // show/hide Load data dialog &quot;Internet Link&quot; Tab
+                cloudDriveBtn: 1,     // show/hide Load data dialog &quot;Goto Cloud Drive&quot; Button
+                localDriveTab: 1,     // show/hide Load data dialog &quot;Local Drive&quot; Tab
+                googleSpreadSheetTab: 1, // show/hide Load data dialog &quot;Google Spreadsheet&quot; Tab
+                copyPasteTab: 1,      // show/hide Load data dialog &quot;Copy &amp; Paste&quot; Tab
 
-        localSaveTab: 1,      // show/hide Save WPT dialog &quot;Save to local&quot; Tab
-        serverSaveTab: 1,     // show/hide Save WPT dialog &quot;Save to Server&quot; Tab
+                localSaveTab: 1,      // show/hide Save WPT dialog &quot;Save to local&quot; Tab
+                serverSaveTab: 1,     // show/hide Save WPT dialog &quot;Save to Server&quot; Tab
 
-        showDimInfoWhenHover: 0, // Whether Show Dimension/hierachy/level Tooltip when mouse hover
+                showDimInfoWhenHover: 0, // Whether Show Dimension/hierachy/level Tooltip when mouse hover
 
-        sheetBarPivot: 1,     // show/hide Pivot buttons on sheet bar
-        sheetBarFields: 1,    // show/hide Pivot fields on sheet bar
+                sheetBarPivot: 1,     // show/hide Pivot buttons on sheet bar
+                sheetBarFields: 1,    // show/hide Pivot fields on sheet bar
 
-        sheetSwitchBtn: 1,    // show/hide &quot;switch grid and chart&quot; button on sheet bar
-        sheetLayoutBtn: 1,    // show/hide &quot;grid &amp; chart layout&quot; buttons on sheet bar
-        sheetMenuBtn: 1,    // show/hide menu button on sheet bar
+                sheetSwitchBtn: 1,    // show/hide &quot;switch grid and chart&quot; button on sheet bar
+                sheetLayoutBtn: 1,    // show/hide &quot;grid &amp; chart layout&quot; buttons on sheet bar
 
-        exportGridMenu: 1,    // show/hide &quot;export&quot;  menu on sheet pivot grid menu bar
-        exportChartMenu: 1,   // show/hide &quot;export&quot;  menu on sheet pivot chart menu bar
-        exportReportMenu: 1,  // show/hide &quot;export&quot;  menu on report bar
+                exportGridMenu: 1,    // show/hide &quot;export&quot;  menu on sheet pivot grid menu bar
+                exportChartMenu: 1,   // show/hide &quot;export&quot;  menu on sheet pivot chart menu bar
+                exportReportMenu: 1,  // show/hide &quot;export&quot;  menu on report bar
 
-        exportToExcel: 1,     // support &quot;Export to Excel&quot;
-        exportToHtml: 1,      // support &quot;Export to HTML&quot;
-        exportToPdf: 1,       // support &quot;Export to PDF&quot;
-        exportToPng: 1,       // support &quot;Export to PNG&quot;
-        exportToJpeg: 1,      // support &quot;Export to JPEG&quot;
-        exportToGif: 1,       // support &quot;Export to GIF&quot;
+                exportToExcel: 1,     // support &quot;Export to Excel&quot;
+                exportToHtml: 1,      // support &quot;Export to HTML&quot;
+                exportToPdf: 1,       // support &quot;Export to PDF&quot;
+                exportToPng: 1,       // support &quot;Export to PNG&quot;
+                exportToJpeg: 1,      // support &quot;Export to JPEG&quot;
+                exportToGif: 1,       // support &quot;Export to GIF&quot;
 
-        zoomBtn: 1,           // show/hide &quot;Zoom&quot;  menu on sheet control menu bar
-        fullScreenBtn: 1      // Support &quot;Full Screen&quot; mode for grid &amp; chart
-    },
-
-    fileLinks:[],
-
-    filepicker:{
-        key:&#39;&#39;  // filepicker application key
-    },
-
-    decimalPoint: &#39;.&#39;,  // decimal point charactor: &#39;.&#39;, &#39;,&#39;
-    thousandsSep: &#39;,&#39;, // thousands separator: &#39;,&#39; &#39;.&#39;, &#39; &#39;
-    zoomScaleStep: 0.05,
-    reportCssFile: &#39;./brightsea/wpt/wptReport.css&#39;,
-
-    olap:{
-        drillThroughMaxRows: 1000,
-        sync : 0,
-        timeout : 300000,
-        xmlaProxyEnabled: 1,        // enable/disable Xmla Proxy 1/0
-        xmlaProxy: &#39;/wpt/xmlaProxy&#39;
-    },
-
-    exporting: {
-        pdf: {
-            paperMarginTop: &#39;1cm&#39;,
-            paperMarginLeft: &#39;1cm&#39;,
-            paperMarginBottom: &#39;1cm&#39;,
-            paperMarginRight: &#39;1cm&#39;,
-            paperFormat: &#39;A4&#39;, //&#39;A3&#39;, &#39;A4&#39;, &#39;A5&#39;, &#39;Legal&#39;, &#39;Letter&#39;, &#39;Tabloid&#39;. &#39;Custom&#39;
-            paperOrientation: &#39;portrait&#39;,  //&#39;portrait&#39;, &#39;landscape&#39;
-            paperWidth: &#39;600px&#39;,
-            paperHeight: &#39;600px&#39;,
-            headerHeight: &#39;1cm&#39;,
-            header: &#39;&#39;,
-            footerHeight: &#39;1cm&#39;,
-            footer: &#39;&#39;,
-            zoomFactor: 1
-        }
-    },
-
-    pivotFields: {  //Pivot Fields List pane
-        show: 1,   // show/hide: 1/0
-        position:&#39;right&#39;, // position: &#39;left&#39;, &#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;
-        stacked: 0,  //stack fields area or not: 1/0
-        width:300, // width, only for left and right
-        height:200 // height, only for top and bottom
-    },
-
-    server: {
-        helpUrl:&#39;http://webpivottable.com/documents&#39;,
-        fileProxyEnabled: 1,        // enable/disable file Proxy 1/0
-        fileProxy: &#39;/wpt/fileProxy&#39;,
-        fileProxyWithBase64: &#39;/wpt/fileProxyWithBase64&#39;,
-        generatePdf: &#39;/wpt/generatePdf&#39;
-    },
-
-
-    csvGrid:{
-        cellWidth: 120,
-        cellHeight: 25
-    },
-
-    report: {
-
-    },
-
-    sheet:{
-        controlMenuBar: {  //Grid &amp; Chart control menu bar
-            show: 1,   // show/hide: 1/0
-            position:&#39;right&#39;, // position: &#39;left&#39;, &#39;right&#39;
-            width:25
-        },
-
-        chartFirst: 0,          // show chart at top/left? 0/1
-        pivotLayout: &#39;1&#39;,       // Pivot Grid and chart layout
-                                // 0 -- tile horizontal, 1 -- tile vertical,
-                                // 2 -- grid only,  3 -- chart only
-        expandRows: 1,          // Expand/collapse All rows
-        expandCols: 1,          // Expand/Collapse All columns  
-        nonEmpty: 1,
-        mdx: &#39;&#39;
-    },
-
-    grid:{
-        showSigns: 1,
-        showRowTotals: 1,
-        showColTotals: 1,
-        showRowSubtotals: 1,
-        showColSubtotals: 1,
-        compactForm: 1,
-        rowHeaderWidth: 200,
-        cellWidth: 100,
-        cellHeight: 25,
-        theme: &#39;wpt-default&#39;
-    },
-    chart:{
-        width: 500,
-        height: 300,
-
-        high:{
-            theme: &#39;default&#39;, //default, grid, gray, skies, drak-blue, drak-green
-            chart:{
-                type:&#39;column&#39;,  //column, bar, line, spline, area, areaspline, pie
-                options3d: {
-                    enabled: false,
-                    alpha: 15,
-                    beta: 15,
-                    depth: 50,
-                    viewDistance: 25
-                }
+                zoomBtn: 1,           // show/hide &quot;Zoom&quot;  menu on sheet control menu bar
+                fullScreenBtn: 1      // Support &quot;Full Screen&quot; mode for grid &amp; chart
             },
-            credits: {
-                enabled:false
+
+            fileLinks:[],
+
+            filepicker:{
+                key:&#39;&#39;  // filepicker application key
             },
+
+            decimalPoint: &#39;.&#39;,  // decimal point charactor: &#39;.&#39;, &#39;,&#39;
+            thousandsSep: &#39;,&#39;, // thousands separator: &#39;,&#39; &#39;.&#39;, &#39; &#39;
+            zoomScaleStep: 0.05,
+            reportCssFile: &#39;./brightsea/wpt/wptReport.css&#39;,
+
+            controlMenuBarPosition:&#39;right&#39;, // Control MenuBar position: &#39;left&#39;, &#39;right&#39;
+
+            olap:{
+                drillThroughMaxRows: 1000,
+                sync : 0,
+                timeout : 300000,
+                xmlaProxyEnabled: 1,        // enable/disable Xmla Proxy 1/0
+                xmlaProxy: &#39;/wpt/xmlaProxy&#39;
+            },
+
             exporting: {
-                enabled:false
-            },
-            navigation:{
-                buttonOptions:{
-                    align: &#39;right&#39;,   // left, center, right
-                    verticalAlign: &#39;top&#39; // top, middle, bottom
+                pdf: {
+                    paperMarginTop: &#39;1cm&#39;,
+                    paperMarginLeft: &#39;1cm&#39;,
+                    paperMarginBottom: &#39;1cm&#39;,
+                    paperMarginRight: &#39;1cm&#39;,
+                    paperFormat: &#39;A4&#39;, //&#39;A3&#39;, &#39;A4&#39;, &#39;A5&#39;, &#39;Legal&#39;, &#39;Letter&#39;, &#39;Tabloid&#39;. &#39;Custom&#39;
+                    paperOrientation: &#39;portrait&#39;,  //&#39;portrait&#39;, &#39;landscape&#39;
+                    paperWidth: &#39;600px&#39;,
+                    paperHeight: &#39;600px&#39;,
+                    headerHeight: &#39;1cm&#39;,
+                    header: &#39;&#39;,
+                    footerHeight: &#39;1cm&#39;,
+                    footer: &#39;&#39;,
+                    zoomFactor: 1
                 }
             },
-            legend: {
-                enabled: true,
-                floating: false,
-                layout: &#39;vertical&#39;,  //horizontal, vertical
-                align: &#39;right&#39;,      // left, center, right
-                verticalAlign: &#39;middle&#39;, // top, middle, bottom
-                reversed: false
+
+            pivotFields: {  //Pivot Fields List pane
+                show: 1,   // show/hide: 1/0
+                position:&#39;right&#39;, // position: &#39;left&#39;, &#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;
+                stacked: 0,  //stack fields area or not: 1/0
+                width:300, // width, only for left and right
+                height:200 // height, only for top and bottom
             },
-            tooltip:{
-                enabled: true,
-                shadow: true
+
+            server: {
+                helpUrl:&#39;http://webpivottable.com/documents&#39;,
+                fileProxyEnabled: 1,        // enable/disable file Proxy 1/0
+                fileProxy: &#39;/wpt/fileProxy&#39;,
+                fileProxyWithBase64: &#39;/wpt/fileProxyWithBase64&#39;,
+                generatePdf: &#39;/wpt/generatePdf&#39;
             },
-            plotOptions: {
-                series:{
-                    stacking: null //null, &#39;normal&#39;, &#39;percent&#39;
-                }
+
+
+            csvGrid:{
+                cellWidth: 120,
+                cellHeight: 25
             },
-            xAxis: {
-                labels:{
-                    enabled: true,
-                    align:&#39;left&#39;,  // left, center, right
-                    rotation:45    // 0 -- 360
+
+            report: {
+
+            },
+
+            sheet:{
+                chartFirst: 0,          // show chart at top/left? 0/1
+                pivotLayout: &#39;1&#39;,       // Pivot Grid and chart layout
+                                        // 0 -- tile horizontal, 1 -- tile vertical,
+                                        // 2 -- grid only,  3 -- chart only
+                expandRows: 1,          // Expand/collapse All rows
+                expandCols: 1,          // Expand/Collapse All columns  
+                nonEmpty: 1,
+                mdx: &#39;&#39;
+            },
+
+            grid:{
+                showSigns: 1,
+                showRowTotals: 1,
+                showColTotals: 1,
+                showRowSubtotals: 1,
+                showColSubtotals: 1,
+                compactForm: 1,
+                rowHeaderWidth: 200,
+                cellWidth: 100,
+                cellHeight: 25,
+                theme: &#39;wpt-default&#39;
+            },
+            chart:{
+                width: 500,
+                height: 300,
+
+                high:{
+                    theme: &#39;default&#39;, //default, grid, gray, skies, drak-blue, drak-green
+                    chart:{
+                        type:&#39;column&#39;,  //column, bar, line, spline, area, areaspline, pie
+                        options3d: {
+                            enabled: false,
+                            alpha: 15,
+                            beta: 15,
+                            depth: 50,
+                            viewDistance: 25
+                        }
+                    },
+                    credits: {
+                        enabled:false
+                    },
+                    exporting: {
+                        enabled:false
+                    },
+                    navigation:{
+                        buttonOptions:{
+                            align: &#39;right&#39;,   // left, center, right
+                            verticalAlign: &#39;top&#39; // top, middle, bottom
+                        }
+                    },
+                    legend: {
+                        enabled: true,
+                        floating: false,
+                        layout: &#39;vertical&#39;,  //horizontal, vertical
+                        align: &#39;right&#39;,      // left, center, right
+                        verticalAlign: &#39;middle&#39;, // top, middle, bottom
+                        reversed: false
+                    },
+                    tooltip:{
+                        enabled: true,
+                        shadow: true
+                    },
+                    plotOptions: {
+                        series:{
+                            stacking: null //null, &#39;normal&#39;, &#39;percent&#39;
+                        }
+                    },
+                    xAxis: {
+                        labels:{
+                            enabled: true,
+                            align:&#39;left&#39;,  // left, center, right
+                            rotation:45    // 0 -- 360
+                        }
+                    }
                 }
             }
-        }
-    }
-};
+       };
 </code></pre>
   </body>
 </html>

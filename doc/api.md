@@ -2,7 +2,7 @@
 
 ## APIs
 
-### To create webPivotTable object with some customize options
+### Create webPivotTable object with some customize options
 
     var myOptions = {
        uiFlags: {
@@ -15,132 +15,244 @@
     },"wpt-container");
 
 
-### To set customize options after webPivotTable had been created on page
+### Set customize options after webPivotTable had been created on page
 
     webPivotTable.setOptions(customOptions);
 
-    //Parameters:
-    //    customOptions : Object
+        /** 
+        *  Set custom options.
+        *  @param {Object} customOptions - customize options 
+        */
     
-### To change to another language
+### Change language locale
   
-  
+    webPivotTable.changeLocale(locale);
     
+        /** 
+        * Change language locale.
+        * @param {string} locale - language locale string
+        *      available values: 'en','zh','es','pt',‘fr','de','ar','ru','it',
+        *                        'nl','el','he','hi','hu','sv','ko','ja'
+        * 
+        * if locale is null, will set locale to webPivotTable.options.locale
+        * changeLocale() can be used as a method to refresh whole component. 
+        */
 
-### To initialize webPivotTable with a data source from a CSV file
+If you changed some internal data structure through APIs, you want to refreah whole component, 
+you can call ` webPivotTable.changeLocale(); ` . Actually, most of setting APIs, like 
+setOptions, setCsvUrl, will call this internally, and you don't need call it again.
+
+
+### Load source data from data array
+
+    webPivotTable.setDataArray(attrArray, dataArray, dataUrl, wptObject);
+
+        /** 
+        * Load source data from data array 
+        * @param {Array} attrArray - Array of attributes
+        *       example: ["department", "area", "cost", ...]
+        * @param {Array} dataArray - Array of data rows, each row is also an array of values
+        *       example: [["dep1", "area1", 1000, ...], ..., ["dep6", "area2", 2000,...]]
+        * @param {String} dataUrl - optional, Url for track the source data
+        *       This is just for tracking, pass "" if not know or no need. 
+        * @param {Object} wptObject - optional, pre-saved wpt JSON object
+        * 
+        * if wptObject is not null, use it as pivot selections 
+        */
+
+This is major API to load source data into WPT component, it was used by setCsvUrl and setCsvRawData internally.
+Actually, developers can load any kinds of data from any other resources, like SQL databases, and format them
+as attrArray and dataArray, then load them into WPT component.
+
+
+### Load source data from CSV file URL
 
     webPivotTable.setCsvUrl(url, separator, wptObject);
 
-    //Parameters:
-    //    csvUrl: URL String of CSV file
-    //    separator: optional, separator char for CSV file, default is ","
-    //    wptObject: optional, pre-saved wpt JSON object
-
-    //        if wptObject is not null, use it as wpt options
+        /** 
+        * Load source data from CSV file URL 
+        * @param {string} csvUrl - URL String of CSV file
+        * @param {string} separator - optional, separator char for CSV file, default is ","
+        * @param {Object} wptObject - optional, pre-saved wpt JSON object
+        * 
+        * if wptObject is not null, use it as pivot selections 
+        */
     
+### Load source data from CSV RAW data
+
+    webPivotTable.setCsvRawData(csvRawData, separator, wptObject);
+
+        /** 
+        * Load source data from CSV RAW data 
+        * @param {string} csvRawData - CSV RAW data
+        *    https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
+        * @param {string} separator - optional, separator char for CSV RAW data, default is ","
+        * @param {Object} wptObject - optional, pre-saved wpt JSON object
+        * 
+        * if wptObject is not null, use it as pivot selections 
+        */
+
+WPT component use
+<a href="https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html" target="_blank">dojox.data.CsvStore</a>
+to handle CSV RAW data, please reference that to under CSV RAW data.
+
+
+### Load WPT format String 
+
+    webPivotTable.setWptString(wptString);
+
+        /** 
+        * Load WPT format String 
+        * @param {String} wptString - pre-saved WPT format string
+        */
     
-### Or you can read raw CSV data from a CSV file or database in your program, and pass this raw data into the following method:
+### Load WPT format JSON Oject 
 
-    webPivotTable.setCsvRawData(csvData, separator, wptObject);
+    webPivotTable.setWptObject(wptObject);
 
-    //Parameters:
-    //    csvData: CSV RAW data
-    //    separator: optional, separator char for CSV file, default is ","
-    //    wptObject: optional, pre-saved wpt JSON object
-    //        if wptObject is not null, use it as wpt options
+        /** 
+        * Load WPT format JSON Oject 
+        * @param {Object} wptObject - pre-saved WPT format JSON object
+        */
     
-### Or you can read and parse CSV data from a CSV file or database, put the content into an array of all data and an array of all attributes in your program, then pass them into the method below:
+### Load WPT format String or JSON Oject with updated first source data
 
-    webPivotTable.setCsvData(attributes, dataArray, csvUrl,  wptObject);
+    webPivotTable.setWpt(wpt, dataObject);
 
-    //Parameters:
-    //    attributes: Array of fields name
-    //    dataArray: Array of data rows, each row is also an array of values
-    //    csvUrl: String of url for keep record, default ""
-    //    wptObject: optional, pre-saved wpt JSON object
-    //        if wptObject is not null, use it as wpt options
-    
-As we are using dojox.data.CsvStore to handle Csv file and raw data, please reference it for the format of parameters you need passed into list above APIs.
+        /** 
+        * Load WPT format String or JSON Oject with updated first source data
+        * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+        * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+        *        format {data:[], fields:[]}
+        */
 
-### To load data from OLAP cubes, you can pass cube options into the method below:
+### Load WPT format String or JSON object with data array as updated first source data
 
-    webPivotTable.setOlapCube({
-        xmlaUrl: "Your xmla server url",
-        DataSourceInfo: "Your data source info",
-        Catalog: "Your catalog name",
-        CubeName: "Your cube name",
-        nonEmpty: 1,
-        drillThroughMaxRows: 1000
-    });
-    
-We also provide APIs for you to save and open WPT format data:
+    webPivotTable.setWptWithDataArray(wpt, attrArray, dataArray);
 
-### To generate wpt string to be saved into wpt file.
+        /** 
+        * Load WPT format String or JSON object with data array as updated first source data
+        * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+        * @param {Array} attrArray - Array of attributes
+        *       example: ["department", "area", "cost", ...]
+        * @param {Array} dataArray - Array of data rows, each row is also an array of values
+        *       example: [["dep1", "area1", 1000, ...], ..., ["dep6", "area2", 2000,...]]
+        */
+
+
+### Load WPT format String or JSON Oject with updated first source data
+
+    webPivotTable.setWptWithCsvUrl(wpt, csvUrl, separator);
+
+        /** 
+        * Load WPT format String or JSON object with CSV Url as updated first source data
+        * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+        * @param {string} csvUrl - URL String of CSV file
+        * @param {string} separator - optional, separator char for CSV RAW data, default is ","
+        */
+
+### Load WPT format String or JSON object with CSV RAW data as updated first source data
+
+    webPivotTable.setWptWithCsvRawData(wpt, csvRawData, separator);
+
+        /** 
+        * Load WPT format String or JSON object with CSV RAW data as updated first source data
+        * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+        * @param {String} csvRawData - CSV RAW data
+        *    https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
+        * @param {string} separator - optional, separator char for CSV RAW data, default is ","
+        */
+
+
+
+### Load OLAP Cube
+
+    webPivotTable.setOlapCube(olapData);
+
+        /** 
+        * Load OLAP Cube
+        * @param {Object} olapData - Object of OLAP Cube Information
+        *     {
+        *         options: {
+        *             sync : _this.options.olap.sync,
+        *             timeout : _this.options.olap.timeout,
+        *             xmlaProxyEnabled: _this.options.olap.xmlaProxyEnabled,
+        *             xmlaProxy: _this.options.olap.xmlaProxy
+        *         },
+        *         xmlaUrl: "Xmla server url",
+        *         DataSourceInfo: "Data source info",
+        *         Catalog: "Catalog name",
+        *         CubeName: "Cube name"
+        *     }
+        */
+
+
+
+### Generate WPT format string
 
     var wptString = webPivotTable.generateWptString(ignoreData);
 
-    //Parameters:
-    //    ignoreData : boolean
-    //        if equal to true, ignore data and fields, only save options and controls
-    //return: string
+        /** 
+        * Generate WPT format string to be saved into wpt file.
+        * @param {boolean} ignoreData 
+        *        if equal to true, ignore data and fields, only save options and controls
+        * @return {string} 
+        */
     
-### To generate wpt JSON object to be saved into wpt file.
+### Generate WPT format JSON object
 
     var wptObject = webPivotTable.generateWptJSON(ignoreData);
 
-    //Parameters:
-    //    ignoreData : boolean
-    //        if equal to true, ignore data and fields, only save options and controls
-    //return: JSON object
+        /** 
+        * Generate WPT format JSON object
+        * @param {boolean} ignoreData 
+        *        if equal to true, ignore data and fields, only save options and controls
+        * @return {Object} 
+        */
     
-### To generate wpt string from CSV format data with default options and controls to be saved into wpt file. This is quite useful for loading large size CSV data since wpt file will relatively smaller than CSV file and also be more faster to be loaded into WebPivotTable component.
+### Generate wpt string from data array with default options and controls
 
-    webPivotTable.generateWptStringFromCsvData(attributes, dataArray, csvUrl, , callback, errCallback);
+    webPivotTable.generateWptStringFromDataArray(attrArray, dataArray, dataUrl, callback, errCallback);
 
-    //Parameters:
-    //    attributes: Array of fields name
-    //    dataArray: Array of data rows, each row is also an array of values
-    //    csvUrl: String of url for keep record, default ""
-    //    callback(wptString): callback function while generation successfully
-    //    errCallback(error): optional callback function while error
+        /** 
+        * Generate wpt string from data array with default options and controls
+        * @param {Array} attrArray - Array of attributes
+        *       example: ["department", "area", "cost", ...]
+        * @param {Array} dataArray - Array of data rows, each row is also an array of values
+        *       example: [["dep1", "area1", 1000, ...], ..., ["dep6", "area2", 2000,...]]
+        * @param {String} dataUrl - optional, Url for track the source data
+        *       This is just for tracking, pass "" if not know or no need. 
+        * @param {Function} callback - Callback function when success
+        *           callback = function(wptString)
+        * @param {Function} errCallback - Callback function when error
+        *           errCallback = function(error)
+        */
     
-### To generate wpt string from CSV file URL with default options and controls to be saved into wpt file. This is quite useful for loading large size CSV data since wpt file will relatively smaller than CSV file and also be more faster to be loaded into WebPivotTable component.
+### Generate wpt string from Csv Url with default options and controls
 
     webPivotTable.generateWptStringFromCsvUrl(csvUrl, separator, callback, errCallback);
 
-    //Parameters:
-    //    csvUrl: URL String of CSV file
-    //    separator: separator char for CSV file, usually is ","
-    //    callback(wptString): callback function while generation successfully
-    //    errCallback(error): optional callback function while error
-    
-### To generate wpt string from CSV file URL with default options and controls to be saved into wpt file. This is quite useful for loading large size CSV data since wpt file will relatively smaller than CSV file and also be more faster to be loaded into WebPivotTable component.
+        /** 
+        * Generate wpt string from Csv Url with default options and controls
+        * @param {string} csvUrl - URL String of CSV file
+        * @param {string} separator - optional, separator char for CSV RAW data, default is ","
+        * @param {Function} callback - Callback function when success
+        *           callback = function(wptString)
+        * @param {Function} errCallback - Callback function when error
+        *           errCallback = function(error)
+        */
 
-    webPivotTable.generateWptStringFromCsvRawData(csvData, separator, callback, errCallback);
+### Generate wpt string from Csv RAW data with default options and controls
 
-    //Parameters:
-    //    csvData: CSV RAW data, https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
-    //    separator: separator char for CSV RAW data, usually is ","
-    //    callback(wptString): callback function while generation successfully
-    //    errCallback(error): optional callback function while error
-    
-### To load wptString into WebPivotTable component.
+    webPivotTable.generateWptStringFromCsvRawData(csvRawData, separator, callback, errCallback);
 
-    webPivotTable.setWptString(wptString, csvData, separator);
-
-    //Parameters:
-    //    wptString: pre-saved wpt string
-    //    csvData: optional, if exist, use this data to generate data and fields
-    //    separator: optional, separator char for CSV RAW data, default is ","
-    
-### To load wptObject into WebPivotTable component.
-
-    webPivotTable.setWptObject(wptObject, dataObject);
-
-    //Parameters:
-    //    wptObject: pre-saved wpt JSON object
-    //    dataObject: optional, if exist, use this as data and fields
-    //       format {data:[], fields:[]}    
-    
-    
-    
+        /** 
+        * Generate wpt string from Csv RAW data with default options and controls
+        * @param {String} csvRawData - CSV RAW data
+        *    https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
+        * @param {string} separator - optional, separator char for CSV RAW data, default is ","
+        * @param {Function} callback - Callback function when success
+        *           callback = function(wptString)
+        * @param {Function} errCallback - Callback function when error
+        *           errCallback = function(error)
+        */
