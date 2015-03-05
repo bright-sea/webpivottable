@@ -6049,14 +6049,14 @@ html.has-touch .dgrid-column-resizer {
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
-    background-image:url(sign_in.png);
+    background-image:url("resources/img/sign_in.png");
     float:left;
 }
 .wpt-signup-img {
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
-    background-image:url(sign_up.png);
+    background-image:url("resources/img/sign_up.png");
     float:left;
 }
 .wpt-signout-img {
