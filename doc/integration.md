@@ -24,7 +24,7 @@ and javascript files into your page.
     
         <!-- Step 2 import wpt.js file into the page with correct dojo config-->
         <script type="text/javascript" src="brightsea/wpt/wpt.js"  
-            data-dojo-config="async:1, baseUrl: '/brightsea/dojo/'"></script> 
+            data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script> 
         
         <!-- Step 3 import third party javascript libraries-->    
         <script type="text/javascript" src="lib/filepicker/index.js"></script>
