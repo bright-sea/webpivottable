@@ -156,8 +156,6 @@ Users can try it without any development or integration involved.
 * [dojo](http://dojotoolkit.org/) 
 * [dgrid](https://github.com/SitePen/dgrid)
 * [dstore](https://github.com/sitepen/dstore) 
-* [put-selector](https://github.com/kriszyp/put-selector) 
-* [xstyle](https://github.com/kriszyp/xstyle)
 * [Highcharts](http://www.highcharts.com/)
 * [node.js](http://nodejs.org/)
 * [xls.js]( https://github.com/SheetJS/js-xls)
