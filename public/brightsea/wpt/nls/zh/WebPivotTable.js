@@ -494,10 +494,8 @@ define({
     Tip_SwitchGridChart: "切换表格与图形",
 
     Msg_LeavingPage: "在离开页面前请保存你的WPT报表，否则你将丢失你所有的操作！",
-    Msg_SheetUsedByReports: "有一些报表基于该工作薄， 那些工作薄会发生改变如果您确认移除。",
-    Msg_SourceUsedBySheets: "有一些工作薄基于该数据源， 请先移除那些工作薄。",
-    Msg_FirstSourceNotRemovable: "第一个工作薄的数据源不能被移除。",
-    Msg_SourceWithSheetNotRemovable: "有一些工作薄基于此数据源，请先移除那些工作薄再移除此数据源。",
+    Msg_SheetUsedByReports: "有一些报表基于该工作薄， 那些报表会发生改变如果您确认移除。",
+    Msg_SourceUsedBySheets: "有一些工作薄和报表基于该数据源， 那些工作薄和报表也会同时被移除。",
 
     Lbl_FileName: "文件名",
     Lbl_IgnoreData: "不保存数据，只保存操作选项。",
@@ -505,6 +503,7 @@ define({
     Lbl_CreateSheetFromSource: "从数据源创建新的工作薄",
     Lbl_CopySheetFromSheet: "从已经存在的工作薄拷贝",
     Lbl_RemoveSheetConfirmation:"您确认要移除这个工作薄吗？",
+    Lbl_RemoveSourceConfirmation:"您确认要移除这个数据源吗？",
 
     Lbl_AvailableComponents: "可用的组件",
     Lbl_ReportComponents: "报表组件",

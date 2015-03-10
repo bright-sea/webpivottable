@@ -233,7 +233,5 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
             },
             ...
         ],
-        "ptIndex":0,"
-        "dsIndex":0,"
         "view":"PIVOTTABLE"
     }

@@ -2,26 +2,18 @@
 
 ## APIs
 
-### Create webPivotTable object with some customize options
 
-    var myOptions = {
-       uiFlags: {
-          openWptBtn: 0,
-          saveWptBtn: 0
-       }
-    };
-    var webPivotTable = new WebPivotTable({
-        customOptions:myOptions
-    },"wpt-container");
+### Refresh UI of whole component
 
-
-### Set customize options after webPivotTable had been created on page
-
-    webPivotTable.setOptions(customOptions);
-
+    webPivotTable.refreshUI();
+    
         /** 
-        *  Set custom options.
-        *  @param {Object} customOptions - customize options 
+        * Refresh UI of whole component. 
+        * 
+        * This is a method to refresh UI after you changed some internal data structure
+        * through APIs. 
+        * Most of setting APIs, like changeLocale, setOptions, setCsvUrl, etc. 
+        * will call this internally, you don't need call it again.
         */
     
 ### Change language locale
@@ -35,12 +27,33 @@
         *                        'nl','el','he','hi','hu','sv','ko','ja'
         * 
         * if locale is null, will set locale to webPivotTable.options.locale
-        * changeLocale() can be used as a method to refresh whole component. 
+        * changeLocale() will call refreshUI automatically. 
         */
 
-If you changed some internal data structure through APIs, you want to refreah whole component, 
-you can call ` webPivotTable.changeLocale(); ` . Actually, most of setting APIs, like 
-setOptions, setCsvUrl, will call this internally, and you don't need call it again.
+
+### Set customize options after webPivotTable had been created
+
+    webPivotTable.setOptions(customizeOptions);
+
+        /** 
+        * Set customize options after webPivotTable had been created
+        * @param {Object} customizeOptions - customize options 
+        * 
+        * Note:
+        * 1. to set customize options while create WebPivotTable object, use
+        *       var customizeOptions = {
+        *           uiFlags: {
+        *              openWptBtn: 0,
+        *              saveWptBtn: 0
+        *           }
+        *       };
+        *
+        *       var webPivotTable = new WebPivotTable({
+        *           customOptions:customizeOptions
+        *       },"wpt-container"); 
+        * 2. You don't need pass options which you accept the default value in parameter.
+        * 3. setOptions will call refreshUI automatically
+        */
 
 
 ### Load source data from data array
@@ -57,12 +70,13 @@ setOptions, setCsvUrl, will call this internally, and you don't need call it aga
         *       This is just for tracking, pass "" if not know or no need. 
         * @param {Object} wptObject - optional, pre-saved wpt JSON object
         * 
-        * if wptObject is not null, use it as pivot selections 
+        * Note:
+        * 1. If wptObject is not null, use it as pre-saved pivot selections 
+        * 2. This is major API to load source data into WPT component, it was 
+        *   used by setCsvUrl and setCsvRawData internally.  Actually, developers 
+        *   can load any kinds of data from any other resources, like SQL databases, 
+        *   and format them as attrArray and dataArray, then load them into WPT component.
         */
-
-This is major API to load source data into WPT component, it was used by setCsvUrl and setCsvRawData internally.
-Actually, developers can load any kinds of data from any other resources, like SQL databases, and format them
-as attrArray and dataArray, then load them into WPT component.
 
 
 ### Load source data from CSV file URL

@@ -114,22 +114,16 @@
   <body>  
     <p><a href="./index.html">Back to Index</a></p>
 <h2 id="apis">APIs</h2>
-<h3 id="create-webpivottable-object-with-some-customize-options">Create webPivotTable object with some customize options</h3>
-<pre><code>var myOptions = {
-   uiFlags: {
-      openWptBtn: 0,
-      saveWptBtn: 0
-   }
-};
-var webPivotTable = new WebPivotTable({
-    customOptions:myOptions
-},&quot;wpt-container&quot;);
-</code></pre><h3 id="set-customize-options-after-webpivottable-had-been-created-on-page">Set customize options after webPivotTable had been created on page</h3>
-<pre><code>webPivotTable.setOptions(customOptions);
+<h3 id="refresh-ui-of-whole-component">Refresh UI of whole component</h3>
+<pre><code>webPivotTable.refreshUI();
 
     /** 
-    *  Set custom options.
-    *  @param {Object} customOptions - customize options 
+    * Refresh UI of whole component. 
+    * 
+    * This is a method to refresh UI after you changed some internal data structure
+    * through APIs. 
+    * Most of setting APIs, like changeLocale, setOptions, setCsvUrl, etc. 
+    * will call this internally, you don&#39;t need call it again.
     */
 </code></pre><h3 id="change-language-locale">Change language locale</h3>
 <pre><code>webPivotTable.changeLocale(locale);
@@ -141,12 +135,31 @@ var webPivotTable = new WebPivotTable({
     *                        &#39;nl&#39;,&#39;el&#39;,&#39;he&#39;,&#39;hi&#39;,&#39;hu&#39;,&#39;sv&#39;,&#39;ko&#39;,&#39;ja&#39;
     * 
     * if locale is null, will set locale to webPivotTable.options.locale
-    * changeLocale() can be used as a method to refresh whole component. 
+    * changeLocale() will call refreshUI automatically. 
     */
-</code></pre><p>If you changed some internal data structure through APIs, you want to refreah whole component, 
-you can call <code>webPivotTable.changeLocale();</code> . Actually, most of setting APIs, like 
-setOptions, setCsvUrl, will call this internally, and you don&#39;t need call it again.</p>
-<h3 id="load-source-data-from-data-array">Load source data from data array</h3>
+</code></pre><h3 id="set-customize-options-after-webpivottable-had-been-created">Set customize options after webPivotTable had been created</h3>
+<pre><code>webPivotTable.setOptions(customizeOptions);
+
+    /** 
+    * Set customize options after webPivotTable had been created
+    * @param {Object} customizeOptions - customize options 
+    * 
+    * Note:
+    * 1. to set customize options while create WebPivotTable object, use
+    *       var customizeOptions = {
+    *           uiFlags: {
+    *              openWptBtn: 0,
+    *              saveWptBtn: 0
+    *           }
+    *       };
+    *
+    *       var webPivotTable = new WebPivotTable({
+    *           customOptions:customizeOptions
+    *       },&quot;wpt-container&quot;); 
+    * 2. You don&#39;t need pass options which you accept the default value in parameter.
+    * 3. setOptions will call refreshUI automatically
+    */
+</code></pre><h3 id="load-source-data-from-data-array">Load source data from data array</h3>
 <pre><code>webPivotTable.setDataArray(attrArray, dataArray, dataUrl, wptObject);
 
     /** 
@@ -159,12 +172,14 @@ setOptions, setCsvUrl, will call this internally, and you don&#39;t need call it
     *       This is just for tracking, pass &quot;&quot; if not know or no need. 
     * @param {Object} wptObject - optional, pre-saved wpt JSON object
     * 
-    * if wptObject is not null, use it as pivot selections 
+    * Note:
+    * 1. If wptObject is not null, use it as pre-saved pivot selections 
+    * 2. This is major API to load source data into WPT component, it was 
+    *   used by setCsvUrl and setCsvRawData internally.  Actually, developers 
+    *   can load any kinds of data from any other resources, like SQL databases, 
+    *   and format them as attrArray and dataArray, then load them into WPT component.
     */
-</code></pre><p>This is major API to load source data into WPT component, it was used by setCsvUrl and setCsvRawData internally.
-Actually, developers can load any kinds of data from any other resources, like SQL databases, and format them
-as attrArray and dataArray, then load them into WPT component.</p>
-<h3 id="load-source-data-from-csv-file-url">Load source data from CSV file URL</h3>
+</code></pre><h3 id="load-source-data-from-csv-file-url">Load source data from CSV file URL</h3>
 <pre><code>webPivotTable.setCsvUrl(url, separator, wptObject);
 
     /** 

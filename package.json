@@ -28,8 +28,5 @@
   "engines": {
     "node": ">=0.10.28",
     "npm": ">=1.4.28"
-  },
-  "devDependencies": {
-    "grunt-text-replace": "~0.4.0"
   }
 }

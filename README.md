@@ -14,7 +14,7 @@ the most popular implementation. Everyday, millions of users use it to analyze t
 data, create reports. It is also the major client side tool within Microsoft Business
 Intelligence solution to pivot Microsoft Analysis Service (SSAS) cubes interactively.
 
-Despite the fact that pivot table have been a cornerstone of Excel, it remains
+Despite the fact that pivot table has been a cornerstone of Excel, it remains
 one of the most underutilized tools in the entire Microsoft Office Suite since 
 it is not intuitive enough to be used by normal users and hard to be integrated 
 into other applications by professional developers.

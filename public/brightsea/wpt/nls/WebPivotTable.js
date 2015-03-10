@@ -498,9 +498,7 @@ define({
 
         Msg_LeavingPage: "Please save WPT report before you leave the page, otherwise you may lose your work!",
         Msg_SheetUsedByReports: "There are some reports based on this sheet. Those reports will be changed if you confirm to remove.",
-        Msg_SourceUsedBySheets: "There are some sheets based on this source. Please remove those sheets first.",
-        Msg_FirstSourceNotRemovable: "Data source for the first sheet can't be removed.",
-        Msg_SourceWithSheetNotRemovable: "There are sheets based on this data source, please remove those sheets first.",
+        Msg_SourceUsedBySheets: "There are some sheets and/or reports based on this source. Remove it will also remove all these sheets and reports.",
 
         Lbl_FileName: "File Name",
         Lbl_IgnoreData: "Don't save data, save pivot options only.",
@@ -508,6 +506,7 @@ define({
         Lbl_CreateSheetFromSource: "Create new sheet from source",
         Lbl_CopySheetFromSheet: "Copy an existing sheet",
         Lbl_RemoveSheetConfirmation:"Do you really want to remove this sheet?",
+        Lbl_RemoveSourceConfirmation:"Do you really want to remove this source?",
 
         Lbl_AvailableComponents: "Available Components",
         Lbl_ReportComponents: "Report Components",
