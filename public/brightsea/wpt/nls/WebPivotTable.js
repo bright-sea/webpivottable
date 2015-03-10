@@ -482,6 +482,7 @@ define({
         Tip_RenameReportName: "Change report name",
         Lbl_Sources: "Sources List",
         Lbl_Sheets: "Sheets List",
+        Lbl_NoSource: "No Data Source yet.",
 
         Btn_Create: "Create",
         Btn_Add: "Add",
@@ -496,6 +497,8 @@ define({
 
         Tip_SwitchGridChart: "Switch Grid & Chart",
 
+        Msg_SelectSource: "Please select a data source.",
+        Msg_SelectSheet: "Please select an exist sheet.",
         Msg_LeavingPage: "Please save WPT report before you leave the page, otherwise you may lose your work!",
         Msg_SheetUsedByReports: "There are some reports based on this sheet. Those reports will be changed if you confirm to remove.",
         Msg_SourceUsedBySheets: "There are some sheets and/or reports based on this source. Remove it will also remove all these sheets and reports.",

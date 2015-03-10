@@ -478,6 +478,7 @@ define({
     Tip_RenameReportName: "更换报表名",
     Lbl_Sources: "数据源列表",
     Lbl_Sheets: "工作薄列表",
+    Lbl_NoSource: "尚无数据源。",
 
 
     Btn_Create: "创建",
@@ -493,6 +494,8 @@ define({
 
     Tip_SwitchGridChart: "切换表格与图形",
 
+    Msg_SelectSource: "请选择一个数据源！",
+    Msg_SelectSheet: "请选择一个现存的工作薄！",
     Msg_LeavingPage: "在离开页面前请保存你的WPT报表，否则你将丢失你所有的操作！",
     Msg_SheetUsedByReports: "有一些报表基于该工作薄， 那些报表会发生改变如果您确认移除。",
     Msg_SourceUsedBySheets: "有一些工作薄和报表基于该数据源， 那些工作薄和报表也会同时被移除。",
