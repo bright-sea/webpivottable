@@ -468,8 +468,6 @@ define({
         Tip_PivotTable: "Switch to Pivot Table View",
         Btn_DataSource: "DataSource",
         Tip_DataSource: "Switch to Data Source View",
-        Btn_Dashboard: "Dashboard",
-        Tip_Dashboard: "Switch to Dashboard View",
 
         Lbl_Source: "Source",
         Lbl_Sheet: "Sheet",
@@ -480,8 +478,9 @@ define({
         Tip_RenameSourceName: "Change data source name",
         Tip_RenameSheetName: "Change sheet name",
         Tip_RenameReportName: "Change report name",
-        Lbl_Sources: "Sources List",
-        Lbl_Sheets: "Sheets List",
+        Lbl_Fields: "Fields List",
+        Lbl_UsedBySheets: "Used by sheets",
+        Lbl_UsedByReports: "Used by reports",
         Lbl_NoSource: "No Data Source yet.",
 
         Btn_Create: "Create",

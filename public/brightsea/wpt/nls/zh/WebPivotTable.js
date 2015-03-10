@@ -463,8 +463,6 @@ define({
     Tip_PivotTable: "切换到数据透视表视图",
     Btn_DataSource: "数据源",
     Tip_DataSource: "切换到数据源视图",
-    Btn_Dashboard: "仪表盘",
-    Tip_Dashboard: "切换到仪表盘视图",
 
     Lbl_Source: "数据源",
     Lbl_Sheet: "工作薄",
@@ -476,8 +474,9 @@ define({
     Tip_RenameSourceName: "更换数据源名",
     Tip_RenameSheetName: "更换工作薄名",
     Tip_RenameReportName: "更换报表名",
-    Lbl_Sources: "数据源列表",
-    Lbl_Sheets: "工作薄列表",
+    Lbl_Fields: "字段列表",
+    Lbl_UsedBySheets: "使用该数据源的工作薄",
+    Lbl_UsedByReports: "使用该数据源的报表",
     Lbl_NoSource: "尚无数据源。",
 
 
