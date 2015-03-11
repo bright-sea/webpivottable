@@ -1,4 +1,4 @@
-## WPT component Documents for Developer 
+## WPT component Document for Developers 
 
 * [Integration Guide](./integration.md)  
 

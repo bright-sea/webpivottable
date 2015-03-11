@@ -205,19 +205,62 @@
 </code></pre><p>WPT component use
 <a href="https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html" target="_blank">dojox.data.CsvStore</a>
 to handle CSV RAW data, please reference that to under CSV RAW data.</p>
-<h3 id="load-wpt-format-string">Load WPT format String</h3>
-<pre><code>webPivotTable.setWptString(wptString);
+<h3 id="load-source-data-from-web-service-data-url">Load source data from Web Service Data URL</h3>
+<pre><code>webPivotTable.setWebServiceDataUrl(wsDataUrl, wptObject);
+
+    /** 
+    * Load source data from Web Service Data URL 
+    * @param {string} wsDataUrl - URL String of Web Service Data URL
+    * @param {Object} wptObject - optional, pre-saved wpt JSON object
+    * 
+    * Note:
+    * 1. The Web Service should return a JSON object
+    *       {  
+    *           attrArray: [],
+    *           dataArray: []
+    *       }
+    * 2. This is a very useful API to access data in SQL databases or any other data storages
+    *    since Web Service access is cross domain and can be provided by any backend technologies.  
+    * 3. If wptObject is not null, use it as pivot selections 
+    */
+</code></pre><h3 id="load-wpt-format-object-from-web-service-wpt-url">Load WPT format object from Web Service WPT URL</h3>
+<pre><code>webPivotTable.setWebServiceWptUrl(wsWptUrl, dataObject);
+
+    /** 
+    * Load WPT format object from Web Service WPT URL 
+    * @param {string} wsWptUrl - URL String of Web Service WPT URL
+    * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+    *        format {data:[], fields:[]}
+    * 
+    * Note:
+    * 1. The Web Service should return a WPT format JSON object
+    *       {  
+    *           format: &quot;WPT&quot;,
+    *           version: &quot;2.0&quot;,
+    *           sources: [],
+    *           sheets: [],
+    *           reprots: []
+    *       }
+    * 2. This is a very useful API to load WPT from SQL databases or any other data storages
+    *    since Web Service access is cross domain and can be provided by any backend technologies.  
+    */
+</code></pre><h3 id="load-wpt-format-string">Load WPT format String</h3>
+<pre><code>webPivotTable.setWptString(wptString, dataObject);
 
     /** 
     * Load WPT format String 
     * @param {String} wptString - pre-saved WPT format string
+    * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+    *        format {data:[], fields:[]}
     */
 </code></pre><h3 id="load-wpt-format-json-oject">Load WPT format JSON Oject</h3>
-<pre><code>webPivotTable.setWptObject(wptObject);
+<pre><code>webPivotTable.setWptObject(wptObject, dataObject);
 
     /** 
     * Load WPT format JSON Oject 
     * @param {Object} wptObject - pre-saved WPT format JSON object
+    * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+    *        format {data:[], fields:[]}
     */
 </code></pre><h3 id="load-wpt-format-string-or-json-oject-with-updated-first-source-data">Load WPT format String or JSON Oject with updated first source data</h3>
 <pre><code>webPivotTable.setWpt(wpt, dataObject);

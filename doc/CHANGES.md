@@ -1,7 +1,13 @@
 [Back to Index](./index.md)
 
-### V3.2.1 March 1st, 2015
-* Add options to show/hide and position Grid&Chart menu bar
+### V3.3 March 15th, 2015
+* Remove dependence of put-selector and xstyle
+* All source tabs and sheet tabs are closable
+* Source view redesigned to show more info about source and improve navigation
+* Refactor to separate UI with services to support mobile version development
+* Add loading data or wpt file from web service (cross domain in browser) 
+* Imporve APIs and documents
+* Add options to position Grid&Chart menu bar at left/right
 * Add more uiFlags options to customize User Interface
 
 ### V3.2 February 25th, 2015

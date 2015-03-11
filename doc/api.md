@@ -111,22 +111,72 @@ WPT component use
 to handle CSV RAW data, please reference that to under CSV RAW data.
 
 
+### Load source data from Web Service Data URL 
+
+    webPivotTable.setWebServiceDataUrl(wsDataUrl, wptObject);
+
+        /** 
+        * Load source data from Web Service Data URL 
+        * @param {string} wsDataUrl - URL String of Web Service Data URL
+        * @param {Object} wptObject - optional, pre-saved wpt JSON object
+        * 
+        * Note:
+        * 1. The Web Service should return a JSON object
+        *       {  
+        *           attrArray: [],
+        *           dataArray: []
+        *       }
+        * 2. This is a very useful API to access data in SQL databases or any other data storages
+        *    since Web Service access is cross domain and can be provided by any backend technologies.  
+        * 3. If wptObject is not null, use it as pivot selections 
+        */
+
+
+### Load WPT format object from Web Service WPT URL 
+
+    webPivotTable.setWebServiceWptUrl(wsWptUrl, dataObject);
+
+        /** 
+        * Load WPT format object from Web Service WPT URL 
+        * @param {string} wsWptUrl - URL String of Web Service WPT URL
+        * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+        *        format {data:[], fields:[]}
+        * 
+        * Note:
+        * 1. The Web Service should return a WPT format JSON object
+        *       {  
+        *           format: "WPT",
+        *           version: "2.0",
+        *           sources: [],
+        *           sheets: [],
+        *           reprots: []
+        *       }
+        * 2. This is a very useful API to load WPT from SQL databases or any other data storages
+        *    since Web Service access is cross domain and can be provided by any backend technologies.  
+        */
+
+
+
 ### Load WPT format String 
 
-    webPivotTable.setWptString(wptString);
+    webPivotTable.setWptString(wptString, dataObject);
 
         /** 
         * Load WPT format String 
         * @param {String} wptString - pre-saved WPT format string
+        * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+        *        format {data:[], fields:[]}
         */
     
 ### Load WPT format JSON Oject 
 
-    webPivotTable.setWptObject(wptObject);
+    webPivotTable.setWptObject(wptObject, dataObject);
 
         /** 
         * Load WPT format JSON Oject 
         * @param {Object} wptObject - pre-saved WPT format JSON object
+        * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+        *        format {data:[], fields:[]}
         */
     
 ### Load WPT format String or JSON Oject with updated first source data

@@ -429,6 +429,12 @@ define({
         ERROR_NO_DATA_IN_REPORT: "No data in report yet!",
 
 
+        Mnu_WebService: "Web Service",
+        Lbl_WebServiceUrl: "Web Service URL",
+        Msg_InputWebServiceUrl: "Please input web service URL.",
+        Msg_LoadingWSData: "Loading data from web service",
+        Msg_WrongWSData: "Return data is not compatiable. ",
+
 
         Mnu_SaveToLocal: "To local file",
         Mnu_SaveToServer: "To server database",
