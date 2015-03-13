@@ -9,6 +9,7 @@
 * Imporve APIs and documents
 * Add options to position Grid&Chart menu bar at left/right
 * Add more uiFlags options to customize User Interface
+* Fix issue of load local olap cube through API.
 
 ### V3.2 February 25th, 2015
 * Add user information to support backend user authentication
@@ -31,8 +32,10 @@
 
 
 ### V3.0 January 10th, 2015
-* Redesign both UI and data structure to support to switch data source view and pivot table view
-* Redesign both UI and data structure to support to add multiple sources, sheets and reports
+* Redesign both UI and data structure to support to switch data source view and 
+  pivot table view
+* Redesign both UI and data structure to support to add multiple sources, sheets
+  and reports
 * Redesign the UI to better customize grids and charts
 * Update the wpt format to 2.0 to support multiple sources, sheets and reports
 * Show all charts at one time.
@@ -52,7 +55,8 @@
 
 ### V2.5 November 15th, 2014
 * Support to add Calculated fields with any formula
-* Support to keep filters working when loading updated data with pre saved pivot options.
+* Support to keep filters working when loading updated data with pre saved pivot
+  options.
 * Fix the issue pivot fields grid is empty while hide it first
 * Fix the issue of olap cube crossjoin with multiple dimensions.
 
