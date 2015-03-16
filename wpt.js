@@ -8,11 +8,19 @@ var fs = require('fs'),
 
 
 exports.xmlaProxy = function ( req,res ) {
-    req.pipe(request(req.get('xmlaUrl'))).pipe(res);
+    req.pipe(request(req.get('xmlaUrl'))
+            .on('error', function(err) {
+                res.send(400, err);
+            })
+    ).pipe(res);
 };
 
 exports.fileProxy = function ( req,res ) {
-    request.get(req.get('fileUrl')).pipe(res);
+    request.get(req.get('fileUrl'))
+        .on('error', function(err) {
+            res.send(400, err);
+        })
+        .pipe(res);
 };
 
 exports.generatePdf = function ( req,res ) {
