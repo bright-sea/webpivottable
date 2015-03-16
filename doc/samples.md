@@ -207,7 +207,7 @@ Code:
     </body>
     </html>
     
-## Business Intelligence product to levearge WPT component
+## Business Intelligence product to leverage WPT component
 
 <a href='http://bi2.io/' target='_blank'>Bright BI</a>
   

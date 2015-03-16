@@ -4,7 +4,7 @@
  Copyright (c) 2012-2015, Brightsea Inc. All Rights Reserved.
  @author :  minghai.zhao@gmail.com
  @version : 3.3.0
- Release Date: March 15th, 2015
+ Release Date: March 16th, 2015
 
  This WebPivotTable Component mimics a Microsoft Excel PivotTable
  based on dojo and HighCharts.

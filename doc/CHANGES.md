@@ -1,6 +1,6 @@
 [Back to Index](./index.md)
 
-### V3.3 March 15th, 2015
+### V3.3 March 16th, 2015
 * Remove dependence of put-selector and xstyle
 * All source tabs and sheet tabs are closable
 * Source view redesigned to show more info about source and improve navigation
