@@ -489,6 +489,8 @@ define({
         Lbl_UsedByReports: "Used by reports",
         Lbl_NoSource: "No Data Source yet.",
 
+        Lbl_DistinctCount: "Distinct Count",
+
         Btn_Create: "Create",
         Btn_Add: "Add",
         Btn_Change: "Change",

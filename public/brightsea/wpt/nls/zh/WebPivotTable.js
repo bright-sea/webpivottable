@@ -479,6 +479,7 @@ define({
     Lbl_UsedByReports: "使用该数据源的报表",
     Lbl_NoSource: "尚无数据源。",
 
+    Lbl_DistinctCount: "重复计数",
 
     Btn_Create: "创建",
     Btn_Add: "增加",
