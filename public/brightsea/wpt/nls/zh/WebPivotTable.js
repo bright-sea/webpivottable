@@ -463,6 +463,8 @@ define({
     Tip_PivotTable: "切换到数据透视表视图",
     Btn_DataSource: "数据源",
     Tip_DataSource: "切换到数据源视图",
+    Btn_Report: "报表",
+    Tip_Report: "切换到报表视图",
 
     Lbl_Source: "数据源",
     Lbl_Sheet: "工作薄",

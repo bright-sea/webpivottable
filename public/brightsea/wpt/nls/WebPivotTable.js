@@ -474,6 +474,8 @@ define({
         Tip_PivotTable: "Switch to Pivot Table View",
         Btn_DataSource: "DataSource",
         Tip_DataSource: "Switch to Data Source View",
+        Btn_Report: "Report",
+        Tip_Report: "Switch to Report View",
 
         Lbl_Source: "Source",
         Lbl_Sheet: "Sheet",
@@ -529,7 +531,10 @@ define({
         Tip_OpenWpt: "Open this WPT",
 
         Tip_AddSheet: "Create a new sheet",
-        Tip_AddReport: "Create a new report"
+        Tip_AddReport: "Create a new report",
+
+
+        Tip_RefineData: "Clean, transform, refine the data"
 
 
     },

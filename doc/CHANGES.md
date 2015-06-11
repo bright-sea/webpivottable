@@ -1,5 +1,17 @@
 [Back to Index](./index.md)
 
+### V 3.4 Jun 10th, 2015
+* Fix the issue of calculated field selection list not more than 25
+* Fix calculated field formula issue with ">" and "<"
+* Fix the issue of move values field in OLAP mode
+* Add distinct count statistic function for value fields
+* Add conditional operator in calculated field
+* First implementation of data refine functionalities.
+* Separate report tabs from pivottable view to an new view
+* Remove dependence of dojo base module in favour of ES5
+* Internal architecture redesign to provide mobile version services   
+
+
 ### V3.3 March 16th, 2015
 * Remove dependence of put-selector and xstyle
 * All source tabs and sheet tabs are closable
