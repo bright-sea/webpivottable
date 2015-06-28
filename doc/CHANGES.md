@@ -1,5 +1,19 @@
 [Back to Index](./index.md)
 
+### V 3.5 Jun 28th, 2015
+* Fix the issue of currency sign combobox store issue
+* Fix all nls missing items
+* Fix the issue of random order of children for a tree in dstore 
+* Create tab effects for viewSwitch buttons
+* Export all source data and drill through data to Excel
+* Add remove and edit buttons for pivot fields and control fields
+* Add delimiter selector for memory mode source
+* Add loaded data viewer for source
+* Add watermark for free version
+* Add jszip lib dependency
+* Add js-xlsx lib dependency
+
+
 ### V 3.4 Jun 10th, 2015
 * Fix the issue of calculated field selection list not more than 25
 * Fix calculated field formula issue with ">" and "<"
@@ -18,7 +32,7 @@
 * Source view redesigned to show more info about source and improve navigation
 * Refactor to separate UI with services to support mobile version development
 * Add loading data or wpt file from web service (cross domain in browser) 
-* Imporve APIs and documents
+* Improve APIs and documents
 * Add options to position Grid&Chart menu bar at left/right
 * Add more uiFlags options to customize User Interface
 * Fix issue of load local olap cube through API.

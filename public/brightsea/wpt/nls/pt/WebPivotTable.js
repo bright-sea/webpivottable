@@ -27,15 +27,15 @@ define({
     Msg_CloudDriveNotSupport: "Your network prevent you from using cloud drive.",
 
     /* WebPivotTable.js  */
-    Lbl_Sum: "Soma",
-    Lbl_Count: "Contagem",
-    Lbl_Average: "Média",
-    Lbl_Max: "Max",
-    Lbl_Min: "Min",
-    Lbl_Median: "Mediana",
-    Lbl_Mode: "Moda",
-    Lbl_StdDev: "Desvio Padrão",
-    Lbl_Variance: "Variação",
+    Lbl_Stat_Sum: "Soma",
+    Lbl_Stat_Count: "Contagem",
+    Lbl_Stat_Average: "Média",
+    Lbl_Stat_Max: "Max",
+    Lbl_Stat_Min: "Min",
+    Lbl_Stat_Median: "Mediana",
+    Lbl_Stat_Mode: "Moda",
+    Lbl_Stat_StdDev: "Desvio Padrão",
+    Lbl_Stat_Variance: "Variação",
 
     Tab_DrillThrough: "Detalhe",
 
@@ -71,7 +71,7 @@ define({
     Mnu_GssFile: "Planilha Google",
 
     Mnu_Internet: "Link da Internet",
-    Mnu_LocalDrive:"Disco Local",
+    Mnu_LocalDrive:"Arquivo Local",
     Mnu_CopyPaste: "Copiar & Colar",
     Mnu_CloudDrive: "Cloud Drive",
 

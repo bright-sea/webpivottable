@@ -1052,12 +1052,22 @@ body .dijitAlignClient { position: absolute; }
 	
 	overflow: hidden;
 }
-.dijitCalendarContainer {
+.dijitCalendarContainer table {
 	width: auto;	
+	clear: both;    
 }
 .dijitCalendarContainer th, .dijitCalendarContainer td {
 	padding: 0;
 	vertical-align: middle;
+}
+.dijitCalendarMonthContainer {
+	text-align: center;
+}
+.dijitCalendarDecrementArrow {
+	float: left;
+}
+.dijitCalendarIncrementArrow {
+	float: right;
 }
 .dijitCalendarYearLabel {
     white-space: nowrap;    
@@ -3228,7 +3238,6 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
 }
 .claro .dijitCalendar {
   border: solid 1px #b5bcc7;
-  border-collapse: separate;
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #cfe5fa;
@@ -3253,6 +3262,9 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
   
   background-color: #abd6ff;
   border: solid 1px #759dc0;
+}
+.claro .dijitCalendar table {
+  border-collapse: separate;
 }
 .claro .dijitCalendarMonthContainer th {
   text-align: center;
@@ -4758,6 +4770,12 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
 div.dijitNumberTextBoxRtl {
 	text-align: right;
 }
+.dijitCalendarRtl .dijitCalendarDecrementArrow {
+	float: right;
+}
+.dijitCalendarRtl .dijitCalendarIncrementArrow {
+	float: left;
+}
 .dijitCalendarRtl .dijitCalendarNextYear {
 	margin:0 0.55em 0 0;
 }
@@ -5218,6 +5236,10 @@ div.dijitNumberTextBoxRtl {
 .dgrid-input {
   width: 99%;
 }
+html.has-mozilla .dgrid .dgrid-row:focus,
+html.has-mozilla .dgrid .dgrid-cell:focus {
+  outline: 1px dotted;
+}
 html.has-mozilla .dgrid-focus {
   outline-offset: -1px;
 }
@@ -5603,9 +5625,15 @@ html.has-touch .dgrid-column-resizer {
     padding: 3px;
 }
 .wpt-bar-header-pane .dijitToolbar  .dijitToggleButtonChecked .dijitButtonNode{
-    border: 1px solid black;
     font-weight: bold;
     background-color: lightblue;
+    margin-top: 2px;
+    border-top-width: 4px;
+    padding-bottom: 6px;
+    border-bottom-width: 0;
+}
+.wpt-bar-header-pane .dijitToolbar  .dijitButtonContents {
+    outline: none;
 }
 .wpt-button-selector .dijitToggleButtonChecked .dijitButtonNode{
     background-color: orange;

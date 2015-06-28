@@ -17,12 +17,16 @@ Code:
     
         <link rel='stylesheet' href='brightsea/wpt/wpt.css'>
     
-        <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
         <script type="text/javascript" src="lib/filepicker/index.js"></script>
         <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="lib/highcharts-release/highcharts-all.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-3d.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
         <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
+        <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
+        <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
     
+        <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
     
         <script type="text/javascript">
             require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
@@ -134,12 +138,16 @@ Code:
     
         <link rel='stylesheet' href='brightsea/wpt/wpt.css'>
     
-        <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
         <script type="text/javascript" src="lib/filepicker/index.js"></script>
         <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="lib/highcharts-release/highcharts-all.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-3d.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
         <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
+        <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
+        <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
     
+        <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
     
         <script type="text/javascript">
             require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
@@ -180,12 +188,16 @@ Code:
     
         <link rel='stylesheet' href='brightsea/wpt/wpt.css'>
     
-        <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
         <script type="text/javascript" src="lib/filepicker/index.js"></script>
         <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="lib/highcharts-release/highcharts-all.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-3d.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
         <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
+        <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
+        <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
     
+        <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
     
         <script type="text/javascript">
             require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){

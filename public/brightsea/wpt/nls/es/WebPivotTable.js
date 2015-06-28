@@ -27,15 +27,15 @@ define({
     Msg_CloudDriveNotSupport: "La red impide el uso de cloud drive.",
 
     /* WebPivotTable.js */
-    Lbl_Sum: "Sumatoria",
-    Lbl_Count: "Conteo",
-    Lbl_Average: "Promedio",
-    Lbl_Max: "Maximo",
-    Lbl_Min: "Minimo",
-    Lbl_Median: "Mediana",
-    Lbl_Mode: "Moda",
-    Lbl_StdDev: "Desviación estándar",
-    Lbl_Variance: "Varianza",
+    Lbl_Stat_Sum: "Sumatoria",
+    Lbl_Stat_Count: "Conteo",
+    Lbl_Stat_Average: "Promedio",
+    Lbl_Stat_Max: "Maximo",
+    Lbl_Stat_Min: "Minimo",
+    Lbl_Stat_Median: "Mediana",
+    Lbl_Stat_Mode: "Moda",
+    Lbl_Stat_StdDev: "Desviación estándar",
+    Lbl_Stat_Variance: "Varianza",
 
     Tab_DrillThrough: "Detalles",
 
@@ -71,7 +71,7 @@ define({
     Mnu_GssFile: " Hoja de cálculo google",
 
     Mnu_Internet: "Enlace de Internet",
-    Mnu_LocalDrive:"Unidad local",
+    Mnu_LocalDrive:"Archivo local",
     Mnu_CopyPaste: "Copiar y pegar",
     Mnu_CloudDrive: "Unidad de almacenamiento en la nube",
 

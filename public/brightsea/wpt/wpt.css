@@ -1052,12 +1052,22 @@ body .dijitAlignClient { position: absolute; }
 	
 	overflow: hidden;
 }
-.dijitCalendarContainer {
+.dijitCalendarContainer table {
 	width: auto;	
+	clear: both;    
 }
 .dijitCalendarContainer th, .dijitCalendarContainer td {
 	padding: 0;
 	vertical-align: middle;
+}
+.dijitCalendarMonthContainer {
+	text-align: center;
+}
+.dijitCalendarDecrementArrow {
+	float: left;
+}
+.dijitCalendarIncrementArrow {
+	float: right;
 }
 .dijitCalendarYearLabel {
     white-space: nowrap;    
@@ -3228,7 +3238,6 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
 }
 .claro .dijitCalendar {
   border: solid 1px #b5bcc7;
-  border-collapse: separate;
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #cfe5fa;
@@ -3253,6 +3262,9 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
   
   background-color: #abd6ff;
   border: solid 1px #759dc0;
+}
+.claro .dijitCalendar table {
+  border-collapse: separate;
 }
 .claro .dijitCalendarMonthContainer th {
   text-align: center;
@@ -4758,6 +4770,12 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
 div.dijitNumberTextBoxRtl {
 	text-align: right;
 }
+.dijitCalendarRtl .dijitCalendarDecrementArrow {
+	float: right;
+}
+.dijitCalendarRtl .dijitCalendarIncrementArrow {
+	float: left;
+}
 .dijitCalendarRtl .dijitCalendarNextYear {
 	margin:0 0.55em 0 0;
 }
@@ -5416,6 +5434,10 @@ div.dojoxDialogNoTitle {
 .dgrid-input {
   width: 99%;
 }
+html.has-mozilla .dgrid .dgrid-row:focus,
+html.has-mozilla .dgrid .dgrid-cell:focus {
+  outline: 1px dotted;
+}
 html.has-mozilla .dgrid-focus {
   outline-offset: -1px;
 }
@@ -5801,9 +5823,15 @@ html.has-touch .dgrid-column-resizer {
     padding: 3px;
 }
 .wpt-bar-header-pane .dijitToolbar  .dijitToggleButtonChecked .dijitButtonNode{
-    border: 1px solid black;
     font-weight: bold;
     background-color: lightblue;
+    margin-top: 2px;
+    border-top-width: 4px;
+    padding-bottom: 6px;
+    border-bottom-width: 0;
+}
+.wpt-bar-header-pane .dijitToolbar  .dijitButtonContents {
+    outline: none;
 }
 .wpt-button-selector .dijitToggleButtonChecked .dijitButtonNode{
     background-color: orange;
@@ -6240,6 +6268,22 @@ html.has-touch .dgrid-column-resizer {
 	background-image:url("data:image/gif;base64,R0lGODlhEAAQAOYAAP///wBdAIGOm///AHeFkyczPgh1AEazGeTl93mGlOXl+ABJAABIAIiVoXaDj3+MmcPN1hglMXiEkXaBjgBEAHiGk3yIlHN/i4OQnHB8iOTr8fz+/7vFz254hGt1gUpTX9rc7ebq7vcZANzd79js98bQ2M7h7err+9Lc50O2E2hyflljb9/z/nZ7jwR3AG2FlQ6iDgBwABeuEdXo8zK1G0lTXi+6HSivG2qBkRglMsLM12VwemBpdABCAHGBjsHL1huqDwBAAF5pdBonM+Pk9WZ0gf4fAGFteD2wDSgzP1DVPie6I93l8NgUAFdga+Hu/8nT3Hh+k8nR2t8aAGNtd/Hy+RytHt/s/7/I0gOhEVxmccHK1BimDubm+DE8R3N/jV9nclVfad3e8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAQABAAAAfKgA0YAoSFhoQYDQ8AjI2Ojg8WAAQJBBUEmJeUBAAWEgAOjBqNo4yhEhMAPiwkTEQICl0KCCdfABMXAC9GIk9IB8DAKVEAFxkAOFNNVzEGzs4uLQAZHQBFMyYoICNiVY8dHgBHjFKOAecBAB4qAEJQECUQIYwBAwPpADsAKwAbWxsA0A2wgo4KACc/OGDhENDegBtL7vEAEIaRDnoDssDgAkRGAC0AvOSIMCQCAAZBAiihEYDCAjCPzA2wga9GkgI4cxY42cMlgA+BAAA7");
 	float:left;
 	margin-right: 3px;
+}
+.wpt-field-edit-img {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH1wIUEjosbofQGwAAAZ9JREFUOI2lkU8o5GEYgJ/38ysbGVImzTQXLTEHFyUbSpO47Nr2osWBrJM2F6RctInEzU1RpExuykhoNmkPDjZ7YPJnhJmWotGaZrIKPwfN7Mz8Zjby1ltv3/c+z/u9ffDKkEgxPTepvwRsa+4QAC32sLXpy7PgGedUtNYSL/3+47gHKiWICCIKESE/3xrXbxBE0RhIRFDqqU4MgyACJApEFPptGFe5mcwye7RfGQUqmkr9y9DlMe53FeQV1oJziwUHI0kFsVBEdHn2i4W1H9hdK1gbG7FmZBH6Tt9KHbb/CpRS3AQ2uDoY5GPDJzRNw+ndwxsKk13H5/pV/ElXiMDXvmmCp+NUvJ8gN93N0rILJXfoo718WGU+5Qqgc+Hph9sd7DWTPIRn8f/8RnXRFl87u9CzLal/Af2Gs+12zDYH5oIG/l4M49lcJMvagq1kgPQ3prh2g+BkvYrCyjFMuRb+nPRwuL1Jnn2IHFuTYVZSge+6lALuOd/t5rf3iGLHEiZzVVLYIJhxTnG4GyAY6OOtJYgvrR+Pex/YTyl4dTwCiMp08Xi/QsYAAAAASUVORK5CYII=");
+    float:left;
+    margin-right: 3px;
+}
+.wpt-field-remove-img {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABuwAAAbsBOuzj4gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKXSURBVDiNpZPLS1RhGIef75xvzjeO2eR4mzJsapzSatHFNEoiaBMECoZdIDCTiKL/oKK/INq6yIKkVKLIjUSLoIVZbiKCPFNjeUGhnHEujZ0ZZ8avhWH3Tb3L9/Lw3n5Ca83/mPzVERFCKUUXUp40q6urAG/h06cxhOg38ua96lQq9mO++LGD6WLZalRWdBcdafG7tm1HWGo5kM+TC4/hPH4UI55qXTfzcfg3wJTPs98VDD7Ru5us3JcMa7bWIQwDhAAhSNhhTLcb+eb1YmF66ti6d1ODAAbAzPrVZdK/drAQ3GLJ5oNUXbnK3MgL8rEYS/F55p49p+zCRay9+8jXBCzh93dHQiG1AoCidhmsLcsmU6xubMQdCrH+2nWir14TffmKqkuXKd61m5LGJhYTSWRgo9/j9XStjDBbv+mpq37bAS0EiWicmhs3cYdCZMcj5OIJVjU0kHkbZvL8OUprqhHCID8eGV77dKR5uQNhbM59eE8hFqXEbTLRcYps5B0qWLtcHLaZONOJ11uCnp+nMD0FUvq+n1GpOIbh1wsLkHHQC1nyiQTfboDWGp3NspRMIQzAMEDK0u87UFYMpUBZJDN5NvTeobhhD449hmPbFNXVE+i9Q/KLA5aFUAphqfAKwHCrPqEU6cUlAnf78ezYiWPbTHR2MNnZ8Q1SR+DWbdILDlgK7Xb3rwDSHl+PsNSsS5p8Hh3FsW0mu06zprIcr7+CybNdOGGbz6MvcFkWQsroUo57Pz3Sx5bDrdowBzLJlMppWFXuQ5gmQgi01qTn5pHSoMhXmhWaQ5UD94d/e+XZ40f3m4KHQPlftDML+kJV/4PBP2oBYKatrczlol0b4gSaLUBcC2Jo+tIpp6d2aCj7VzH9i30FmYkOE891ISEAAAAASUVORK5CYII=");
+    float:left;
+    margin-right: 3px;
 }
 .wpt-delete-calculated-img {
   width: 16px;

@@ -27,15 +27,15 @@ define({
     Msg_CloudDriveNotSupport: "您的网络禁止您使用云驱动器.",
 
     /* WebPivotTable.js  */  
-    Lbl_Sum: "总计",
-	Lbl_Count: "计数",
-	Lbl_Average: "平均值",
-	Lbl_Max: "最大值",
-	Lbl_Min: "最小值",
-	Lbl_Median: "中值",
-	Lbl_Mode: "众数",
-	Lbl_StdDev: "均方差",
-	Lbl_Variance: "方差",
+    Lbl_Stat_Sum: "总和",
+	Lbl_Stat_Count: "计数",
+	Lbl_Stat_Average: "平均值",
+	Lbl_Stat_Max: "最大值",
+	Lbl_Stat_Min: "最小值",
+	Lbl_Stat_Median: "中值",
+	Lbl_Stat_Mode: "众数",
+	Lbl_Stat_StdDev: "均方差",
+	Lbl_Stat_Variance: "方差",
 
     Tab_DrillThrough: "钻取",
 
@@ -65,11 +65,11 @@ define({
     Mnu_CsvFile: "CSV文件 (.csv)",
     Mnu_XlsFile: "XLS文件(Excel 97-2004)",
     Mnu_XlsxFile: "XLSX文件(Excel 2007+)",
-    Mnu_OlapCube: "OLAP多维数据集",
+    Mnu_OlapCube: "OLAP模式",
     Mnu_GssFile: "Google电子数据表",
 
     Mnu_Internet: "互联网链接",
-    Mnu_LocalDrive:"本地驱动器",
+    Mnu_LocalDrive:"本地文件",
     Mnu_CopyPaste: "拷贝/粘贴",
     Mnu_CloudDrive: "云驱动器",
 
@@ -327,10 +327,14 @@ define({
     Lbl_High_PrintChart: '打印图',
     Lbl_High_ResetZoom: '重设缩放',
     Lbl_High_ResetZoomTitle: '重设缩放级别 1:1',
-    
 
+    Lbl_3DView: "3D视图",
+    Lbl_Alpha: "阿尔法",
+    Lbl_Beta: "贝塔",
+    Lbl_Depth: "深度",
+    Lbl_ViewDistance: "视图距离",
 
-    /* DataPane.js  */    
+    /* DataPane.js  */
 
     Lbl_XmlaUrl: "XMLA服务器URL: ",
     Lbl_DataSource: "数据源: ",
@@ -422,6 +426,16 @@ define({
     ERROR_NO_DATA_IN_REPORT: "当前报表中还没有数据！",
 
 
+    Mnu_WebService: "Web服务",
+    Lbl_WebServiceUrl: "Web服务URL",
+    Msg_InputWebServiceUrl: "请输入Web服务URL.",
+    Msg_LoadingWSData: "从Web 服务加载数据",
+    Msg_WrongWSData: "返回的数据不兼容。",
+    Msg_NoDataLoaded: "没有数据被加载",
+    Msg_DataLoaded: "数据已经加载好",
+    Msg_SelectFileFromLocal: "请从本地驱动器选择一个文件",
+    Btn_ViewLoadedData: "查看已加载数据",
+
 
     Mnu_SaveToLocal: "到本地文件",
     Mnu_SaveToServer: "到服务器数据库中",
@@ -481,7 +495,7 @@ define({
     Lbl_UsedByReports: "使用该数据源的报表",
     Lbl_NoSource: "尚无数据源。",
 
-    Lbl_DistinctCount: "重复计数",
+    Lbl_Stat_DistinctCount: "重复计数",
 
     Btn_Create: "创建",
     Btn_Add: "增加",
@@ -490,9 +504,10 @@ define({
     Btn_Delete: "删除",
     Btn_Open: "打开",
 
-    Mnu_Memory: "本地内存",
+    Mnu_Memory: "内存模式",
     Lbl_Samples: "样例",
     Lbl_Format: "格式",
+    Lbl_Delimiter: "定界符",
 
     Tip_SwitchGridChart: "切换表格与图形",
 
@@ -521,6 +536,97 @@ define({
     Tip_OpenWpt: "打开此WPT",
 
     Tip_AddSheet: "创建新工作薄",
-    Tip_AddReport: "创建新报表"
+    Tip_AddReport: "创建新报表",
+
+    Lbl_Function_ConditionalOperator: '条件运算,语法： <br> 表达式 ? 表达式 : 表达式',
+    Lbl_Function_Abs: '绝对值',
+    Lbl_Function_Max: '最大值',
+    Lbl_Function_Min: '最小值',
+    Lbl_Function_Pow: 'x的y次方',
+    Lbl_Function_Sqrt: '平方根',
+    Lbl_Function_Exp: 'e的次方',
+    Lbl_Function_Log: '自然对数',
+    Lbl_Function_Random: '随机数',
+    Lbl_Function_Round: '四舍五入为最接近的整数',
+    Lbl_Function_Ceil: '向上舍数',
+    Lbl_Function_Floor: '向下舍数',
+    Lbl_Function_Sin: '正弦',
+    Lbl_Function_Cos: '余弦',
+    Lbl_Function_Tan: '正切',
+    Lbl_Function_Asin: '反正弦',
+    Lbl_Function_Acos: '反余弦',
+    Lbl_Function_Atan: '反正切',
+    Lbl_Function_Atan2: '从X轴到一个点的角度',
+    Lbl_Math_E: '常数 e, 自然对数的基',
+    Lbl_Math_LN10: '10的自然对数',
+    Lbl_Math_LN2: '2的自然对数',
+    Lbl_Math_LOG10E: 'e的以10为基的对数',
+    Lbl_Math_LOG2E: 'e的以2为基的对数',
+    Lbl_Math_PI: '常数 \u03c0',
+    Lbl_Math_SQRT1_2: '2的平方根的倒数',
+    Lbl_Math_SQRT_2: '2的平方根',
+
+    Lbl_SortBy: "以...索引",
+    Lbl_FilterBy: "以...过滤",
+    Lbl_Filter: "过滤",
+    Lbl_Label: "标签",
+    Lbl_TopBottom: "前/后",
+    Lbl_Top: "前",
+    Lbl_Bottom: "后",
+    Lbl_ShowItems: "显示满足...的项目",
+
+    Lbl_Equals: "相等",
+    Lbl_NotEquals: "不等",
+    Lbl_GreatThan: "大于",
+    Lbl_GreatEqual: "大于等于",
+    Lbl_LessThan: "小于",
+    Lbl_LessEqual: "小于等于",
+    Lbl_BeginWith: "起始于",
+    Lbl_NotBeginWith: "不起始于",
+    Lbl_EndWith: "终止于",
+    Lbl_NotEndWith: "不终止于",
+    Lbl_Contains: "包含",
+    Lbl_NotContains: "不包含",
+    Lbl_Between: "在之间",
+    Lbl_NotBetween: "不在之间",
+
+
+    Lbl_ShowValuesAs: "值显示为",
+    Lbl_NoCalculation:  "无计算",
+    Lbl_Percent_GrandTotal: "总计的百分比",
+    Lbl_Percent_ColumnTotal: "列小计的百分比",
+    Lbl_Percent_RowTotal: "行小计的百分比",
+    Lbl_Percent_ParentColumnTotal: "父亲列小计的百分比",
+    Lbl_Percent_ParentRowTotal: "父亲行小计的百分比",
+
+    Lbl_Category_General: "通用",
+    Lbl_Category_Number: "数字",
+    Lbl_Category_Currency: "货币",
+    Lbl_Category_Accounting: "会计",
+    Lbl_Category_Date: "日期",
+    Lbl_Category_Time: "时间",
+    Lbl_Category_Percentage: "百分比",
+    Lbl_Category_Fraction: "分数",
+    Lbl_Category_Scientific: "科学的",
+    Lbl_Category_Text: "文本",
+    Lbl_Category_Special: "特殊",
+    Lbl_Category_Custom: "定制",
+
+    Lbl_Prefix: "前缀",
+    Lbl_Suffix: "后缀",
+    Lbl_NegativeNumbers: "负数",
+    Lbl_NoSpecificFormat: "没有特别格式。",
+
+    Lbl_Mode: "模式",
+    Lbl_Url: "URL",
+    Lbl_ShowDimensionInfo: "鼠标悬停时显示纬度信息",
+
+    Lbl_GrandTotal: "总计",
+    Lbl_Total: "小计",
+
+
+    Lbl_RefineData: "净化数据",
+    Tip_RefineData: "清洗, 转换, 净化数据"
+
 
 });

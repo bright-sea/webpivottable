@@ -92,16 +92,20 @@ and javascript files into your page.
         <!-- Step 1 import wpt.css file into the page -->
         <link rel='stylesheet' href='brightsea/wpt/wpt.css'>    
     
-        <!-- Step 2 import wpt.js file into the page with correct dojo config-->
+        <!-- Step 2 import third party javascript libraries-->    
+        <script type="text/javascript" src="lib/filepicker/index.js"></script>
+        <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-3d.js"></script>
+        <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
+        <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
+        <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
+        <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
+    
+        <!-- Step 3 import wpt.js file into the page with correct dojo config-->
         <script type="text/javascript" src="brightsea/wpt/wpt.js"  
             data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script> 
         
-        <!-- Step 3 import third party javascript libraries-->    
-        <script type="text/javascript" src="lib/filepicker/index.js"></script>
-        <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="lib/highcharts-release/highcharts-all.js"></script>
-        <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
-    
         <!-- Step 4 create WebPivotTable object after dojo domReady-->
         <script type="text/javascript">
             require(["wpt/WebPivotTable","dojo/domReady!"], function(WebPivotTable){
@@ -118,8 +122,8 @@ and javascript files into your page.
 
 
 * Step1: import wpt.css file into the page
-* Step2: import wpt.js file into the page with correct dojo config
-* Step3: import third party javascript libraries
+* Step2: import third party javascript libraries
+* Step3: import wpt.js file into the page with correct dojo config
 * Step4: create WebPivotTable object after dojo domReady
 * Step5: add "claro" class to body tag
 
