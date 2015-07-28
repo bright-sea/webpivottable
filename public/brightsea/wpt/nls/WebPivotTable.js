@@ -65,8 +65,8 @@ define({
         Dlg_LoadData: "Load Data From Data Source",
 
         Mnu_CsvFile: "CSV File (.csv)",
-        Mnu_XlsFile: "XLS File (Excel 97-2004)",
-        Mnu_XlsxFile: "XLSX File (Excel 2007+)",
+        Mnu_ExcelFile: "Excel File (.xlsx/.xlsm/.xlsb/.xls)",
+        Mnu_OdsFile: "Open Office SpreadSheet File (.ods)",
         Mnu_OlapCube: "OLAP Mode",
         Mnu_GssFile: "Google Spreadsheet",
 
@@ -100,6 +100,7 @@ define({
         Lbl_Language: "Language",
         Lbl_English: "English",
         Lbl_Chinese: "Chinese",
+        Lbl_Turkish: "Turkish",
         Lbl_French: "French",
         Lbl_German: "German",
         Lbl_Spanish: "Spanish",
@@ -428,7 +429,6 @@ define({
 
         ERROR_NO_DATA_IN_REPORT: "No data in report yet!",
 
-
         Mnu_WebService: "Web Service",
         Lbl_WebServiceUrl: "Web Service URL",
         Msg_InputWebServiceUrl: "Please input web service URL.",
@@ -437,6 +437,16 @@ define({
         Msg_NoDataLoaded: "No data loaded",
         Msg_DataLoaded: "Data loaded successfully",
         Msg_SelectFileFromLocal: "Please select a file from local drive",
+        Msg_DiscoveringDataSources: "Discovering datasources: ",
+        Msg_DiscoveringCatalogs: "Discovering catalogs: ",
+        Msg_DiscoveringCubes: "Discovering cubes: ",
+        Msg_LoadingDimensions: "Loading all dimensions: ",
+        Msg_LoadingHierarchies: "Loading all hierarchies: ",
+        Msg_LoadingLevels: "Loading all levels: ",
+        Error_OLAP_NoDataSource: "No datasources found.",
+        Error_OLAP_NoCatalog: "No catalogs found",
+        Error_OLAP_NoDimension: "No dimensions found.",
+
         Btn_ViewLoadedData: "View Loaded Data",
 
         Mnu_SaveToLocal: "To local file",
@@ -458,10 +468,12 @@ define({
         Lbl_Footer: "Footer",
         Lbl_ZoomFactor: "Zoom Factor",
 
+        Btn_Export: "Export",
         Btn_ExportToHtml: "Export To HTML File",
         Btn_ExportToPng: "Export To PNG Image File",
         Btn_ExportToGif: "Export To GIF Image File",
         Btn_ExportToJpeg: "Export To JPEG Image File",
+        Btn_ExportToCsv: "Export To CSV File",
 
         Tip_AddCalculatedField: "Add new calculated field",
         Tip_ChangeCalculatedField: "Change this calculated field",
@@ -617,7 +629,6 @@ define({
 
         Lbl_Mode: "Mode",
         Lbl_Url: "URL",
-        Lbl_ShowDimensionInfo: "Show Dimension Info When Hover",
 
         Lbl_GrandTotal: "Grand Total",
         Lbl_Total: "Total",
@@ -629,6 +640,7 @@ define({
     },
 
     zh: true,
+    tr: true,
     pt: true,
     es: true,
     it: true

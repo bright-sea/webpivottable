@@ -1,5 +1,21 @@
 [Back to Index](./index.md)
 
+### V 3.6 July 28th, 2015
+* Export all source data and drill through data to CSV
+* Remove view property from wpt format
+* Layout source pane and drill through pane
+* Add customizeNew options for user to provide customized create new wpt UI
+* Add customizeOpen options for user to provide customized open wpt UI
+* Add customizeSave options for user to provide customized save UI
+* Add fields info for source fields and remove hover of xmla fields
+* Add ODS format support
+* Fix issue of olap drill through without proxy
+* Change wpt format for better support options
+* Add Turkish locale 
+* Fix issue of export html and pdf with non utf-8 chars
+* Fix issue of fields setting grid pagination
+
+
 ### V 3.5 Jun 28th, 2015
 * Fix the issue of currency sign combobox store issue
 * Fix all nls missing items

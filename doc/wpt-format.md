@@ -19,7 +19,6 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
             "id":1,
             "name":"Source1",
             "mode":"MEMORY",
-            "format":"CSV",
             "url":"/json/example.csv",
             "data":[           // data array
                 [               // first row data
@@ -43,7 +42,13 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                     "type":"NUMBER"  // MEASURE -- number    ATTRIBUTE -- string
                 },
                 ...
-            ]
+            ]，
+            “options”: {
+                "grid": {
+                    "cellWidth": 120,
+                    "cellHeight": 21
+                }
+            }
         },
         ...
     ],
@@ -135,75 +140,76 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                                 //  0--cols  1--rows else -1
             "valuesIndex":-1,   // if value length >1, the index of values in axis
                                 // else -1
-            "sheetOptions":{
+            "options":{
                 "chartFirst":0,
                 "pivotLayout":"1",
                 "expandRows":1,
                 "expandCols":1,
                 "nonEmpty":1,
-                "mdx":""
-            },
-            "gridOptions"{
-                "showSigns":1,
-                "showRowTotals":1,
-                "showColTotals":1,
-                "showRowSubtotals":1,
-                "showColSubtotals":1,
-                "compactForm":1,
-                "rowHeaderWidth":200,
-                "cellWidth":100,
-                "cellHeight":23,
-                "theme":"wpt-default"
-            },  
-            "chartOptions":{
-                "width":500,
-                "height":300,
-                "high":{
-                    "theme":"default",  //default, grid, gray, skies, drak-blue, drak-green
-                    chart:{
-                        type:'column',  //column, bar, line, spline, area, areaspline, pie
-                        options3d: {
-                            enabled: false,
-                            alpha: 15,
-                            beta: 15,
-                            depth: 50,
-                            viewDistance: 25
-                        }
-                    },
-                        credits: {
-                            enabled:false
-                        },
-                        exporting: {
-                            enabled:true
-                        },
-                        navigation:{
-                            buttonOptions:{
-                                align: 'right',   // left, center, right
-                                verticalAlign: 'top' // top, middle, bottom
+                "mdx":"",
+                
+                "grid":{
+                    "showSigns":1,
+                    "showRowTotals":1,
+                    "showColTotals":1,
+                    "showRowSubtotals":1,
+                    "showColSubtotals":1,
+                    "compactForm":1,
+                    "rowHeaderWidth":200,
+                    "cellWidth":100,
+                    "cellHeight":23,
+                    "theme":"wpt-default"
+                },  
+                "chart":{
+                    "width":500,
+                    "height":300,
+                    "high":{
+                        "theme":"default",  //default, grid, gray, skies, drak-blue, drak-green
+                        chart:{
+                            type:'column',  //column, bar, line, spline, area, areaspline, pie
+                            options3d: {
+                                enabled: false,
+                                alpha: 15,
+                                beta: 15,
+                                depth: 50,
+                                viewDistance: 25
                             }
                         },
-                        legend: {
-                            enabled: true,
-                            floating: false,
-                            layout: 'vertical',  //horizontal, vertical
-                            align: 'right',      // left, center, right
-                            verticalAlign: 'middle', // top, middle, bottom
-                            reversed: false
-                        },
-                        tooltip:{
-                            enabled: true,
-                            shadow: true
-                        },
-                        plotOptions: {
-                            series:{
-                                stacking: null //null, 'normal', "percent"
-                            }
-                        },
-                        xAxis: {
-                            labels:{
+                            credits: {
+                                enabled:false
+                            },
+                            exporting: {
+                                enabled:true
+                            },
+                            navigation:{
+                                buttonOptions:{
+                                    align: 'right',   // left, center, right
+                                    verticalAlign: 'top' // top, middle, bottom
+                                }
+                            },
+                            legend: {
                                 enabled: true,
-                                align:'left',  // left, center, right
-                                rotation:45    // 0 -- 360
+                                floating: false,
+                                layout: 'vertical',  //horizontal, vertical
+                                align: 'right',      // left, center, right
+                                verticalAlign: 'middle', // top, middle, bottom
+                                reversed: false
+                            },
+                            tooltip:{
+                                enabled: true,
+                                shadow: true
+                            },
+                            plotOptions: {
+                                series:{
+                                    stacking: null //null, 'normal', "percent"
+                                }
+                            },
+                            xAxis: {
+                                labels:{
+                                    enabled: true,
+                                    align:'left',  // left, center, right
+                                    rotation:45    // 0 -- 360
+                                }
                             }
                         }
                     }
@@ -229,9 +235,8 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                         "sheetId":1
                     }
                 ],
-                "reportOptions":{}
+                "options":{}
             },
             ...
-        ],
-        "view":"PIVOTTABLE"
+        ]
     }

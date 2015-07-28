@@ -128,7 +128,6 @@ when it saved.</p>
         &quot;id&quot;:1,
         &quot;name&quot;:&quot;Source1&quot;,
         &quot;mode&quot;:&quot;MEMORY&quot;,
-        &quot;format&quot;:&quot;CSV&quot;,
         &quot;url&quot;:&quot;/json/example.csv&quot;,
         &quot;data&quot;:[           // data array
             [               // first row data
@@ -152,7 +151,13 @@ when it saved.</p>
                 &quot;type&quot;:&quot;NUMBER&quot;  // MEASURE -- number    ATTRIBUTE -- string
             },
             ...
-        ]
+        ]，
+        “options”: {
+            &quot;grid&quot;: {
+                &quot;cellWidth&quot;: 120,
+                &quot;cellHeight&quot;: 21
+            }
+        }
     },
     ...
 ],
@@ -244,75 +249,76 @@ when it saved.</p>
                             //  0--cols  1--rows else -1
         &quot;valuesIndex&quot;:-1,   // if value length &gt;1, the index of values in axis
                             // else -1
-        &quot;sheetOptions&quot;:{
+        &quot;options&quot;:{
             &quot;chartFirst&quot;:0,
             &quot;pivotLayout&quot;:&quot;1&quot;,
             &quot;expandRows&quot;:1,
             &quot;expandCols&quot;:1,
             &quot;nonEmpty&quot;:1,
-            &quot;mdx&quot;:&quot;&quot;
-        },
-        &quot;gridOptions&quot;{
-            &quot;showSigns&quot;:1,
-            &quot;showRowTotals&quot;:1,
-            &quot;showColTotals&quot;:1,
-            &quot;showRowSubtotals&quot;:1,
-            &quot;showColSubtotals&quot;:1,
-            &quot;compactForm&quot;:1,
-            &quot;rowHeaderWidth&quot;:200,
-            &quot;cellWidth&quot;:100,
-            &quot;cellHeight&quot;:23,
-            &quot;theme&quot;:&quot;wpt-default&quot;
-        },  
-        &quot;chartOptions&quot;:{
-            &quot;width&quot;:500,
-            &quot;height&quot;:300,
-            &quot;high&quot;:{
-                &quot;theme&quot;:&quot;default&quot;,  //default, grid, gray, skies, drak-blue, drak-green
-                chart:{
-                    type:&#39;column&#39;,  //column, bar, line, spline, area, areaspline, pie
-                    options3d: {
-                        enabled: false,
-                        alpha: 15,
-                        beta: 15,
-                        depth: 50,
-                        viewDistance: 25
-                    }
-                },
-                    credits: {
-                        enabled:false
-                    },
-                    exporting: {
-                        enabled:true
-                    },
-                    navigation:{
-                        buttonOptions:{
-                            align: &#39;right&#39;,   // left, center, right
-                            verticalAlign: &#39;top&#39; // top, middle, bottom
+            &quot;mdx&quot;:&quot;&quot;,
+
+            &quot;grid&quot;:{
+                &quot;showSigns&quot;:1,
+                &quot;showRowTotals&quot;:1,
+                &quot;showColTotals&quot;:1,
+                &quot;showRowSubtotals&quot;:1,
+                &quot;showColSubtotals&quot;:1,
+                &quot;compactForm&quot;:1,
+                &quot;rowHeaderWidth&quot;:200,
+                &quot;cellWidth&quot;:100,
+                &quot;cellHeight&quot;:23,
+                &quot;theme&quot;:&quot;wpt-default&quot;
+            },  
+            &quot;chart&quot;:{
+                &quot;width&quot;:500,
+                &quot;height&quot;:300,
+                &quot;high&quot;:{
+                    &quot;theme&quot;:&quot;default&quot;,  //default, grid, gray, skies, drak-blue, drak-green
+                    chart:{
+                        type:&#39;column&#39;,  //column, bar, line, spline, area, areaspline, pie
+                        options3d: {
+                            enabled: false,
+                            alpha: 15,
+                            beta: 15,
+                            depth: 50,
+                            viewDistance: 25
                         }
                     },
-                    legend: {
-                        enabled: true,
-                        floating: false,
-                        layout: &#39;vertical&#39;,  //horizontal, vertical
-                        align: &#39;right&#39;,      // left, center, right
-                        verticalAlign: &#39;middle&#39;, // top, middle, bottom
-                        reversed: false
-                    },
-                    tooltip:{
-                        enabled: true,
-                        shadow: true
-                    },
-                    plotOptions: {
-                        series:{
-                            stacking: null //null, &#39;normal&#39;, &quot;percent&quot;
-                        }
-                    },
-                    xAxis: {
-                        labels:{
+                        credits: {
+                            enabled:false
+                        },
+                        exporting: {
+                            enabled:true
+                        },
+                        navigation:{
+                            buttonOptions:{
+                                align: &#39;right&#39;,   // left, center, right
+                                verticalAlign: &#39;top&#39; // top, middle, bottom
+                            }
+                        },
+                        legend: {
                             enabled: true,
-                            align:&#39;left&#39;,  // left, center, right
-                            rotation:45    // 0 -- 360
+                            floating: false,
+                            layout: &#39;vertical&#39;,  //horizontal, vertical
+                            align: &#39;right&#39;,      // left, center, right
+                            verticalAlign: &#39;middle&#39;, // top, middle, bottom
+                            reversed: false
+                        },
+                        tooltip:{
+                            enabled: true,
+                            shadow: true
+                        },
+                        plotOptions: {
+                            series:{
+                                stacking: null //null, &#39;normal&#39;, &quot;percent&quot;
+                            }
+                        },
+                        xAxis: {
+                            labels:{
+                                enabled: true,
+                                align:&#39;left&#39;,  // left, center, right
+                                rotation:45    // 0 -- 360
+                            }
                         }
                     }
                 }
@@ -338,11 +344,10 @@ when it saved.</p>
                     &quot;sheetId&quot;:1
                 }
             ],
-            &quot;reportOptions&quot;:{}
+            &quot;options&quot;:{}
         },
         ...
-    ],
-    &quot;view&quot;:&quot;PIVOTTABLE&quot;
+    ]
 }
 </code></pre>
   </body>

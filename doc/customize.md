@@ -70,8 +70,6 @@ Even after WebPivotTable object being created, you can still change options:
             localSaveTab: 1,      // show/hide Save WPT dialog "Save to local" Tab
             serverSaveTab: 1,     // show/hide Save WPT dialog "Save to Server" Tab
             
-            showDimInfoWhenHover: 0, // Whether Show Dimension/hierachy/level Tooltip when mouse hover
-
             sheetBarPivot: 1,     // show/hide Pivot buttons on sheet bar
             sheetBarFields: 1,    // show/hide Pivot fields on sheet bar
             
@@ -95,6 +93,22 @@ Even after WebPivotTable object being created, you can still change options:
         },
 
         fileLinks:[],
+
+        customizeNew: {
+            enabled: false,       // enable to call user customize new wpt UI
+            callback: function(webPivotTable){} // user callback to create new wpt
+        },
+
+        customizeOpen: {
+            enabled: false,       // enable to call user customize save wpt UI
+            callback: function(webPivotTable){} // user callback to open wpt
+        },
+
+        customizeSave: {
+            enabled: false,        // enable to call user customize save wpt UI
+            ignoreData: false,    // whether the passed wptString include data or not
+            callback: function(webPivotTable, wptString){}    // user callback to get saved data
+        },
 
         filepicker:{
             key:''               // filepicker application key
@@ -174,73 +188,75 @@ Even after WebPivotTable object being created, you can still change options:
             expandRows: 1,          // Expand/collapse All rows
             expandCols: 1,          // Expand/Collapse All columns  
             nonEmpty: 1,
-            mdx: ''
-        },
+            mdx: ''，
 
-        grid:{
-            showSigns: 1,
-            showRowTotals: 1,
-            showColTotals: 1,
-            showRowSubtotals: 1,
-            showColSubtotals: 1,
-            compactForm: 1,
-            rowHeaderWidth: 200,
-            cellWidth: 100,
-            cellHeight: 25,
-            theme: 'wpt-default'
-        },
-        chart:{
-            width: 500,
-            height: 300,
-
-            high:{
-                theme: 'default', //default, grid, gray, skies, drak-blue, drak-green
-                chart:{
-                    type:'column',  //column, bar, line, spline, area, areaspline, pie
-                    options3d: {
-                        enabled: false,
-                        alpha: 15,
-                        beta: 15,
-                        depth: 50,
-                        viewDistance: 25
-                    }
-                },
-                credits: {
-                    enabled:false
-                },
-                exporting: {
-                    enabled:false
-                },
-                navigation:{
-                    buttonOptions:{
-                        align: 'right',   // left, center, right
-                        verticalAlign: 'top' // top, middle, bottom
-                    }
-                },
-                legend: {
-                    enabled: true,
-                    floating: false,
-                    layout: 'vertical',  //horizontal, vertical
-                    align: 'right',      // left, center, right
-                    verticalAlign: 'middle', // top, middle, bottom
-                    reversed: false
-                },
-                tooltip:{
-                    enabled: true,
-                    shadow: true
-                },
-                plotOptions: {
-                    series:{
-                        stacking: null //null, 'normal', 'percent'
-                    }
-                },
-                xAxis: {
-                    labels:{
+            grid:{
+                showSigns: 1,
+                showRowTotals: 1,
+                showColTotals: 1,
+                showRowSubtotals: 1,
+                showColSubtotals: 1,
+                compactForm: 1,
+                rowHeaderWidth: 200,
+                cellWidth: 100,
+                cellHeight: 25,
+                theme: 'wpt-default'
+            },
+            chart:{
+                width: 500,
+                height: 300,
+    
+                high:{
+                    theme: 'default', //default, grid, gray, skies, drak-blue, drak-green
+                    chart:{
+                        type:'column',  //column, bar, line, spline, area, areaspline, pie
+                        options3d: {
+                            enabled: false,
+                            alpha: 15,
+                            beta: 15,
+                            depth: 50,
+                            viewDistance: 25
+                        }
+                    },
+                    credits: {
+                        enabled:false
+                    },
+                    exporting: {
+                        enabled:false
+                    },
+                    navigation:{
+                        buttonOptions:{
+                            align: 'right',   // left, center, right
+                            verticalAlign: 'top' // top, middle, bottom
+                        }
+                    },
+                    legend: {
                         enabled: true,
-                        align:'left',  // left, center, right
-                        rotation:45    // 0 -- 360
+                        floating: false,
+                        layout: 'vertical',  //horizontal, vertical
+                        align: 'right',      // left, center, right
+                        verticalAlign: 'middle', // top, middle, bottom
+                        reversed: false
+                    },
+                    tooltip:{
+                        enabled: true,
+                        shadow: true
+                    },
+                    plotOptions: {
+                        series:{
+                            stacking: null //null, 'normal', 'percent'
+                        }
+                    },
+                    xAxis: {
+                        labels:{
+                            enabled: true,
+                            align:'left',  // left, center, right
+                            rotation:45    // 0 -- 360
+                        }
                     }
                 }
             }
+            
         }
+
     };

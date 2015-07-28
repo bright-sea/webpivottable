@@ -27,7 +27,7 @@ define({
     Msg_CloudDriveNotSupport: "您的网络禁止您使用云驱动器.",
 
     /* WebPivotTable.js  */  
-    Lbl_Stat_Sum: "总和",
+    Lbl_Stat_Sum: "求和",
 	Lbl_Stat_Count: "计数",
 	Lbl_Stat_Average: "平均值",
 	Lbl_Stat_Max: "最大值",
@@ -63,8 +63,8 @@ define({
     Dlg_LoadData: "从数据源加载数据",
 
     Mnu_CsvFile: "CSV文件 (.csv)",
-    Mnu_XlsFile: "XLS文件(Excel 97-2004)",
-    Mnu_XlsxFile: "XLSX文件(Excel 2007+)",
+    Mnu_ExcelFile: "Excel文件 (.xlsx/.xlsm/.xlsb/.xls)",
+    Mnu_OdsFile: "OpenOffice表格文件 (.ods)",
     Mnu_OlapCube: "OLAP模式",
     Mnu_GssFile: "Google电子数据表",
 
@@ -98,6 +98,7 @@ define({
     Lbl_Language: "语言",    
     Lbl_English: "英语",    
     Lbl_Chinese: "中文",
+    Lbl_Turkish: "土耳其语",
     Lbl_French: "法语",
     Lbl_German: "德语",
     Lbl_Spanish: "西班牙语",
@@ -434,6 +435,16 @@ define({
     Msg_NoDataLoaded: "没有数据被加载",
     Msg_DataLoaded: "数据已经加载好",
     Msg_SelectFileFromLocal: "请从本地驱动器选择一个文件",
+    Msg_DiscoveringDataSources: "正在查找数据源: ",
+    Msg_DiscoveringCatalogs: "正在查找分类: ",
+    Msg_DiscoveringCubes: "正在查找多维数据集: ",
+    Msg_LoadingDimensions: "正在加载所有的维度: ",
+    Msg_LoadingHierarchies: "正在加载所有的层次结构: ",
+    Msg_LoadingLevels: "正在加载所有的层级: ",
+    Error_OLAP_NoDataSource: "没有找到数据源。",
+    Error_OLAP_NoCatalog: "没有找到分类。",
+    Error_OLAP_NoDimension: "没有找到维度。",
+
     Btn_ViewLoadedData: "查看已加载数据",
 
 
@@ -456,10 +467,12 @@ define({
     Lbl_Footer: "页脚",
     Lbl_ZoomFactor: "放大因子",
 
+    Btn_Export: "输出",
     Btn_ExportToHtml: "输出到HTML文件",
     Btn_ExportToPng: "输出到PNG图片文件",
     Btn_ExportToGif: "输出到GIF图片文件",
     Btn_ExportToJpeg: "输出到JPEG图片文件",
+    Btn_ExportToCsv: "输出到CSV文件",
 
     Tip_AddCalculatedField: "增加新的计算字段",
     Tip_ChangeCalculatedField: "更改此计算字段",
@@ -619,7 +632,6 @@ define({
 
     Lbl_Mode: "模式",
     Lbl_Url: "URL",
-    Lbl_ShowDimensionInfo: "鼠标悬停时显示纬度信息",
 
     Lbl_GrandTotal: "总计",
     Lbl_Total: "小计",

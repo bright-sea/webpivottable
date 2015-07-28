@@ -24,6 +24,7 @@ Code:
         <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
         <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
         <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
+        <script type="text/javascript" src="lib/js-xlsx/dist/ods.js"></script>
         <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
     
         <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
@@ -58,27 +59,27 @@ Code:
                             url: "http://bi2.io/json/FL_insurance.csv",
                             label: "Florida Insurance Data (Total 36,634 records)"
                         },{
-                            type: "XLS",
+                            type: "EXCEL",
                             url: "http://bi2.io/json/example.xls",
                             label: "USA Selection Poll Data (Total 4,000 records)"
                         },{
-                            type: "XLS",
+                            type: "EXCEL",
                             url: "http://bi2.io/json/sales.xls",
                             label: "Sales Sample Data (Total 2,823 records)"
                         },{
-                            type: "XLS",
+                            type: "EXCEL",
                             url: "http://bi2.io/json/FL_insurance.xls",
                             label: "Florida Insurance Data (Total 36,634 records)"
                         },{
-                            type: "XLSX",
+                            type: "EXCEL",
                             url: "http://bi2.io/json/example.xlsx",
                             label: "USA Selection Poll Data (Total 4,000 records)"
                         },{
-                            type: "XLSX",
+                            type: "EXCEL",
                             url: "http://bi2.io/json/sales.xlsx",
                             label: "Sales Sample Data (Total 2,823 records)"
                         },{
-                            type: "XLSX",
+                            type: "EXCEL",
                             url: "http://bi2.io/json/FL_insurance.xlsx",
                             label: "Florida Insurance Data (Total 36,634 records)"
                         },{
@@ -145,6 +146,7 @@ Code:
         <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
         <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
         <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
+        <script type="text/javascript" src="lib/js-xlsx/dist/ods.js"></script>
         <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
     
         <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>
@@ -195,6 +197,7 @@ Code:
         <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
         <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
         <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
+        <script type="text/javascript" src="lib/js-xlsx/dist/ods.js"></script>
         <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
     
         <script type="text/javascript" src="brightsea/wpt/wpt.js"  data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script>

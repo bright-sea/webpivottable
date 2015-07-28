@@ -65,8 +65,8 @@ define({
     Dlg_LoadData: "Carregando dados da Fonte de Dados",
 
     Mnu_CsvFile: "Arquivo CSV (.csv)",
-    Mnu_XlsFile: "Arquivo XLS (Excel 97-2004)",
-    Mnu_XlsxFile: "Arquivo XLSX (Excel 2007+)",
+    Mnu_ExcelFile: "Arquivo Excel (.xlsx/.xlsm/.xlsb/.xls)",
+    Mnu_OdsFile: " Arquivo Open Office SpreadSheet (.ods)",
     Mnu_OlapCube: "Cubo OLAP ",
     Mnu_GssFile: "Planilha Google",
 
@@ -100,6 +100,7 @@ define({
     Lbl_Language: "Idiomas",
     Lbl_English: "Inglês",
     Lbl_Chinese: "Chinês",
+    Lbl_Turkish: "Turco",
     Lbl_French: "Francês",
     Lbl_German: "Alemão",
     Lbl_Spanish: "Espanhol",

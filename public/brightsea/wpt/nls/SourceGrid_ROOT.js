@@ -1,0 +1,2 @@
+//>>built
+define("wpt/nls/SourceGrid_ROOT",{"dgrid/extensions/nls/pagination":{status:"${start} - ${end} of ${total} results",gotoFirst:"Go to first page",gotoNext:"Go to next page",gotoPrev:"Go to previous page",gotoLast:"Go to last page",gotoPage:"Go to page",jumpPage:"Jump to page",rowsPerPage:"Number of rows per page",_localized:{ar:1,de:1,es:1,fr:1,ja:1,pt:1,ro:1,sk:1,sl:1,th:1,"zh-cn":1,"zh-hk":1}}});

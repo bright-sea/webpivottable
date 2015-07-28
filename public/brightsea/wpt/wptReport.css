@@ -5638,8 +5638,8 @@ html.has-touch .dgrid-column-resizer {
 .wpt-button-selector .dijitToggleButtonChecked .dijitButtonNode{
     background-color: orange;
 }
-.wpt-main-container .dgrid-pagination .dgrid-navigation,
-.wpt-main-container .dgrid-pagination .dgrid-page-size{
+.wpt-csv-data-grid .dgrid-pagination .dgrid-navigation,
+.wpt-csv-data-grid .dgrid-pagination .dgrid-page-size{
     float:left;
 }
 .wpt-message{
@@ -5705,6 +5705,18 @@ html.has-touch .dgrid-column-resizer {
 .wpt-cursor-pointer {
     cursor:pointer;
 }
+.wpt-csv-data-grid .dgrid-row-odd{
+    background: mintcream;
+}
+.wpt-csv-data-grid .dgrid-header .dgrid-cell{
+    text-align: center;
+    background-color: #bfd6eb;
+    font-weight: bold;
+}
+.wpt-csv-data-grid .dgrid-cell,
+.wpt-csv-data-grid .dgrid-header .dgrid-cell {
+    border-color: #888;
+}
 .wpt-fields-grid .wpt-field-checkbox,
 .wpt-fields-grid .wpt-field-filter,
 .wpt-fields-grid .wpt-field-arrow,
@@ -5726,7 +5738,7 @@ html.has-touch .dgrid-column-resizer {
 .wpt-fields-grid .dgrid-cell,
 .wpt-control-grid .dgrid-cell,
 .wpt-fields-grid-ttd .dgrid-cell{
-  padding: 0;
+    padding: 0;
 	border: 0;
 }
 .wpt-control-grid .dgrid-row-table {
