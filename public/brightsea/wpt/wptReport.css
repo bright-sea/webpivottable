@@ -5566,7 +5566,7 @@ html.has-touch .dgrid-column-resizer {
     padding:0;
 }
 .wpt-toolbar .wpt-toolbar-container{
-    padding:0 5px;
+    padding:0;
 }
 .wpt-toolbar-separator
 {
@@ -5621,7 +5621,8 @@ html.has-touch .dgrid-column-resizer {
 .wpt-main-container .dijitContentPane,
 .wpt-nav-pane .dijitContentPane,
 .dojoxDialog .dijitTabPane,
-.wpt-tooltip-dialog .dijitContentPane{
+.wpt-tooltip-dialog .dijitContentPane,
+.wpt-nav-pane .dijitAccordionContainer .dijitAccordionContainer-child {
     padding: 3px;
 }
 .wpt-bar-header-pane .dijitToolbar  .dijitToggleButtonChecked .dijitButtonNode{
@@ -5662,6 +5663,18 @@ html.has-touch .dgrid-column-resizer {
     color:blue;
     cursor:pointer;
     text-decoration: underline;
+}
+.wpt-button {
+    color:blue;
+    cursor:pointer;
+    padding: 3px;
+    float:left;
+    margin: 0px;
+    font-weight: bold;
+}
+.wpt-button:hover {
+    border: 1px solid #888;
+    padding: 2px;
 }
 .wpt-pivot-chart-pane:-webkit-full-screen { width: 100%; height:100%; overflow: auto;}
 .wpt-pivot-chart-pane:-moz-full-screen    { width: 100%; height:100%; overflow: auto;}
@@ -5721,7 +5734,8 @@ html.has-touch .dgrid-column-resizer {
 .wpt-fields-grid .wpt-field-filter,
 .wpt-fields-grid .wpt-field-arrow,
 .wpt-control-grid .wpt-field-arrow,
-.wpt-fields-grid-ttd .field-selector{
+.wpt-fields-grid-ttd .field-selector,
+.wpt-fields-grid  .field-selector{
 	width:16px;
 }
 .wpt-control-container {

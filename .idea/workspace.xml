@@ -1,93 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2113945-3708-4288-8aa0-c309c797e1aa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_ROOT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_en-us.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_es-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_fi-fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_fr-fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_he-il.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_it-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_ja-jp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_ko-kr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_nl-nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_pt-pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/SourceGrid_zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/tr/WebPivotTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_ROOT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_en-us.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_es-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_fi-fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_fr-fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_he-il.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_it-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_ja-jp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_ko-kr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_nl-nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_pt-pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/wptdojo_zh-tw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/CHANGES.html" afterPath="$PROJECT_DIR$/doc/CHANGES.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/CHANGES.md" afterPath="$PROJECT_DIR$/doc/CHANGES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.html" afterPath="$PROJECT_DIR$/README.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/WebPivotTable.js" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/WebPivotTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/es/WebPivotTable.js" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/es/WebPivotTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/it/WebPivotTable.js" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/it/WebPivotTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/pt/WebPivotTable.js" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/pt/WebPivotTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/nls/zh/WebPivotTable.js" afterPath="$PROJECT_DIR$/public/brightsea/wpt/nls/zh/WebPivotTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/customize.html" afterPath="$PROJECT_DIR$/doc/customize.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/customize.md" afterPath="$PROJECT_DIR$/doc/customize.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/integration.html" afterPath="$PROJECT_DIR$/doc/integration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/integration.md" afterPath="$PROJECT_DIR$/doc/integration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/samples.html" afterPath="$PROJECT_DIR$/doc/samples.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/samples.md" afterPath="$PROJECT_DIR$/doc/samples.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/wpt-format.html" afterPath="$PROJECT_DIR$/doc/wpt-format.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/wpt-format.md" afterPath="$PROJECT_DIR$/doc/wpt-format.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/wpt.css" afterPath="$PROJECT_DIR$/public/brightsea/wpt/wpt.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/wpt.js" afterPath="$PROJECT_DIR$/public/brightsea/wpt/wpt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/brightsea/wpt/wptReport.css" afterPath="$PROJECT_DIR$/public/brightsea/wpt/wptReport.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js-xlsx/dist/xlsx.full.min.js" afterPath="$PROJECT_DIR$/public/lib/js-xlsx/dist/xlsx.full.min.js" />
-    </list>
+    <list default="true" id="b2113945-3708-4288-8aa0-c309c797e1aa" name="Default" comment="" />
     <ignored path="webpivottable.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,6 +96,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webpivottable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpivottable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpivottable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,7 +228,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3749072" sideWeight="0.6701847" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />

@@ -16,11 +16,15 @@ exports.xmlaProxy = function ( req,res ) {
 };
 
 exports.fileProxy = function ( req,res ) {
-    request.get(req.get('fileUrl'))
-        .on('error', function(err) {
-            res.send(400, err);
-        })
-        .pipe(res);
+    try {
+        request.get(req.get('fileUrl'))
+            .on('error', function (err) {
+                res.send(400, err);
+            })
+            .pipe(res);
+    }catch(error){
+        res.send(500, req.get('fileUrl')+' is not available!');
+    }
 };
 
 exports.generatePdf = function ( req,res ) {

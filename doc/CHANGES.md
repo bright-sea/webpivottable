@@ -1,5 +1,15 @@
 [Back to Index](./index.md)
 
+### V 3.7 Oct 16th, 2015
+* Fix issue on opening calculated field dialog at IE
+* Fix issue export grid to excel file with hidden rows
+* Redesign refine data modal dialog to modal view
+* Replace dojo csv parse with papaparse
+* Improve performance to support big size source data
+* Add hideSubtotal to hide subtotal of individual rows/cols field
+* Redesign drill through dialog to modal view
+* Customize drill through grid for filter and reorder
+
 ### V 3.6 July 28th, 2015
 * Export all source data and drill through data to CSV
 * Remove view property from wpt format

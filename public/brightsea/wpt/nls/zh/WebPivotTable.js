@@ -95,7 +95,7 @@ define({
 
     Tip_Help: "帮助",
 
-    Lbl_Language: "语言",    
+    Lbl_Language: "语言",
     Lbl_English: "英语",    
     Lbl_Chinese: "中文",
     Lbl_Turkish: "土耳其语",
@@ -635,6 +635,7 @@ define({
 
     Lbl_GrandTotal: "总计",
     Lbl_Total: "小计",
+    Lbl_HideSubtotal: "隐藏小计",
 
 
     Lbl_RefineData: "净化数据",

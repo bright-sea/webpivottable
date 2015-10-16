@@ -621,6 +621,7 @@ define({
 
 	Lbl_GrandTotal: "Genel Toplam",
 	Lbl_Total: "Toplam",
+    Lbl_HideSubtotal: "Gizle Ara Toplam",
 
 	Lbl_RefineData: "Refine Data",
 	Tip_RefineData: "Clean, transform, refine the data"

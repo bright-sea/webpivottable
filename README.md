@@ -102,7 +102,8 @@ and javascript files into your page.
         <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
         <script type="text/javascript" src="lib/js-xlsx/dist/ods.js"></script>
         <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
-    
+        <script type="text/javascript" src="lib/papaparse/papaparse.min.js"></script>
+   
         <!-- Step 3 import wpt.js file into the page with correct dojo config-->
         <script type="text/javascript" src="brightsea/wpt/wpt.js"  
             data-dojo-config="async:1, baseUrl: 'brightsea/dojo/'"></script> 

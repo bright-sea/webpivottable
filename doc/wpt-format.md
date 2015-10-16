@@ -93,6 +93,7 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
                 filterValue1: null    // for filterType =1
                          // and filterOperator = 'BT' or 'NB'
             },
+            hideSubtotal: 1,  //hide subtotal of this row or column field
             "type":"NUMBER"
         },
         ....

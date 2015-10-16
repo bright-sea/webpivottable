@@ -632,10 +632,12 @@ define({
 
         Lbl_GrandTotal: "Grand Total",
         Lbl_Total: "Total",
+        Lbl_HideSubtotal: "Hide Subtotal",
+
+        Lbl_SourceDataMaxRows: "Maximum supported rows for source data",
 
         Lbl_RefineData: "Refine Data",
         Tip_RefineData: "Clean, transform, refine the data"
-
 
     },
 
