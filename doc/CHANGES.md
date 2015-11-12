@@ -1,5 +1,15 @@
 [Back to Index](./index.md)
 
+### V3.8 Nov 12th, 2015
+* Add DrillThroughByDoubleClick options to customize drillThrough trigger
+* Add dojoDialogStyle options to customize dialog style
+* Add locale into String Compare to sort fields by locale
+* Remove Normalize check for Csv contents to avoid browser compatible issue
+* Fix issue of export excel with non utf-8 chars
+* Redesign open wpt dialog to modal view
+* Fix issue of Tooltip stay on screen while click a button with tooltips.
+
+
 ### V 3.7 Oct 16th, 2015
 * Fix issue on opening calculated field dialog at IE
 * Fix issue export grid to excel file with hidden rows

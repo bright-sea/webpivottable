@@ -128,8 +128,8 @@ define({
 
         /* SheetBar.js  */
 
-        Tip_ShowPivotFieldsList: "Show Pivot Fields List",
-        Tip_HidePivotFieldsList: "Hide Pivot Fields List",
+        Tip_ShowPivotFieldsList: "Show Navigation Panel",
+        Tip_HidePivotFieldsList: "Hide Navigation Panel",
 
         Tip_TileHorizontal: "Tile Horizontal",
         Tip_TileVertical: "Tile Vertical",
@@ -285,6 +285,7 @@ define({
         Lbl_Col: "Column",
         Lbl_Value: "Value",
         Lbl_ClickToDrillThrough: "Click to drill through.",
+        Lbl_DoubleClickToDrillThrough: "DoubleClick to drill through.",
 
         /* PivotChart.js  */
 
@@ -635,6 +636,8 @@ define({
         Lbl_HideSubtotal: "Hide Subtotal",
 
         Lbl_SourceDataMaxRows: "Maximum supported rows for source data",
+
+        Tip_CloseModal: "Close & return to main view",
 
         Lbl_RefineData: "Refine Data",
         Tip_RefineData: "Clean, transform, refine the data"

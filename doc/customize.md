@@ -38,41 +38,50 @@ Even after WebPivotTable object being created, you can still change options:
 
     var defaultOptions = {
     
-        locale: 'en',  // current language locale
-        availableLocales: ['en','zh','es','pt','it'], //selectable locale at UI
-                       // 'en','zh','es','pt',‘fr','de','ar','ru','it',
-                       // 'nl','el','he','hi','hu','sv','ko','ja'
+        locale: 'en',        // Current language locale
+                             // it should be set to one of values in below availableLocals
 
-        leavePageWarning: 1, //When leave page, whether to show a warning
+        availableLocales: ['en','zh','tr','es','pt','it'],
+                             // Selectable language locales for users to switch languages
+                             // possible locales like: 'en','zh','tr', 'es','pt',‘fr','de','ar',
+                             // 'ru','it', 'nl','el','he','hi','hu','sv','ko','ja'
 
-        uiFlags: {
+        leavePageWarning: 1, // When user leave page, whether show a warning or not
+
+        uiFlags: {           // A set of flags to control User Interface
+
             switchViewBtn: 1,     // show/hide TopBar view switch buttons
             newWptBtn: 1,         // show/hide TopBar "Create New WPT" button
             openWptBtn: 1,        // show/hide TopBar "Open WPT" button
             saveWptBtn: 1,        // show/hide TopBar "Save WPT" button
-            
-            navPaneBtn: 1,        // show/hide TopBar "Show pivot fields list" button
-            userBtn: 1,           // show/hide TopBar "Users" dropdown button
-            settingBtn: 1,
-            languageSwitchBtn: 1, // show/hide TopBar 'Language' dropdown button
-            helpBtn: 1,           // show/hide TopBar 'Help' button, but not work for free version
-            aboutBtn: 1,          // show/hide TopBar 'About' button, but not work for free version
 
-            memoryTab: 1,         // show/hide Load data dialog "Local Memory" Tab
-            olapTab: 1,           // show/hide Load data dialog "OLAP Cube" Tab
-            internetLinkTab: 1,   // show/hide Load data dialog "Internet Link" Tab
-            cloudDriveBtn: 1,     // show/hide Load data dialog "Goto Cloud Drive" Button
-            localDriveTab: 1,     // show/hide Load data dialog "Local Drive" Tab
-            webServiceTab: 1,     // show/hide Load data dialog "Web Service" Tab
-            googleSpreadSheetTab: 1, // show/hide Load data dialog "Google Spreadsheet" Tab
-            copyPasteTab: 1,      // show/hide Load data dialog "Copy & Paste" Tab
+            navPaneBtn: 1,        // show/hide TopBar "Show/Hide Navigation Panel" button
+            userBtn: 1,           // show/hide TopBar "Users" dropdown button
+            settingBtn: 1,        // show/hide TopBar "Setting" button
+            languageSwitchBtn: 1, // show/hide TopBar 'Language' dropdown button
+
+            helpBtn: 1,           // show/hide TopBar 'Help' button
+                                  // Only works for Component edition, Will always show for free edition
+            aboutBtn: 1,          // show/hide TopBar 'About' button
+                                  // Only works for Component edition, Will always show for free edition
+
+            memoryTab: 1,         // show/hide Load data view "Memory" Tab
+            olapTab: 1,           // show/hide Load data view "OLAP" Tab
+            internetLinkTab: 1,   // enable/disable Load data or wpt from "Internet Link"
+            cloudDriveBtn: 1,     // enable/disable Load data or wpt from "Cloud Drive"
+            localDriveTab: 1,     // enable/disable Load data or wpt from "Local Drive"
+            webServiceTab: 1,     // enable/disable Load data or wpt from "Web Service"
+            googleSpreadSheetTab: 1, // enable/disable Load data from "Google Spreadsheet"
+            copyPasteTab: 1,      // enable/disable Load data or wpt from "Copy & Paste"
 
             localSaveTab: 1,      // show/hide Save WPT dialog "Save to local" Tab
             serverSaveTab: 1,     // show/hide Save WPT dialog "Save to Server" Tab
-            
+
+            refineBtn: 0,         // show/hide refine dialog button
+
             sheetBarPivot: 1,     // show/hide Pivot buttons on sheet bar
             sheetBarFields: 1,    // show/hide Pivot fields on sheet bar
-            
+
             sheetSwitchBtn: 1,    // show/hide "switch grid and chart" button on sheet bar
             sheetLayoutBtn: 1,    // show/hide "grid & chart layout" buttons on sheet bar
 
@@ -80,44 +89,67 @@ Even after WebPivotTable object being created, you can still change options:
             exportChartMenu: 1,   // show/hide "export"  menu on sheet pivot chart menu bar
             exportReportMenu: 1,  // show/hide "export"  menu on report menu bar
             exportSourceMenu: 1,  // show/hide "export"  menu on source menu bar
-            
+
             exportToExcel: 1,     // support "Export to Excel"
+            exportToCsv: 1,       // support "Export to Csv"
             exportToHtml: 1,      // support "Export to HTML"
             exportToPdf: 1,       // support "Export to PDF"
             exportToPng: 1,       // support "Export to PNG"
             exportToJpeg: 1,      // support "Export to JPEG"
             exportToGif: 1,       // support "Export to GIF"
 
-            zoomBtn: 1,           // show/hide "Zoom"  menu on sheet control menu bar
-            fullScreenBtn: 1      // Support "Full Screen" mode for grid & chart
+            drillThroughByDoubleClick: 0,  // doubleclick or click to drill through pivot grids
+            oldDialogStyle: 0,    // use dijit.Dialog instead of dojox.dialog
+
+            zoomBtn: 1,           // show/hide "Zoom" menu
+            fullScreenBtn: 1      // enable/disable "Full Screen" mode
+        },
+
+        pivotFields: {               // Navigation Panel
+            show: 1,                 // show/hide: 1/0
+            position:'right',        // position: 'left', 'top', 'right', 'bottom'
+            stacked: 0,              // stack fields area or not: 1/0
+            width:300,               // width, only for left and right
+            height:200               // height, only for top and bottom
         },
 
         fileLinks:[],
 
-        customizeNew: {
-            enabled: false,       // enable to call user customize new wpt UI
-            callback: function(webPivotTable){} // user callback to create new wpt
+        customizeNew: {           // If enabled, click "Create New Wpt" button will not open dialog.
+                                  // Integration developers can hook their own handler in callback
+            enabled: false,       // enable/disable this hook
+            callback: function(webPivotTable){} // customize handler when click "Create New Wpt" button
         },
 
-        customizeOpen: {
+        customizeOpen: {          // If enabled, click "Open Wpt" button will not open dialog.
+                                  // Integration developers can hook their own handler in callback
             enabled: false,       // enable to call user customize save wpt UI
-            callback: function(webPivotTable){} // user callback to open wpt
+            callback: function(webPivotTable){} // customize handler when click "Open Wpt" button
         },
 
-        customizeSave: {
-            enabled: false,        // enable to call user customize save wpt UI
+        customizeSave: {          // If enabled, click "Save Wpt" button will not open dialog.
+                                  // Integration developers can hook their own handler in callback
+            enabled: false,       // enable to call user customize save wpt UI
             ignoreData: false,    // whether the passed wptString include data or not
-            callback: function(webPivotTable, wptString){}    // user callback to get saved data
+            callback: function(webPivotTable, wptString){}
+                                  // customize handler when click "Save Wpt" button
         },
 
         filepicker:{
-            key:''               // filepicker application key
+            key:''                // filepicker application key
         },
 
-        decimalPoint: '.',       // decimal point charactor: '.', ','
-        thousandsSep: ',',       // thousands separator: ',' '.', ' '
-        zoomScaleStep: 0.05,     // when zoom in/out, this is a scale for each step
-        reportCssFile: './brightsea/wpt/wptReport.css', // report CSS file path
+        decimalPoint: '.',        // decimal point charactor: '.', ','
+        thousandsSep: ',',        // thousands separator: ',' '.', ' '
+
+        sourceDataMaxRows: 100000,  // maximum supported rows of source data
+        zoomScaleStep: 0.05,        // when zoom in/out, this is the scale for each step
+
+        reportCssFile: './brightsea/wpt/wptReport.css',
+                                  // Report CSS file path
+                                  // If integration developer changed th file structure of Component,
+                                  // this should be set to point to correct path.
+
         webServiceTimeout: 10000,  // Web Service call timeout setting
 
         controlMenuBarPosition:'right', // Control MenuBar position: 'left', 'right'
@@ -125,7 +157,7 @@ Even after WebPivotTable object being created, you can still change options:
         olap:{
             drillThroughMaxRows: 1000,  // Max return rows for each drill through call
             sync : 0,                   // Synchroize / Asynchorize call
-            timeout : 300000,           // Timeout for xmla call 
+            timeout : 300000,           // Timeout for xmla call
             xmlaProxyEnabled: 1,        // enable/disable Xmla Proxy 1/0
             xmlaProxy: '/wpt/xmlaProxy' // Server proxy for cross domain xmla access
         },
@@ -148,14 +180,6 @@ Even after WebPivotTable object being created, you can still change options:
             }
         },
 
-        pivotFields: {               // Pivot Fields List pane
-            show: 1,                 // show/hide: 1/0
-            position:'right',        // position: 'left', 'top', 'right', 'bottom'
-            stacked: 0,              // stack fields area or not: 1/0
-            width:300,               // width, only for left and right
-            height:200               // height, only for top and bottom
-        },
-
         server: {
             helpUrl:'http://webpivottable.com/documents',
             fileProxyEnabled: 1,          // enable/disable file Proxy 1/0
@@ -168,27 +192,28 @@ Even after WebPivotTable object being created, you can still change options:
             cellWidth: 120,
             cellHeight: 21
         },
-        
-        source: {
+
+        source: {                  // Default options for each new source
             grid: {
                 cellWidth: 120,
                 cellHeight: 21
             }
         },
 
-        report: {
+        report: {                  // Default options for each new report
 
         },
 
-        sheet:{
+        sheet:{                    // Default options for each new sheet
+
             chartFirst: 0,          // show chart at top/left? 0/1
             pivotLayout: '1',       // Pivot Grid and chart layout
                                     // 0 -- tile horizontal, 1 -- tile vertical,
                                     // 2 -- grid only,  3 -- chart only
             expandRows: 1,          // Expand/collapse All rows
-            expandCols: 1,          // Expand/Collapse All columns  
+            expandCols: 1,          // Expand/Collapse All columns
             nonEmpty: 1,
-            mdx: ''，
+            mdx: '',
 
             grid:{
                 showSigns: 1,
@@ -205,7 +230,7 @@ Even after WebPivotTable object being created, you can still change options:
             chart:{
                 width: 500,
                 height: 300,
-    
+
                 high:{
                     theme: 'default', //default, grid, gray, skies, drak-blue, drak-green
                     chart:{
@@ -256,7 +281,6 @@ Even after WebPivotTable object being created, you can still change options:
                     }
                 }
             }
-            
         }
 
     };

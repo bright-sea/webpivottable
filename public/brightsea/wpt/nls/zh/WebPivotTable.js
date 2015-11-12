@@ -124,8 +124,8 @@ define({
 
     /* SheetBar.js  */
 
-    Tip_ShowPivotFieldsList: "显示数据透视字段列表",
-    Tip_HidePivotFieldsList: "隐藏数据透视字段列表",
+    Tip_ShowPivotFieldsList: "显示导航面板",
+    Tip_HidePivotFieldsList: "隐藏导航面板",
     
     Tip_TileHorizontal: "水平平铺",
     Tip_TileVertical: "垂直平铺",
@@ -284,6 +284,7 @@ define({
     Lbl_Col: "列",
     Lbl_Value: "值",
     Lbl_ClickToDrillThrough: "点击进行钻取。",
+    Lbl_DoubleClickToDrillThrough: "双击进行钻取。",
 
     /* PivotChart.js  */    
     
@@ -637,6 +638,7 @@ define({
     Lbl_Total: "小计",
     Lbl_HideSubtotal: "隐藏小计",
 
+    Tip_CloseModal: "关闭并返回主视图",
 
     Lbl_RefineData: "净化数据",
     Tip_RefineData: "清洗, 转换, 净化数据"
