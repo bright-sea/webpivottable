@@ -126,12 +126,17 @@ table.dijitInline {
 }
 .dijitHidden {
 	
-	display: none !important;
+	position: absolute; 
+	visibility: hidden; 
+}
+.dijitHidden * {
+	visibility: hidden !important; 
 }
 .dijitVisible {
 	
 	display: block !important;	
 	position: relative;			
+	visibility: visible;
 }
 .dj_ie6 .dijitComboBox .dijitInputContainer,
 .dijitInputContainer {
@@ -1814,6 +1819,17 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
 }
 .dijitNumberTextBox .dijitInputInner {
 	text-align: inherit; 
+}
+.dijitNumberTextBox input.dijitInputInner,
+.dijitCurrencyTextBox input.dijitInputInner,
+.dijitSpinner input.dijitInputInner {
+	text-align: right;
+}
+.dj_ie8 .dijitNumberTextBox input.dijitInputInner, .dj_ie9 .dijitNumberTextBox input.dijitInputInner,
+.dj_ie8 .dijitCurrencyTextBox input.dijitInputInner, .dj_ie9 .dijitCurrencyTextBox input.dijitInputInner,
+.dj_ie8 .dijitSpinner input.dijitInputInner, .dj_ie9 .dijitSpinner input.dijitInputInner {
+	
+	padding-right: 1px !important;
 }
 .dijitToolbar .dijitSelect {
 	margin: 0;
@@ -5369,6 +5385,7 @@ html.has-mozilla .dgrid-focus {
   border-right: 2px dotted #000 !important;
 }
 .dgrid-column-resizer {
+  cursor: col-resize;
   position: absolute;
   width: 2px;
   background-color: #666;
@@ -5387,6 +5404,14 @@ html.has-mozilla .dgrid-focus {
 }
 .dgrid-resize-header-container {
   height: 100%;
+}
+.dgrid-resize-guard {
+  cursor: col-resize;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 html.has-touch .dgrid-resize-handle {
   border-left: 20px solid transparent;
@@ -5544,6 +5569,10 @@ html.has-touch .dgrid-column-resizer {
 }
 .dojoxDialog{
     padding:0px !important;
+}
+.dijitDialogUnderlay {
+    opacity: 0;
+    background: rgb(238, 238, 238);
 }
 .dojoxDialogTitleBar {
     background-color: lightblue  !important;
@@ -5746,7 +5775,7 @@ html.has-touch .dgrid-column-resizer {
 }
 .wpt-control-container .wpt-text{
     float:left;
-    margin:0;
+    margin:2px 0;
     font-weight:bold;
 }
 .wpt-fields-grid .dgrid-cell,
@@ -5784,8 +5813,12 @@ html.has-touch .dgrid-column-resizer {
 }
 .wpt-fields-grid-ttd,
 .wpt-fields-setting-ttd{
-    width:300px;
-	height:350px;
+    width:400px;
+	height:400px;
+}
+.wpt-selection-grid-ttd{
+    width:250px;
+    height:300px;
 }
 .wpt-xmla-data-ttd{
     width:400px;

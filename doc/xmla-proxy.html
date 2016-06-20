@@ -1,0 +1,194 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <p><a href="./index.html">Back to Index</a></p>
+<h2 id="why-we-may-need-xmlaproxy-web-service-">Why we may need xmlaProxy Web Service?</h2>
+<h3 id="cross-domain-access-to-olap-server">Cross domain access to OLAP server</h3>
+<p>For security reason, there is a <a href="https://en.wikipedia.org/wiki/Same-origin_policy">Same Origin Policy</a> in 
+browsers. It means, web page of the application in web server (for example, web page which integrated WPT
+component) can’t access other web server (for example, OLAP server) directly if there are not at the same
+domain. (Pay attention that same domain means the same ip address and same port.)</p>
+<p>One of cross domain access solutions is using proxy. Proxy is a web service at web server which forwards 
+the request from WPT component to OLAP server, then forward response from OLAP server back to WPT component. </p>
+<p>In our nodeJs web server, we provide a proxy service at <a href="http://web_URL/wpt/xmlaProxy">http://web_URL/wpt/xmlaProxy</a>  , and the source code
+of this service is quite simple, you can see it at wpt.js file in root directory.</p>
+<h2 id="implementation-of-xmlaproxy-web-service">Implementation of xmlaProxy Web Service</h2>
+<h3 id="nodejs-javascript-version-included-in-wpt-component-">NodeJS (Javascript) version (included in WPT component)</h3>
+<pre><code>exports.xmlaProxy = function ( req,res ) {
+    req.pipe(request(req.get(&#39;xmlaUrl&#39;))
+            .on(&#39;error&#39;, function(err) {
+                res.send(400, err);
+            })
+    ).pipe(res);
+};
+</code></pre><p>WPT component will send all request to “/wpt/xmlaProxy” with an extra header “xmlaUrl”, the value of this header
+is real OLAP server URL. Since proxy url “/wpt/xmlaProxy” is at web server and the same domain, this request is
+OK. When proxy get the request, it will retrieve the value of “xmlaUrl” header,this is done by code:</p>
+<pre><code>req.get(“xmlaUrl”)
+</code></pre><p>Then it will make another request to this URL(that’s a request to real OLAP server), the code is</p>
+<pre><code>request(req.get(&quot;xmlaUrl&quot;))
+</code></pre><p>Although this is still a cross domain request (from web server to olap server, but since this request is at server
+side, not in browser, same origin policy is only a limitation in browsers, at server side, we can make any http 
+request to other servers)</p>
+<p>Then, pipe other information in request from WPT component in this request as well, this is done by code:</p>
+<pre><code>req.pipe(request(&quot;...&quot;))
+</code></pre><p>Finally, when proxy get response, pipe it back to response which should send back to WPT component, this is done 
+by code:</p>
+<pre><code>.pipe(res)
+</code></pre><p>Summary: Proxy get real olap server url from header, then make a http request to this url, and pipe the response
+back to WPT component.</p>
+<h3 id="java-version-contributed-by-ade-putra-">JAVA version (contributed by Ade Putra)</h3>
+<h4 id="restfull-web-service">Restfull Web Service</h4>
+<pre><code>import org.apache.http.HttpEntity;
+import org.apache.http.client.fluent.Content;
+import org.apache.http.client.fluent.Request;
+import org.apache.http.entity.ContentType;
+
+@Path(&quot;wptProxy&quot;)
+@POST
+@Consumes(MediaType.TEXT_XML)
+@Produces(MediaType.TEXT_XML)
+public Response wptProxy(@HeaderParam(&quot;xmlaUrl&quot;) String urls, @Context HttpServletRequest httpRequest) throws IOException {   
+      Content content = Request.Post(urls)
+         .bodyStream(httpRequest.getInputStream(), ContentType.TEXT_XML)
+         .execute()
+         .returnContent();
+      return Response.ok(content.asString()).build();
+}
+</code></pre><h4 id="stripes-framework-actionbean">Stripes (Framework) actionBean</h4>
+<pre><code>import org.apache.http.HttpEntity;
+import org.apache.http.client.fluent.Content;
+import org.apache.http.client.fluent.Request;
+import org.apache.http.entity.ContentType;
+
+public Resolution wptProxy() throws IOException {
+    String urls = context.getRequest().getHeader(&quot;xmlaUrl&quot;);
+
+    Content content = Request.Post(urls)
+            .bodyStream(context.getRequest().getInputStream(), ContentType.TEXT_XML)
+            .execute()
+            .returnContent(); 
+
+    StreamingResolution streamingResolution = new StreamingResolution(&quot;text/xml&quot;, content.asString());
+    return streamingResolution; 
+}
+</code></pre><h4 id="maven-dependency-pom-xml-">Maven Dependency (pom.xml)</h4>
+<pre><code> &lt;dependency&gt;
+       &lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
+       &lt;artifactId&gt;fluent-hc&lt;/artifactId&gt;
+       &lt;version&gt;4.2.6&lt;/version&gt;
+ &lt;/dependency&gt;
+</code></pre>
+  </body>
+</html>

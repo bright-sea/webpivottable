@@ -1,5 +1,67 @@
 [Back to Index](./index.md)
 
+### V4.2 May 28th, 2016
+* Add getWptObject API for developers to change internal wpt object directly
+* Add xmlaProxy java implementation in document, contributed by Ade Putra
+* Add deferLayoutExcludeFilter option to exclude field sort/filter from defer
+* Add Percentile Inclusive & Exclusive statistic methods for value fields
+* Add successCB and errorCB to all data load APIs
+* Add defaultToDistinctCount custom option to default stats for String field
+* Add support of Vietnamese 
+* Add show all selections in field order/filter dialog
+* Fix sheet grid/chart customize options not independent issue
+* Fix drill through issue for pie chart
+* Fix CSV data parse with customize delimiter issue
+* Fix compatible issue with old wpt format report options
+* Fix loadDataPane olap mode only issue
+* Fix to replace all hardcoded labels with translation
+
+
+
+### V4.1 Feb 19th, 2016
+* Add more report layout design options 
+* Add Combined chart and an option to switch between combined and separated 
+* Fix issue when filter OLAP levels with different order
+* Add back defer update button and function on navigation panel
+* Redesign drill through menu bars
+* Add German locale, translation contributed by Florian Strohmaier
+* Add search textbox on Fields List bar
+* Add calculatedFieldBtn option to show/hide calculated field function
+* Add sort for fields list
+* Add setDataArrays API to load multiple data sources together 
+* Add generateFilteredData API to retrieve current filtered data for one sheet
+* Add category function for memory mode fields list
+* Add categoryFieldBtn option to show/hide category function
+
+### V4.0 Jan 10th, 2016
+* Change dojoDialog underlay opacity from 0.5 to 0 
+* Remove defer update button and function on navigation panel
+* Redesign source/sheet/report menu bars
+* Remove pivot grid menu and pivot chart menu and add new customize dialog
+* Add pivot fields on menu bar for OLAP mode
+* Extend menu bar pivot fields full functional as navigation panel
+* Adjust top bar and sheet menu bar layout to responsive better
+* Add report title and style customization
+* Redesign all uiFlags options to server all above changes 
+* Add demos for customize options and chinese version
+* Use Caption instead of unique name in OLAP field filter
+* Fix issue move calculated field from values to rows
+
+
+### V3.9 Dec 12th, 2015
+* Add new options to hide DataSource/PivotTable/Report view buttons
+* Add new options to hide new Source/sheet/report buttons
+* Add mew options to hide rename Source/sheet/report buttons
+* Add new option changeSourceBtn to hide change source button
+* Add doubleclick custom event for highcharts 
+* Fix issue of some olap cube might have no levels for hierachy
+* Fix issue of Tooltip value not formatted
+* Fix the issue at IE11 when export pivot grid to Excel
+* Remove dependency of ods.js in js-xlsx
+* Update Portuguese translation file
+
+
+
 ### V3.8 Nov 12th, 2015
 * Add DrillThroughByDoubleClick options to customize drillThrough trigger
 * Add dojoDialogStyle options to customize dialog style
@@ -31,7 +93,7 @@
 * Add ODS format support
 * Fix issue of olap drill through without proxy
 * Change wpt format for better support options
-* Add Turkish locale 
+* Add Turkish locale, translation contributed by Onur Özgüzel
 * Fix issue of export html and pdf with non utf-8 chars
 * Fix issue of fields setting grid pagination
 

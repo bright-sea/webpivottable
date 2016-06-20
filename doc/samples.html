@@ -114,7 +114,7 @@
   <body>  
     <p><a href="./index.html">Back to Index</a></p>
 <h2 id="initial-wpt-component-with-an-csv-file-url-as-data-source">Initial WPT component with an csv file URL as data source</h2>
-<p><a href='http://bi2.io/demo.html' target='_blank'>Online Demo</a></p>
+<p><a href='http://demo.webpivottable.com/demo.html' target='_blank'>Online Demo</a></p>
 <p>Code:  </p>
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -133,8 +133,8 @@
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/highcharts-release/highcharts-3d.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/highcharts-release/highcharts-more.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/grouped_categories/grouped-categories.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;lib/custom_events/customEvents.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/jszip/dist/jszip.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;lib/js-xlsx/dist/ods.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/js-xlsx/dist/xlsx.min.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/papaparse/papaparse.min.js&quot;&gt;&lt;/script&gt;
 
@@ -147,51 +147,51 @@
                     reportCssFile: &quot;./brightsea/wpt/wptReport.css&quot;,
                     fileLinks:[{
                         type: &quot;WPT&quot;,
-                        url: &quot;http://bi2.io/json/sample91.wpt&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/sample91.wpt&quot;,
                         label: &quot;Predefined small CSV WebPivotTable file&quot;
                     },{
                         type: &quot;WPT&quot;,
-                        url: &quot;http://bi2.io/json/sample92.wpt&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/sample92.wpt&quot;,
                         label: &quot;Predefined Mondrian OLAP WebPivotTable file&quot;
                     },{
                         type: &quot;WPT&quot;,
-                        url: &quot;http://bi2.io/json/sample93.wpt&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/sample93.wpt&quot;,
                         label: &quot;Predefined large CSV WebPivotTable file&quot;
                     },{
                         type: &quot;CSV&quot;,
-                        url: &quot;http://bi2.io/json/example.csv&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/example.csv&quot;,
                         label: &quot;USA Selection Poll Data (Total 4,000 records)&quot;
                     },{
                         type: &quot;CSV&quot;,
-                        url: &quot;http://bi2.io/json/sales.csv&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/sales.csv&quot;,
                         label: &quot;Sales Sample Data (Total 2,823 records)&quot;
                     },{
                         type: &quot;CSV&quot;,
-                        url: &quot;http://bi2.io/json/FL_insurance.csv&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/FL_insurance.csv&quot;,
                         label: &quot;Florida Insurance Data (Total 36,634 records)&quot;
                     },{
                         type: &quot;EXCEL&quot;,
-                        url: &quot;http://bi2.io/json/example.xls&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/example.xls&quot;,
                         label: &quot;USA Selection Poll Data (Total 4,000 records)&quot;
                     },{
                         type: &quot;EXCEL&quot;,
-                        url: &quot;http://bi2.io/json/sales.xls&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/sales.xls&quot;,
                         label: &quot;Sales Sample Data (Total 2,823 records)&quot;
                     },{
                         type: &quot;EXCEL&quot;,
-                        url: &quot;http://bi2.io/json/FL_insurance.xls&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/FL_insurance.xls&quot;,
                         label: &quot;Florida Insurance Data (Total 36,634 records)&quot;
                     },{
                         type: &quot;EXCEL&quot;,
-                        url: &quot;http://bi2.io/json/example.xlsx&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/example.xlsx&quot;,
                         label: &quot;USA Selection Poll Data (Total 4,000 records)&quot;
                     },{
                         type: &quot;EXCEL&quot;,
-                        url: &quot;http://bi2.io/json/sales.xlsx&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/sales.xlsx&quot;,
                         label: &quot;Sales Sample Data (Total 2,823 records)&quot;
                     },{
                         type: &quot;EXCEL&quot;,
-                        url: &quot;http://bi2.io/json/FL_insurance.xlsx&quot;,
+                        url: &quot;http://demo.webpivottable.com/json/FL_insurance.xlsx&quot;,
                         label: &quot;Florida Insurance Data (Total 36,634 records)&quot;
                     },{
                         type: &quot;GSS&quot;,
@@ -203,19 +203,19 @@
                         label: &quot;Sales Sample Data (Total 2,823 records)&quot;
                     },{
                         type: &quot;OLAP&quot;,
-                        url: &quot;http://bi2.io:8080/mondrian/xmla&quot;,
+                        url: &quot;http://sampledata.infragistics.com/olap/msmdpump.dll&quot;,
+                        label: &quot;Sample Microsoft Analysis Service&quot;
+                    },{
+                        type: &quot;OLAP&quot;,
+                        url: &quot;http://demo.webpivottable.com:8080/mondrian/xmla&quot;,
                         label: &quot;Sample Mondrian OLAP Server&quot;
                     },{
                         type: &quot;OLAP&quot;,
-                        url: &quot;http://olap.flexmonster.com/olap/msmdpump.dll&quot;,
-                        label: &quot;Sample Microsoft Analysis Service&quot;
-//                    },{
-//                        type: &quot;OLAP&quot;,
-//                        url: &quot;http://bi2.io:8282/icCube/xmla&quot;,
-//                        label: &quot;Sample IcCube OLAP Server&quot;
+                        url: &quot;http://demo.webpivottable.com:8282/icCube/xmla&quot;,
+                        label: &quot;Sample icCube OLAP Server&quot;
                     }],
                     filepicker:{
-                        key:&quot;A4bieoUsyR4yBrNPkFIvrz&quot;  //bi2.io
+                        key:&quot;A4bieoUsyR4yBrNPkFIvrz&quot;  //demo.webpivottable.com
                     }
                 }
             },&quot;wpt-container&quot;);
@@ -231,7 +231,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre><h2 id="initial-wpt-component-with-an-olap-cube-as-data-source">Initial WPT component with an olap cube as data source</h2>
-<p><a href='http://bi2.io/demo-cube.html' target='_blank'>Online Demo</a></p>
+<p><a href='http://demo.webpivottable.com/demo-cube.html' target='_blank'>Online Demo</a></p>
 <p>Code:  </p>
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -250,8 +250,8 @@
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/highcharts-release/highcharts-3d.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/highcharts-release/highcharts-more.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/grouped_categories/grouped-categories.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;lib/custom_events/customEvents.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/jszip/dist/jszip.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;lib/js-xlsx/dist/ods.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/js-xlsx/dist/xlsx.min.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/papaparse/papaparse.min.js&quot;&gt;&lt;/script&gt;
 
@@ -263,7 +263,7 @@
             },&quot;wpt-container&quot;);
 
             wpt.setOlapCube({
-                 xmlaUrl: &quot;http://bi2.io:8080/mondrian/xmla&quot;,
+                 xmlaUrl: &quot;http://demo.webpivottable.com:8080/mondrian/xmla&quot;,
                  DataSourceInfo: &quot;Provider=Mondrian;DataSource=MondrianFoodMart;&quot;,
                  Catalog: &quot;FoodMart&quot;,
                  CubeName: &quot;HR&quot;
@@ -278,7 +278,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre><h2 id="initial-wpt-component-with-a-pre-saved-wpt-string-and-a-csv-file-as-updated-data-source">Initial WPT component with a pre-saved wpt string and a CSV file as updated data source</h2>
-<p><a href='http://bi2.io/demo-update.html' target='_blank'>Online Demo</a></p>
+<p><a href='http://demo.webpivottable.com/demo-update.html' target='_blank'>Online Demo</a></p>
 <p>Code:  </p>
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -297,8 +297,8 @@
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/highcharts-release/highcharts-3d.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/highcharts-release/highcharts-more.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/grouped_categories/grouped-categories.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;lib/custom_events/customEvents.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/jszip/dist/jszip.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;lib/js-xlsx/dist/ods.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/js-xlsx/dist/xlsx.min.js&quot;&gt;&lt;/script&gt;
     &lt;script type=&quot;text/javascript&quot; src=&quot;lib/papaparse/papaparse.min.js&quot;&gt;&lt;/script&gt;
 
@@ -324,7 +324,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre><h2 id="business-intelligence-product-to-leverage-wpt-component">Business Intelligence product to leverage WPT component</h2>
-<p><a href='http://bi2.io/' target='_blank'>Bright BI</a></p>
+<p><a href='http://demo.webpivottable.com/' target='_blank'>Bright BI</a></p>
 
   </body>
 </html>

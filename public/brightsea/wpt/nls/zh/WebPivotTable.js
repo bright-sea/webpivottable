@@ -3,7 +3,7 @@ define({
     Msg_LoadingData: "正在加载数据，总记录数：",
     Msg_LoadingCubeData: "正在加载OLAP多维数据集数据",
     Msg_LoadingGSSData: "正在加载Google电子数据表数据",
-    Msg_ChooseFieldsFirst: "为创建报表，请从数据透视字段列表中选取字段",
+    Msg_ChooseFieldsFirst: "为创建报表，请从字段列表中选取字段",
     Msg_UpdatingPivotGridData: "正在更新数据透视表格数据 ",
     Msg_QueryCubeRetrieveData: "正在查询OLAP多维数据集以获取数据 ",
     Msg_RetrievingMembers: "正在获取属性成员 ",    
@@ -52,8 +52,8 @@ define({
     Mnu_NewWpt: "创建新的WEB数据透视表",
     Mnu_OpenWpt: "打开WEB数据透视表文件 (.wpt)",
     Mnu_SaveWpt: "保存WEB数据透视表",
-    Mnu_Report: "创建并输出报表",
     Mnu_SourceData: "打开源数据视图",
+    Mnu_Report: "创建并输出报表",
 
     Mnu_Setting: "设置",
     Dlg_Setting: "设置",
@@ -114,6 +114,7 @@ define({
     Lbl_Swedish: "瑞典语",
     Lbl_Korean: "韩语",
     Lbl_Japanese: "日语",
+    Lbl_Vietnamese: "越南语",
 
     Lbl_DecimalPoint: "十进位小数点",
     Lbl_ThousandsSep: "千位分割符",
@@ -124,16 +125,14 @@ define({
 
     /* SheetBar.js  */
 
-    Tip_ShowPivotFieldsList: "显示导航面板",
-    Tip_HidePivotFieldsList: "隐藏导航面板",
+    Tip_ShowNavigationPanel: "显示导航面板",
+    Tip_HideNavigationPanel: "隐藏导航面板",
     
     Tip_TileHorizontal: "水平平铺",
     Tip_TileVertical: "垂直平铺",
-    Tip_GridOnly: "只显示数据透视表",
-    Tip_ChartOnly: "只显示数据透视图",
+    Tip_GridOnly: "只显示表格",
+    Tip_ChartOnly: "只显示图表",
     
-    Btn_PivotFields: "透视字段",
-    Tip_PivotFields: "修改或过滤透视字段",
     Lbl_NoneSelected: "(无)",
     Mnu_FieldFiltering: "字段过滤...",
 
@@ -154,10 +153,10 @@ define({
 
     /* PivotFields.js  */    
     
-	Lbl_PivotFieldsList: "数据透视字段列表",
-	Lbl_DragFields: "在以下区域间拖动字段",
+	Lbl_FieldsList: "字段列表",
+	Lbl_DragFields: "在区域间拖动字段",
 
-    Tip_FieldsListLayout: "数据透视字段列表布局",    
+    Tip_FieldsListLayout: "字段列表布局",
     Lbl_FieldsListPosition: "置于",
     Btn_OnTop: "上方",
     Btn_OnBottom: "下方",
@@ -523,7 +522,7 @@ define({
     Lbl_Format: "格式",
     Lbl_Delimiter: "定界符",
 
-    Tip_SwitchGridChart: "切换表格与图形",
+    Tip_SwitchGridChart: "切换表格与图表",
 
     Msg_SelectSource: "请选择一个数据源！",
     Msg_SelectSheet: "请选择一个现存的工作薄！",
@@ -638,7 +637,57 @@ define({
     Lbl_Total: "小计",
     Lbl_HideSubtotal: "隐藏小计",
 
+    Lbl_SortAndFilter: "排序和过滤...",
+    Lbl_SchemaProperties: "架构属性...",
+    Lbl_RetrieveMembers: "提取成员",
+    Lbl_Customize: "定制",
+    Tip_Customize: "定制表格和图表",
+    Lbl_Grid: "表格",
+    Lbl_Chart: "图表",
+    Lbl_CombinedChart: "组合图表在一起",
+
+
+    Lbl_Margin: "留白: ",
+    Lbl_Right: "右边",
+    Lbl_Left: "左边",
+
+    Lbl_SourceDataMaxRows: "源数据最大支持行数",
+
+
     Tip_CloseModal: "关闭并返回主视图",
+
+
+    Lbl_Dimension: "维度",
+    Lbl_Hierarchy: "层级",
+    Lbl_Level: "层次",
+    Lbl_Measure: "测度",
+    Lbl_Measures: "测度",
+
+    Lbl_Portrait: "肖像",
+    Lbl_Landscape: "景观",
+    Lbl_OrderBy: "按此排序",
+    Lbl_AddOrderByAsc: "增加按此上升排序",
+    Lbl_AddOrderByDes: "增加按此下降排序",
+    Lbl_ChangeToOrderByAsc: "更改为按此上升排序",
+    Lbl_ChangeToOrderByDes: "更改为按此下降排序",
+    Lbl_RemoveOrderBy: "移除按此排序",
+    Lbl_Parse: "解析",
+    Lbl_FileContent: "文件内容",
+    Lbl_ExcelWorkbook:"Excel工作薄",
+    Lbl_SelectedSource: "当前选定的数据源",
+    Lbl_AddToReport: "加入报表",
+    Lbl_RemoveFromReport: "从报表中移除",
+    Lbl_Auto: "自动",
+    Lbl_Content: "内容",
+    Lbl_ShowAllSelections: "显示全部选择",
+
+    Msg_ParsingData: "正在解析数据",
+    Msg_InvalidData: "没有数据或者是无效的数据",
+    Msg_TooManyRows: "数据太大，超过了能够支持的最大记录数",
+    Msg_SignInFirst: "请先登录!",
+
+
+
 
     Lbl_RefineData: "净化数据",
     Tip_RefineData: "清洗, 转换, 净化数据"

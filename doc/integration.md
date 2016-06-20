@@ -29,8 +29,8 @@ and javascript files into your page.
         <script type="text/javascript" src="lib/highcharts-release/highcharts-3d.js"></script>
         <script type="text/javascript" src="lib/highcharts-release/highcharts-more.js"></script>
         <script type="text/javascript" src="lib/grouped_categories/grouped-categories.js"></script>
+        <script type="text/javascript" src="lib/custom_events/customEvents.js"></script>
         <script type="text/javascript" src="lib/jszip/dist/jszip.min.js"></script>
-        <script type="text/javascript" src="lib/js-xlsx/dist/ods.js"></script>
         <script type="text/javascript" src="lib/js-xlsx/dist/xlsx.min.js"></script>
         <script type="text/javascript" src="lib/papaparse/papaparse.min.js"></script>
     

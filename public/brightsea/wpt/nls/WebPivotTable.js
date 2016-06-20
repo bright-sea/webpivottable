@@ -5,7 +5,7 @@ define({
         Msg_LoadingData: "Loading data, total records: ",
         Msg_LoadingCubeData: "Loading OLAP cube data ",
         Msg_LoadingGSSData: "Loading Google spreadsheet data ",
-        Msg_ChooseFieldsFirst: "To build a report, choose fields from Pivot Fields List.",
+        Msg_ChooseFieldsFirst: "To build a report, choose fields from Fields List.",
         Msg_UpdatingPivotGridData: "Updating pivot grid data ",
         Msg_QueryCubeRetrieveData: "Querying OLAP cube to retrieve data ",
         Msg_RetrievingMembers: "Retrieving members of attribute ",
@@ -117,6 +117,7 @@ define({
         Lbl_Japanese: "Japanese",
         Lbl_Korean: "Korean",
         Lbl_Polish: "Polish",
+        Lbl_Vietnamese: "Vietnamese",
 
 
         Lbl_DecimalPoint: "Decimal Point",
@@ -128,16 +129,14 @@ define({
 
         /* SheetBar.js  */
 
-        Tip_ShowPivotFieldsList: "Show Navigation Panel",
-        Tip_HidePivotFieldsList: "Hide Navigation Panel",
+        Tip_ShowNavigationPanel: "Show Navigation Panel",
+        Tip_HideNavigationPanel: "Hide Navigation Panel",
 
         Tip_TileHorizontal: "Tile Horizontal",
         Tip_TileVertical: "Tile Vertical",
-        Tip_GridOnly: "Show Pivot Grid Only",
-        Tip_ChartOnly: "Show Pivot Chart Only",
+        Tip_GridOnly: "Show Grid Only",
+        Tip_ChartOnly: "Show Chart Only",
 
-        Btn_PivotFields: "Pivot Fields",
-        Tip_PivotFields: "Change or Filter Pivot Fields",
         Lbl_NoneSelected: "(None)",
         Mnu_FieldFiltering: "Field Filtering...",
 
@@ -148,7 +147,7 @@ define({
         Tip_Mdx: "MDX Statement",
 
         Btn_Run: "Run",
-        Tip_Run: "Execuate this MDX stament on OLAP Cube",
+        Tip_Run: "Execuate this MDX statement on OLAP Cube",
 
         Tip_SwapAxis: "Swap Rows and Columns",
         Tip_ClearAll: "Clear All",
@@ -156,10 +155,10 @@ define({
 
         /* PivotFields.js  */
 
-        Lbl_PivotFieldsList: "Pivot Fields List",
-        Lbl_DragFields: "Drag fields between areas below:",
+        Lbl_FieldsList: "Fields List",
+        Lbl_DragFields: "Drag fields between areas",
 
-        Tip_FieldsListLayout: "Layout Pivot Fields List",
+        Tip_FieldsListLayout: "Layout Fields List",
         Lbl_FieldsListPosition: "Position on",
         Btn_OnTop: "Top",
         Btn_OnBottom: "Bottom",
@@ -508,6 +507,8 @@ define({
         Lbl_NoSource: "No Data Source yet.",
 
         Lbl_Stat_DistinctCount: "Distinct Count",
+        Lbl_Stat_PercentileInc: "Percentile Inclusive",
+        Lbl_Stat_PercentileExc: "Percentile Exclusive",
 
         Btn_Create: "Create",
         Btn_Add: "Add",
@@ -635,9 +636,62 @@ define({
         Lbl_Total: "Total",
         Lbl_HideSubtotal: "Hide Subtotal",
 
+        Lbl_SortAndFilter: "Sort & Filter ...",
+        Lbl_SchemaProperties: "Schema Properties ...",
+        Lbl_RetrieveMembers: "Retrieve Members",
+        Lbl_Customize: "Customize",
+        Tip_Customize: "Customize grid and charts",
+        Lbl_Grid: "Grid",
+        Lbl_Chart: "Chart",
+        Lbl_CombinedChart: "Combine Charts Together",
+
+
+        Lbl_Margin: "Margin",
+        Lbl_Right: "Right",
+        Lbl_Left: "Left",
+
+        Tip_AddCategoryField: "Add new category",
+        Tip_ChangeCategoryField: "Change this category",
+        Tip_RemoveCategoryField: "Remove this category",
+        Lbl_CategoryField: "Category",
+        Lbl_AvailableFields: "Available Fields",
+        Lbl_SelectedFields: "Selected Fields",
+
+
         Lbl_SourceDataMaxRows: "Maximum supported rows for source data",
 
         Tip_CloseModal: "Close & return to main view",
+
+        Lbl_Dimension: "Dimension",
+        Lbl_Hierarchy: "Hierarchy",
+        Lbl_Level: "Level",
+        Lbl_Measure: "Measure",
+        Lbl_Measures: "Measures",
+
+        Lbl_Portrait: "portrait",
+        Lbl_Landscape: "landscape",
+        Lbl_OrderBy: "Order By",
+        Lbl_AddOrderByAsc: "Add to Order By Ascending",
+        Lbl_AddOrderByDes: "Add to Order By Descending",
+        Lbl_ChangeToOrderByAsc: "Change to Order By Ascending",
+        Lbl_ChangeToOrderByDes: "Change to Order By Descending",
+        Lbl_RemoveOrderBy: "Remove Order By",
+        Lbl_Parse: "Parse",
+        Lbl_FileContent: "File Content",
+        Lbl_ExcelWorkbook:"Excel Workbook",
+        Lbl_SelectedSource: "Current Selected data source",
+        Lbl_AddToReport: "Add to report",
+        Lbl_RemoveFromReport: "Remove from report",
+        Lbl_Auto: "Auto",
+        Lbl_Content: "Content",
+        Lbl_ShowAllSelections: "Show All Selections",
+
+        Msg_ParsingData: "Parsing data",
+        Msg_InvalidData: "No data or invalid data",
+        Msg_TooManyRows: "Too many rows which more than supported maximum rows",
+        Msg_SignInFirst: "Please Sign in First!",
+
+
 
         Lbl_RefineData: "Refine Data",
         Tip_RefineData: "Clean, transform, refine the data"
@@ -645,6 +699,7 @@ define({
     },
 
     zh: true,
+    de: true,
     tr: true,
     pt: true,
     es: true,

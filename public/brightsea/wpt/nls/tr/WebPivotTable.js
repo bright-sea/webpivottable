@@ -3,13 +3,13 @@ define({
     Msg_LoadingData: "Veriler yükleniyor, Toplam Kayıt: ",
     Msg_LoadingCubeData: "OLAP veri kübü yükleniyor ",
     Msg_LoadingGSSData: "Google spreadsheet verileri yükleniyor ",
-    Msg_ChooseFieldsFirst: "Rapor tasarlamak için PivotTablo alanlarından seçim yapın.",
+    Msg_ChooseFieldsFirst: "Bir rapor oluşturmak için , Alanlar Listesi'nde alanları seçin.",
     Msg_UpdatingPivotGridData: "Pivot grid verisi güncelleniyor ",
     Msg_QueryCubeRetrieveData: "OLAP kübü veri çekmek için sorgulanıyor ",
     Msg_RetrievingMembers: "Retrieving members of attribute ",    
     Msg_DrillingThrough: "Hücre detaylarına erişiliyor ",    
     Msg_ExportingReport: "Rapor dışarı aktarılıyor ",    
-    
+
     Msg_LoadingFile: "Dosyalar yükleniyor: ",
     Msg_LoadingOlapCube: "OLAP küpleri getiriliyor :",
     Msg_PromptLoadCube: "Pivot Tablo' ya yüklemek için küplerden herhangi birisine tıklayın",
@@ -115,6 +115,7 @@ define({
 	Lbl_Japanese: "Japonca",
 	Lbl_Korean: "Korece",
 	Lbl_Polish: "Lehçe",
+	Lbl_Vietnamese: "Vietnam",
 
 
 	Lbl_DecimalPoint: "Ondalık Ayıracı",
@@ -126,16 +127,14 @@ define({
 
     /* SheetBar.js  */
 
-	Tip_ShowPivotFieldsList: "Pivot Alan Listesini Göster",
-	Tip_HidePivotFieldsList: "Pivot Alan Listesini Gizle",
+	Tip_ShowNavigationPanel: "Pivot Alan Listesini Göster",
+	Tip_HideNavigationPanel: "Pivot Alan Listesini Gizle",
 
 	Tip_TileHorizontal: "Dikey Döşe",
 	Tip_TileVertical: "Yatay Döşe",
-	Tip_GridOnly: "Sadece Pivot Grid' i Göster",
-	Tip_ChartOnly: "Sadece Pivot Grafiği' ı Göster",
+	Tip_GridOnly: "Sadece Grid' i Göster",
+	Tip_ChartOnly: "Sadece Grafiği' ı Göster",
 
-	Btn_PivotFields: "Pivot Alanları",
-	Tip_PivotFields: "Pivot Alanlarını Değiştir veya Filtrele",
 	Lbl_NoneSelected: "(Hiçbiri)",
 	Mnu_FieldFiltering: "Alan Filtreleniyor...",
 
@@ -156,10 +155,10 @@ define({
 
     /* PivotFields.js  */    
     
-	Lbl_PivotFieldsList: "Pivot Alanlarının Listesi",
-	Lbl_DragFields: "Alanları aşağıdaki bölgelere sürükleyin:",
+	Lbl_FieldsList: "Alanları Listesi",
+	Lbl_DragFields: "Alanlar arasındaki sürükleyin alanları",
 
-	Tip_FieldsListLayout: "Pivot Alanlarının Listesinin Görünümü",
+	Tip_FieldsListLayout: "Alanlarının Listesinin Görünümü",
 	Lbl_FieldsListPosition: "Position on",
 	Btn_OnTop: "Üst",
 	Btn_OnBottom: "Alt",

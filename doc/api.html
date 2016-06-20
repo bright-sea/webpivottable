@@ -160,166 +160,297 @@
     * 3. setOptions will call refreshUI automatically
     */
 </code></pre><h3 id="load-source-data-from-data-array">Load source data from data array</h3>
-<pre><code>webPivotTable.setDataArray(attrArray, dataArray, dataUrl, wptObject);
+<pre><code>webPivotTable.setDataArray(attrArray, dataArray, dataUrl, wptObject, successCB, errorCB);
 
-    /** 
-    * Load source data from data array 
-    * @param {Array} attrArray - Array of attributes
-    *       example: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...]
-    * @param {Array} dataArray - Array of data rows, each row is also an array of values
-    *       example: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]]
-    * @param {String} dataUrl - optional, Url for track the source data
-    *       This is just for tracking, pass &quot;&quot; if not know or no need. 
-    * @param {Object} wptObject - optional, pre-saved wpt JSON object
-    * 
-    * Note:
-    * 1. If wptObject is not null, use it as pre-saved pivot selections 
-    * 2. This is major API to load source data into WPT component, it was 
-    *   used by setCsvUrl and setCsvRawData internally.  Actually, developers 
-    *   can load any kinds of data from any other resources, like SQL databases, 
-    *   and format them as attrArray and dataArray, then load them into WPT component.
-    */
+    /**
+     * Load source data from data array
+     * @param {Array} attrArray - Array of attributes
+     *       example: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...]
+     * @param {Array} dataArray - Array of data rows, each row is also an array of values
+     *       example: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]]
+     * @param {String} dataUrl - optional, Url for track the source data
+     *       This is just for tracking, pass &quot;&quot; if not know or no need.
+     * @param {Object} wptObject - optional, pre-saved wpt JSON object
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * Note:
+     * 1. If wptObject is not null, use it as pre-saved pivot selections
+     * 2. This is major API to load source data into WPT component, it was
+     *   used by setCsvUrl and setCsvRawData internally.  Actually, developers
+     *   can load any kinds of data from any other resources, like SQL databases,
+     *   and format them as attrArray and dataArray, then load them into WPT component.
+     */
+</code></pre><h3 id="load-multiple-data-sources-together-from-data-arrays">Load multiple data sources together from data arrays</h3>
+<pre><code>webPivotTable.setDataArrays (dataSources, wptObject, successCB, errorCB);
+
+    /**
+     * Load data from data sources
+     * @param {Array} dataSources - Array of data source
+     *       example: [{
+     *          attr: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...],
+     *          data: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]],
+     *          url: &#39;&#39;
+     *       },{
+     *          attr: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...],
+     *          data: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]],
+     *          url: &#39;&#39;
+     *       }]
+     * @param {Object} wptObject - optional, pre-saved wpt JSON object
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * Note:
+     * 1. If wptObject is not null, use it as pre-saved pivot selections
+     * 2. This is major API to load multiple source data into WPT component, developers
+     *   can load any kinds of data from any other resources, like SQL databases,
+     *   and format them as attrArray and dataArray, then load them into WPT component.
+     */
 </code></pre><h3 id="load-source-data-from-csv-file-url">Load source data from CSV file URL</h3>
-<pre><code>webPivotTable.setCsvUrl(url, separator, wptObject);
+<pre><code>webPivotTable.setCsvUrl(url, separator, wptObject, successCB, errorCB);
 
-    /** 
-    * Load source data from CSV file URL 
-    * @param {string} csvUrl - URL String of CSV file
-    * @param {string} separator - optional, separator char for CSV file, default is &quot;,&quot;
-    * @param {Object} wptObject - optional, pre-saved wpt JSON object
-    * 
-    * if wptObject is not null, use it as pivot selections 
-    */
+    /**
+     * Load source data from CSV file URL
+     * @param {string} csvUrl - URL String of CSV file
+     * @param {string} separator - optional, separator char for CSV file, default is &quot;,&quot;
+     * @param {Object} wptObject - optional, pre-saved wpt JSON object
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * if wptObject is not null, use it as pivot selections
+     */
 </code></pre><h3 id="load-source-data-from-csv-raw-data">Load source data from CSV RAW data</h3>
-<pre><code>webPivotTable.setCsvRawData(csvRawData, separator, wptObject);
+<pre><code>webPivotTable.setCsvRawData(csvRawData, separator, wptObject, successCB, errorCB);
 
-    /** 
-    * Load source data from CSV RAW data 
-    * @param {string} csvRawData - CSV RAW data
-    *    https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
-    * @param {string} separator - optional, separator char for CSV RAW data, default is &quot;,&quot;
-    * @param {Object} wptObject - optional, pre-saved wpt JSON object
-    * 
-    * if wptObject is not null, use it as pivot selections 
-    */
+    /**
+     * Load source data from CSV RAW data
+     * @param {string} csvRawData - CSV RAW data
+     *    https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
+     * @param {string} separator - optional, separator char for CSV RAW data, default is &quot;,&quot;
+     * @param {Object} wptObject - optional, pre-saved wpt JSON object
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * if wptObject is not null, use it as pivot selections
+     */
 </code></pre><p>WPT component use
 <a href="https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html" target="_blank">dojox.data.CsvStore</a>
 to handle CSV RAW data, please reference that to under CSV RAW data.</p>
 <h3 id="load-source-data-from-web-service-data-url">Load source data from Web Service Data URL</h3>
-<pre><code>webPivotTable.setWebServiceDataUrl(wsDataUrl, wptObject);
+<pre><code>webPivotTable.setWebServiceDataUrl(wsDataUrl, wptObject, successCB, errorCB);
 
-    /** 
-    * Load source data from Web Service Data URL 
-    * @param {string} wsDataUrl - URL String of Web Service Data URL
-    * @param {Object} wptObject - optional, pre-saved wpt JSON object
-    * 
-    * Note:
-    * 1. The Web Service should return a JSON object
-    *       {  
-    *           attrArray: [],
-    *           dataArray: []
-    *       }
-    * 2. This is a very useful API to access data in SQL databases or any other data storages
-    *    since Web Service access is cross domain and can be provided by any backend technologies.  
-    * 3. If wptObject is not null, use it as pivot selections 
-    */
+    /**
+     * Load source data from Web Service Data URL
+     * @param {string} wsDataUrl - URL String of Web Service Data URL
+     * @param {Object} wptObject - optional, pre-saved wpt JSON object
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     *
+     * Note:
+     * 1. The Web Service should return a JSON object
+     *       {
+     *           attrArray: [],
+     *           dataArray: []
+     *       }
+     * 2. This is a very useful API to access data in SQL databases or any other data storages
+     *    since Web Service access is cross domain and can be provided by any backend technologies.
+     * 3. If wptObject is not null, use it as pivot selections
+     */
 </code></pre><h3 id="load-wpt-format-object-from-web-service-wpt-url">Load WPT format object from Web Service WPT URL</h3>
-<pre><code>webPivotTable.setWebServiceWptUrl(wsWptUrl, dataObject);
+<pre><code>webPivotTable.setWebServiceWptUrl(wsWptUrl, dataObject, successCB, errorCB);
 
-    /** 
-    * Load WPT format object from Web Service WPT URL 
-    * @param {string} wsWptUrl - URL String of Web Service WPT URL
-    * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
-    *        format {data:[], fields:[]}
-    * 
-    * Note:
-    * 1. The Web Service should return a WPT format JSON object
-    *       {  
-    *           format: &quot;WPT&quot;,
-    *           version: &quot;2.0&quot;,
-    *           sources: [],
-    *           sheets: [],
-    *           reprots: []
-    *       }
-    * 2. This is a very useful API to load WPT from SQL databases or any other data storages
-    *    since Web Service access is cross domain and can be provided by any backend technologies.  
-    */
+    /**
+     * Load WPT format object from Web Service WPT URL
+     * @param {string} wsWptUrl - URL String of Web Service WPT URL
+     * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+     *        format {data:[], fields:[]}
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     *
+     * Note:
+     * 1. The Web Service should return a WPT format JSON object
+     *       {
+     *           format: &quot;WPT&quot;,
+     *           version: &quot;2.0&quot;,
+     *           sources: [],
+     *           sheets: [],
+     *           reprots: []
+     *       }
+     * 2. This is a very useful API to load WPT from SQL databases or any other data storages
+     *    since Web Service access is cross domain and can be provided by any backend technologies.
+     */
 </code></pre><h3 id="load-wpt-format-string">Load WPT format String</h3>
-<pre><code>webPivotTable.setWptString(wptString, dataObject);
+<pre><code>webPivotTable.setWptString(wptString, dataObject, successCB, errorCB);
 
-    /** 
-    * Load WPT format String 
-    * @param {String} wptString - pre-saved WPT format string
-    * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
-    *        format {data:[], fields:[]}
-    */
+    /**
+     * Load WPT format String
+     * @param {String} wptString - pre-saved WPT format string
+     * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+     *        format {data:[], fields:[]}
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     */
 </code></pre><h3 id="load-wpt-format-json-oject">Load WPT format JSON Oject</h3>
-<pre><code>webPivotTable.setWptObject(wptObject, dataObject);
+<pre><code>webPivotTable.setWptObject(wptObject, dataObject, successCB, errorCB);
 
-    /** 
-    * Load WPT format JSON Oject 
-    * @param {Object} wptObject - pre-saved WPT format JSON object
-    * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
-    *        format {data:[], fields:[]}
-    */
+    /**
+     * Load WPT format JSON Oject
+     * @param {Object} wptObject - pre-saved WPT format JSON object
+     * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+     *        format {data:[], fields:[]}
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     */
 </code></pre><h3 id="load-wpt-format-string-or-json-oject-with-updated-first-source-data">Load WPT format String or JSON Oject with updated first source data</h3>
-<pre><code>webPivotTable.setWpt(wpt, dataObject);
+<pre><code>webPivotTable.setWpt(wpt, dataObject, successCB, errorCB);
 
-    /** 
-    * Load WPT format String or JSON Oject with updated first source data
-    * @param {String/Object} wpt - pre-saved WPT format String or JSON object
-    * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
-    *        format {data:[], fields:[]}
-    */
+    /**
+     * Load WPT format String or JSON Oject with updated first source data
+     * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+     * @param {Object} dataObject - optional, if exist, use this as data and fields of first source
+     *        format {data:[], fields:[]}
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     */
 </code></pre><h3 id="load-wpt-format-string-or-json-object-with-data-array-as-updated-first-source-data">Load WPT format String or JSON object with data array as updated first source data</h3>
-<pre><code>webPivotTable.setWptWithDataArray(wpt, attrArray, dataArray);
+<pre><code>webPivotTable.setWptWithDataArray(wpt, attrArray, dataArray, successCB, errorCB);
 
-    /** 
-    * Load WPT format String or JSON object with data array as updated first source data
-    * @param {String/Object} wpt - pre-saved WPT format String or JSON object
-    * @param {Array} attrArray - Array of attributes
-    *       example: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...]
-    * @param {Array} dataArray - Array of data rows, each row is also an array of values
-    *       example: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]]
-    */
+    /**
+     * Load WPT format String or JSON object with data array as updated first source data
+     * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+     * @param {Array} attrArray - Array of attributes
+     *       example: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...]
+     * @param {Array} dataArray - Array of data rows, each row is also an array of values
+     *       example: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]]
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     */
 </code></pre><h3 id="load-wpt-format-string-or-json-oject-with-updated-first-source-data">Load WPT format String or JSON Oject with updated first source data</h3>
-<pre><code>webPivotTable.setWptWithCsvUrl(wpt, csvUrl, separator);
+<pre><code>webPivotTable.setWptWithCsvUrl(wpt, csvUrl, separator, successCB, errorCB);
 
-    /** 
-    * Load WPT format String or JSON object with CSV Url as updated first source data
-    * @param {String/Object} wpt - pre-saved WPT format String or JSON object
-    * @param {string} csvUrl - URL String of CSV file
-    * @param {string} separator - optional, separator char for CSV RAW data, default is &quot;,&quot;
-    */
+    /**
+     * Load WPT format String or JSON object with CSV Url as updated first source data
+     * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+     * @param {string} csvUrl - URL String of CSV file
+     * @param {string} separator - optional, separator char for CSV RAW data, default is &quot;,&quot;
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     */
 </code></pre><h3 id="load-wpt-format-string-or-json-object-with-csv-raw-data-as-updated-first-source-data">Load WPT format String or JSON object with CSV RAW data as updated first source data</h3>
-<pre><code>webPivotTable.setWptWithCsvRawData(wpt, csvRawData, separator);
+<pre><code>webPivotTable.setWptWithCsvRawData(wpt, csvRawData, separator, successCB, errorCB);
 
-    /** 
-    * Load WPT format String or JSON object with CSV RAW data as updated first source data
-    * @param {String/Object} wpt - pre-saved WPT format String or JSON object
-    * @param {String} csvRawData - CSV RAW data
-    *    https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
-    * @param {string} separator - optional, separator char for CSV RAW data, default is &quot;,&quot;
-    */
+    /**
+     * Load WPT format String or JSON object with CSV RAW data as updated first source data
+     * @param {String/Object} wpt - pre-saved WPT format String or JSON object
+     * @param {String} csvRawData - CSV RAW data
+     *    https://dojotoolkit.org/reference-guide/1.9/dojox/data/CsvStore.html
+     * @param {string} separator - optional, separator char for CSV RAW data, default is &quot;,&quot;
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     */
 </code></pre><h3 id="load-olap-cube">Load OLAP Cube</h3>
-<pre><code>webPivotTable.setOlapCube(olapData);
+<pre><code>webPivotTable.setOlapCube(olapData, successCB, errorCB);
 
-    /** 
-    * Load OLAP Cube
-    * @param {Object} olapData - Object of OLAP Cube Information
-    *     {
-    *         options: {
-    *             sync : _this.options.olap.sync,
-    *             timeout : _this.options.olap.timeout,
-    *             xmlaProxyEnabled: _this.options.olap.xmlaProxyEnabled,
-    *             xmlaProxy: _this.options.olap.xmlaProxy
-    *         },
-    *         xmlaUrl: &quot;Xmla server url&quot;,
-    *         DataSourceInfo: &quot;Data source info&quot;,
-    *         Catalog: &quot;Catalog name&quot;,
-    *         CubeName: &quot;Cube name&quot;
-    *     }
-    */
+    /**
+     * Load OLAP Cube
+     * @param {Object} olapData - Object of OLAP Cube Information
+     *     {
+     *         options: {
+     *             sync : _this.options.olap.sync,
+     *             timeout : _this.options.olap.timeout,
+     *             xmlaProxyEnabled: _this.options.olap.xmlaProxyEnabled,
+     *             xmlaProxy: _this.options.olap.xmlaProxy
+     *         },
+     *         xmlaUrl: &quot;Xmla server url&quot;,
+     *         DataSourceInfo: &quot;Data source info&quot;,
+     *         Catalog: &quot;Catalog name&quot;,
+     *         CubeName: &quot;Cube name&quot;
+     *     }
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     */
+</code></pre><h3 id="get-internal-wpt-object">Get internal WPT object</h3>
+<pre><code>var wpt = webPivotTable.getWptObject();
+
+    /**
+     * get internal WPT object
+     * 
+     * This will return current WPT internal object, developers can change anything directly 
+     * in this object, for example, change sources/sheets name or fields. 
+     * After changed this object, call refreshUI to refresh whole UI.
+     * 
+     * Please follow wpt-file-format document to understand returned object:
+     *   http://webpivottable.com/documents/wpt-file-format
+     *
+     * @return {object}
+     */
 </code></pre><h3 id="generate-wpt-format-string">Generate WPT format string</h3>
 <pre><code>var wptString = webPivotTable.generateWptString(ignoreData);
 
@@ -379,6 +510,18 @@ to handle CSV RAW data, please reference that to under CSV RAW data.</p>
     * @param {Function} errCallback - Callback function when error
     *           errCallback = function(error)
     */
+</code></pre><h3 id="retrieve-current-filtered-data-for-a-sheet">Retrieve current filtered data for a sheet</h3>
+<pre><code>webPivotTable.generateFilteredData(sheetIndex);
+
+    /**
+     * Generate current filtered data for a sheet
+     * @param {int} sheetIndex - sheet index
+     * @return {Object}
+     *      {
+     *         attrArray: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...]
+     *         dataArray: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]]
+     *      }
+     */
 </code></pre>
   </body>
 </html>

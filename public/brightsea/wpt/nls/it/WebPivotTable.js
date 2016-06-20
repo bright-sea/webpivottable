@@ -3,7 +3,7 @@ define({
     Msg_LoadingData: "Caricamento dati, rocords totali: ",
     Msg_LoadingCubeData: "Caricamento dati OLAP ",
     Msg_LoadingGSSData: "Caricamento dati Google foglio di calcolo ",
-    Msg_ChooseFieldsFirst: "Per costruire un report, scegliere i campi dalla Lista Campi Pivot.",
+    Msg_ChooseFieldsFirst: "Per costruire un report, scegliere i campi dalla Lista Campi.",
     Msg_UpdatingPivotGridData: "Aggiornamento dati griglia pivot ",
     Msg_QueryCubeRetrieveData: "Interrogazione cubo OLAP per recuperare i dati ",
     Msg_RetrievingMembers: "Recupero membri di attributi ",
@@ -116,6 +116,7 @@ define({
     Lbl_Swedish: "Svedese",
     Lbl_Japanese: "Giapponese",
     Lbl_Korean: "Koreano",
+    Lbl_Vietnamese: "Vietnamita",
 
 
     Lbl_DecimalPoint: "Separatore Decimale",
@@ -127,16 +128,14 @@ define({
 
     /* SheetBar.js  */
 
-    Tip_ShowPivotFieldsList: "Mostra Lista Campi Pivot",
-    Tip_HidePivotFieldsList: "Nascondi Lista Campi Pivot",
+    Tip_ShowNavigationPanel: "Mostra Lista Campi Pivot",
+    Tip_HideNavigationPanel: "Nascondi Lista Campi Pivot",
 
     Tip_TileHorizontal: "Tile Orizzontale",
     Tip_TileVertical: "Tile Verticale",
-    Tip_GridOnly: "Mostra Solo la Griglia Pivot",
-    Tip_ChartOnly: "Mostra Solo Grafico Pivot",
+    Tip_GridOnly: "Mostra Solo la Griglia",
+    Tip_ChartOnly: "Mostra Solo Grafico",
 
-    Btn_PivotFields: "Campi Pivot",
-    Tip_PivotFields: "Cambia o Filtra Campi Pivot",
     Lbl_NoneSelected: "(Nessuno)",
     Mnu_FieldFiltering: "Filtraggio campo...",
 
@@ -155,10 +154,10 @@ define({
 
     /* PivotFields.js  */
 
-    Lbl_PivotFieldsList: "Lista Campi Pivot",
-    Lbl_DragFields: "Trascinare i campi tra le aree qui sotto:",
+    Lbl_FieldsList: "dei campi elenco",
+    Lbl_DragFields: "Trascinare i campi tra le aree",
 
-    Tip_FieldsListLayout: "Disposizione Lista Campi Pivot",
+    Tip_FieldsListLayout: "Disposizione Lista Campi",
     Lbl_FieldsListPosition: "Posizione attiva",
     Btn_OnTop: "Sopra",
     Btn_OnBottom: "Sotto",

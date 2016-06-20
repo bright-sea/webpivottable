@@ -3,7 +3,7 @@ define({
     Msg_LoadingData: "Cargando datos, total de registros: ",
     Msg_LoadingCubeData: "Cargando datos del cubo OLAP  ",
     Msg_LoadingGSSData: "Cargando datos de las hojas de cálculo de Google ",
-    Msg_ChooseFieldsFirst: "Para realizar el reporte, seleccione los campos de la Tabla Dinámica.",
+    Msg_ChooseFieldsFirst: "Para construir un informe, seleccione los campos de campos de lista.",
     Msg_UpdatingPivotGridData: "Actualizando datos de la tabla dinámica ",
     Msg_QueryCubeRetrieveData: "Consultando al cubo OLAP para obtener datos ",
     Msg_RetrievingMembers: "Obteniendo registros de atributo ",
@@ -115,6 +115,7 @@ define({
     Lbl_Swedish: "Sueco",
     Lbl_Japanese: "Japonés",
     Lbl_Korean: "Coreano",
+    Lbl_Vietnamese: "Vietnamita",
 
 
     Lbl_DecimalPoint: "Punto decimal",
@@ -125,16 +126,14 @@ define({
     Btn_Cancel: "Cancelar",
 
     /* SheetBar.js */
-    Tip_ShowPivotFieldsList: "Mostrar lista de campos",
-    Tip_HidePivotFieldsList: "Ocultar lista de campos",
+    Tip_ShowNavigationPanel: "Mostrar lista de campos",
+    Tip_HideNavigationPanel: "Ocultar lista de campos",
 
     Tip_TileHorizontal: "División horizontal",
     Tip_TileVertical: "División Vertical",
-    Tip_GridOnly: "Mostar solo tabla dinámica",
-    Tip_ChartOnly: "Mostar solo gráfico dinámico",
+    Tip_GridOnly: "Mostar solo tabla",
+    Tip_ChartOnly: "Mostar solo gráfico",
 
-    Btn_PivotFields: "Campos de tabla dinámimca",
-    Tip_PivotFields: "Cambiar o filtrar campos de la tabla dinámica",
     Lbl_NoneSelected: "(Ninguno)",
     Mnu_FieldFiltering: "Filtrando campos...",
 
@@ -152,8 +151,8 @@ define({
     Tip_ClearFilter: "Borrar filtros",
     
     /* PivotFields.js */
-    Lbl_PivotFieldsList: "Lista de campos de la tabla dinámica",
-    Lbl_DragFields: "Arrastre los campos hacia las áreas debajo:",
+    Lbl_FieldsList: "campos Lista",
+    Lbl_DragFields: "Arrastre los campos entre las zonas",
 
     Tip_FieldsListLayout: "Opciones de lista de campos",
     Lbl_FieldsListPosition: "Posicionar",

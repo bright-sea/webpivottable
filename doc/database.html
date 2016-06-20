@@ -1,0 +1,216 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <p><a href="./index.html">Back to Index</a></p>
+<h2 id="how-to-load-data-from-database">How to load data from Database</h2>
+<p>WebPivotTable is a pure front end javascript component, it is not designed and also
+is not secure to connect to back end database (like SQL database, noSQL database) directly.
+A good practice is create a secured web service at web server to connect to database and get
+the data, then publish a service interface for front end WebPivotTable component to load the data. </p>
+<p>There are two ways to achieve this loading:</p>
+<h3 id="web-service-to-provide-data-directly">Web service to provide data directly</h3>
+<p>The most easily way to load data from database to to provide a web service which return data
+with correct format to WebPivotTable component directly. List below is the API for front end
+integration developer:</p>
+<pre><code>webPivotTable.setWebServiceDataUrl(wsDataUrl, wptObject, successCB, errorCB);
+
+    /**
+     * Load source data from Web Service Data URL
+     * @param {string} wsDataUrl - URL String of Web Service Data URL
+     * @param {Object} wptObject - optional, pre-saved wpt JSON object
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     *
+     * Note:
+     * 1. The Web Service should return a JSON object
+     *       {
+     *           attrArray: [],
+     *           dataArray: []
+     *       }
+     * 2. This is a very useful API to access data in SQL databases or any other data storages
+     *    since Web Service access is cross domain and can be provided by any backend technologies.
+     * 3. If wptObject is not null, use it as pivot selections
+     */
+</code></pre><p>The only required parameter is web service URL and this service should return a JSON object.</p>
+<p>Here is an example web service: <a href="http://demo.webpivottable.com/wpt/wsSample">http://demo.webpivottable.com/wpt/wsSample</a></p>
+<p>The returned json data is like:</p>
+<pre><code>    {&quot;attrArray&quot;:
+        [&quot;abc&quot;,&quot;xyz&quot;],
+     &quot;dataArray&quot;:
+        [[1,3],[2,4]]
+    }
+</code></pre><p>This web service is created on NodeJS web server, the code is quite simple:  </p>
+<pre><code>    exports.wsSample = function(req, res) {
+
+        var data = {
+            attrArray:[&#39;abc&#39;,&#39;xyz&#39;],
+            dataArray:[
+                [1,3],
+                [2,4]
+            ]
+        };
+
+        res.jsonp(data);
+    };
+</code></pre><p>This kind of web service can also be used directly through User Interface bu end users to
+load data without any code at front end. Try load it from demo site: 
+<a href="http://demo.webpivottable.com/demo.html" target="_blank">http://demo.webpivottable.com/demo.html</a></p>
+<ol>
+<li><p>Click &quot;Create a new WebPivotTable&quot; button at top bar to open a dialog view.</p>
+</li>
+<li><p>On the right navigation panel, choose &quot;memory mode&quot; --&gt; &quot;Web Service&quot; Tab</p>
+</li>
+<li><p>Input above sample web service Url and click &quot;load&quot; button.</p>
+</li>
+</ol>
+<h3 id="any-service-to-return-data-to-front-end">Any Service to return data to front end</h3>
+<p>Another way to load data from database is provide any kind of a service to connect to database 
+and get the data. Then at front end, developer use Ajax call to connect to this service. After 
+data returned to front end, format it and call another API to load the data into WebPivotTable
+object. List below is the API to achieve this:</p>
+<pre><code>webPivotTable.setDataArray(attrArray, dataArray, dataUrl, wptObject, successCB, errorCB);
+
+    /**
+     * Load source data from data array
+     * @param {Array} attrArray - Array of attributes
+     *       example: [&quot;department&quot;, &quot;area&quot;, &quot;cost&quot;, ...]
+     * @param {Array} dataArray - Array of data rows, each row is also an array of values
+     *       example: [[&quot;dep1&quot;, &quot;area1&quot;, 1000, ...], ..., [&quot;dep6&quot;, &quot;area2&quot;, 2000,...]]
+     * @param {String} dataUrl - optional, Url for track the source data
+     *       This is just for tracking, pass &quot;&quot; if not know or no need.
+     * @param {Object} wptObject - optional, pre-saved wpt JSON object
+     * @param {Func} successCB(wpt) - optional, success callback
+     *        in this callback, current wpt object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * @param {Func} errorCB(error) - optional, error callback
+     *        in this callback, error object will be published as first parameter
+     *        and &quot;this&quot; will be WebPivotTable object
+     *
+     * Note:
+     * 1. If wptObject is not null, use it as pre-saved pivot selections
+     * 2. This is major API to load source data into WPT component, it was
+     *   used by setCsvUrl and setCsvRawData internally.  Actually, developers
+     *   can load any kinds of data from any other resources, like SQL databases,
+     *   and format them as attrArray and dataArray, then load them into WPT component.
+     */
+</code></pre>
+  </body>
+</html>

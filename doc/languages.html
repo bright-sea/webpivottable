@@ -1,0 +1,209 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <p><a href="./index.html">Back to Index</a></p>
+<h2 id="switch-languages">Switch languages</h2>
+<p>WebPivotTable support switch languages dynamically. In the package, there is a 
+&quot;public/brightsea/wpt/nls&quot; directory which includes all language files. There are 
+two customize options for you to customize languages:</p>
+<pre><code>    locale: &#39;en&#39;,        // Current language locale
+                         // it should be set to one of values in below availableLocals
+
+    availableLocales: [&#39;en&#39;,&#39;zh&#39;,&#39;tr&#39;,&#39;es&#39;,&#39;pt&#39;,&#39;it&#39;],
+                         // Selectable language locales for users to switch languages
+                         // possible locales like: &#39;en&#39;,&#39;zh&#39;,&#39;tr&#39;, &#39;es&#39;,&#39;pt&#39;,‘fr&#39;,&#39;de&#39;,&#39;ar&#39;,
+                         // &#39;ru&#39;,&#39;it&#39;, &#39;nl&#39;,&#39;el&#39;,&#39;he&#39;,&#39;hi&#39;,&#39;hu&#39;,&#39;sv&#39;,&#39;ko&#39;,&#39;ja&#39;
+</code></pre><p>The first option &quot;locale&quot; identify current language locale and second option &quot;availableLocales&quot;
+list all languages which will be listed in the UI language switch selector. </p>
+<h2 id="add-a-new-language">Add a new language</h2>
+<p>If you want to  add a new language, it is also quite easy. You only need make a translation of
+a language file and do some setting. </p>
+<h3 id="step1-create-a-new-locale-directory">Step1. Create a new locale directory</h3>
+<p>First you need to create a new locale directory under &quot;public/brightsea/wpt/nls&quot; directory.
+For example, if you want to add French, create a &quot;public/brightsea/wpt/nls/fr&quot; directory.</p>
+<pre><code>    public 
+      |- brightsea
+          |- wpt
+              |- nls
+                  |- de   
+                  |   |- WebPivotTable.js  
+                  |
+                  |- zh   
+                  |   |- WebPivotTable.js  
+                  |
+                  |- fr   
+                  |
+                  |- WebPivotTable.js   
+</code></pre><h3 id="step2-add-new-locale-in-root-language-file">Step2. Add new locale in root language file</h3>
+<p>Add new locale into root language file  &quot;public/brightsea/wpt/nls/WebPivotTable.js&quot;.
+For example, add &quot;fr: true&quot; at the bottom of this file:</p>
+<pre><code>define({
+    root: {
+
+        Msg_LoadDataFirst: &quot;No data yet, please load data first.&quot;,
+        Msg_LoadingData: &quot;Loading data, total records: &quot;,
+        Msg_LoadingCubeData: &quot;Loading OLAP cube data &quot;,
+        Msg_LoadingGSSData: &quot;Loading Google spreadsheet data &quot;,
+        Msg_ChooseFieldsFirst: &quot;To build a report, choose fields from Fields List.&quot;,
+        Msg_UpdatingPivotGridData: &quot;Updating pivot grid data &quot;,
+        Msg_QueryCubeRetrieveData: &quot;Querying OLAP cube to retrieve data &quot;,
+        Msg_RetrievingMembers: &quot;Retrieving members of attribute &quot;,
+        Msg_DrillingThrough: &quot;Drilling through to the cell details &quot;,
+        Msg_ExportingReport: &quot;Exporting Report &quot;,
+
+        ...
+   },
+
+    zh: true,
+    de: true,
+    tr: true,
+    pt: true,
+    es: true,
+    it: true,
+    fr: true
+});     
+</code></pre><h3 id="step3-copy-a-language-file-from-other-locale-directory">Step3. Copy a language file from other locale directory</h3>
+<p>Each locale directory includes only one file &quot;WebPivotTable.js&quot;, you can copy this from another 
+locale directory. For example, copy from &quot;de&quot; directory.</p>
+<pre><code>define({
+    Msg_LoadDataFirst: &quot;Keine Daten vorhanden, laden Sie bitte zuerst Daten.&quot;,
+    Msg_LoadingData: &quot;Daten werden geladen, Anzahl der Zeilen: &quot;,
+    Msg_LoadingCubeData: &quot;OLAP-Cube Daten werden geladen &quot;,
+    Msg_LoadingGSSData: &quot;Google Spreadsheet Daten werden geladen &quot;,
+    Msg_ChooseFieldsFirst: &quot;Um einen Bericht zu erstellen, wählen Sie aus der Felder-Liste.&quot;,
+    Msg_UpdatingPivotGridData: &quot;Pivot-Tabelle wird aktualisiert &quot;,
+    Msg_QueryCubeRetrieveData: &quot;Daten für den OLAP-Cube werden geladen &quot;,
+    Msg_RetrievingMembers: &quot;Abrufen von Mitgliedern des Attributs &quot;,
+    Msg_DrillingThrough: &quot;Drilling through der Zelldetails &quot;,
+    Msg_ExportingReport: &quot;Berichtexport &quot;,
+
+    ...    
+});
+</code></pre><h3 id="step4-translate-language-file">Step4. Translate language file</h3>
+<p>Make a translation of the value of each key in language file.</p>
+<h3 id="step5-add-new-locale-into-customerize-option-when-you-create-webpivottable-object">Step5. Add new locale into customerize option when you create WebPivotTable object</h3>
+<pre><code>var myOptions = {
+    availableLocales: [&#39;en&#39;,&#39;zh&#39;,&#39;tr&#39;,&#39;es&#39;,&#39;pt&#39;,&#39;it&#39;, &#39;fr&#39;],   
+
+    uiFlags: {
+        openWptBtn: 0,
+        saveWptBtn: 0
+    }
+};
+var webPivotTable = new WebPivotTable({
+    customOptions:myOptions
+},&quot;wpt-container&quot;);
+</code></pre>
+  </body>
+</html>

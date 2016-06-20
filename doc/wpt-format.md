@@ -111,7 +111,9 @@ The WPT format is pretty simple; it's just a string of JSON objects. Here is a s
             "label":"Sum of PRECINCT",  //display label
             "fieldIndex":2,    // base field index of fields
             "stats":"Sum",     // Sum/Count/Average/Max/Min/
-                               // Median/Mode/Stddev/Variance
+                               // Median/Mode/Stddev/Variance/
+                               // DistinctCount/PercentileInc/PercentileExc
+            "statsParameter": 90 //Percentile                   
             "showValueAs": 0,  // if not exist, the same as 0
                                //    0 - No Calculation
                                //    1 - % of Grand total

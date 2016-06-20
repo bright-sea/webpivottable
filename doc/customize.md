@@ -51,6 +51,10 @@ Even after WebPivotTable object being created, you can still change options:
         uiFlags: {           // A set of flags to control User Interface
 
             switchViewBtn: 1,     // show/hide TopBar view switch buttons
+            dataSourceBtn: 1,     // show/hide DataSource View Button
+            pivotTableBtn: 1,     // show/hide PivotTable View Button
+            reportBtn: 1,         // show/hide Report View Button
+
             newWptBtn: 1,         // show/hide TopBar "Create New WPT" button
             openWptBtn: 1,        // show/hide TopBar "Open WPT" button
             saveWptBtn: 1,        // show/hide TopBar "Save WPT" button
@@ -77,18 +81,38 @@ Even after WebPivotTable object being created, you can still change options:
             localSaveTab: 1,      // show/hide Save WPT dialog "Save to local" Tab
             serverSaveTab: 1,     // show/hide Save WPT dialog "Save to Server" Tab
 
+            newSourceBtn: 1,      // show/hide new source button
+            newSheetBtn: 1,       // show/hide new sheet button
+            newReportBtn: 1,      // show/hide new report button
+            renameSourceBtn: 1,   // show/hide rename source button
+            renameSheetBtn: 1,    // show/hide rename sheet button
+            renameReportBtn: 1,   // show/hide rename report button
+
+            changeSourceBtn: 1,   // show/hide change source button
             refineBtn: 0,         // show/hide refine dialog button
 
-            sheetBarPivot: 1,     // show/hide Pivot buttons on sheet bar
-            sheetBarFields: 1,    // show/hide Pivot fields on sheet bar
 
-            sheetSwitchBtn: 1,    // show/hide "switch grid and chart" button on sheet bar
-            sheetLayoutBtn: 1,    // show/hide "grid & chart layout" buttons on sheet bar
+            sourceBarMenuBtn: 1,  // show/hide menu button on source bar
+            sourceBarCustomize: 1, // show/hide customize button on source bar
+            sourceBarExport: 1,    // show/hide export button on source bar
 
-            exportGridMenu: 1,    // show/hide "export"  menu on sheet pivot grid menu bar
-            exportChartMenu: 1,   // show/hide "export"  menu on sheet pivot chart menu bar
-            exportReportMenu: 1,  // show/hide "export"  menu on report menu bar
-            exportSourceMenu: 1,  // show/hide "export"  menu on source menu bar
+
+            calculatedFieldBtn: 1, // show/hide calculated field button
+            categoryFieldBtn: 1,  // show/hide category field button
+            sheetBarMenuBtn: 1,   // show/hide menu button on sheet bar
+            sheetBarMdxBtn: 1,    // show/hide MDX button on sheet bar
+            sheetBarFieldsList: 1, // show/hide fields List on sheet bar
+            sheetBarPivotFields: 1,  // show/hide Pivot fields on sheet bar
+            sheetBarCustomize: 1, // show/hide customize button on sheet bar
+            sheetBarExport: 1,    // show/hide export button on sheet bar
+
+            reportBarMenuBtn: 1,  // show/hide menu button on report bar
+            reportBarCustomize: 1, // show/hide customize button on report bar
+            reportBarExport: 1,    // show/hide export button on report bar
+
+            drillThroughCustomize: 1, // show/hide customize button on drillThrough bar
+            drillThroughExport: 1,    // show/hide export button on drillThrough bar
+
 
             exportToExcel: 1,     // support "Export to Excel"
             exportToCsv: 1,       // support "Export to Csv"
@@ -100,12 +124,16 @@ Even after WebPivotTable object being created, you can still change options:
 
             drillThroughByDoubleClick: 0,  // doubleclick or click to drill through pivot grids
             oldDialogStyle: 0,    // use dijit.Dialog instead of dojox.dialog
+            deferLayoutExcludeFilter: 0,   // exclude field sort/filter from defer layout update
+            defaultToDistinctCount: 0,     // Default statistic function of String field to distinct count
 
             zoomBtn: 1,           // show/hide "Zoom" menu
             fullScreenBtn: 1      // enable/disable "Full Screen" mode
         },
 
-        pivotFields: {               // Navigation Panel
+        defaultView: "PIVOTTABLE",   // Default view: 'DATASOURCE', 'PIVOTTABLE', 'REPORT'
+
+        navigationPane: {            // Navigation Panel
             show: 1,                 // show/hide: 1/0
             position:'right',        // position: 'left', 'top', 'right', 'bottom'
             stacked: 0,              // stack fields area or not: 1/0
@@ -113,7 +141,53 @@ Even after WebPivotTable object being created, you can still change options:
             height:200               // height, only for top and bottom
         },
 
-        fileLinks:[],
+        fileLinks:[
+            //{
+            //    type: "WPT",
+            //    url: "http://demo.webpivottable.com/json/sample91.wpt",
+            //    label: "Predefined small CSV WebPivotTable file"
+            //},{
+            //    type: "CSV",
+            //    url: "http://demo.webpivottable.com/json/example.csv",
+            //    label: "USA Selection Poll Data (Total 4,000 records)"
+            //},{
+            //    type: "EXCEL",
+            //    url: "http://demo.webpivottable.com/json/example.xls",
+            //    label: "USA Selection Poll Data (Total 4,000 records)"
+            //},{
+            //    type: "EXCEL",
+            //    url: "http://demo.webpivottable.com/json/sales.xls",
+            //    label: "Sales Sample Data (Total 2,823 records)"
+            //},{
+            //    type: "EXCEL",
+            //    url: "http://demo.webpivottable.com/json/sales.xlsx",
+            //    label: "Sales Sample Data (Total 2,823 records)"
+            //},{
+            //    type: "WSWPT",
+            //    url: "http://demo.webpivottable.com/json/sample91.wpt",
+            //    label: "Predefined small CSV WebPivotTable file"
+            //},{
+            //    type: "WSDATA",
+            //    url: "http://demo.webpivottable.com/json/sample91.wpt",
+            //    label: "Predefined small CSV WebPivotTable file"
+            //},{
+            //    type: "GSS",
+            //    url: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html",
+            //    label: "USA Selection Poll Data (Total 4,000 records)"
+            //},{
+            //    type: "OLAP",
+            //    url: "http://sampledata.infragistics.com/olap/msmdpump.dll",
+            //    label: "Sample Microsoft Analysis Service"
+            //},{
+            //    type: "OLAP",
+            //    url: "http://demo.webpivottable.com:8080/mondrian/xmla",
+            //    label: "Sample Mondrian OLAP Server"
+            //},{
+            //    type: "OLAP",
+            //    url: "http://demo.webpivottable.com:8282/icCube/xmla",
+            //    label: "Sample icCube OLAP Server"
+            //}
+        ],
 
         customizeNew: {           // If enabled, click "Create New Wpt" button will not open dialog.
                                   // Integration developers can hook their own handler in callback
@@ -135,6 +209,16 @@ Even after WebPivotTable object being created, you can still change options:
                                   // customize handler when click "Save Wpt" button
         },
 
+        customizeButtons: [       // Add Customize buttons on top bar
+            //{
+            //    label: "Customize",
+            //    title: "A customize button to do something funncy",
+            //    click: function (evt){
+            //        alert("haha, I am clicked!"+this);
+            //    }
+            //}
+        ],
+
         filepicker:{
             key:''                // filepicker application key
         },
@@ -151,8 +235,6 @@ Even after WebPivotTable object being created, you can still change options:
                                   // this should be set to point to correct path.
 
         webServiceTimeout: 10000,  // Web Service call timeout setting
-
-        controlMenuBarPosition:'right', // Control MenuBar position: 'left', 'right'
 
         olap:{
             drillThroughMaxRows: 1000,  // Max return rows for each drill through call
@@ -201,7 +283,28 @@ Even after WebPivotTable object being created, you can still change options:
         },
 
         report: {                  // Default options for each new report
-
+            title: {
+                enabled: true,
+                align: 'center',          // left, center, right
+                paddingTop: 10,
+                paddingRight: 10,
+                paddingBottom: 10,
+                paddingLeft: 10,
+                fontSize: 28,
+                fontWeight: "bold"
+            },
+            component: {
+                title: {
+                    enabled: true,
+                    align: 'left',            // left, center, right
+                    paddingTop: 10,
+                    paddingRight: 10,
+                    paddingBottom: 10,
+                    paddingLeft: 10,
+                    fontSize: 24,
+                    fontWeight: "bold"
+                }
+            }
         },
 
         sheet:{                    // Default options for each new sheet
