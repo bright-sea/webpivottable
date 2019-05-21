@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>WebPivotTable Component</title>
+
+  <style type="text/css">
+    html, body {width:100%;height:100%; padding:0; margin:0;}
+  </style>
+
+  <script type="text/javascript" src="./dist/vendor.js"></script>
+  <script type="text/javascript" src="./dist/wpt.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var wpt = $('web-pivot-table')[0];
+      wpt.$eventBus.$emit('setOptions', {
+        styles: {
+          highLightColor: 'rgb(250, 224, 177)',
+        },
+        uiFlags: {
+          report: 0,
+        },
+        customHandlers: {
+          newWpt: 0,
+          openWpt: 1,
+          saveWpt: 1,
+          drillThrough: 1
+        },
+        filestack: {
+          enabled: true,
+          key: "A4bieoUsyR4yBrNPkFIvrz"  //demo.webpivottable.com
+        },
+
+      });
+
+      wpt.$eventBus.$on('newWpt', function(payload){
+        console.log("customize newWpt", payload);
+      });
+
+      wpt.$eventBus.$on('openWpt', function(payload){
+        console.log("customize openWpt", payload);
+      });
+
+      wpt.$eventBus.$on('saveWpt', function(payload){
+        console.log("customize saveWpt", payload);
+        wpt.$eventBus.$emit('generateWptString', false, function(wptString){
+          console.log("wptString", wptString);
+        });
+      });
+
+      wpt.$eventBus.$on('drillThrough', function(payload){
+        console.log("customize drillThrough", payload);
+      });
+
+
+      // wpt.$eventBus.$emit('setWebServiceDataUrl', 'https://demo.webpivottable.com/wpt/wsSample');
+
+      // wpt.$eventBus.$emit('setOlapCube', {
+      //   catalog: "FoodMart",
+      //   cubeName: "HR",
+      //   dataSourceInfo: "Provider=Mondrian;DataSource=MondrianFoodMart;",
+      //   xmlaUrl: "http://52.4.22.157:8080/mondrian/xmla"
+      // });
+
+      // wpt.$eventBus.$emit('setDataArray',
+      //   ['asd', 'ccc'],
+      //   [[1, 2], [3, 4], [5, 6]],
+      //   "url",
+      //   null,
+      //   function () {},
+      //   function () {}
+      // );
+
+      wpt.$eventBus.$emit('setCsvUrl', 'https://webpivottable.com/testfiles/example.csv');
+
+      // wpt.$eventBus.$emit('generateWptString', false, function(wptString){
+      //   console.log("wptString", wptString);
+      // });
+
+      // var obj={"format":"WPT","version":"3.0","source":{"name":"Source1","mode":"OLAP","url":"http://52.4.22.157:8080/mondrian/xmla","data":{"xmlaUrl":"http://52.4.22.157:8080/mondrian/xmla","dataSourceInfo":"Provider=Mondrian;DataSource=MondrianFoodMart;","catalog":"FoodMart","cubeName":"HR"},"options":{"navigationPanel":{"show":"FIELDS","position":"right","stacked":0,"width":300,"height":200},"fieldsListFilter":"","fieldsListSort":0,"grid":{"cellWidth":120,"cellHeight":21}},"id":"1933979845012"},"sheet":{"id":"1663180908750","pivot":{"fields":{},"rows":[{"id":"H-[Pay Type]","children":[{"id":"L-[Pay Type].[(All)]"},{"id":"L-[Pay Type].[Pay Type]"}]}],"columns":[],"filters":[],"values":[{"id":"M-[Measures].[Count]"},{"id":"M-[Measures].[Org Salary]"}],"valuesInAxis":0,"valuesIndex":0,"nonEmpty":1},"collapsed":{},"options":{"sheet":{"pivotLayout":"GRID_ONLY","expandRows":1,"expandCols":1,"showRowTotals":1,"showColTotals":1,"showRowSubtotals":1,"showColSubtotals":1,"navigationPanel":{"show":"FIELDS","position":"right","stacked":0,"width":300,"height":200},"deferLayoutUpdate":false,"fieldsListFilter":"","fieldsListSort":0},"grid":{"showSigns":1,"showEmptyAsZero":0,"compactForm":1,"rowHeaderWidth":200,"cellWidth":100,"cellHeight":20,"theme":"wpt-default","noFixedColumns":0,"cellStyle":{"columnHeader":{"textAlign":"center","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundColumn":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"rowHeader":{"textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundRow":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"totalCell":{"textAlign":"right","backgroundColor":"#72d2df"},"subtotalCell":{"textAlign":"right","backgroundColor":"#d2e9e9"},"dataCell":{"textAlign":"right","backgroundColor":"#eee"},"noDataCell":{"backgroundColor":"#ddd"}}},"chart":{"width":500,"height":300,"combined":true,"high":{"theme":"default","chart":{"type":"column","options3d":{"enabled":false,"alpha":15,"beta":15,"depth":50,"viewDistance":25}},"credits":{"enabled":false},"exporting":{"enabled":false},"navigation":{"buttonOptions":{"align":"right","verticalAlign":"top"}},"legend":{"enabled":true,"floating":false,"layout":"vertical","align":"right","verticalAlign":"middle","reversed":false},"tooltip":{"enabled":true,"shadow":true},"plotOptions":{"series":{"stacking":null,"dataLabels":{"enabled":false,"align":"center","rotation":0}}},"xAxis":{"labels":{"enabled":true,"align":"left","rotation":45}}}}}}};
+      //
+      // var okfunc=function(){
+      //   alert("ok");
+      // };
+      // var errfunc=function(){
+      //   alert("error");
+      // };
+      // wpt.$eventBus.$emit('setWptObject',obj,'',okfunc,errfunc);
+
+      $('#locale-select').on('change', function() {
+        var value = this.value;
+        if (value) {
+          var wpt = $('web-pivot-table')[0];
+          wpt.$eventBus.$emit('setLocale',value);
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div style="padding:10px;">
+    <h3 style="text-align: center;margin:0;">Test wpt component</h3>
+    <div>
+      Switch Locale:
+      <select id="locale-select">
+        <option value="" selected disabled hidden>Choose here</option>
+        <option value="en">English</option>
+        <option value="zh-CN">Chinese</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="pt">Portuguese</option>
+        <option value="es">Spain</option>
+        <option value="tr-TR">Turkey</option>
+      </select>
+    </div>
+  </div>
+
+  <div style="width:98%; height:90%; margin: auto;">
+    <web-pivot-table
+      options='{"localeFilePath": "./lang/", "locale":"en", "leavePageWarning": 0}'>
+    </web-pivot-table>
+  </div>
+</body>
+
+</html>

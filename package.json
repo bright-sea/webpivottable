@@ -1,10 +1,10 @@
 {
-  "name": "WebPivotTable",
-  "version": "4.2.0",
+  "name": "webpivottable",
+  "version": "6.0.0",
   "description": "A pure javascript pivot table and pivot chart component.",
   "author": {
-    "name": "Minghai Zhao",
-    "email": "minghai.zhao@gmail.com"
+    "name": "Brightsea Inc.",
+    "email": "support@brightsea.ca"
   },
   "website": {
     "url": "webpivottable.com"
@@ -13,20 +13,5 @@
     "type": "git",
     "url": "git@github.com:bright-sea/webpivottable.git"
   },
-  "private": true,
-  "dependencies": {
-    "express": "~4.2.0",
-    "morgan": "~1.0.0",
-    "body-parser": "~1.0.0",
-    "method-override": "~1.0.0",
-    "compression": "~1.0.1",
-    "phantomjs": "~1.9.2",
-    "phantom": "~0.7.2",
-    "temp": "~0.8.1",
-    "request": "2.21.x"
-  },
-  "engines": {
-    "node": ">=0.10.28",
-    "npm": ">=1.4.28"
-  }
+  "private": false
 }

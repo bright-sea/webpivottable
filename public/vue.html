@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Use WebPivotTable in VueJS</title>
+
+  <script type="text/javascript" src="./dist/vendor.js"></script>
+  <script type="text/javascript" src="./dist/wpt.js"></script>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div style="margin: 10px 20px;">
+      Switch Locale:
+      <select @change="changeLocale" :value="locale">
+        <option value="en">English</option>
+        <option value="zh-CN">Chinese</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="pt">Portuguese</option>
+        <option value="es">Spain</option>
+        <option value="tr-TR">Turkey</option>
+      </select>
+    </div>
+
+    <div style="width: 98%; height:500px; margin: auto">
+      <web-pivot-table
+          ref="wpt"
+          :options="optionsString"
+      />
+    </div>
+  </div>
+
+
+  <script>
+
+
+    new Vue({
+      el: '#container',
+      data: {
+        locale: 'zh-CN',
+        options: {
+          "leavePageWarning": 0,
+        },
+      },
+      computed: {
+        optionsString() {
+          this.options.locale = this.locale;
+          return JSON.stringify(this.options);
+        }
+      },
+
+      methods: {
+        changeLocale(event) {
+          const locale = event.target.value;
+          this.locale = locale;
+        },
+      }
+    });
+
+  </script>
+</body>
+
+</html>

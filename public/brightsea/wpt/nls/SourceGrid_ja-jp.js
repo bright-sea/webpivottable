@@ -1,2 +1,0 @@
-//>>built
-define("wpt/nls/SourceGrid_ja-jp",{"dgrid/extensions/nls/pagination":{status:"\u691c\u7d22\u7d50\u679c${total}\u4ef6\u4e2d${start}\u4ef6\u304b\u3089${end}\u4ef6\u307e\u3067\u3092\u8868\u793a\u3002",gotoFirst:"Go to first page",gotoNext:"Go to next page",gotoPrev:"Go to previous page",gotoLast:"Go to last page",gotoPage:"Go to page",jumpPage:"Jump to page",rowsPerPage:"Number of rows per page",_localized:{}}});
