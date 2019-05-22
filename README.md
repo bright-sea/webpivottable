@@ -6,7 +6,7 @@
 
 WPT component is a public github project for any one to download and try it
 
-### [NPM](https://npmjs.org)
+### [NPM](https://www.npmjs.com/package/webpivottable)
 
 WPT component published as a npm package, you can install it by run:
 
@@ -21,7 +21,7 @@ yarn add webpivottable
 
 ### CDN
 
-https://webpivottable.com/releases/6.0.0/public/dist/webpivottable.js
+https://webpivottable.com/releases/6.0.0-beta.0/dist/webpivottable.js
 
 
 
