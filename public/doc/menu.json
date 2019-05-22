@@ -1,0 +1,145 @@
+[
+  {
+    "title": "Prologue",
+    "links": [
+      {
+        "to": "", "name": "Introduction",
+        "contents": [
+          { "to": "#what-39-s-pivot-table-", "name": "What's Pivot Table?" },
+          { "to": "#pivot-table-examples", "name": "Pivot Table Examples" },
+          { "to": "#history-of-pivot-table", "name": "History of Pivot Table" }
+        ]
+      },
+      {
+        "to": "/quick-start-guide", "name": "Quick Start Guide",
+        "contents": [
+          { "to": "#download", "name": "Download" },
+          { "to": "#installation", "name": "Installation" },
+          { "to": "#integration", "name": "Integration" },
+          { "to": "#customization", "name": "Customization" }
+        ]
+      },
+      {
+        "to": "/release-notes", "name": "Release Notes",
+        "contents": [
+          { "to": "#version-5-0-0", "name": "Version 5.0.0" },
+          { "to": "#version-4-x", "name": "Version 4.x" }
+        ]
+      },
+      {
+        "to": "/why-webpivottable", "name": "Why WebPivotTable?",
+        "contents": [
+          { "to": "#web-based", "name": "Web based" },
+          { "to": "#easy-to-use", "name": "Easy to use" },
+          { "to": "#powerful", "name": "Powerful" },
+          { "to": "#integration", "name": "Integration" },
+          { "to": "#share", "name": "Share" },
+          { "to": "#low-cost", "name": "Low cost" }
+        ]
+      },
+      { "to": "/webpivottable-editions", "name": "WebPivotTable Editions",
+        "contents": [
+          { "to": "#free-edition", "name": "Free Edition" },
+          { "to": "#pro-edition", "name": "Pro Edition" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "References",
+    "links": [
+      {
+        "to": "/integration", "name": "Integration"
+      },
+      {
+        "to": "/options", "name": "Options",
+        "contents": [
+          { "to": "#how-to-set-options", "name": "How to set options?" },
+          { "to": "#leave-page-warning", "name": "leavePageWarning" },
+          { "to": "#locale", "name": "locale" },
+          { "to": "#locale-file-path", "name": "localeFilePath" },
+          { "to": "#available-locales", "name": "availableLocales" },
+          { "to": "#server", "name": "server" },
+          { "to": "#limit", "name": "limit" },
+          { "to": "#small-screen-breakpoint", "name": "smallScreenBreakpoint" },
+          { "to": "#medium-screen-breakpoint", "name": "mediumScreenBreakpoint" },
+          { "to": "#navigation-panel-width", "name": "navigationPanelWidth" },
+          { "to": "#decimal-point", "name": "decimalPoint" },
+          { "to": "#thousands-sep", "name": "thousandsSep" },
+          { "to": "#default-to-distinct-count", "name": "defaultToDistinctCount" },
+          { "to": "#drill-through-by-single-click", "name": "drillThroughBySingleClick" },
+          { "to": "#defer-layout-exclude-filter", "name": "deferLayoutExcludeFilter" },
+          { "to": "#default-value-format", "name": "defaultValueFormat" },
+          { "to": "#ui-flags", "name": "uiFlags" },
+          { "to": "#styles", "name": "styles" },
+          { "to": "#file-links", "name": "fileLinks" },
+          { "to": "#custom-handlers", "name": "customHandlers" },
+          { "to": "#custom-buttons", "name": "customButtons" },
+          { "to": "#filestack", "name": "filestack" },
+          { "to": "#source", "name": "source" },
+          { "to": "#report", "name": "report" },
+          { "to": "#sheet", "name": "sheet" }
+        ]
+      },
+      {
+        "to": "/apis", "name": "APIs",
+        "contents": [
+          { "to": "#how-to-call-apis", "name": "How to call APIs?" },
+          { "to": "#set-locale", "name": "setLocale" },
+          { "to": "#set-options", "name": "setOptions" },
+          { "to": "#set-view", "name": "setView" },
+          { "to": "#set-data-array", "name": "setDataArray" },
+          { "to": "#set-csv-url", "name": "setCsvUrl" },
+          { "to": "#set-wpt-string", "name": "setWptString" },
+          { "to": "#set-wpt-object", "name": "setWptObject" },
+          { "to": "#set-wpt", "name": "setWpt" },
+          { "to": "#generate-wpt-string", "name": "generateWptString" },
+          { "to": "#generate-wpt-json", "name": "generateWptJSON" },
+          { "to": "#set-olap-cube", "name": "setOlapCube" },
+          { "to": "#set-web-service-data-url", "name": "setWebServiceDataUrl" },
+          { "to": "#add-web-service-data-url", "name": "addWebServiceDataUrl" }
+        ]
+      },
+      {
+        "to": "/events", "name": "Events",
+        "contents": [
+          { "to": "#how-to-listen-to-events", "name": "How to Listen to Events?" },
+          { "to": "#new-wpt", "name": "newWpt" },
+          { "to": "#open-wpt", "name": "openWpt" },
+          { "to": "#save-wpt", "name": "saveWpt" },
+          { "to": "#drill-through", "name": "drillThrough" }
+        ]
+      },
+      {
+        "to": "/internationalization", "name": "Internationalization"
+      },
+      {
+        "to": "/cross-domain-access", "name": "Cross domain access",
+        "contents": [
+          { "to": "#same-origin-policy", "name": "Same-origin Policy" },
+          { "to": "#cross-origin-resource-sharing", "name": "Cross-Origin Resource Sharing" },
+          { "to": "#proxy-server", "name": "Proxy Server" },
+          { "to": "#default-proxy-server", "name": "Default Proxy Server" }
+        ]
+      },
+      {
+        "to": "/wpt-file-format", "name": "WPT file format"
+      }
+    ]
+  },
+  {
+    "title": "Version 4",
+    "links": [
+      {"to": "/v4-instruction", "name": "Instruction"},
+      {"to": "/v4-changes", "name": "Changes History"},
+      {"to": "/v4-integration", "name": "Integration Guide"},
+      {"to": "/v4-customize", "name": "Customize Options"},
+      {"to": "/v4-apis", "name": "APIs"},
+      {"to": "/v4-wpt-format", "name": "WPT File Format"},
+      {"to": "/v4-xmla-proxy", "name": "XMLA Proxy"},
+      {"to": "/v4-languages", "name": "Customize Languages"},
+      {"to": "/v4-database", "name": "Load Data From Database"},
+      {"to": "/v4-samples", "name": "Samples and Demos"}
+    ]
+  }
+]
