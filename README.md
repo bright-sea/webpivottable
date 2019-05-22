@@ -1,14 +1,41 @@
-# WPT component
+# WPT ( WebPivotTable ) component
 
-## Public directory
+## How to get WPT component?
+
+### [Github](https://github.com/bright-sea/webpivottable)
+
+WPT component is a public github project for any one to download and try it
+
+### [NPM](https://npmjs.org)
+
+WPT component published as a npm package, you can install it by run:
+
+```
+npm install webpivottable
+```
+
+or
+```
+yarn add webpivottable
+```
+
+### CDN
+
+https://webpivottable.com/releases/6.0.0/public/dist/webpivottable.js
+
+
+
+## How to use WPT component?
+
+
+### Public directory
 
 Copy whole public directory into web server root is all we need, no depends on any other libs or frameworks.
 
-To integrate WPT component, we only need import two javascript files into web page like below:
+To integrate WPT component, we only need import one javascript files into web page like below:
 
 ```html
-<script type="text/javascript" src="./dist/vendor.js"></script>
-<script type="text/javascript" src="./dist/wpt.js"></script>
+<script type="text/javascript" src="./dist/webpivottable.js"></script>
 ```
 
 Then, we can put a "wpt-pivot-table" tag into page:
@@ -39,8 +66,7 @@ List below is a sample html file:
     html, body, #wpt-container {width:100%;height:100%; padding:0; margin:0;}
   </style>
 
-  <script type="text/javascript" src="./dist/vendor.js"></script>
-  <script type="text/javascript" src="./dist/wpt.js"></script>
+  <script type="text/javascript" src="./dist/webpivottable.js"></script>
 
 </head>
 
@@ -53,7 +79,7 @@ List below is a sample html file:
 </html>
 ```  
 
-## Server directory (optional)
+### Server directory (optional)
 
 For cross domain file or olap access, wpt component default to use our demo server as proxy:
 
@@ -78,4 +104,8 @@ backend services the same as wpt.js inside server directory have done.
 But if you have no cross domain access, then you can disable those proxies in above options. 
 
 
+## [DEMO](https://webpivottable.com/demo)
+
+
+## [Document](https://webpivottable.com/doc)
 
