@@ -83,5 +83,5 @@ the request from WebPivotTable to OLAP server, then forward response from OLAP s
 
 
 In our nodeJs web server, we provide a proxy service at http://web_URL/wpt/xmlaProxy  , and the source code
-of this service is quite simple, you can see it at wpt.js file in root directory.
+of this service is quite simple, you can see it at services.js file in root directory.
 

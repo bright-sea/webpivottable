@@ -21,7 +21,8 @@ yarn add webpivottable
 
 ### CDN
 
-https://webpivottable.com/releases/6.0.0-beta.0/dist/webpivottable.js
+https://webpivottable.com/releases/6.0.0-beta.0/dist/wpt.js
+https://webpivottable.com/releases/6.0.0-beta.0/dist/wpt-lib.js
 
 
 
@@ -32,10 +33,11 @@ https://webpivottable.com/releases/6.0.0-beta.0/dist/webpivottable.js
 
 Copy whole public directory into web server root is all we need, no depends on any other libs or frameworks.
 
-To integrate WPT component, we only need import one javascript files into web page like below:
+To integrate WPT component, we only need import two javascript files into web page like below:
 
 ```html
-<script type="text/javascript" src="./dist/webpivottable.js"></script>
+  <script type="text/javascript" src="./dist/wpt.js"></script>
+  <script type="text/javascript" src="./dist/wpt-lib.js"></script>
 ```
 
 Then, we can put a "wpt-pivot-table" tag into page:
@@ -66,7 +68,8 @@ List below is a sample html file:
     html, body, #wpt-container {width:100%;height:100%; padding:0; margin:0;}
   </style>
 
-  <script type="text/javascript" src="./dist/webpivottable.js"></script>
+  <script type="text/javascript" src="./dist/wpt.js"></script>
+  <script type="text/javascript" src="./dist/wpt-lib.js"></script>
 
 </head>
 
@@ -98,7 +101,7 @@ options: {
 
 If you want to run a server proxy by your own, please copy server directory as a nodeJs application.
 or if you are using other back end technology (like java, php, .net), you can add a proxy endpoint into your
-backend services the same as wpt.js inside server directory have done.
+backend services the same as services.js inside server directory have done.
 
 
 But if you have no cross domain access, then you can disable those proxies in above options. 

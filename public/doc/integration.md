@@ -5,10 +5,11 @@ description: "Integration with all kinds of frameworks"
 
 WebPivotTable folllows new Web Component standard and it works very well with all kinds of javascript environments.
 
-To integrate WebPivotTable, we only need to import one javascript files into web page like:
+To integrate WebPivotTable, we only need to import two javascript files into web page like:
 
 ```html
-<script type="text/javascript" src="./dist/webpivottable.js"></script>
+<script type="text/javascript" src="./dist/wpt.js"></script>
+<script type="text/javascript" src="./dist/wpt-lib.js"></script>
 ```
 
 Then, we can put a "wpt-pivot-table" tag into page:

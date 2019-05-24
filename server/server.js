@@ -6,7 +6,7 @@ var express = require("express"),
   morgan = require("morgan"),
   methodOverride = require("method-override"),
   cors = require("cors"),
-  wpt = require("./wpt.js"),
+  services = require("./services.js"),
   app = (module.exports = express());
 
 app.use(cors());
@@ -16,9 +16,9 @@ app.use(bodyParser.json({ limit: "100mb" }));
 app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
 app.use(methodOverride());
 
-app.post("/wpt/fileProxy", wpt.fileProxy);
-app.post("/wpt/xmlaProxy", wpt.xmlaProxy);
-app.get("/wpt/wsSample", wpt.wsSample);
+app.post("/wpt/fileProxy", services.fileProxy);
+app.post("/wpt/xmlaProxy", services.xmlaProxy);
+app.get("/wpt/wsSample", services.wsSample);
 
 // catch the uncaught errors that weren't wrapped in a domain or try catch statement
 // do not use this in modules, but only in applications, as otherwise we could have multiple of these bound
