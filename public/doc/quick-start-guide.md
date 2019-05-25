@@ -22,8 +22,7 @@ When you get the packaged zip file, unzip it to any directory and you will see l
 webpivotptable
        ├─-- public
        |       ├─-- dist
-       |       |      ├─-- wpt.js
-       |       |      └─-- wpt-lib.js
+       |       |      └─-- wpt.js
        |       |--- lang  
        |       |      ├─-- de.json
        |       |      ├─-- en.json
