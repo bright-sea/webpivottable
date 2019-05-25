@@ -22,7 +22,6 @@ yarn add webpivottable
 ### CDN
 
 https://webpivottable.com/releases/6.0.0-beta.0/dist/wpt.js
-https://webpivottable.com/releases/6.0.0-beta.0/dist/wpt-lib.js
 
 
 
@@ -33,11 +32,10 @@ https://webpivottable.com/releases/6.0.0-beta.0/dist/wpt-lib.js
 
 Copy whole public directory into web server root is all we need, no depends on any other libs or frameworks.
 
-To integrate WPT component, we only need import two javascript files into web page like below:
+To integrate WPT component, we only need import one javascript file into web page like below:
 
 ```html
   <script type="text/javascript" src="./dist/wpt.js"></script>
-  <script type="text/javascript" src="./dist/wpt-lib.js"></script>
 ```
 
 Then, we can put a "wpt-pivot-table" tag into page:
@@ -69,7 +67,6 @@ List below is a sample html file:
   </style>
 
   <script type="text/javascript" src="./dist/wpt.js"></script>
-  <script type="text/javascript" src="./dist/wpt-lib.js"></script>
 
 </head>
 
