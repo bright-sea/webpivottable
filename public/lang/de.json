@@ -1,5 +1,7 @@
 {
   "Msg_LeavingPage": "Bitte den WPT-Bericht vor verlassen speichern. Nicht gespeicherte Daten gehen verloren!",
+  "Msg_LoadDataFirst": "Keine Daten vorhanden, laden Sie bitte zuerst Daten.",
+  "Msg_ChooseFieldsFirst": "Um einen Bericht zu erstellen, wählen Sie aus der Felder-Liste.",
   "Msg_CloseModal": "Schließen und zurückkehren zu Hauptansicht",
   "Msg_NewWpt": "Neuen WebPivotTable erstellen",
   "Msg_OpenWpt": "WebPivotTable Datei öffnen (.wpt)",

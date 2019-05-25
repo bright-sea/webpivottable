@@ -1,5 +1,7 @@
 {
   "Msg_LeavingPage": "Por favor, salve o relatório WPT antes de sair da página, senão você poderá perder seu trabalho!",
+  "Msg_LoadDataFirst": "Nenhum dado, por favor carregue os dados antes.",
+  "Msg_ChooseFieldsFirst": "Para construir um relatório, selecione os campos na lista de campos.",
   "Msg_CloseModal": "Fechar & retornar para visão principal",
   "Msg_NewWpt": "Criar novo WebPivotTable",
   "Msg_OpenWpt": "Abrir arquivo WebPivotTable (.wpt)",

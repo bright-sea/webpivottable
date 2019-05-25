@@ -1,5 +1,7 @@
 {
   "Msg_LeavingPage": "Lütfen WPT rapor sayfasını çıkmadan önce kaydedin, yoksa çalışmanızı kaybedebilirsiniz!",
+  "Msg_LoadDataFirst": "Hiçbir veri yüklü değil, lütfen önce veri yükleyin.",
+  "Msg_ChooseFieldsFirst": "Bir rapor oluşturmak için , Alanlar Listesi'nde alanları seçin.",
   "Msg_CloseModal":  "Close & return to main view",
   "Msg_NewWpt": "Yeni WebPivotTable oluştur",
   "Msg_OpenWpt": "WebPivotTable dosyası aç (.wpt)",

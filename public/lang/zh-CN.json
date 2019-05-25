@@ -1,5 +1,7 @@
 {
   "Msg_LeavingPage": "在离开页面前请保存你的WPT报表，否则你将丢失你所有的操作！",
+  "Msg_LoadDataFirst": "还没有数据源， 请点击右上角菜单条连接一个数据源， 或者拖拉一个数据源文件到这里",
+  "Msg_ChooseFieldsFirst": "为创建报表，请从字段列表中选取字段",
   "Msg_CloseModal": "关闭并返回主视图",
   "Msg_NewWpt": "创建新的WEB数据透视表",
   "Msg_OpenWpt": "打开WEB数据透视表文件 (.wpt)",
