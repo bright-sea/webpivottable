@@ -267,7 +267,7 @@ Please reference [Internationalization](/doc/internationalization) for more deta
 | `uiFlags.sourceEditable`      | `bool`    | 1       | add/rename/remove/change source or not      |
 | `uiFlags.sheetEditable`       | `bool`    | 1       | add/rename/remove/change sheet or not      |
 | `uiFlags.reportEditable`      | `bool`    | 1       | add/rename/remove/change report or not      |
-| `uiFlags.sourceRefine`        | `bool`    | 1       | show/hide source refine data      |
+| `uiFlags.dataRefine`        | `bool`    | 1       | show/hide source refine data      |
 | `uiFlags.sourceExportToCsv`   | `bool`    | 1       | show/hide source "Export to csv"      |
 | `uiFlags.sourceExportToExcel` | `bool`    | 1       | show/hide source "Export to Excel"      |
 | `uiFlags.sourcePrint`         | `bool`    | 1       | show/hide source "Print"      |
