@@ -5,9 +5,8 @@
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",
   "Msg_SwitchToPivotChart": "Switch to Pivot Chart",
   "Msg_OpenSourceView": "Open Source View",
-  "Msg_BackToSheetView": "Return to Sheet View",
-  "Msg_BackToSourceView": "Return to Source View",
-  "Msg_ConnectSource":  "Connect to Data Source",
+  "Msg_BackToWpt": "Return to WPT",
+  "Msg_ConnectSource":  "Connect New Data Source",
   "Msg_OpenWpt":  "Open Saved WPT",
   "Msg_SaveWpt":  "Save WPT",
   "Msg_ResetWpt":  "Reset WPT",
@@ -109,16 +108,11 @@
 
   "Lbl_Source": "Quelle",
   "Lbl_Sheet": "Blatt",
-  "Lbl_Report": "Bericht",
-  "Lbl_SourceName": "Quellenname: ",
-  "Lbl_SheetName": "Blattname",
-  "Lbl_ReportName": "Berichtsname",
+  "Lbl_PivotGrid": "Pivot Grid",
+  "Lbl_PivotChart": "Pivot Chart",
 
-  "Lbl_PivotGridControlPanel": "Pivot Grid",
-  "Lbl_PivotChartControlPanel": "Pivot Chart",
-  "Lbl_SourceControlPanel": "Data Source",
-  "Lbl_DrillThroughControlPanel": "DrillThrough",
-  "Lbl_DataRefineControlPanel": "Data Refine",
+  "Lbl_Export": "Export",
+  "Lbl_RowsPerPage": "/page",
 
   "Lbl_MemoryMode": "Memory Mode",
   "Lbl_CsvFile": "CSV Datei (.csv)",
@@ -366,8 +360,6 @@
   "Lbl_Prefix": "Prefix",
   "Lbl_Suffix": "Suffix",
   "Lbl_NegativeNumbers": "Negative Zahl",
-  "Lbl_NoSpecificFormat": "Kein bestimmtes Format.",
-
-  "Lbl_RefineData": "Sauber, zu transformieren , zu verfeinern, die Daten"
+  "Lbl_NoSpecificFormat": "Kein bestimmtes Format."
 
 }

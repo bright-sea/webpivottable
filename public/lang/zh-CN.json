@@ -4,10 +4,8 @@
   "Msg_ChooseFieldsFirst": "为创建报表，请从字段列表中选取字段",
   "Msg_SwitchToPivotGrid": "切换到透视表格",
   "Msg_SwitchToPivotChart": "切换到透视图",
-  "Msg_OpenSourceView": "打开数据源试图",
-  "Msg_BackToSheetView": "返回工作薄视图",
-  "Msg_BackToSourceView": "返回数据源视图",
-  "Msg_ConnectSource": "连接到数据源",
+  "Msg_BackToWpt": "返回WPT",
+  "Msg_ConnectSource": "连接新的数据源",
   "Msg_OpenWpt": "打开保存的WPT",
   "Msg_SaveWpt": "保存WPT",
   "Msg_ResetWpt":  "重置WPT",
@@ -108,16 +106,11 @@
 
   "Lbl_Source": "数据源",
   "Lbl_Sheet": "工作薄",
-  "Lbl_Report": "报表",
-  "Lbl_SourceName": "数据源名",
-  "Lbl_SheetName": "工作薄名",
-  "Lbl_ReportName": "报表名",
+  "Lbl_PivotGrid": "透视表格",
+  "Lbl_PivotChart": "透视图",
 
-  "Lbl_PivotGridControlPanel": "透视表格",
-  "Lbl_PivotChartControlPanel": "透视图",
-  "Lbl_SourceControlPanel": "数据源",
-  "Lbl_DrillThroughControlPanel": "钻取",
-  "Lbl_DataRefineControlPanel": "数据精炼",
+  "Lbl_Export": "输出",
+  "Lbl_RowsPerPage": "/页",
 
   "Lbl_MemoryMode": "内存模式",
   "Lbl_CsvFile": "CSV文件 (.csv)",
@@ -364,7 +357,5 @@
   "Lbl_Prefix": "前缀",
   "Lbl_Suffix": "后缀",
   "Lbl_NegativeNumbers": "负数",
-  "Lbl_NoSpecificFormat": "没有特别格式。",
-
-  "Lbl_RefineData": "清洗, 转换, 净化数据"
+  "Lbl_NoSpecificFormat": "没有特别格式。"
 }

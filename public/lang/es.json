@@ -4,10 +4,8 @@
   "Msg_ChooseFieldsFirst": "Para construir un informe, seleccione los campos de campos de lista.",
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",
   "Msg_SwitchToPivotChart": "Switch to Pivot Chart",
-  "Msg_OpenSourceView": "Open Source View",
-  "Msg_BackToSheetView": "Return to Sheet View",
-  "Msg_BackToSourceView": "Return to Source View",
-  "Msg_ConnectSource":  "Connect to Data Source",
+  "Msg_BackToWpt": "Return to WPT",
+  "Msg_ConnectSource":  "Connect New Data Source",
   "Msg_OpenWpt":  "Open Saved WPT",
   "Msg_SaveWpt":  "Save WPT",
   "Msg_ResetWpt":  "Reset WPT",
@@ -108,16 +106,11 @@
 
   "Lbl_Source": "Fuente",
   "Lbl_Sheet": "Sheet",
-  "Lbl_Report": "Reporte",
-  "Lbl_SourceName":  "Source Name",
-  "Lbl_SheetName":  "Sheet Name",
-  "Lbl_ReportName":  "Report Name",
+  "Lbl_PivotGrid": "Pivot Grid",
+  "Lbl_PivotChart": "Pivot Chart",
 
-  "Lbl_PivotGridControlPanel": "Pivot Grid",
-  "Lbl_PivotChartControlPanel": "Pivot Chart",
-  "Lbl_SourceControlPanel": "Data Source",
-  "Lbl_DrillThroughControlPanel": "DrillThrough",
-  "Lbl_DataRefineControlPanel": "Data Refine",
+  "Lbl_Export": "Export",
+  "Lbl_RowsPerPage": "/page",
 
   "Lbl_MemoryMode":  "Memory Mode",
   "Lbl_CsvFile": "Archivo CSV (.csv)",
@@ -365,7 +358,5 @@
   "Lbl_Prefix":  "Prefix",
   "Lbl_Suffix":  "Suffix",
   "Lbl_NegativeNumbers":  "Negative Numbers",
-  "Lbl_NoSpecificFormat":  "No specific format.",
-
-  "Lbl_RefineData":  "Clean, transform, refine the data"
+  "Lbl_NoSpecificFormat":  "No specific format."
 }

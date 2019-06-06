@@ -1,13 +1,11 @@
 {
   "Msg_LeavingPage":  "Please save WPT report before you leave the page, otherwise you may lose your work!",
-  "Msg_LoadDataFirst":  "No data source yet, please click top right MenuBar to connect a data source or drag and drop a data source file to here.",
+  "Msg_LoadDataFirst":  "Please drop a csv/excel/wpt file here or select a source from the menu.",
   "Msg_ChooseFieldsFirst":  "To build a report, choose fields from Fields List.",
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",
   "Msg_SwitchToPivotChart": "Switch to Pivot Chart",
-  "Msg_OpenSourceView": "Open Source View",
-  "Msg_BackToSheetView": "Return to Sheet View",
-  "Msg_BackToSourceView": "Return to Source View",
-  "Msg_ConnectSource":  "Connect to Data Source",
+  "Msg_BackToWpt": "Return to WPT",
+  "Msg_ConnectSource":  "Connect New Data Source",
   "Msg_OpenWpt":  "Open Saved WPT",
   "Msg_SaveWpt":  "Save WPT",
   "Msg_ResetWpt":  "Reset WPT",
@@ -107,18 +105,13 @@
   "Btn_Run":  "Run",
   "Btn_Refresh":  "Refresh",
 
-  "Lbl_Source":  "Source",
+  "Lbl_Source":  "Data Source",
   "Lbl_Sheet":  "Sheet",
-  "Lbl_Report":  "Report",
-  "Lbl_SourceName":  "Source Name",
-  "Lbl_SheetName":  "Sheet Name",
-  "Lbl_ReportName":  "Report Name",
+  "Lbl_PivotGrid": "Pivot Grid",
+  "Lbl_PivotChart": "Pivot Chart",
 
-  "Lbl_PivotGridControlPanel": "Pivot Grid",
-  "Lbl_PivotChartControlPanel": "Pivot Chart",
-  "Lbl_SourceControlPanel": "Data Source",
-  "Lbl_DrillThroughControlPanel": "DrillThrough",
-  "Lbl_DataRefineControlPanel": "Data Refine",
+  "Lbl_Export": "Export",
+  "Lbl_RowsPerPage": "/page",
 
   "Lbl_MemoryMode":  "Memory Mode",
   "Lbl_CsvFile":  "CSV File (.csv)",
@@ -613,7 +606,6 @@
   "Lbl_RefineSorts": "Sorts",
   "Lbl_RefineFilters": "Filters",
   "Lbl_RefineHistory": "History",
-  "Lbl_ShowAllColumns": "Show all columns",
-  "Lbl_RefineData":  "Clean, transform, refine the data"
+  "Lbl_ShowAllColumns": "Show all columns"
 
 }
