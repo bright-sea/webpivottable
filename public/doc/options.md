@@ -37,7 +37,7 @@ There are two ways to set options:
   ```javascript
     var wpt = document.getElementsByTagName('web-pivot-table')[0];
   
-    wpt.$eventBus.$emit('setOptions', {
+    wpt.setOptions({
       localeFilePath: "./lang/",
       locale: "en",
       leavePageWarning: 0

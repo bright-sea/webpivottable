@@ -16,90 +16,91 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    $(document).ready(function(){
-      var wpt = $('web-pivot-table')[0];
-      wpt.$eventBus.$emit('setOptions', {
-        styles: {
-          highLightColor: 'rgb(250, 224, 177)',
-        },
-        uiFlags: {
-          report: 0,
-        },
-        customHandlers: {
-          connectSource: 0,
-          openWpt: 1,
-          saveWpt: 1,
-          drillThrough: 1
-        },
-        filestack: {
-          enabled: true,
-          key: "A4bieoUsyR4yBrNPkFIvrz"  //demo.webpivottable.com
-        },
+     $(document).ready(function(){
+       var wpt = $('web-pivot-table')[0];
+       wpt.setOptions({
+         styles: {
+           highLightColor: 'rgb(250, 224, 177)',
+         },
+         uiFlags: {
+           report: 0,
+         },
+         customHandlers: {
+           connectSource: 0,
+           openWpt: 1,
+           saveWpt: 1,
+           drillThrough: 1
+         },
+         filestack: {
+           enabled: true,
+           key: "A4bieoUsyR4yBrNPkFIvrz"  //demo.webpivottable.com
+         },
+       });
 
-      });
+       wpt.addEventListener('EVENT_NEW_WPT', function(event) {
+         console.log("customize newWpt", event);
+       });
 
-      wpt.$eventBus.$on('newWpt', function(payload){
-        console.log("customize newWpt", payload);
-      });
+       wpt.addEventListener('EVENT_OPEN_WPT', function(event) {
+         console.log("customize open Wpt", event);
+       });
 
-      wpt.$eventBus.$on('openWpt', function(payload){
-        console.log("customize openWpt", payload);
-      });
+       wpt.addEventListener('EVENT_SAVE_WPT', function(event) {
+         console.log("customize saveWpt", event);
+       });
 
-      wpt.$eventBus.$on('saveWpt', function(payload){
-        console.log("customize saveWpt", payload);
-        wpt.$eventBus.$emit('generateWptString', false, function(wptString){
-          console.log("wptString", wptString);
-        });
-      });
+       wpt.addEventListener('EVENT_DRILL_THROUGH', function(event) {
+         console.log("customize drillthrough", event);
+       });
 
-      wpt.$eventBus.$on('drillThrough', function(payload){
-        console.log("customize drillThrough", payload);
-      });
+       // wpt.setWebServiceDataUrl('https://demo.webpivottable.com/wpt/wsSample');
+
+       // wpt.setOlapCube({
+       //   catalog: "FoodMart",
+       //   cubeName: "HR",
+       //   dataSourceInfo: "Provider=Mondrian;DataSource=MondrianFoodMart;",
+       //   xmlaUrl: "http://52.4.22.157:8080/mondrian/xmla"
+       // });
+
+       // wpt.setDataArray(
+       //   ['asd', 'ccc'],
+       //   [[1, 2], [3, 4], [5, 6]],
+       //   "url"
+       // );
+
+       // wpt.setCsvUrl("https://webpivottable.com/testfiles/example.csv");
+
+       // var obj={"format":"WPT","version":"3.0","pivot":{"fields":{},"rows":[{"id":"H-[Date].[Calendar]","children":[{"id":"L-[Date].[Calendar].[(All)]"},{"id":"L-[Date].[Calendar].[Calendar Year]"},{"id":"L-[Date].[Calendar].[Calendar Semester]"},{"id":"L-[Date].[Calendar].[Calendar Quarter]"},{"id":"L-[Date].[Calendar].[Month]"},{"id":"L-[Date].[Calendar].[Date]"}]}],"columns":[],"filters":[],"values":[{"id":"M-[Measures].[Average Rate]"},{"id":"M-[Measures].[Average Sales Amount]"}],"valuesInAxis":0,"valuesIndex":0,"nonEmpty":1},"collapsed":{},"options":{"showGrid":1,"expandRows":1,"expandCols":1,"showRowTotals":1,"showColTotals":1,"showRowSubtotals":1,"showColSubtotals":1,"grid":{"showSigns":1,"showEmptyAsZero":0,"compactForm":1,"rowHeaderWidth":200,"cellWidth":100,"cellHeight":20,"theme":"wpt-default","noFixedColumns":0,"cellStyle":{"columnHeader":{"textAlign":"center","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundColumn":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"rowHeader":{"textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundRow":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"totalCell":{"textAlign":"right","backgroundColor":"#72d2df"},"subtotalCell":{"textAlign":"right","backgroundColor":"#d2e9e9"},"dataCell":{"textAlign":"right","backgroundColor":"#eee"},"noDataCell":{"backgroundColor":"#ddd"}}},"chart":{"width":500,"height":300,"combined":true,"high":{"theme":"default","chart":{"type":"column","options3d":{"enabled":false,"alpha":15,"beta":15,"depth":50,"viewDistance":25}},"credits":{"enabled":false},"exporting":{"enabled":false},"navigation":{"buttonOptions":{"align":"right","verticalAlign":"top"}},"legend":{"enabled":true,"floating":false,"layout":"vertical","align":"right","verticalAlign":"middle","reversed":false},"tooltip":{"enabled":true,"shadow":true},"plotOptions":{"series":{"stacking":null,"dataLabels":{"enabled":false,"align":"center","rotation":0}}},"xAxis":{"labels":{"enabled":true,"align":"left","rotation":45}}}}},"source":{"mode":"OLAP","url":"http://olap.flexmonster.com/olap/msmdpump.dll","data":{"xmlaUrl":"http://olap.flexmonster.com/olap/msmdpump.dll","dataSourceInfo":"Provider=Microsoft Analysis Services;DataSource=WIN-IA9HPVD1RU5;","catalog":"Adventure Works DW Standard Edition","cubeName":"Adventure Works"}}}
+       //
+       // wpt.setWptString(JSON.stringify(obj)).then( function(response){
+       //   console.log("setWptObject", response);
+       // });
+
+       // wpt.setWpt(obj).then( function(response){
+       //   console.log("setWptObject", response);
+       // });
+       //
+       // wpt.setWptObject(obj).then( function(response){
+       //   console.log("setWptObject", response);
+       // });
 
 
-      // wpt.$eventBus.$emit('setWebServiceDataUrl', 'https://demo.webpivottable.com/wpt/wsSample');
+       // wpt.generateWptString(false).then(function(wptString){
+       //   console.log("wptString", wptString);
+       // });
 
-      // wpt.$eventBus.$emit('setOlapCube', {
-      //   catalog: "FoodMart",
-      //   cubeName: "HR",
-      //   dataSourceInfo: "Provider=Mondrian;DataSource=MondrianFoodMart;",
-      //   xmlaUrl: "http://52.4.22.157:8080/mondrian/xmla"
-      // });
+       // wpt.generateWptJSON(false).then(function(wptObj){
+       //   console.log("wptJSON", wptObj);
+       // });
 
-      // wpt.$eventBus.$emit('setDataArray',
-      //   ['asd', 'ccc'],
-      //   [[1, 2], [3, 4], [5, 6]],
-      //   "url",
-      //   null,
-      //   function () {},
-      //   function () {}
-      // );
-
-      wpt.$eventBus.$emit('setCsvUrl', 'https://webpivottable.com/testfiles/example.csv');
-
-      // wpt.$eventBus.$emit('generateWptString', false, function(wptString){
-      //   console.log("wptString", wptString);
-      // });
-
-      // var obj={"format":"WPT","version":"3.0","source":{"name":"Source1","mode":"OLAP","url":"http://52.4.22.157:8080/mondrian/xmla","data":{"xmlaUrl":"http://52.4.22.157:8080/mondrian/xmla","dataSourceInfo":"Provider=Mondrian;DataSource=MondrianFoodMart;","catalog":"FoodMart","cubeName":"HR"},"options":{"navigationPanel":{"show":"FIELDS","position":"right","stacked":0,"width":300,"height":200},"fieldsListFilter":"","fieldsListSort":0,"grid":{"cellWidth":120,"cellHeight":21}},"id":"1933979845012"},"sheet":{"id":"1663180908750","pivot":{"fields":{},"rows":[{"id":"H-[Pay Type]","children":[{"id":"L-[Pay Type].[(All)]"},{"id":"L-[Pay Type].[Pay Type]"}]}],"columns":[],"filters":[],"values":[{"id":"M-[Measures].[Count]"},{"id":"M-[Measures].[Org Salary]"}],"valuesInAxis":0,"valuesIndex":0,"nonEmpty":1},"collapsed":{},"options":{"sheet":{"pivotLayout":"GRID_ONLY","expandRows":1,"expandCols":1,"showRowTotals":1,"showColTotals":1,"showRowSubtotals":1,"showColSubtotals":1,"navigationPanel":{"show":"FIELDS","position":"right","stacked":0,"width":300,"height":200},"deferLayoutUpdate":false,"fieldsListFilter":"","fieldsListSort":0},"grid":{"showSigns":1,"showEmptyAsZero":0,"compactForm":1,"rowHeaderWidth":200,"cellWidth":100,"cellHeight":20,"theme":"wpt-default","noFixedColumns":0,"cellStyle":{"columnHeader":{"textAlign":"center","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundColumn":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"rowHeader":{"textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundRow":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"totalCell":{"textAlign":"right","backgroundColor":"#72d2df"},"subtotalCell":{"textAlign":"right","backgroundColor":"#d2e9e9"},"dataCell":{"textAlign":"right","backgroundColor":"#eee"},"noDataCell":{"backgroundColor":"#ddd"}}},"chart":{"width":500,"height":300,"combined":true,"high":{"theme":"default","chart":{"type":"column","options3d":{"enabled":false,"alpha":15,"beta":15,"depth":50,"viewDistance":25}},"credits":{"enabled":false},"exporting":{"enabled":false},"navigation":{"buttonOptions":{"align":"right","verticalAlign":"top"}},"legend":{"enabled":true,"floating":false,"layout":"vertical","align":"right","verticalAlign":"middle","reversed":false},"tooltip":{"enabled":true,"shadow":true},"plotOptions":{"series":{"stacking":null,"dataLabels":{"enabled":false,"align":"center","rotation":0}}},"xAxis":{"labels":{"enabled":true,"align":"left","rotation":45}}}}}}};
-      //
-      // var okfunc=function(){
-      //   alert("ok");
-      // };
-      // var errfunc=function(){
-      //   alert("error");
-      // };
-      // wpt.$eventBus.$emit('setWptObject',obj,'',okfunc,errfunc);
-
-      $('#locale-select').on('change', function() {
-        var value = this.value;
-        if (value) {
-          var wpt = $('web-pivot-table')[0];
-          wpt.$eventBus.$emit('setLocale',value);
-        }
-      });
-    });
+       $('#locale-select').on('change', function() {
+         var value = this.value;
+         if (value) {
+           var wpt = $('web-pivot-table')[0];
+           wpt.setLocale(value);
+         }
+       });
+     });
   </script>
 
 </head>

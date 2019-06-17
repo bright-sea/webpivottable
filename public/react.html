@@ -30,7 +30,7 @@
     changeLocale = (event) => {
       this.setState({locale: event.target.value});
       if (this.wpt){
-        this.wpt.$eventBus.$emit('setLocale', event.target.value);
+        this.wpt.setLocale(event.target.value);
       }
     };
 

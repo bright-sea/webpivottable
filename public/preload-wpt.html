@@ -14,20 +14,17 @@
   </style>
 
   <script type="text/javascript" src="./dist/wpt.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var wpt = $('web-pivot-table')[0];
-      wpt.$eventBus.$emit('setWptUrl', 'https://webpivottable.com/testfiles/file61.wpt');
-    });
-  </script>
 </head>
 
 <body>
   <div id="wpt-container">
     <web-pivot-table />
   </div>
+
+  <script>
+    var wpt = document.getElementsByTagName('web-pivot-table')[0];
+    wpt.setWptUrl('https://webpivottable.com/testfiles/file611.wpt');
+  </script>
 </body>
 
 </html>

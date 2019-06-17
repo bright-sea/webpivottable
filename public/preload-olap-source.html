@@ -15,24 +15,22 @@
 
   <script type="text/javascript" src="./dist/wpt.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var wpt = $('web-pivot-table')[0];
-      wpt.$eventBus.$emit('setOlapCube', {
-        catalog: "FoodMart",
-        cubeName: "HR",
-        dataSourceInfo: "Provider=Mondrian;DataSource=MondrianFoodMart;",
-        xmlaUrl: "http://52.4.22.157:8080/mondrian/xmla"
-      });
-    });
-  </script>
 </head>
 
 <body>
   <div id="wpt-container">
     <web-pivot-table />
   </div>
+
+  <script>
+    var wpt = document.getElementsByTagName('web-pivot-table')[0];
+    wpt.setOlapCube({
+      catalog: "FoodMart",
+      cubeName: "HR",
+      dataSourceInfo: "Provider=Mondrian;DataSource=MondrianFoodMart;",
+      xmlaUrl: "http://52.4.22.157:8080/mondrian/xmla"
+    });
+  </script>
 </body>
 
 </html>
