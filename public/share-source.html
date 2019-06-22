@@ -23,9 +23,9 @@
       var wpt1 = $('web-pivot-table')[0];
       var wpt2 = $('web-pivot-table')[1];
 
-      wpt1.setCsvUrl('https://webpivottable.com/testfiles/example.csv')
+      wpt1.getSourceFromCsvUrl('https://webpivottable.com/testfiles/example.csv')
         .then(function(source) {
-          console.log("source", source);
+          wpt1.setSourceObject(source);
           wpt2.setSourceObject(source);
         });
     });

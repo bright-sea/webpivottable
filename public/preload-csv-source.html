@@ -23,9 +23,7 @@
 
   <script>
     var wpt = document.getElementsByTagName('web-pivot-table')[0];
-    wpt.setCsvUrl('https://webpivottable.com/testfiles/example.csv').then( function(response){
-      console.log("response", response);
-    });
+    wpt.setWptFromCsvUrl('https://webpivottable.com/testfiles/example.csv');
 
     wpt.addEventListener("EVENT_DRILL_THROUGH", function(event) {
       console.log("drill through happens", event);

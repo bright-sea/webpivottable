@@ -21,7 +21,7 @@ yarn add webpivottable
 
 ### CDN
 
-https://webpivottable.com/releases/6.0.0-beta.0/dist/wpt.js
+https://webpivottable.com/releases/latest/dist/wpt.js
 
 
 
