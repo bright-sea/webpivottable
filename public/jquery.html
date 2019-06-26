@@ -37,19 +37,19 @@
          },
        });
 
-       wpt.addEventListener('EVENT_NEW_WPT', function(event) {
+       wpt.addEventListener(wpt.Constants.eventType.NEW_WPT, function(event) {
          console.log("customize newWpt", event);
        });
 
-       wpt.addEventListener('EVENT_OPEN_WPT', function(event) {
+       wpt.addEventListener(wpt.Constants.eventType.OPEN_WPT, function(event) {
          console.log("customize open Wpt", event);
        });
 
-       wpt.addEventListener('EVENT_SAVE_WPT', function(event) {
+       wpt.addEventListener(wpt.Constants.eventType.SAVE_WPT, function(event) {
          console.log("customize saveWpt", event);
        });
 
-       wpt.addEventListener('EVENT_DRILL_THROUGH', function(event) {
+       wpt.addEventListener(wpt.Constants.eventType.DRILL_THROUGH, function(event) {
          console.log("customize drillthrough", event);
        });
 
@@ -68,13 +68,13 @@
 
        // wpt.setWptFromCsvUrl("https://webpivottable.com/testfiles/example.csv");
 
-       wpt.setWptFromExcelUrl("https://webpivottable.com/testfiles/example.xls");
+       // wpt.setWptFromExcelUrl("https://webpivottable.com/testfiles/example.xls");
 
        // wpt.setWptFromWptUrl("https://webpivottable.com/testfiles/file621.wpt");
 
        // wpt.setWptFromWebService('https://demo.webpivottable.com/wpt/wsSample');
 
-       // wpt.setWptFromGoogleSpreadSheet("https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html");
+       wpt.setWptFromGoogleSpreadSheet("https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html");
 
        // var obj={"format":"WPT","version":"3.0","pivot":{"fields":{},"rows":[{"id":"H-[Date].[Calendar]","children":[{"id":"L-[Date].[Calendar].[(All)]"},{"id":"L-[Date].[Calendar].[Calendar Year]"},{"id":"L-[Date].[Calendar].[Calendar Semester]"},{"id":"L-[Date].[Calendar].[Calendar Quarter]"},{"id":"L-[Date].[Calendar].[Month]"},{"id":"L-[Date].[Calendar].[Date]"}]}],"columns":[],"filters":[],"values":[{"id":"M-[Measures].[Average Rate]"},{"id":"M-[Measures].[Average Sales Amount]"}],"valuesInAxis":0,"valuesIndex":0,"nonEmpty":1},"collapsed":{},"options":{"showGrid":1,"expandRows":1,"expandCols":1,"showRowTotals":1,"showColTotals":1,"showRowSubtotals":1,"showColSubtotals":1,"grid":{"showSigns":1,"showEmptyAsZero":0,"compactForm":1,"rowHeaderWidth":200,"cellWidth":100,"cellHeight":20,"theme":"wpt-default","noFixedColumns":0,"cellStyle":{"columnHeader":{"textAlign":"center","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundColumn":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"rowHeader":{"textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"compoundRow":{"verticalAlign":"top","textAlign":"left","backgroundColor":"#bfd6eb","fontWeight":"bold"},"totalCell":{"textAlign":"right","backgroundColor":"#72d2df"},"subtotalCell":{"textAlign":"right","backgroundColor":"#d2e9e9"},"dataCell":{"textAlign":"right","backgroundColor":"#eee"},"noDataCell":{"backgroundColor":"#ddd"}}},"chart":{"width":500,"height":300,"combined":true,"high":{"theme":"default","chart":{"type":"column","options3d":{"enabled":false,"alpha":15,"beta":15,"depth":50,"viewDistance":25}},"credits":{"enabled":false},"exporting":{"enabled":false},"navigation":{"buttonOptions":{"align":"right","verticalAlign":"top"}},"legend":{"enabled":true,"floating":false,"layout":"vertical","align":"right","verticalAlign":"middle","reversed":false},"tooltip":{"enabled":true,"shadow":true},"plotOptions":{"series":{"stacking":null,"dataLabels":{"enabled":false,"align":"center","rotation":0}}},"xAxis":{"labels":{"enabled":true,"align":"left","rotation":45}}}}},"source":{"mode":"OLAP","url":"http://olap.flexmonster.com/olap/msmdpump.dll","data":{"xmlaUrl":"http://olap.flexmonster.com/olap/msmdpump.dll","dataSourceInfo":"Provider=Microsoft Analysis Services;DataSource=WIN-IA9HPVD1RU5;","catalog":"Adventure Works DW Standard Edition","cubeName":"Adventure Works"}}}
        //

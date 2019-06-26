@@ -234,8 +234,8 @@ Please reference [Internationalization](/doc/internationalization) for more deta
 
 | Option                        | Type      | Default  | Description                 |
 |-------------------------------|-----------|----------|-----------------------------|
-| `defaultValueFormat.category` | `string`  |  WptConstants.VALUE_FORMAT_CATEGORY_NUMBER   |  Default format for negative number   |
-| `defaultValueFormat.negative` | `string`  |  WptConstants.VALUE_NEGATIVE_RED_MINUS       |  Default format for negative number   |
+| `defaultValueFormat.category` | `string`  |  Constants.valueFormatCategory.NUMBER   |  Default format for negative number   |
+| `defaultValueFormat.negative` | `string`  |  Constants.negativeValueFormat.RED_MINUS       |  Default format for negative number   |
 
 
 <h2 id="ui-flags"> `uiFlags` </h2>
@@ -320,79 +320,75 @@ Please reference [Internationalization](/doc/internationalization) for more deta
 ```
   [
     {
-      type: WptConstants.FORMAT_WPT,
+      type: Constants.sourceType.WPT,
       url: "https://webpivottable.com/testfiles/file9.wpt",
       label: "Test file 9 (olap mode)"
     },{
-      type: WptConstants.FORMAT_WPT,
+      type: Constants.sourceType.WPT,
       url: "https://webpivottable.com/testfiles/file8.wpt",
       label: "Test file 8 (memory mode)"
     },{
-      type: WptConstants.FORMAT_CSV,
+      type: Constants.sourceType.CSV,
       url: "https://webpivottable.com/testfiles/example.csv",
       label: "USA Selection Poll Data (Total 4,000 records)"
     },{
-      type: WptConstants.FORMAT_CSV,
+      type: Constants.sourceType.CSV,
       url: "https://webpivottable.com/testfiles/sales.csv",
       label: "Sales Sample Data (Total 2,823 records)"
     },{
-      type: WptConstants.FORMAT_CSV,
+      type: Constants.sourceType.CSV,
       url: "https://webpivottable.com/testfiles/FL_insurance.csv",
       label: "Florida Insurance Data (Total 36,634 records)"
     },{
-      type: WptConstants.FORMAT_EXCEL,
+      type: Constants.sourceType.EXCEL,
       url: "https://webpivottable.com/testfiles/example.xls",
       label: "USA Selection Poll Data (Total 4,000 records)"
     },{
-      type: WptConstants.FORMAT_EXCEL,
+      type: Constants.sourceType.EXCEL,
       url: "https://webpivottable.com/testfiles/sales.xls",
       label: "Sales Sample Data (Total 2,823 records)"
     },{
-      type: WptConstants.FORMAT_EXCEL,
+      type: Constants.sourceType.EXCEL,
       url: "https://webpivottable.com/testfiles/FL_insurance.xls",
       label: "Florida Insurance Data (Total 36,634 records)"
     },{
-      type: WptConstants.FORMAT_EXCEL,
+      type: Constants.sourceType.EXCEL,
       url: "https://webpivottable.com/testfiles/example.xlsx",
       label: "USA Selection Poll Data (Total 4,000 records)"
     },{
-      type: WptConstants.FORMAT_EXCEL,
+      type: Constants.sourceType.EXCEL,
       url: "https://webpivottable.com/testfiles/sales.xlsx",
       label: "Sales Sample Data (Total 2,823 records)"
     },{
-      type: WptConstants.FORMAT_EXCEL,
+      type: Constants.sourceType.EXCEL,
       url: "https://webpivottable.com/testfiles/FL_insurance.xlsx",
       label: "Florida Insurance Data (Total 36,634 records)"
     },{
-      type: WptConstants.FORMAT_WSWPT,
-      url: "https://webpivottable.com/testfiles/sample91.wpt",
-      label: "Predefined small CSV WebPivotTable file"
-    },{
-      type: WptConstants.FORMAT_WSDATA,
+      type: Constants.sourceType.WSDATA,
       url: "https://demo.webpivottable.com/wpt/wsSample",
       label: "Simple Sample Web Service"
     },{
-      type: WptConstants.FORMAT_GSS,
+      type: Constants.sourceType.GSS,
       url: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html",
       label: "USA Selection Poll Data (Total 4,000 records)"
     },{
-      type: WptConstants.FORMAT_GSS,
+      type: Constants.sourceType.GSS,
       url: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdHJMOTh4Sm1BSFlDYXRwVW5lc0xuMVE&output=html",
       label: "Sales Sample Data (Total 2,823 records)"
     },{
-      type: WptConstants.FORMAT_OLAP,
+      type: Constants.sourceType.CUBE,
       url: "http://olap.flexmonster.com/olap/msmdpump.dll",
       label: "Sample Microsoft Analysis Service"
     },{
-      type: WptConstants.FORMAT_OLAP,
+      type: Constants.sourceType.CUBE,
       url: "http://sampledata.infragistics.com/data/msmdpump.dll",
       label: "Sample Microsoft Analysis Service 1"
     },{
-      type: WptConstants.FORMAT_OLAP,
+      type: Constants.sourceType.CUBE,
       url: "http://52.4.22.157:8080/mondrian/xmla",
       label: "Sample Mondrian OLAP Server"
     },{
-      type: WptConstants.FORMAT_OLAP,
+      type: Constants.sourceType.CUBE,
       url: "http://52.4.22.157:8282/icCube/xmla",
       label: "Sample icCube OLAP Server"
     }
@@ -614,7 +610,7 @@ key: "A4bieoUsyR4yBrNPkFIvrz"  //demo.webpivottable.com
 
     sheet: {
       chartFirst: 0,          // show chart at top/left? 0/1
-      pivotLayout: WptConstants.PIVOT_LAYOUT_TILE_VERTICAL,
+      pivotLayout: Constants.PIVOT_LAYOUT_TILE_VERTICAL,
                               // Pivot Grid and chart layout
                               // 0 -- tile horizontal, 1 -- tile vertical,
                               // 2 -- grid only,  3 -- chart only
