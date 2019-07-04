@@ -14,9 +14,9 @@
   "Msg_ShowControlPanel": "Mostar a Lista de Campos do Pivot",
   "Msg_HideControlPanel": "Esconder a Lista de Campos do Pivot",
   "Msg_NotValidWptFormat": "Arquivo WPT inválido.",
-  "Err_OLAP_NoDataSource": "Nenhuma fonte de dados encontrada neste servidor: ",
-  "Err_OLAP_NoCatalog": "Nenhum Catálogo encontrado nesta Fonte de Dados: ",
-  "Err_OLAP_NoDimension": "Nenhuma Dimensão encontrada neste cubo: ",
+  "Msg_OLAP_NoDataSource": "Nenhuma fonte de dados encontrada neste servidor: ",
+  "Msg_OLAP_NoCatalog": "Nenhum Catálogo encontrado nesta Fonte de Dados: ",
+  "Msg_OLAP_NoDimension": "Nenhuma Dimensão encontrada neste cubo: ",
 
   "Msg_InputFileUrl": "Favor informar a URL do arquivo de entrada.",
   "Msg_LoadingFile": "Lendo arquivo: ",
@@ -44,19 +44,13 @@
   "Msg_SelectCatalog": "Please select a catalog",
   "Msg_SelectCubeName": "Please select a cube name",
 
+  "Msg_ExecutingMdx": "Executing MDX statement... ",
   "Msg_GeneratingPivotData": "Generating pivot data...",
   "Msg_PivotDataGenerated": "Pivot data generated.",
-  "Msg_MilliSeconds": "ms",
   "Msg_DrillThroughDataRetrieved": "Drill through data retrieved.",
   "Msg_ManuallyInclude": "Please manually pickup labels which should be included",
   "Msg_ManuallyExclude": "Please manually pickup labels which should be excluded",
 
-  "Msg_SelectSource": "Por favor, selecione uma fonte de dados.",
-  "Msg_SelectSheet": "Por favor, selecione uma planilha válida.",
-  "Msg_SheetUsedByReports": "Existem alguns relatórios baseados nessa planilha. Esses relatório serão alterados se você deletar a planilha.",
-  "Msg_SourceUsedBySheets": "Existem algumas planilhas e/ou relatórios utilizando esta fonte. Romovê-la irá remover também todas essas planilhas e relatórios.",
-  "Msg_RemoveSheetConfirmation": "Você deseja realmente remover esta planilha?",
-  "Msg_RemoveSourceConfirmation": "Você deseja realmente remover esta fonte de dados?",
   "Msg_RunMdxStatement": "Executar esta consulta MDX no Cubo OLAP",
   "Msg_FormatExpression": "You can use any validate javascript expression in formula.",
 
@@ -115,7 +109,7 @@
 
   "Lbl_MemoryMode": "Modo de Memória",
   "Lbl_CsvFile": "Arquivo CSV (.csv)",
-  "Lbl_ExcelFile": "Arquivo Excel (.xlsx/.xlsm/.xlsb/.xls)",
+  "Lbl_ExcelFile": "Arquivo Excel (.xlsx/.xls)",
   "Lbl_OlapMode": "Cubo OLAP ",
   "Lbl_GssFile": "Planilha Google",
   "Lbl_WebService": "Serviço Web",
@@ -146,22 +140,6 @@
   "Lbl_ExportToJpeg": "Exportar para Imagem JPEG",
   "Lbl_ExportToCsv": "Exportar para arquivo CSV",
   "Lbl_Print": "Print",
-
-  "Lbl_AddSource": "Adicionar uma nova fonte de dados",
-  "Lbl_RemoveSource": "Remover essa fonte de dados",
-  "Lbl_ChangeSource": "Trocar essa fonte de dados",
-  "Lbl_AddSheet": "Criar uma nova planilha",
-  "Lbl_AddReport": "Criar um novo relatório",
-  "Lbl_CreateSheetFromSource": "Criar nova planilha da fonte de dados",
-  "Lbl_CopySheetFromSheet": "Copiar planilha existente",
-  "Lbl_AvailableComponents": "Componetes Disponíveis",
-  "Lbl_ReportComponents": "Componentes de Relatório",
-
-  "Lbl_RenameSourceName": "Mudar o nome da fonte dos dados",
-  "Lbl_RenameSheetName": "Mudar nome da planilha",
-  "Lbl_RenameReportName": "mudar nome do relatório",
-  "Lbl_UsedBySheets": "Usado pelas planilhas",
-  "Lbl_UsedByReports": "Usado pelos relatórios",
 
   "Lbl_CollapseRows": "Agrupar Todas as Linhas",
   "Lbl_ExpandRows": "Desagruopar Todas as Linhas",
@@ -222,6 +200,9 @@
   "Lbl_NotSort": "Not sort",
   "Lbl_SortAscend": "Classificar de A a Z",
   "Lbl_SortDescend": "Classificar de Z a A",
+
+  "Lbl_GridOptions": "Grid Options",
+  "Lbl_ChartOptions": "Chart Options",
 
   "Lbl_RowHeadWidth": "Largura do Título da Linha",
   "Lbl_CellWidth": "Lartgura da Célula",

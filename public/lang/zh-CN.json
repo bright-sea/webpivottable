@@ -14,9 +14,9 @@
   "Msg_ShowControlPanel": "显示控制面板",
   "Msg_HideControlPanel": "隐藏控制面板",
   "Msg_NotValidWptFormat": "不是一个有效的WEB数据透视表文件.",
-  "Err_OLAP_NoDataSource": "在这个服务器上没有发现数据源: ",
-  "Err_OLAP_NoCatalog": "在这个数据源没有发现目录: ",
-  "Err_OLAP_NoDimension": "在这个多维数据集没有发现维字段: ",
+  "Msg_OLAP_NoDataSource": "在这个服务器上没有发现数据源: ",
+  "Msg_OLAP_NoCatalog": "在这个数据源没有发现目录: ",
+  "Msg_OLAP_NoDimension": "在这个多维数据集没有发现维字段: ",
 
   "Msg_InputFileUrl": "请输入文件URL.",
   "Msg_LoadingFile": "正在加载文件: ",
@@ -44,19 +44,13 @@
   "Msg_SelectCatalog": "请选择一个分类",
   "Msg_SelectCubeName": "请选择一个多维数据集名字",
 
+  "Msg_ExecutingMdx": "正在执行MDX语句... ",
   "Msg_GeneratingPivotData": "正在生成透视数据...",
   "Msg_PivotDataGenerated": "透视数据已经生成",
-  "Msg_MilliSeconds": "毫秒",
   "Msg_DrillThroughDataRetrieved": "钻取数据已经提取",
   "Msg_ManuallyInclude": "请手工选择所有要包含在内的标签",
   "Msg_ManuallyExclude": "请手工选择所有要剔除在外的标签",
 
-  "Msg_SelectSource": "请选择一个数据源！",
-  "Msg_SelectSheet": "请选择一个现存的工作薄！",
-  "Msg_SheetUsedByReports": "有一些报表基于该工作薄， 那些报表会发生改变如果您确认移除。",
-  "Msg_SourceUsedBySheets": "有一些工作薄和报表基于该数据源， 那些工作薄和报表也会同时被移除。",
-  "Msg_RemoveSheetConfirmation":"您确认要移除这个工作薄吗？",
-  "Msg_RemoveSourceConfirmation":"您确认要移除这个数据源吗？",
   "Msg_RunMdxStatement": "在OLAP多维数据集执行该MDX语句",
   "Msg_FormatExpression": "在公式中您可以使用任何有效的javascript表达式.",
 
@@ -114,7 +108,7 @@
 
   "Lbl_MemoryMode": "内存模式",
   "Lbl_CsvFile": "CSV文件 (.csv)",
-  "Lbl_ExcelFile": "Excel文件 (.xlsx/.xlsm/.xlsb/.xls)",
+  "Lbl_ExcelFile": "Excel文件 (.xlsx/.xls)",
   "Lbl_OlapMode": "OLAP模式",
   "Lbl_GssFile": "Google电子数据表",
   "Lbl_WebService": "Web服务",
@@ -145,22 +139,6 @@
   "Lbl_ExportToJpeg": "输出到JPEG图片文件",
   "Lbl_ExportToCsv": "输出到CSV文件",
   "Lbl_Print": "打印",
-
-  "Lbl_AddSource": "增加新的数据源",
-  "Lbl_RemoveSource": "移除当前数据源",
-  "Lbl_ChangeSource": "更改当前数据源",
-  "Lbl_AddSheet": "创建新工作薄",
-  "Lbl_AddReport": "创建新报表",
-  "Lbl_CreateSheetFromSource": "从数据源创建新的工作薄",
-  "Lbl_CopySheetFromSheet": "从已经存在的工作薄拷贝",
-  "Lbl_AvailableComponents": "可用的组件",
-  "Lbl_ReportComponents": "报表组件",
-
-  "Lbl_RenameSourceName": "更换数据源名",
-  "Lbl_RenameSheetName": "更换工作薄名",
-  "Lbl_RenameReportName": "更换报表名",
-  "Lbl_UsedBySheets": "使用该数据源的工作薄",
-  "Lbl_UsedByReports": "使用该数据源的报表",
 
   "Lbl_CollapseRows": "收缩所有行",
   "Lbl_ExpandRows": "展开所有行",
@@ -221,6 +199,9 @@
   "Lbl_NotSort": "不索引",
   "Lbl_SortAscend": "向上排序",
   "Lbl_SortDescend": "向下排序",
+
+  "Lbl_GridOptions": "透视表选项",
+  "Lbl_ChartOptions": "透视图选项",
 
   "Lbl_RowHeadWidth": "行表头宽度",
   "Lbl_CellWidth": "单元宽度",
