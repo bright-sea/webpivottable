@@ -1,6 +1,6 @@
 {
   "Msg_LeavingPage": "Lütfen WPT rapor sayfasını çıkmadan önce kaydedin, yoksa çalışmanızı kaybedebilirsiniz!",
-  "Msg_LoadDataFirst": "Hiçbir veri yüklü değil, lütfen önce veri yükleyin.",
+  "Msg_LoadDataFirst":  "Drop a csv/excel/wpt file here or",
   "Msg_ChooseFieldsFirst": "Bir rapor oluşturmak için , Alanlar Listesi'nde alanları seçin.",
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",
   "Msg_SwitchToPivotChart": "Switch to Pivot Chart",

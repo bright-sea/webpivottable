@@ -1,6 +1,6 @@
 {
   "Msg_LeavingPage": "Bitte den WPT-Bericht vor verlassen speichern. Nicht gespeicherte Daten gehen verloren!",
-  "Msg_LoadDataFirst": "Keine Daten vorhanden, laden Sie bitte zuerst Daten.",
+  "Msg_LoadDataFirst":  "Drop a csv/excel/wpt file here or",
   "Msg_ChooseFieldsFirst": "Um einen Bericht zu erstellen, wählen Sie aus der Felder-Liste.",
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",
   "Msg_SwitchToPivotChart": "Switch to Pivot Chart",
