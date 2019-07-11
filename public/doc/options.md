@@ -46,10 +46,6 @@ There are two ways to set options:
   Since we can pass javascript object as parameters of `setOptions` API and it will be **deeply merged** into
   default options, this is a better way to set complicate options.
 
-  <div class="Alert Alert--orange">
-  `setOption` API is one of serveral APIs which are availabe on both Free edition and Pro edition.  
-  </div>
-  
 
 <h2 id="leave-page-warning"> `leavePageWarning` </h2>
 
@@ -395,7 +391,7 @@ Please reference [Internationalization](/doc/internationalization) for more deta
   ]
 ```
 
-<h2 id="custom-handlers"> `customHandlers`  <span class="Alert Alert--orange"> Pro edition only.</span> </h2>
+<h2 id="custom-handlers"> `customHandlers` </h2>
 
 | Option                         | Type        | Default | Description                 |
 |--------------------------------|-------------|---------|-----------------------------|
@@ -404,96 +400,8 @@ Please reference [Internationalization](/doc/internationalization) for more deta
 | `customHandlers.saveWpt`       | `bool`      | 0       | enable/disable custom "Save wpt" handler      |
 | `customHandlers.drillThrough`  | `bool`      | 0       | enable/disable custom "drill Through" handler      |
 
-This custom Handlers only available in Pro Edition.
-
 These options only enable/disable custom handlers, the real custom handler should be passing in event listener.
 Please see [How to listen To Events](/doc/events#how-to-listen-to-events) for more details.
-
-
-<h2 id="custom-buttons"> `customButtons`  <span class="Alert Alert--orange"> Pro edition only.</span> </h2>
-
-| Option               | Type     | Default  | Description                 |
-|----------------------|----------|----------|-----------------------------|
-| `customButtons`      | `array`  | []       | Add Custom buttons on top bar  |
-
-Each customButton is an object:
-
-| Property            | Type      |  value                |   Description                  |
-|---------------------|-----------|-----------------------|--------------------------------|
-| position            | `string`  | `left, center, right` | Position on top bar           |
-| type                | `string`  | `button, select`      | button type                |
-| label               | `string`  | ''                    | label of `button` or placeholder of `select` , if labelTranslation is true, then this label will be come from language files     |
-| labelTranslation    | `bool`    | 0                     | whether label come from language files     |
-| title               | `string`  | ''                    | title of `button` (not apply to `select`), if titleTranslation is true, then this title will be come from language files     |
-| titleTranslation    | `bool`    | 0                     | whether title come from language files     |
-| style               | `string`  | ''                    | custom style for button     |
-| eventName           | `string`  | ''                    | Event name for onclick (`button`) or onchange (`select`)       |
-| value               | `string`  | ''                    | value for `select`       |
-| options             | `array`   | []                    | options for `select`       |
-
-
-```
-  [ 
-    {
-      position: "left",
-      type: "button",
-      label: "Button1",
-      labelTranslation: 0,
-      title: "Custom button 1",
-      titleTranslation: 0,
-      style: "color: #000; font-weight: 300;",
-      eventName: "customButton1"
-    },
-    {
-      position: "center",
-      type: "button",
-      label: "Button2",
-      labelTranslation: 0,
-      title: "",
-      titleTranslation: 0,
-      style: "color: #000; font-weight: 300;",
-      eventName: "customButton2"
-    },
-    {
-      position: "right",
-      type: "select",
-      label: "Please select",
-      labelTranslation: 0,
-      style: "width:200px; margin-top: 1px;",
-      value: "value2",
-      options: [{
-        label: "label1", value: "value1"
-      }, {
-        label: "label2", value: "value2"
-      }, {
-        label: "label3", value: "value3"
-      }],
-      eventName: "customButton3"
-    }
-  ]
-```
-
-This options only add button/select to top bar, the click handler for button and change handler for select
-should be passing in event listener.
-Please see [How to listen To Events](/doc/events#how-to-listen-to-events) for more details.
-
-For example:
-
-```
-  wpt.$eventBus.$on('customButton1', function(payload){
-    console.log("custom Button 1 click", payload);
-  });
-
-  wpt.$eventBus.$on('customButton2', function(payload){
-    console.log("custom Button 2 click", payload);
-  });
-
-  wpt.$eventBus.$on('customButton3', function(payload){
-    console.log("custom Button 3 (select) changed", payload);
-  });
-```
-
-
 
 <h2 id="filestack"> `filestack` </h2>
 
@@ -504,104 +412,6 @@ For example:
 
 
 key: "A4bieoUsyR4yBrNPkFIvrz"  //demo.webpivottable.com
-
-<h2 id="source"> `source` </h2>
-
-```
-  source: {                  // Default options for each new source
-    navigationPanel: {          // Navigation Panel
-      show: 1,                  // show/hide: 1/0
-      position:'right',         // position: 'left', 'top', 'right', 'bottom'
-      stacked: 0,               // stack fields area or not: 1/0
-      width: 300,               // width, only for left and right
-      height: 200               // height, only for top and bottom
-    },
-    fieldsListFilter: "",
-    fieldsListSort: 0,          // -1 descend, 1- ascend, 0-no sort
-    grid: {
-      cellWidth: 120,
-      cellHeight: 21
-    }
-  }
-```
-
-<h2 id="report"> `report` </h2>
-
-```
-  report: {                  // Default options for each new report
-    navigationPanel: {          // Navigation Panel
-      show: 1,                  // show/hide: 1/0
-      position:'right',         // position: 'left', 'top', 'right', 'bottom'
-      stacked: 0,               // stack fields area or not: 1/0
-      width: 300,               // width, only for left and right
-      height: 200               // height, only for top and bottom
-    },
-    width: 1000,
-    header: {
-      width: {
-        value: 100,
-        measure: "%"   // %, px,
-      },
-      height: {
-        auto: true,
-        value: 100,
-        measure: "px"
-      },
-      padding: {
-        top: 10,
-        right: 10,
-        bottom: 10,
-        left: 10
-      },
-      title: {
-        enabled: true,
-        align: 'center',          // left, center, right
-        margin: {
-          top: 10,
-          right: 10,
-          bottom: 10,
-          left: 10
-        },
-        fontSize: 28,
-        fontWeight: "bold"
-      }
-
-    },
-
-    component: {
-      width: {
-        value: 50,
-        measure: "%"   // %, px,
-      },
-      height: {
-        auto: true,
-        value: 300,
-        measure: "px"
-      },
-      title: {
-        enabled: true,
-        align: 'center',            // left, center, right
-        margin: {
-          top: 10,
-          right: 10,
-          bottom: 10,
-          left: 10
-        },
-        fontSize: 24,
-        fontWeight: "bold"
-      },
-      content:{
-        align: 'center',            // left, center, right
-        margin: {
-          top: 10,
-          right: 10,
-          bottom: 10,
-          left: 10
-        }
-      }
-    }
-  },
-```
 
 <h2 id="sheet"> `sheet` </h2>
 

@@ -5,7 +5,7 @@
       {
         "to": "", "name": "Introduction",
         "contents": [
-          { "to": "#what-39-s-pivot-table-", "name": "What's Pivot Table?" },
+          { "to": "#whats-pivot-table-", "name": "What's Pivot Table?" },
           { "to": "#pivot-table-examples", "name": "Pivot Table Examples" },
           { "to": "#history-of-pivot-table", "name": "History of Pivot Table" }
         ]

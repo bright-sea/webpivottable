@@ -7,9 +7,6 @@ description: "WebPivotTable quick start guide"
 
 Please go to [Download Page](/download) to get a WebPivotTable package.
 
-There are two editions of WebPivotTable: Free edition and Pro edition.
-Free edition has almost the same functionalities as Pro edition except that Free edition does not provide some [APIs](/doc/apis). 
-
 ## Installation
 
 WebPivotTable is an javascript component, the installation is just like any other javascript component.
@@ -70,7 +67,7 @@ Please reference [Cross domain access](/doc/cross-domain-access) for more detail
 To integrate WebPivotTable, we only need to import one javascript file into web page like:
 
 ```html
-<script type="text/javascript" src="./dist/webpivottable.js"></script>
+<script type="text/javascript" src="./dist/wpt.js"></script>
 ```
 
 Then, we can put a "wpt-pivot-table" tag into page:
@@ -101,7 +98,7 @@ List below is an example html file:
     html, body, #wpt-container {width:100%;height:100%; padding:0; margin:0;}
   </style>
 
-  <script type="text/javascript" src="./dist/webpivottable.js"></script>
+  <script type="text/javascript" src="./dist/wpt.js"></script>
 
 </head>
 

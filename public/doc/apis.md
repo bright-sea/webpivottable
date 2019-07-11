@@ -9,7 +9,7 @@ resources, or save reports to local files or server then reload them in future, 
 
 <h2 id="how-to-call-apis"> How to call APIs? </h2>
 
-*WebPivotTable APIs are all asynchorize function and return as a Promise.
+*WebPivotTable APIs are all asynchronous function and return as a Promise.
 
 Below is standard syntax to call APIs:  
 
@@ -17,20 +17,13 @@ Below is standard syntax to call APIs:
 var wpt = document.getElementsByTagName('web-pivot-table')[0];
 
 wpt[apiName](params1, params2, ..., paramsn)
-.then( function(response) {})
+.then( function(response) {}, function(error) {})
 ;
 ```
 
-First, we need get WebPivotTable object, then call $emit method of this object's $eventBus props,
-passing with API name together with a list of params.
+First, we need get WebPivotTable object, then call api method passing with a list of params.
 
-Since event bus is asynchronous, we should pass callbacks as params if we want to add some logic when API call succeed
- with response or failed with error.<br><br>
-  
-<div class="Alert Alert--info">
-Except "$emit" method, "$eventBus" has an "$on" method to be used to listen to some events emit from WebPivotTable.
-See [Events](/doc/events) for more details.    
-</div>
+For asynchronous api, we can chain a then function with success callback and error callback.<br><br>
   
 
 <h2 id="set-locale">`setLocale`</h2>
@@ -56,63 +49,88 @@ wpt.setOptions(options);
 This `setOptions` API is a major way to customize WebPivotTable, see [Options](/doc/options) for more details.
 </div>
 
-<h2 id="set-data-array"> `setDataArray`   </h2>
+<h2 id="set-data-array"> `setWptFromDataArray`   </h2>
 
 ```javascript
-wpt.setDataArray(attrArray, dataArray, dataUrl);
+wpt.setWptFromDataArray(attrArray, dataArray, url, type);
 ```
 | Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
 |------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | `attrArray`      | `array`       | no         | Array of attributes. example: ["department", "area", "cost", ...]                                                                      |
 | `dataArray`      | `array`       | no         | Array of data rows, each row is also an array of values. example: [["dep1", "area1", 1000, ...], ..., ["dep6", "area2", 2000,...]]     |
-| `dataUrl`        | `string`      | yes        | Url for track the source data, This is just for tracking, pass "" if not know or no need.                                              |
+| `url`            | `string`      | yes        | Url for track the source data, This is just for tracking, pass "" if not know or no need.                                              |
+| `type`           | `string`      | yes        | type for track the source data, This is just for tracking, pass "" if not know or no need.                                              |
   
 Load source data from data array
   
 Notes:  
 - This is major API to load source data into WebPivotTable, it was
-  used by `setCsvUrl` and `setCsvRawData` internally.  Actually, developers
+  used by `setWptFromCsvUrl` and `setWptFromExcelUrl` internally.  Actually, developers
   can load any kinds of data from any other resources, like SQL databases,
   and format them as attrArray and dataArray, then load them into WebPivotTable.
 
 
-<h2 id="set-csv-url"> `setCsvUrl`   </h2>
+<h2 id="set-csv-url"> `setWptFromCsvUrl`   </h2>
 
 ```javascript
-wpt.setCsvUrl(csvUrl, separator);
+wpt.setWptFromCsvUrl(url, delimiter);
 ```
 | Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
 |------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `csvUrl`         | `string`      | no         | URL String of CSV file           |
-| `separator`      | `string`      | yes        | separator char for CSV file, default is ","     |
+| `url`            | `string`      | no         | URL String of CSV file           |
+| `delimiter`      | `string`      | yes        | separator char for CSV file, default is ","     |
   
 Load source data from CSV file URL
   
 
-
-<h2 id="set-wpt-string"> `setWptString`   </h2>
+<h2 id="set-excel-url"> `setWptFromExcelUrl`   </h2>
 
 ```javascript
-wpt.setWptString(wptString);
+wpt.setWptFromExcelUrl(url, delimiter);
 ```
 | Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
 |------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `wptString`      | `string`      | no         | pre-saved WPT format string           |
+| `url`            | `string`      | no         | URL String of CSV file           |
+| `delimiter`      | `string`      | yes        | separator char for CSV file, default is ","     |
+  
+Load source data from excel file URL
+  
+
+<h2 id="set-web-service"> `setWptFromWebService`   </h2>
+
+```javascript
+wpt.setWptFromWebService(url);
+```
+| Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
+|------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| `url`            | `string`      | no         | URL String of web service endpoint         |
+  
+Load source data from web service URL
+  
+
+<h2 id="set-gss-url"> `setWptFromGoogleSpreadSheet`   </h2>
+
+```javascript
+wpt.setWptFromGoogleSpreadSheet(url);
+```
+| Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
+|------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| `url`            | `string`      | no         | URL String of google spread sheet           |
+  
+Load source data from google spreadsheet URL
+  
+
+
+<h2 id="set-wpt-string"> `setWptFromWptUrl`   </h2>
+
+```javascript
+wpt.setWptFromWptUrl(url);
+```
+| Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
+|------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| `url`            | `string`      | no         | Url of  wpt file              |
   
 Load WPT format String
-  
-
-
-<h2 id="set-wpt-object"> `setWptObject`   </h2>
-
-```javascript
-wpt.setWptObject(wptObject);
-```
-| Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
-|------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `wptObject`      | `object`      | no         | pre-saved WPT format JSON object           |
-  
-Load WPT format JSON Oject
   
 
 
@@ -127,6 +145,26 @@ wpt.setWpt(wpt);
   
 Load WPT format String or JSON Object with updated first source data
   
+
+<h2 id="set-olap-cube"> `setWptFromOlapCube`   </h2>
+
+```javascript
+wpt.setWptFromOlapCube(olapData);
+```
+| Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
+|------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| `olapData`       | `Object`      | no         | Object of OLAP Cube Information           |
+  
+Load OLAP Cube
+  
+```
+olapData: {
+  xmlaUrl: "Xmla server url",
+  dataSourceInfo: "Data source info",
+  catalog: "Catalog name",
+  cubeName: "Cube name"
+}
+```
 
 <h2 id="generate-wpt-string"> `generateWptString`   </h2>
 
@@ -152,46 +190,18 @@ wpt.generateWptJSON(ignoreData);
 Generate WPT format JSON object
   
 
-<h2 id="set-olap-cube"> `setOlapCube`   </h2>
+<h2 id="set-source-object"> `setSourceObject`   </h2>
 
 ```javascript
-wpt.setOlapCube(olapData);
+wpt.setSourceObject(source);
 ```
 | Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
 |------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `olapData`       | `Object`      | no         | Object of OLAP Cube Information           |
+| `source`         | `object`      | no         | use external object as data source           |
   
-Load OLAP Cube
-  
-```
-olapData: {
-  xmlaUrl: "Xmla server url",
-  dataSourceInfo: "Data source info",
-  catalog: "Catalog name",
-  cubeName: "Cube name"
-}
-```
-
-<h2 id="set-web-service-data-url"> `setWebServiceDataUrl`   </h2>
+<h2 id="get-source-object"> `getSourceObject`   </h2>
 
 ```javascript
-wpt.setWebServiceDataUrl(wsDataUrl);
+wpt.getSourceObject();
 ```
-| Param Name       | Param Type    | Optional   | Description                                                                                                                                                                                                                                                                                 |
-|------------------|---------------|------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `wsDataUrl`      | `string`      | no         | URL String of Web Service Data URL           |
-  
-Load source data from WebService URL and create a new WPT with a new Sheet
-  
-Notes:  
-- The Web Service should return a JSON object
-```
-       {
-           attrArray: [],
-           dataArray: []
-       }
-```       
-- This is a very useful API to access data in SQL databases or any other data storages
-    since Web Service access is cross domain and can be provided by any backend technologies.
-
-
+return Source object  
