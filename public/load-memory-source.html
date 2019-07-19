@@ -11,7 +11,7 @@
 
   <style type="text/css">
     html, body {width:100%;height:100%; padding:0; margin:0;}
-    #wpt-container {width:90%;height:80%; padding:0; margin:auto;}
+    #wpt-container {width:800px;height:600px; padding:0; margin:auto;}
   </style>
 
   <script type="text/javascript" src="./dist/wpt.js"></script>
@@ -19,38 +19,27 @@
 
 <body>
 <div>
-  <h3 style="text-align: center; margin: 10px;">Use API to Load all kinds of memory mode spurce data</h3>
+  <h3 style="text-align: center; margin: 10px;">Use API to Load all kinds of memory mode source data</h3>
   <div style="text-align: center; margin: 10px;">
-    Select a csv source file:
-    <select id="select-csv">
-      <option value="" selected disabled hidden>Choose here</option>
-      <option value="https://webpivottable.com/testfiles/example.csv">USA Selection Poll Data (Total 4,000 records)</option>
-      <option value="https://webpivottable.com/testfiles/sales.csv">Sales Sample Data (Total 2,823 records)</option>
-      <option value="https://webpivottable.com/testfiles/FL_insurance.csv">Florida Insurance Data (Total 36,634 records)</option>
-    </select>
-  </div>
-  <div style="text-align: center; margin: 10px;">
-    Select a excel source file:
-    <select id="select-excel">
-      <option value="" selected disabled hidden>Choose here</option>
-      <option value="https://webpivottable.com/testfiles/example.xls">USA Selection Poll Data (Total 4,000 records)</option>
-      <option value="https://webpivottable.com/testfiles/sales.xls">Sales Sample Data (Total 2,823 records)</option>
-      <option value="https://webpivottable.com/testfiles/FL_insurance.xls">Florida Insurance Data (Total 36,634 records)</option>
-    </select>
-  </div>
-  <div style="text-align: center; margin: 10px;">
-    Select a google spread sheet source file:
-    <select id="select-gss">
-      <option value="" selected disabled hidden>Choose here</option>
-      <option value="https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html">USA Selection Poll Data (Total 4,000 records)</option>
-      <option value="https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdHJMOTh4Sm1BSFlDYXRwVW5lc0xuMVE&output=html">Sales Sample Data (Total 2,823 records)</option>
-    </select>
-  </div>
-  <div style="text-align: center; margin: 10px;">
-    Select a web service source file:
-    <select id="select-ws">
-      <option value="" selected disabled hidden>Choose here</option>
-      <option value="https://demo.webpivottable.com/wpt/wsSample">Simple Sample Web Service</option>
+    Select a memory mode data source:
+    <select id="select">
+      <optgroup label="CSV files">
+        <option value="csv1">USA Selection Poll Data (Total 4,000 records)</option>
+        <option value="csv2">Sales Sample Data (Total 2,823 records)</option>
+        <option value="csv3">Florida Insurance Data (Total 36,634 records)</option>
+      </optgroup>
+      <optgroup label="Excel files">
+        <option value="excel1">USA Selection Poll Data (Total 4,000 records)</option>
+        <option value="excel2">Sales Sample Data (Total 2,823 records)</option>
+        <option value="excel3">Florida Insurance Data (Total 36,634 records)</option>
+      </optgroup>
+      <optgroup label="Google spread sheets">
+        <option value="gss1">USA Selection Poll Data (Total 4,000 records)</option>
+        <option value="gss2">Sales Sample Data (Total 2,823 records)</option>
+      </optgroup>
+      <optgroup label="Web services">
+        <option value="ws1">Simple Sample Web Service</option>
+      </optgroup>
     </select>
   </div>
 </div>
@@ -60,26 +49,70 @@
 </div>
 
 <script>
-  var selectCsv = document.querySelector('#select-csv'),
-    selectExcel = document.querySelector('#select-excel'),
-    selectGss = document.querySelector('#select-gss'),
-    selectWs = document.querySelector('#select-ws'),
+  var select = document.querySelector('#select'),
     wpt = document.getElementsByTagName('web-pivot-table')[0];
 
-  selectCsv.addEventListener('change',function(event){
-    wpt.setWptFromCsvUrl(event.target.value);
-  });
+  var fileMap = {
+    csv1: {
+      link: "https://webpivottable.com/testfiles/example.csv",
+      type: wpt.Constants.sourceType.CSV
+    },
+    csv2: {
+      link: "https://webpivottable.com/testfiles/sales.csv",
+      type: wpt.Constants.sourceType.CSV
+    },
+    csv3: {
+      link: "https://webpivottable.com/testfiles/FL_insurance.csv",
+      type: wpt.Constants.sourceType.CSV
+    },
+    excel1: {
+      link: "https://webpivottable.com/testfiles/example.xls",
+      type: wpt.Constants.sourceType.EXCEL
+    },
+    excel2: {
+      link: "https://webpivottable.com/testfiles/sales.xls",
+      type: wpt.Constants.sourceType.EXCEL
+    },
+    excel3: {
+      link: "https://webpivottable.com/testfiles/FL_insurance.xls",
+      type: wpt.Constants.sourceType.EXCEL
+    },
+    gss1: {
+      link: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdDFLV2Q4a1NWMmw1TXZBRlFMZ1Rxd0E&output=html",
+      type: wpt.Constants.sourceType.GSS
+    },
+    gss2: {
+      link: "https://docs.google.com/spreadsheet/pub?key=0Alkl5EEsxBwBdHJMOTh4Sm1BSFlDYXRwVW5lc0xuMVE&output=html",
+      type: wpt.Constants.sourceType.GSS
+    },
+    ws1: {
+      link: "https://demo.webpivottable.com/wpt/wsSample",
+      type: wpt.Constants.sourceType.WSDATA
+    },
+  };
 
-  selectExcel.addEventListener('change',function(event){
-    wpt.setWptFromExcelUrl(event.target.value);
-  });
+  select.addEventListener('change',function(event){
+    console.log("event", event);
+    const file = fileMap[event.target.value];
+    switch (file.type) {
+      case wpt.Constants.sourceType.CSV:
+        wpt.setWptFromCsvUrl(file.link);
+        break;
 
-  selectGss.addEventListener('change',function(event){
-    wpt.setWptFromGoogleSpreadSheet(event.target.value);
-  });
+      case wpt.Constants.sourceType.EXCEL:
+        wpt.setWptFromExcelUrl(file.link);
+        break;
 
-  selectWs.addEventListener('change',function(event){
-    wpt.setWptFromExcelUrl(event.target.value);
+      case wpt.Constants.sourceType.GSS:
+        wpt.setWptFromGoogleSpreadSheet(file.link);
+        break;
+
+      case wpt.Constants.sourceType.WSDATA:
+        wpt.setWptFromWebService(file.link);
+        break;
+
+      default:
+    }
   });
 
 </script>

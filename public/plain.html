@@ -55,7 +55,7 @@
     var wpt = document.getElementsByTagName('web-pivot-table')[0];
     wpt.setWptFromCsvUrl('https://webpivottable.com/testfiles/example.csv');
 
-    wpt.addEventListener(wpt.events.EVENT_DRILL_THROUGH, function(event) {
+    wpt.addEventListener(wpt.Constants.eventType.DRILL_THROUGH, function(event) {
       console.log("drill through happens", event);
     })
   </script>

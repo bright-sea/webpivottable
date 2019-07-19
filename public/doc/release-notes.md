@@ -4,13 +4,13 @@ description: "Release Notes"
 ---
 
 ## Version 6.0.0
-Released on April 28th, 2018
+Released on July 15th, 2019
 
 Version 6.0.0 (V6) is a new redesign of WebPivotTable.
 
 List below are outstanding improvements of V6 compare to previous version V5: 
 
-
+* __Web component__: V6 move to web component standard.
 
 
 ## Version 5.0.0

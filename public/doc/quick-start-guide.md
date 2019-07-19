@@ -132,9 +132,4 @@ WebPivotTable also provides lots of APIs for developers to call from hosted web 
 For example, developers can use these APIs to load source data from any kind of data resources,
 or to save WebPivotTable into server side for future reload, etc.
 
-<div class="Alert Alert--orange">
-Most APIs are Pro edition only. Please reference [APIs](/doc/apis) for more details.
-</div>
-
-
 

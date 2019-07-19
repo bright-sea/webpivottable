@@ -3,7 +3,7 @@ title: Introduction
 description: "WebPivotTable"
 ---
 
-__WebPivotTable__ is a pure javascript component which mimics all functionalities of Microsoft Excel Pivot Table
+__WebPivotTable__ is a pure javascript component which mimics all functionality of Microsoft Excel Pivot Table
 and run totally inside any browsers. It can be easily embedded into any web pages or any web applications. 
 
 [Demos](/demo) <br/>
