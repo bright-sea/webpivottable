@@ -6,7 +6,7 @@
   "Msg_SwitchToPivotChart": "Switch to Pivot Chart",
   "Msg_BackToWpt": "Return to WPT",
   "Msg_ConnectSource":  "Connect New Data Source",
-  "Msg_OpenWpt":  "Open Saved WPT",
+  "Msg_OpenWpt":  "Open wpt file",
   "Msg_SaveWpt":  "Save WPT",
   "Msg_ResetWpt":  "Reset WPT",
   "Msg_EnterFullScreen": "Tela Cheia",

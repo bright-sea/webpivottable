@@ -6,7 +6,7 @@
   "Msg_SwitchToPivotChart": "切换到透视图",
   "Msg_BackToWpt": "返回WPT",
   "Msg_ConnectSource": "连接新的数据源",
-  "Msg_OpenWpt": "打开保存的WPT",
+  "Msg_OpenWpt": "打开wpt文件",
   "Msg_SaveWpt": "保存WPT",
   "Msg_ResetWpt":  "重置WPT",
   "Msg_EnterFullScreen":  "进入全屏",
