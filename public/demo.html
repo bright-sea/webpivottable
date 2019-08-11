@@ -22,54 +22,52 @@
 
 <body>
 <div>
-  <div style="display:flex; flex-direction: row;">
-    <div style="margin: 5px;">
-      Try to connect to a data source:
-      <select id="select">
-        <option value="" selected disabled hidden>Choose here</option>
-        <optgroup label="CSV files">
-          <option value="csv1">USA Selection Poll Data (Total 4,000 records)</option>
-          <option value="csv2">Sales Sample Data (Total 2,823 records)</option>
-          <option value="csv3">Florida Insurance Data (Total 36,634 records)</option>
-        </optgroup>
-        <optgroup label="Excel files">
-          <option value="excel1">USA Selection Poll Data (Total 4,000 records)</option>
-          <option value="excel2">Sales Sample Data (Total 2,823 records)</option>
-          <option value="excel3">Florida Insurance Data (Total 36,634 records)</option>
-        </optgroup>
-        <optgroup label="Google spread sheets">
-          <option value="gss1">USA Selection Poll Data (Total 4,000 records)</option>
-          <option value="gss2">Sales Sample Data (Total 2,823 records)</option>
-        </optgroup>
-        <optgroup label="Web services">
-          <option value="ws1">Simple Sample Web Service</option>
-        </optgroup>
-        <optgroup label="OLAP Cubes">
-          <option value="ssas">Sample Microsoft Analysis Service</option>
-          <option value="mondrian">Sample Mondrian OLAP Server</option>
-          <option value="iccube">Sample icCube OLAP Server</option>
-        </optgroup>
-      </select>
-    </div>
+  <div style="margin: 5px;">
+    Connect to data source:
+    <select id="select">
+      <option value="" selected disabled hidden>Choose here</option>
+      <optgroup label="CSV files">
+        <option value="csv1">USA Selection Poll Data (Total 4,000 records)</option>
+        <option value="csv2">Sales Sample Data (Total 2,823 records)</option>
+        <option value="csv3">Florida Insurance Data (Total 36,634 records)</option>
+      </optgroup>
+      <optgroup label="Excel files">
+        <option value="excel1">USA Selection Poll Data (Total 4,000 records)</option>
+        <option value="excel2">Sales Sample Data (Total 2,823 records)</option>
+        <option value="excel3">Florida Insurance Data (Total 36,634 records)</option>
+      </optgroup>
+      <optgroup label="Google spread sheets">
+        <option value="gss1">USA Selection Poll Data (Total 4,000 records)</option>
+        <option value="gss2">Sales Sample Data (Total 2,823 records)</option>
+      </optgroup>
+      <optgroup label="Web services">
+        <option value="ws1">Simple Sample Web Service</option>
+      </optgroup>
+      <optgroup label="OLAP Cubes">
+        <option value="ssas">Sample Microsoft Analysis Service</option>
+        <option value="mondrian">Sample Mondrian OLAP Server</option>
+        <option value="iccube">Sample icCube OLAP Server</option>
+      </optgroup>
+    </select>
+    <button onclick="openConnectSource();">Open Dialog</button>
+  </div>
 
-    <div style="margin: 5px;">
-      Try to load a wpt file:
-      <select id="wpt-select">
-        <option value="" selected disabled hidden>Choose here</option>
-        <option value="https://webpivottable.com/testfiles/file631.wpt">A saved wpt file with memory mode data source</option>
-        <option value="https://webpivottable.com/testfiles/file632.wpt">A saved wpt file with olap mode data source</option>
-      </select>
-    </div>
+  <div style="margin: 5px;">
+    Load a wpt file:
+    <select id="wpt-select">
+      <option value="" selected disabled hidden>Choose here</option>
+      <option value="https://webpivottable.com/testfiles/file631.wpt">A saved wpt file with memory mode data source</option>
+      <option value="https://webpivottable.com/testfiles/file632.wpt">A saved wpt file with olap mode data source</option>
+    </select>
+    <button onclick="openLoadWpt();">Open Dialog</button>
+  </div>
 
-    <div style="margin: 5px;">
-      Try to switch Languages:
-      <select id="locale-select">
-        <option value="" selected disabled hidden>Choose here</option>
-        <option value="en">English</option>
-        <option value="zh-CN">Chinese</option>
-      </select>
+    <button onclick="switchEnglish();">English</button>
+    <button onclick="switchChinese();">Chinese</button>
+    <button onclick="showControlPanel();">Show Panel</button>
+    <button onclick="hideControlPanel();">Hide Panel</button>
+    <button onclick="toggleControlPanel();">Toggle Panel</button>
 
-    </div>
   </div>
 </div>
 
@@ -177,10 +175,38 @@
   });
 
 
-  localeSelect.addEventListener('change',function(event) {
-    console.log("event", event);
-    wpt.setLocale(event.target.value);
-  });
+  var openConnectSource = function(e) {
+    wpt.openDialog({
+      type: wpt.Constants.dialogType.CONNECT_SOURCE
+    })
+  };
+
+  var openLoadWpt = function(e) {
+    wpt.openDialog({
+      type: wpt.Constants.dialogType.OPEN_WPT
+    })
+  };
+
+  var switchEnglish = function(e) {
+    wpt.setLocale('en');
+  };
+
+  var switchChinese = function(e) {
+    wpt.setLocale('zh-CN');
+  };
+
+  var showControlPanel = function(e) {
+    wpt.showControlPanel();
+  };
+
+  var hideControlPanel = function(e) {
+    wpt.hideControlPanel();
+  };
+
+  var toggleControlPanel = function(e) {
+    wpt.toggleControlPanel();
+  };
+
 </script>
 </body>
 
