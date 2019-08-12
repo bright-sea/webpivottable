@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>WebPivotTable Component Custom Options</title>
+
+  <style type="text/css">
+    html, body {width:100%;height:100%; padding:0; margin:0; overflow: hidden;}
+    #wpt-container {
+      width: 100%;
+      height: calc(100% - 100px);
+    }
+    .check-label {
+      margin-right: 20px;
+    }
+  </style>
+
+  <script type="text/javascript" src="./dist/wpt.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+
+    var uiFlagsList = [
+      {name : "dropPrompt", label: "Drop files prompt"},
+      {name : "pivotPrompt", label: "Select fields prompt"},
+      {name : "connectSource", label: "Connect to source"},
+      {name : "open", label: "Open wpt file"},
+      {name : "save", label: "Save"},
+      {name : "reset", label: "Reset"},
+      {name : "fullScreen", label: "Fullscreen"},
+      {name : "setting", label: "Setting"},
+      {name : "help", label: "Help"},
+      {name : "about", label: "About"},
+      {name : "source", label: "Data source"},
+      {name : "loadFromCsv", label: "Load From Csv"},
+      {name : "loadFromExcel", label: "Load From Excel"},
+      {name : "loadFromGss", label: "Load From Google sheet"},
+      {name : "loadFromWs", label: "Load From Web Service"},
+      {name : "loadFromOlap", label: "Load From OLAP"},
+      {name : "saveToLocal", label: "Save to local"},
+      {name : "saveToServer", label: "Save to server"}
+    ];
+
+    $(document).ready(function() {
+      var wpt = $('web-pivot-table')[0];
+      var listContainer = $('#listContainer');
+
+      function createHandler(item) {
+        return function() {
+          var option = {
+            uiFlags: {}
+          };
+
+          if ($(this).prop("checked")) {
+            option.uiFlags[item.name] = 1;
+          } else {
+            option.uiFlags[item.name] = 0;
+          }
+          wpt.setOptions(option);
+        };
+      }
+
+      for (var i = 0; i < uiFlagsList.length; i++) {
+        var item = uiFlagsList[i];
+        $('<input />', { type: 'checkbox', id: item.name, checked: true }).appendTo(listContainer);
+        $('<label />', { 'for': item.name, text: item.label, 'class': 'check-label' }).appendTo(listContainer);
+
+        var handler = createHandler(item);
+
+        $('#'+item.name).click(handler);
+      }
+
+    });
+   </script>
+</head>
+
+<body>
+<div>
+  <div style="margin: 5px;" id="listContainer">
+  </div>
+</div>
+
+<div id="wpt-container">
+  <web-pivot-table />
+</div>
+
+</body>
+
+</html>

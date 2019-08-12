@@ -62,6 +62,7 @@
     <button onclick="openLoadWpt();">Open Dialog</button>
   </div>
 
+  <div style="margin: 5px;">
     <button onclick="switchEnglish();">English</button>
     <button onclick="switchChinese();">Chinese</button>
     <button onclick="showControlPanel();">Show Panel</button>
@@ -78,7 +79,6 @@
 <script>
   var select = document.querySelector('#select'),
     wptSelect = document.querySelector('#wpt-select'),
-    localeSelect = document.querySelector('#locale-select'),
     wpt = document.getElementsByTagName('web-pivot-table')[0];
 
   var fileMap = {

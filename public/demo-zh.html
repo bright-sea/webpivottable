@@ -62,11 +62,13 @@
     <button onclick="openLoadWpt();">打开对话框</button>
   </div>
 
-  <button onclick="switchEnglish();">英语</button>
-  <button onclick="switchChinese();">简体中文</button>
-  <button onclick="showControlPanel();">显示面板</button>
-  <button onclick="hideControlPanel();">隐藏面板</button>
-  <button onclick="toggleControlPanel();">开关面板</button>
+  <div style="margin: 5px;">
+    <button onclick="switchEnglish();">英语</button>
+    <button onclick="switchChinese();">简体中文</button>
+    <button onclick="showControlPanel();">显示面板</button>
+    <button onclick="hideControlPanel();">隐藏面板</button>
+    <button onclick="toggleControlPanel();">开关面板</button>
+  </div>
 </div>
 
 <div id="wpt-container">
@@ -76,7 +78,6 @@
 <script>
   var select = document.querySelector('#select'),
     wptSelect = document.querySelector('#wpt-select'),
-    localeSelect = document.querySelector('#locale-select'),
     wpt = document.getElementsByTagName('web-pivot-table')[0];
 
   var fileMap = {
