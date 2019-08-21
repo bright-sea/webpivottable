@@ -65,9 +65,9 @@
   <div style="margin: 5px;">
     <button onclick="switchEnglish();">English</button>
     <button onclick="switchChinese();">Chinese</button>
-    <button onclick="showControlPanel();">Show Panel</button>
-    <button onclick="hideControlPanel();">Hide Panel</button>
     <button onclick="toggleControlPanel();">Toggle Panel</button>
+    <button onclick="reset();">Reset</button>
+    <button onclick="save();">Save</button>
 
   </div>
 </div>
@@ -195,16 +195,18 @@
     wpt.setLocale('zh-CN');
   };
 
-  var showControlPanel = function(e) {
-    wpt.showControlPanel();
-  };
-
-  var hideControlPanel = function(e) {
-    wpt.hideControlPanel();
-  };
-
   var toggleControlPanel = function(e) {
     wpt.toggleControlPanel();
+  };
+
+  var reset = function(e) {
+    wpt.reset();
+  };
+
+  var save = function(e) {
+    wpt.openDialog({
+      type: wpt.Constants.dialogType.SAVE_WPT
+    });
   };
 
 </script>

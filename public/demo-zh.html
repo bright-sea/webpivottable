@@ -65,9 +65,9 @@
   <div style="margin: 5px;">
     <button onclick="switchEnglish();">英语</button>
     <button onclick="switchChinese();">简体中文</button>
-    <button onclick="showControlPanel();">显示面板</button>
-    <button onclick="hideControlPanel();">隐藏面板</button>
     <button onclick="toggleControlPanel();">开关面板</button>
+    <button onclick="reset();">重置</button>
+    <button onclick="save();">保存</button>
   </div>
 </div>
 
@@ -194,17 +194,20 @@
     wpt.setLocale('zh-CN');
   };
 
-  var showControlPanel = function(e) {
-    wpt.showControlPanel();
-  };
-
-  var hideControlPanel = function(e) {
-    wpt.hideControlPanel();
-  };
-
   var toggleControlPanel = function(e) {
     wpt.toggleControlPanel();
   };
+
+  var reset = function(e) {
+    wpt.reset();
+  };
+
+  var save = function(e) {
+    wpt.openDialog({
+      type: wpt.Constants.dialogType.SAVE_WPT
+    });
+  };
+
 </script>
 </body>
 
