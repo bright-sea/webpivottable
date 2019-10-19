@@ -131,6 +131,8 @@
   "Lbl_ShowTotalColumns":  "Grand Total Columns",
   "Lbl_ShowSubtotalRows":  "Subtotal Rows",
   "Lbl_ShowSubtotalColumns":  "Subtotal Columns",
+  "Lbl_NoFixedColumns": "No Fixed Header and Columns",
+  "Lbl_ShowEmptyAsZero": "Show Empty as Zero",
 
   "Lbl_SwapAxis":  "Swap Rows and Columns",
   "Lbl_ClearAll":  "Clear All",

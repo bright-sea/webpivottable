@@ -132,6 +132,8 @@
   "Lbl_ShowTotalColumns": "Gesamtsumme Spalten",
   "Lbl_ShowSubtotalRows": "Zwischensumme Zeilen",
   "Lbl_ShowSubtotalColumns": "Zwischensumme Spalten",
+  "Lbl_NoFixedColumns": "No Fixed Header and Columns",
+  "Lbl_ShowEmptyAsZero": "Show Empty as Zero",
 
   "Lbl_SwapAxis": "Zeilen und Spalten vertauschen",
   "Lbl_ClearAll": "Alles zurücksetzen",

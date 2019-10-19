@@ -130,6 +130,8 @@
   "Lbl_ShowTotalColumns": "Total de columnas",
   "Lbl_ShowSubtotalRows": "Subtotal de filas",
   "Lbl_ShowSubtotalColumns": "Subtotal de columnas",
+  "Lbl_NoFixedColumns": "No Fixed Header and Columns",
+  "Lbl_ShowEmptyAsZero": "Show Empty as Zero",
 
   "Lbl_SwapAxis": "Intercambiar filas y columnas",
   "Lbl_ClearAll": "Limpiar todo",

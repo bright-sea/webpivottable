@@ -130,6 +130,8 @@
   "Lbl_ShowTotalColumns": "总计列",
   "Lbl_ShowSubtotalRows": "小计行",
   "Lbl_ShowSubtotalColumns": "小计列",
+  "Lbl_NoFixedColumns": "无固定表头和列",
+  "Lbl_ShowEmptyAsZero": "空表格显示为零",
 
   "Lbl_SwapAxis": "行列字段互换",
   "Lbl_ClearAll": "清除所有选择",

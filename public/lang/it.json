@@ -130,6 +130,8 @@
   "Lbl_ShowTotalColumns": "Totale Complessivo Colonne",
   "Lbl_ShowSubtotalRows": "Subtotali Righe",
   "Lbl_ShowSubtotalColumns": "Subtotali Colonne",
+  "Lbl_NoFixedColumns": "No Fixed Header and Columns",
+  "Lbl_ShowEmptyAsZero": "Show Empty as Zero",
 
   "Lbl_SwapAxis": "Scambia le Righe con le Colonne",
   "Lbl_ClearAll": "Pulisci Tutto",

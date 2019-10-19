@@ -132,6 +132,8 @@
   "Lbl_ShowTotalColumns": "Sütun Genel Toplamı",
   "Lbl_ShowSubtotalRows": "Satır Ara Toplam",
   "Lbl_ShowSubtotalColumns": "Sütun Ara Toplam",
+  "Lbl_NoFixedColumns": "No Fixed Header and Columns",
+  "Lbl_ShowEmptyAsZero": "Show Empty as Zero",
 
   "Lbl_SwapAxis": "Satır ile Sütunları Yer Değiştir",
   "Lbl_ClearAll": "Hepsini Temizle",
