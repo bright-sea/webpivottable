@@ -1,5 +1,6 @@
 {
   "Msg_LeavingPage": "Lütfen WPT rapor sayfasını çıkmadan önce kaydedin, yoksa çalışmanızı kaybedebilirsiniz!",
+  "Msg_ExportGridModePrompt":  "Please check 'No Fixed Header and Columns' in 'Grid options' to switch grid mode for better export result!",
   "Msg_LoadSourceInstruction":  "Drop a csv/excel/wpt file here or",
   "Msg_PivotInstruction": "Bir rapor oluşturmak için , Alanlar Listesi'nde alanları seçin.",
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",

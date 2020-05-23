@@ -1,5 +1,6 @@
 {
   "Msg_LeavingPage": "Por favor, salve o relatório WPT antes de sair da página, senão você poderá perder seu trabalho!",
+  "Msg_ExportGridModePrompt":  "Please check 'No Fixed Header and Columns' in 'Grid options' to switch grid mode for better export result!",
   "Msg_LoadSourceInstruction":  "Drop a csv/excel/wpt file here or",
   "Msg_PivotInstruction": "Para construir um relatório, selecione os campos na lista de campos.",
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",

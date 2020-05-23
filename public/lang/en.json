@@ -1,5 +1,6 @@
 {
   "Msg_LeavingPage":  "Please save report before you leave the page, otherwise you may lose your work!",
+  "Msg_ExportGridModePrompt":  "Please check 'No Fixed Header and Columns' in 'Grid options' to switch grid mode for better export result!",
   "Msg_LoadSourceInstruction":  "Drop a csv/excel/wpt file here or",
   "Msg_PivotInstruction":  "To build a report, choose fields from Fields List.",
   "Msg_SwitchToPivotGrid": "Switch to Pivot grid",

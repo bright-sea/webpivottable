@@ -1,5 +1,6 @@
 {
   "Msg_LeavingPage": "在离开页面前请保存你的WPT报表，否则你将丢失你所有的操作！",
+  "Msg_ExportGridModePrompt":  "如果要达到好的输出效果，请在‘透视表选项’中勾上‘ 无固定表头和列’切换表格模式后再输出！",
   "Msg_LoadSourceInstruction": "拖拉一个csv/excel/wpt文件到这里, 或者",
   "Msg_PivotInstruction": "为创建报表，请从字段列表中选取字段",
   "Msg_SwitchToPivotGrid": "切换到透视表格",
