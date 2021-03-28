@@ -40,6 +40,7 @@
   "Msg_ManuallyInclude": "请手工选择所有要包含在内的标签",
   "Msg_ManuallyExclude": "请手工选择所有要剔除在外的标签",
   "Msg_FormatExpression": "在公式中您可以使用任何有效的javascript表达式.",
+  "Msg_DrillingThrough": "正在钻取单元细节 ",
 
   "Lbl_Setting": "设置",
   "Lbl_Help": "帮助",

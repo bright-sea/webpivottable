@@ -40,6 +40,7 @@
   "Msg_ManuallyInclude": "Please manually pickup labels which should be included",
   "Msg_ManuallyExclude": "Please manually pickup labels which should be excluded",
   "Msg_FormatExpression": "You can use any validate javascript expression in formula.",
+  "Msg_DrillingThrough": "Foratura attraverso i dettagli della cella ",
 
   "Lbl_Setting": "Impostazioni",
   "Lbl_Help": "Aiuto",

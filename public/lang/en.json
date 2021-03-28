@@ -15,7 +15,7 @@
   "Msg_ShowControlPanel":  "Show control Panel",
   "Msg_HideControlPanel":  "Hide control Panel",
   "Msg_NotValidWptFormat":  "Not a valid WPT file.",
-
+ 
   "Msg_InputFileUrl":  "Please input File URL.",
   "Msg_LoadingFile":  "Loading file: ",
   "Msg_NoDataLoaded":  "No data loaded",
@@ -40,6 +40,7 @@
   "Msg_ManuallyInclude": "Please manually pickup labels which should be included",
   "Msg_ManuallyExclude": "Please manually pickup labels which should be excluded",
   "Msg_FormatExpression": "You can use any validate javascript expression in formula.",
+  "Msg_DrillingThrough":  "Drilling through to the cell details ",
 
   "Lbl_Setting":  "Setting",
   "Lbl_Help":  "Help",
