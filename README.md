@@ -1,111 +1,102 @@
-# WPT ( WebPivotTable ) component
+# WebPivotTable (WPT)
 
-## How to get WPT component?
+A full-featured pivot table and pivot chart **Web Component** built with React.
+Drop it into any web page — no framework required.
 
-### [Github](https://github.com/bright-sea/webpivottable)
+- [Live Demo](https://webpivottable.com/demo)
+- [Quick Start](https://webpivottable.com/quick-start)
+- [Documentation](https://webpivottable.com/docs)
 
-WPT component is a public github project for any one to download and try it
 
-### [NPM](https://www.npmjs.com/package/webpivottable)
+## Install
 
-WPT component published as a npm package, you can install it by run:
+### CDN (simplest)
 
+```html
+<script type="module" src="https://cdn.webpivottable.com/wpt/latest/web-pivot-table.js"></script>
 ```
+
+### npm
+
+```bash
 npm install webpivottable
-```
-
-or
-```
+# or
 yarn add webpivottable
 ```
 
-### CDN
+### GitHub
 
-https://webpivottable.com/releases/latest/dist/wpt.js
-
-
-
-## How to use WPT component?
-
-
-### Public directory
-
-Copy whole public directory into web server root is all we need, no depends on any other libs or frameworks.
-
-To integrate WPT component, we only need import one javascript file into web page like below:
-
-```html
-  <script type="text/javascript" src="./dist/wpt.js"></script>
+```
+https://github.com/aspect-apps/webpivottable
 ```
 
-Then, we can put a "wpt-pivot-table" tag into page:
-```html
-<body>
-  <div id="wpt-container">
-    <web-pivot-table />
-  </div>
-</body>
-``` 
- 
-That's all. Simple enough. Now we have a full functional WebPivotTable on web page.       
- 
-List below is a sample html file:
+
+## Quick Start
+
+Add a single `<script>` tag and a `<web-pivot-table>` element — that's it:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <title>WebPivotTable Component</title>
-
-  <style type="text/css">
-    html, body, #wpt-container {width:100%;height:100%; padding:0; margin:0;}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebPivotTable</title>
+  <style>
+    html, body, #wpt-container { width: 100%; height: 100%; padding: 0; margin: 0; }
   </style>
-
-  <script type="text/javascript" src="./dist/wpt.js"></script>
-
+  <script type="module" src="https://cdn.webpivottable.com/wpt/latest/web-pivot-table.js"></script>
 </head>
-
 <body>
   <div id="wpt-container">
-    <web-pivot-table />
+    <web-pivot-table></web-pivot-table>
   </div>
 </body>
-
 </html>
-```  
-
-### Server directory (optional)
-
-For cross domain file or olap access, wpt component default to use our demo server as proxy:
-
 ```
-options: {
+
+See the full [Quick Start guide](https://webpivottable.com/quick-start) for
+npm usage, React/Vue integration, and pre-loading data sources.
+
+
+## Cross-Domain Proxy
+
+WebPivotTable includes a default proxy server for loading remote files and
+connecting to OLAP servers across origins:
+
+```javascript
+const wpt = document.querySelector('web-pivot-table');
+wpt.setOptions({
   server: {
-    fileProxyEnabled: 1,          // enable/disable file Proxy 1/0
-    fileProxy: 'http://demo.webpivottable.com/wpt/fileProxy',  // Server proxy for cross domain file acess
+    fileProxyEnabled: 1,
+    fileProxy: 'https://new.webpivottable.com/api/wpt/file-proxy',
     fileTimeout: 30000,
-    xmlaProxyEnabled: 1,        // enable/disable Xmla Proxy 1/0
-    xmlaProxy: 'http://demo.webpivottable.com/wpt/xmlaProxy', // Server proxy for cross domain xmla access
+    xmlaProxyEnabled: 1,
+    xmlaProxy: 'https://new.webpivottable.com/api/wpt/xmla-proxy',
     xmlaTimeout: 30000,
   },
-}  
-``` 
+});
+```
 
-If you want to run a server proxy by your own, please copy server directory as a nodeJs application.
-or if you are using other back end technology (like java, php, .net), you can add a proxy endpoint into your
-backend services the same as services.js inside server directory have done.
+If you don't need cross-origin access, disable the proxies by setting
+`fileProxyEnabled` and `xmlaProxyEnabled` to `0`.
 
-
-But if you have no cross domain access, then you can disable those proxies in above options. 
-
-
-## [DEMO](https://webpivottable.com/demo)
+To run your own proxy, see the `server/` directory in this repo for a Node.js
+Express example, or read the
+[Cross-Domain Access docs](https://webpivottable.com/docs/cross-domain-access).
 
 
-## [Document](https://webpivottable.com/doc)
+## Links
+
+- [Live Demo](https://webpivottable.com/demo)
+- [Quick Start](https://webpivottable.com/quick-start)
+- [Documentation](https://webpivottable.com/docs)
+- [APIs](https://webpivottable.com/docs/apis)
+- [Options](https://webpivottable.com/docs/options)
+- [Events](https://webpivottable.com/docs/events)
+
+
+## License
+
+© 2026 Brightsea Inc.
 
