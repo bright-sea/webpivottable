@@ -27,7 +27,7 @@ yarn add webpivottable
 ### GitHub
 
 ```
-https://github.com/aspect-apps/webpivottable
+https://github.com/bright-sea/webpivottable
 ```
 
 
@@ -69,10 +69,10 @@ const wpt = document.querySelector('web-pivot-table');
 wpt.setOptions({
   server: {
     fileProxyEnabled: 1,
-    fileProxy: 'https://new.webpivottable.com/api/wpt/file-proxy',
+    fileProxy: 'https://webpivottable.com/api/wpt/file-proxy',
     fileTimeout: 30000,
     xmlaProxyEnabled: 1,
-    xmlaProxy: 'https://new.webpivottable.com/api/wpt/xmla-proxy',
+    xmlaProxy: 'https://webpivottable.com/api/wpt/xmla-proxy',
     xmlaTimeout: 30000,
   },
 });
