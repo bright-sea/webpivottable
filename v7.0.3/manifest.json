@@ -1,0 +1,24 @@
+{
+  "package": "webpivottable",
+  "version": "7.0.3",
+  "generatedAt": "2026-02-27T01:43:45.389Z",
+  "files": {
+    "iife": "web-pivot-table-7.0.3.js",
+    "esm": "web-pivot-table-7.0.3.esm.js",
+    "localesDir": "locales",
+    "locales": [
+      "de.json",
+      "en.json",
+      "es.json",
+      "fr.json",
+      "it.json",
+      "pt.json",
+      "tr-TR.json",
+      "zh-CN.json"
+    ]
+  },
+  "usage": {
+    "localeDeploymentMode": "self-host",
+    "localeBaseUrl": "/locales"
+  }
+}
