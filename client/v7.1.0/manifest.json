@@ -1,0 +1,26 @@
+{
+  "package": "webpivottable",
+  "version": "7.1.0",
+  "generatedAt": "2026-03-08T05:44:00.156Z",
+  "files": {
+    "iife": "wpt-7.1.0.js",
+    "esm": "wpt-7.1.0.esm.js",
+    "localesDir": "locales",
+    "locales": [
+      "de.json",
+      "en.json",
+      "es.json",
+      "fr.json",
+      "it.json",
+      "ja.json",
+      "ko.json",
+      "pt.json",
+      "tr.json",
+      "zh.json"
+    ]
+  },
+  "usage": {
+    "localeDeploymentMode": "self-host",
+    "localeBaseUrl": "/locales"
+  }
+}
