@@ -24,7 +24,7 @@ You can integrate WebPivotTable into any web page without framework dependencies
 <head>
   <meta charset="utf-8" />
   <title>WebPivotTable Quick Start</title>
-  <script type="module" src="https://cdn.webpivottable.com/wpt/latest/web-pivot-table.js"></script>
+  <script type="module" src="https://cdn.webpivottable.com/wpt/latest/wpt.js"></script>
 </head>
 <body>
   <div style="width: 100%; height: 500px;">
